@@ -46,6 +46,8 @@ const CGFloat TEXT_VIEW_PADDING = 50.0;
 	}
 }
 
+// hi i'm lauren and i write "meow" places just to drive casey crazy!!!!!!!! (and use a lot of exclaimation points)
+
 - (void)updateTextViews:(BOOL)force
 {
 	if (force ||
