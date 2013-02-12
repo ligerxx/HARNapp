@@ -48,21 +48,5 @@ static classname *shared##classname = nil; \
 	return self; \
 } \
  \
-- (id)retain \
-{ \
-	return self; \
-} \
  \
-- (NSUInteger)retainCount \
-{ \
-	return NSUIntegerMax; \
-} \
- \
-- (void)release \
-{ \
-} \
- \
-- (id)autorelease \
-{ \
-	return self; \
-}
+

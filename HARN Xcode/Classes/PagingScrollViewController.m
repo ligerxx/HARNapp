@@ -142,12 +142,5 @@
     [scrollView scrollRectToVisible:frame animated:YES];
 }
 
-- (void)dealloc
-{
-	[currentPage release];
-	[nextPage release];
-	
-	[super dealloc];
-}
 
 @end

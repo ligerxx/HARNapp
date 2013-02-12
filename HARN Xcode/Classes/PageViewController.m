@@ -22,6 +22,11 @@ const CGFloat TEXT_VIEW_PADDING = 50.0;
 
 @synthesize pageIndex;
 
+- (NSInteger)getPageIndex
+{
+    return pageIndex;
+}
+
 - (void)setPageIndex:(NSInteger)newPageIndex
 {
 	pageIndex = newPageIndex;
@@ -46,7 +51,6 @@ const CGFloat TEXT_VIEW_PADDING = 50.0;
 	}
 }
 
-// hi i'm lauren and i write "meow" places just to drive casey crazy!!!!!!!! (and use a lot of exclaimation points)
 
 - (void)updateTextViews:(BOOL)force
 {

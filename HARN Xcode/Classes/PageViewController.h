@@ -24,6 +24,9 @@
 
 @property NSInteger pageIndex;
 
+- (NSInteger)getPageIndex;
+- (void)setPageIndex:(NSInteger)pageIndex;
+
 - (void)updateTextViews:(BOOL)force;
 
 @end
