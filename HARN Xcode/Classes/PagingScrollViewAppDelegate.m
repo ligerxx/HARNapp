@@ -21,6 +21,7 @@
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application
 {
+    
 	[window addSubview:pagingScrollViewController.view];
 	
     // Override point for customization after application launch
