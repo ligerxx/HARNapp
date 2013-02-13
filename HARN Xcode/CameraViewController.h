@@ -9,5 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface CameraViewController : UIViewController
+<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+{
+    UIImagePickerController *imagePicker;
+}
+-(IBAction)showCameraUI:(id)sender;
+-(IBAction)saveImage:(id)sender;
+-(IBAction)closeCamera:(id)sender;
+
+@property (strong, nonatomic) IBOutlet
+UIImageView *imageView;
 
 @end
