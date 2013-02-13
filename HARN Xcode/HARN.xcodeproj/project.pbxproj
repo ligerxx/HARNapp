@@ -13,6 +13,8 @@
 		1D5DA93016B62504002FBF16 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D2E2B9816B613F1006F1863 /* Default-568h@2x.png */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1D62063C16CB480900203DA8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D62063B16CB480900203DA8 /* MobileCoreServices.framework */; };
+		1D62063E16CB481100203DA8 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D62063D16CB481100203DA8 /* MediaPlayer.framework */; };
 		1D92A76916B5E9B700F47D7D /* gallerybackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D92A76816B5E9B700F47D7D /* gallerybackground.png */; };
 		1D92A76D16B5F22600F47D7D /* ceramic.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D92A76A16B5F22600F47D7D /* ceramic.png */; };
 		1D92A76E16B5F22600F47D7D /* monet.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D92A76B16B5F22600F47D7D /* monet.png */; };
@@ -39,6 +41,8 @@
 		1D3623240D0F684500981E51 /* PagingScrollViewAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagingScrollViewAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* PagingScrollViewAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagingScrollViewAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* HARN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HARN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D62063B16CB480900203DA8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		1D62063D16CB481100203DA8 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		1D92A76816B5E9B700F47D7D /* gallerybackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gallerybackground.png; sourceTree = "<group>"; };
 		1D92A76A16B5F22600F47D7D /* ceramic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ceramic.png; sourceTree = "<group>"; };
 		1D92A76B16B5F22600F47D7D /* monet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monet.png; sourceTree = "<group>"; };
@@ -70,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D62063E16CB481100203DA8 /* MediaPlayer.framework in Frameworks */,
+				1D62063C16CB480900203DA8 /* MobileCoreServices.framework in Frameworks */,
 				1DA6A40D16CAFBEE0021267F /* CoreImage.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
@@ -150,6 +156,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1D62063D16CB481100203DA8 /* MediaPlayer.framework */,
+				1D62063B16CB480900203DA8 /* MobileCoreServices.framework */,
 				1DA6A40C16CAFBEE0021267F /* CoreImage.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
