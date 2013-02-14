@@ -154,14 +154,13 @@
 -(void) createPreviewViewsForFilters
 {
     int offsetX = 0;
-    
     for(int index = 0; index < [filters count]; index++)
     {
         UIView *filterView = [[UIView alloc] initWithFrame:CGRectMake(offsetX, 0, 60, 60)];
         
         // create a label to display the name
         UILabel *filterNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, filterView.bounds.size.width, 8)];
-        
+
         filterNameLabel.center = CGPointMake(filterView.bounds.size.width/2, filterView.bounds.size.height + filterNameLabel.bounds.size.height);
         
         FilterPreview *filter = (FilterPreview *) [filters objectAtIndex:index];
@@ -175,7 +174,7 @@
         CIImage *outputImage = [filter.filter outputImage];
         
         CGImageRef cgimg =
-        [context createCGImage:outputImage fromRect:[outputImage extent]];
+        [self.context createCGImage:outputImage fromRect:[outputImage extent]];
         
         UIImage *smallImage =  [UIImage imageWithCGImage:cgimg];
         
@@ -229,7 +228,7 @@
     CIImage *outputImage = [filter.filter outputImage];
     
     CGImageRef cgimg =
-    [context createCGImage:outputImage fromRect:[outputImage extent]];
+    [self.context createCGImage:outputImage fromRect:[outputImage extent]];
     
     UIImage *finalImage = [UIImage imageWithCGImage:cgimg];
     
@@ -245,7 +244,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.context =[CIContext contextWithOptions:nil];        // Custom initialization
     }
     return self;
 }
@@ -253,6 +252,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.context =[CIContext contextWithOptions:nil];        // Custom initialization
+
 	// Do any additional setup after loading the view.
 }
 

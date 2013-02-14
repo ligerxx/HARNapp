@@ -13,7 +13,7 @@
 {
     UIImagePickerController *imagePicker;
     
-    CIContext *context;
+    CIContext *_context;
     NSMutableArray *filters;
     CIImage *beginImage;
     UIScrollView *filtersScrollView;
@@ -25,5 +25,6 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 @property (nonatomic,weak) IBOutlet UIScrollView *filtersScrollView;
+@property(strong,nonatomic) CIContext *context;
 
 @end
