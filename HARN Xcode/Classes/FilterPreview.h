@@ -14,7 +14,7 @@
 }
 -(id) initWithNameAndFilter:(NSString *) theNameOfTheFilter filter:(CIFilter *) theFilter;
 
-@property (nonatomic, strong) NSString *theNameOfTheFilter;
+@property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) CIFilter *filter;
 
 @end
