@@ -65,6 +65,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="iAb-Za-uRe"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZT-0v-xQQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -110,6 +111,7 @@
                                 </state>
                                 <connections>
                                     <action selector="closeCamera:" destination="bzk-Jl-YLS" eventType="touchUpInside" id="mqg-AZ-JEa"/>
+                                    <segue destination="523-E5-MiZ" kind="modal" modalTransitionStyle="flipHorizontal" id="Sc4-Yd-y4n"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kpr-Pe-86f">

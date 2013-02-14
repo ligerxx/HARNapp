@@ -16,18 +16,35 @@
 
 -(IBAction)showCameraUI:(id)sender
 {
+    _imageView.image = nil;
     [self startCameraControllerFromViewController: self
                                     usingDelegate: self];
 }
 
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    UIImage *image;
+    image = (UIImage *)
+    [info valueForKey:UIImagePickerControllerOriginalImage];
+    _imageView.image = image;
+    [picker dismissModalViewControllerAnimated:YES];
+}
+
 -(IBAction)saveImage:(id)sender
 {
-    
+    UIImage *imageToSave;
+    imageToSave = _imageView.image;
+    UIImageWriteToSavedPhotosAlbum((imageToSave), nil, nil, nil);
 }
 
 -(IBAction)closeCamera:(id)sender
 {
     
+}
+
+-(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    [picker dismissModalViewControllerAnimated:YES];
 }
 
 - (BOOL) startCameraControllerFromViewController: (UIViewController*) controller
