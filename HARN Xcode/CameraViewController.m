@@ -7,6 +7,8 @@
 //
 
 #import "CameraViewController.h"
+#import <QuartzCore/QuartzCore.h>
+#import "FilterPreview.h"
 
 @interface CameraViewController ()
 
@@ -41,11 +43,18 @@
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    UIImage *image;
-    image = (UIImage *)
-    [info valueForKey:UIImagePickerControllerOriginalImage];
-    _imageView.image = image;
-    [picker dismissModalViewControllerAnimated:YES];
+    
+    /*When the picture is taken the didFinishPickingMediaWithInfo method of the UIImagePickerControllerDelegate is invoked. The didFinishPickingMediaWithInfo parameter info has the information about the new image. The implementation below shows how to set the new image to the UIImageView control on the view. 
+     */
+    UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+    
+    [self.imageView setImage:image];
+    
+    //If you do not dismiss the model view controller as done below then you will be stuck at the camera screen. 
+    [self dismissModalViewControllerAnimated:YES];
+    
+    //Load the set of filters again
+    [self loadFiltersForImage:image];
 }
 
 -(IBAction)saveImage:(id)sender
@@ -94,6 +103,88 @@
     [controller presentModalViewController: cameraUI animated: YES];
     return YES;
 }
+
+-(void) loadFiltersForImage:(UIImage *) image
+{
+    
+    CIImage *filterPreviewImage = [[CIImage alloc] initWithImage:image];
+    
+    CIFilter *sepiaFilter = [CIFilter filterWithName:@"CISepiaTone" keysAndValues:kCIInputImageKey,filterPreviewImage,
+                             @"inputIntensity",[NSNumber numberWithFloat:0.8],nil];
+    
+    
+    CIFilter *colorMonochrome = [CIFilter filterWithName:@"CIColorMonochrome" keysAndValues:kCIInputImageKey,filterPreviewImage,
+                                 @"inputColor",[CIColor colorWithString:@"Red"],
+                                 @"inputIntensity",[NSNumber numberWithFloat:0.8], nil];
+    
+    filters = [[NSMutableArray alloc] init];
+    
+    
+    [filters addObjectsFromArray:[NSArray arrayWithObjects:
+                                  [[FilterPreview alloc] initWithNameAndFilter:@"Sepia" filter:sepiaFilter],
+                                  [[FilterPreview alloc] initWithNameAndFilter:@"Mono" filter:colorMonochrome]
+                                  
+                                  , nil]];
+    
+    
+    [self createPreviewViewsForFilters];
+}
+
+-(void) createPreviewViewsForFilters
+{
+    int offsetX = 0;
+    /*
+    for(int index = 0; index < [filters count]; index++)
+    {
+        UIView *filterView = [[UIView alloc] initWithFrame:CGRectMake(offsetX, 0, 60, 60)];
+        
+        // create a label to display the name
+        UILabel *filterNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, filterView.bounds.size.width, 8)];
+        
+        filterNameLabel.center = CGPointMake(filterView.bounds.size.width/2, filterView.bounds.size.height + filterNameLabel.bounds.size.height);
+        
+        FilterPreview *filter = (Filter *) [filters objectAtIndex:index];
+        
+        filterNameLabel.text =  filter.theNameOfTheFilter;
+        filterNameLabel.backgroundColor = [UIColor clearColor];
+        filterNameLabel.textColor = [UIColor whiteColor];
+        filterNameLabel.font = [UIFont fontWithName:@"AppleColorEmoji" size:10];
+        filterNameLabel.textAlignment = UITextAlignmentCenter;
+        
+        CIImage *outputImage = [filter.filter outputImage];
+        
+        CGImageRef cgimg =
+        [context createCGImage:outputImage fromRect:[outputImage extent]];
+        
+        UIImage *smallImage =  [UIImage imageWithCGImage:cgimg];
+        
+        // create filter preview image views
+        UIImageView *filterPreviewImageView = [[UIImageView alloc] initWithImage:smallImage];
+        
+        [filterView setUserInteractionEnabled:YES];
+        
+        filterPreviewImageView.layer.cornerRadius = 10;
+        filterPreviewImageView.opaque = NO;
+        filterPreviewImageView.backgroundColor = [UIColor clearColor];
+        filterPreviewImageView.layer.masksToBounds = YES;
+        filterPreviewImageView.frame = CGRectMake(0, 0, 60, 60);
+        
+        filterView.tag = index;
+        
+        [self applyGesturesToFilterPreviewImageView:filterView];
+        
+        [filterView addSubview:filterPreviewImageView];
+        [filterView addSubview:filterNameLabel];
+        
+        [self.filtersScrollView addSubview:filterView];
+        
+        offsetX += filterView.bounds.size.width + 10;
+        
+    }*/
+    
+    [self.filtersScrollView setContentSize:CGSizeMake(400, 60)];
+}
+
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

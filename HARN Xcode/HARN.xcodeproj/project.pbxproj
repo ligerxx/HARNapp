@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1D1EA86116C6E59A0019B139 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D1EA86016C6E59A0019B139 /* Default@2x.png */; };
 		1D1EA86316C6E5A70019B139 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D1EA86216C6E5A70019B139 /* Default.png */; };
+		1D29777616CD77370094FD84 /* FilterPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D29777516CD77370094FD84 /* FilterPreview.m */; };
 		1D3623260D0F684500981E51 /* PagingScrollViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* PagingScrollViewAppDelegate.m */; };
 		1D5DA93016B62504002FBF16 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D2E2B9816B613F1006F1863 /* Default-568h@2x.png */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -22,7 +23,6 @@
 		1D92A76F16B5F22600F47D7D /* skeleton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D92A76C16B5F22600F47D7D /* skeleton.png */; };
 		1D92A77116B5F42800F47D7D /* harn logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D92A77016B5F42800F47D7D /* harn logo.png */; };
 		1D92A77316B5FAC100F47D7D /* blank frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D92A77216B5FAC100F47D7D /* blank frame.png */; };
-		1DA6A40B16CAF0EB0021267F /* JadeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA6A40A16CAF0EB0021267F /* JadeFilter.m */; };
 		1DA6A40D16CAFBEE0021267F /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA6A40C16CAFBEE0021267F /* CoreImage.framework */; };
 		1DC53B5916B60028003591CD /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC53B5816B60028003591CD /* menu.png */; };
 		1DE88E5416CB140600B8804E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */; };
@@ -41,6 +41,8 @@
 /* Begin PBXFileReference section */
 		1D1EA86016C6E59A0019B139 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		1D1EA86216C6E5A70019B139 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		1D29777416CD77370094FD84 /* FilterPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterPreview.h; sourceTree = "<group>"; };
+		1D29777516CD77370094FD84 /* FilterPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterPreview.m; sourceTree = "<group>"; };
 		1D2E2B9816B613F1006F1863 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* PagingScrollViewAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagingScrollViewAppDelegate.h; sourceTree = "<group>"; };
@@ -56,8 +58,6 @@
 		1D92A76C16B5F22600F47D7D /* skeleton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skeleton.png; sourceTree = "<group>"; };
 		1D92A77016B5F42800F47D7D /* harn logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "harn logo.png"; sourceTree = "<group>"; };
 		1D92A77216B5FAC100F47D7D /* blank frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank frame.png"; sourceTree = "<group>"; };
-		1DA6A40916CAF0EB0021267F /* JadeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JadeFilter.h; sourceTree = "<group>"; };
-		1DA6A40A16CAF0EB0021267F /* JadeFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JadeFilter.m; sourceTree = "<group>"; };
 		1DA6A40C16CAFBEE0021267F /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		1DC53B5816B60028003591CD /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
@@ -112,6 +112,8 @@
 				8016D53216CC205C00F20725 /* IIWrapController.m */,
 				1D7090AD16CC063A0074597B /* CameraViewController.h */,
 				1D7090AE16CC063A0074597B /* CameraViewController.m */,
+				1D29777416CD77370094FD84 /* FilterPreview.h */,
+				1D29777516CD77370094FD84 /* FilterPreview.m */,
 				1D3623240D0F684500981E51 /* PagingScrollViewAppDelegate.h */,
 				1D3623250D0F684500981E51 /* PagingScrollViewAppDelegate.m */,
 				C9F783610F2AB7600029CA01 /* DataSource.h */,
@@ -120,8 +122,6 @@
 				C9F783A10F2ABAE40029CA01 /* PagingScrollViewController.m */,
 				C9F783A30F2ABAF10029CA01 /* PageViewController.h */,
 				C9F783A40F2ABAF10029CA01 /* PageViewController.m */,
-				1DA6A40916CAF0EB0021267F /* JadeFilter.h */,
-				1DA6A40A16CAF0EB0021267F /* JadeFilter.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -266,11 +266,11 @@
 				C9F783630F2AB7600029CA01 /* DataSource.m in Sources */,
 				C9F783A20F2ABAE40029CA01 /* PagingScrollViewController.m in Sources */,
 				C9F783A50F2ABAF10029CA01 /* PageViewController.m in Sources */,
-				1DA6A40B16CAF0EB0021267F /* JadeFilter.m in Sources */,
 				1D7090AF16CC063A0074597B /* CameraViewController.m in Sources */,
 				8016D52D16CC1E5F00F20725 /* IIViewDeckController.m in Sources */,
 				8016D53316CC205C00F20725 /* IISideController.m in Sources */,
 				8016D53416CC205C00F20725 /* IIWrapController.m in Sources */,
+				1D29777616CD77370094FD84 /* FilterPreview.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
