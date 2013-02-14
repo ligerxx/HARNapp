@@ -16,6 +16,8 @@
     CIContext *context;
     NSMutableArray *filters;
     CIImage *beginImage;
+    UIScrollView *filtersScrollView;
+    
 }
 -(IBAction)showCameraUI:(id)sender;
 -(IBAction)saveImage:(id)sender;

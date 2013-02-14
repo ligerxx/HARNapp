@@ -24,6 +24,7 @@
 		1D92A77116B5F42800F47D7D /* harn logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D92A77016B5F42800F47D7D /* harn logo.png */; };
 		1D92A77316B5FAC100F47D7D /* blank frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D92A77216B5FAC100F47D7D /* blank frame.png */; };
 		1DA6A40D16CAFBEE0021267F /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA6A40C16CAFBEE0021267F /* CoreImage.framework */; };
+		1DA8E15D16CD8A9B002914E4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA8E15C16CD8A9B002914E4 /* OpenGLES.framework */; };
 		1DC53B5916B60028003591CD /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC53B5816B60028003591CD /* menu.png */; };
 		1DE88E5416CB140600B8804E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */; };
 		1DEE8DFA16CD855900A3C9B7 /* UIImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */; };
@@ -61,6 +62,7 @@
 		1D92A77016B5F42800F47D7D /* harn logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "harn logo.png"; sourceTree = "<group>"; };
 		1D92A77216B5FAC100F47D7D /* blank frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank frame.png"; sourceTree = "<group>"; };
 		1DA6A40C16CAFBEE0021267F /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		1DA8E15C16CD8A9B002914E4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		1DC53B5816B60028003591CD /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1DEE8DF816CD855900A3C9B7 /* UIImageExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageExtension.h; sourceTree = "<group>"; };
@@ -94,13 +96,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8016D53716CC220B00F20725 /* QuartzCore.framework in Frameworks */,
+				1DA8E15D16CD8A9B002914E4 /* OpenGLES.framework in Frameworks */,
+				1DA6A40D16CAFBEE0021267F /* CoreImage.framework in Frameworks */,
 				1D62063E16CB481100203DA8 /* MediaPlayer.framework in Frameworks */,
 				1D62063C16CB480900203DA8 /* MobileCoreServices.framework in Frameworks */,
-				1DA6A40D16CAFBEE0021267F /* CoreImage.framework in Frameworks */,
-				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
-				8016D53716CC220B00F20725 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +192,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1DA8E15C16CD8A9B002914E4 /* OpenGLES.framework */,
 				8016D53516CC21BD00F20725 /* QuartzCore.framework */,
 				1D62063D16CB481100203DA8 /* MediaPlayer.framework */,
 				1D62063B16CB480900203DA8 /* MobileCoreServices.framework */,
