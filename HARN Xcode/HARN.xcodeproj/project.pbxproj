@@ -26,6 +26,7 @@
 		1DA6A40D16CAFBEE0021267F /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA6A40C16CAFBEE0021267F /* CoreImage.framework */; };
 		1DC53B5916B60028003591CD /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC53B5816B60028003591CD /* menu.png */; };
 		1DE88E5416CB140600B8804E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */; };
+		1DEE8DFA16CD855900A3C9B7 /* UIImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		8016D52D16CC1E5F00F20725 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8016D52C16CC1E5F00F20725 /* IIViewDeckController.m */; };
@@ -62,6 +63,8 @@
 		1DA6A40C16CAFBEE0021267F /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		1DC53B5816B60028003591CD /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		1DEE8DF816CD855900A3C9B7 /* UIImageExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageExtension.h; sourceTree = "<group>"; };
+		1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageExtension.m; sourceTree = "<group>"; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -115,6 +118,8 @@
 				8016D53216CC205C00F20725 /* IIWrapController.m */,
 				1D7090AD16CC063A0074597B /* CameraViewController.h */,
 				1D7090AE16CC063A0074597B /* CameraViewController.m */,
+				1DEE8DF816CD855900A3C9B7 /* UIImageExtension.h */,
+				1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */,
 				1D29777416CD77370094FD84 /* FilterPreview.h */,
 				1D29777516CD77370094FD84 /* FilterPreview.m */,
 				1D3623240D0F684500981E51 /* PagingScrollViewAppDelegate.h */,
@@ -277,6 +282,7 @@
 				8016D53416CC205C00F20725 /* IIWrapController.m in Sources */,
 				1D29777616CD77370094FD84 /* FilterPreview.m in Sources */,
 				808DB99816CD7E5F00B591D6 /* TitleViewController.m in Sources */,
+				1DEE8DFA16CD855900A3C9B7 /* UIImageExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

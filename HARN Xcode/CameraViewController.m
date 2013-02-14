@@ -9,10 +9,11 @@
 #import "CameraViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "FilterPreview.h"
+#import "UIImageExtension.h"
 
-@interface CameraViewController ()
+//@interface CameraViewController ()
 
-@end
+//@end
 
 @implementation CameraViewController
 
@@ -158,6 +159,12 @@
         
         UIImage *smallImage =  [UIImage imageWithCGImage:cgimg];
         
+        if(smallImage.imageOrientation == UIImageOrientationUp)
+        {
+            smallImage = [smallImage imageRotatedByDegrees:90];
+        }
+        
+        
         // create filter preview image views
         UIImageView *filterPreviewImageView = [[UIImageView alloc] initWithImage:smallImage];
         
@@ -185,6 +192,33 @@
     [self.filtersScrollView setContentSize:CGSizeMake(400, 60)];
 }
 
+-(void) applyGesturesToFilterPreviewImageView:(UIView *) view
+{
+    UITapGestureRecognizer *singleTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(applyFilter:)];
+    
+    singleTapGestureRecognizer.numberOfTapsRequired = 1;
+    
+    [view addGestureRecognizer:singleTapGestureRecognizer];
+}
+
+-(void) applyFilter:(id) sender
+{
+    int filterIndex = [(UITapGestureRecognizer *) sender view].tag;
+    FilterPreview *filter = [filters objectAtIndex:filterIndex];
+    
+    CIImage *outputImage = [filter.filter outputImage];
+    
+    CGImageRef cgimg =
+    [context createCGImage:outputImage fromRect:[outputImage extent]];
+    
+    UIImage *finalImage = [UIImage imageWithCGImage:cgimg];
+    
+    finalImage = [finalImage imageRotatedByDegrees:90];
+    
+    [self.imageView setImage:finalImage];
+    
+    CGImageRelease(cgimg);
+}
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
