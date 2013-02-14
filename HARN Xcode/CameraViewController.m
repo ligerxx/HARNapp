@@ -133,7 +133,7 @@
 -(void) createPreviewViewsForFilters
 {
     int offsetX = 0;
-    /*
+    
     for(int index = 0; index < [filters count]; index++)
     {
         UIView *filterView = [[UIView alloc] initWithFrame:CGRectMake(offsetX, 0, 60, 60)];
@@ -143,9 +143,9 @@
         
         filterNameLabel.center = CGPointMake(filterView.bounds.size.width/2, filterView.bounds.size.height + filterNameLabel.bounds.size.height);
         
-        FilterPreview *filter = (Filter *) [filters objectAtIndex:index];
+        FilterPreview *filter = (FilterPreview *) [filters objectAtIndex:index];
         
-        filterNameLabel.text =  filter.theNameOfTheFilter;
+        filterNameLabel.text =  filter.name;
         filterNameLabel.backgroundColor = [UIColor clearColor];
         filterNameLabel.textColor = [UIColor whiteColor];
         filterNameLabel.font = [UIFont fontWithName:@"AppleColorEmoji" size:10];
@@ -180,7 +180,7 @@
         
         offsetX += filterView.bounds.size.width + 10;
         
-    }*/
+    }
     
     [self.filtersScrollView setContentSize:CGSizeMake(400, 60)];
 }
