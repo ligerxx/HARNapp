@@ -15,6 +15,7 @@
 @implementation TitleViewController
 @synthesize topLayer = _topLayer;
 @synthesize layerPosition = _layerPosition;
+BOOL _bottomVisible;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -67,9 +68,21 @@
         // if you let go before reaching the midpoint, snap back
         if (self.topLayer.frame.origin.x < 160) {
             [self animateLayerToPoint:0];
+            _bottomVisible = NO;
         } else {
             [self animateLayerToPoint:VIEW_HIDDEN];
+            _bottomVisible = YES;
         }
+    }
+}
+
+- (IBAction)tapToPanLayer:(id)sender {
+    if (_bottomVisible == NO) {
+        [self animateLayerToPoint:VIEW_HIDDEN];
+        _bottomVisible = YES;
+    } else {
+        [self animateLayerToPoint:0];
+        _bottomVisible = NO;
     }
 }
 

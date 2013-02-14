@@ -42,6 +42,9 @@
                                         <state key="highlighted">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="tapToPanLayer:" destination="523-E5-MiZ" eventType="touchUpInside" id="uno-4Z-fmw"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Now Featuring" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DhP-Qs-mRc">
                                         <rect key="frame" x="99" y="152" width="123" height="21"/>
