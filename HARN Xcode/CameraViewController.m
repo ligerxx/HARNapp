@@ -17,8 +17,26 @@
 -(IBAction)showCameraUI:(id)sender
 {
     _imageView.image = nil;
-    [self startCameraControllerFromViewController: self
-                                    usingDelegate: self];
+    
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
+    
+    if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
+    {
+        [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
+    }
+    else
+    {
+        [imagePicker setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+    }
+    
+    [imagePicker setDelegate:self];
+    
+    [self presentModalViewController:imagePicker animated:YES];
+    
+    /*THIS WAS THE ORIGINAL SPEC TAKEN FROM APPLE'S DOCS TO OPEN THE CAMERA GUI.
+     
+     [self startCameraControllerFromViewController: self
+                                    usingDelegate: self];*/
 }
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
