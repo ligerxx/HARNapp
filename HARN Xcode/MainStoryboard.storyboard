@@ -74,12 +74,19 @@
                                 </connections>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="iAb-Za-uRe"/>
+                    <connections>
+                        <outlet property="topLayer" destination="ic6-P1-Y3U" id="X8i-TO-4YY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZT-0v-xQQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="ZCF-kN-6zS"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ZCF-kN-6zS">
+                    <connections>
+                        <action selector="panLayer:" destination="523-E5-MiZ" id="83L-a5-pTr"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="199" y="38"/>
         </scene>
@@ -216,6 +223,9 @@
         </class>
         <class className="TitleViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TitleViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="topLayer" candidateClass="UIView"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
