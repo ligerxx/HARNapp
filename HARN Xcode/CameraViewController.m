@@ -159,10 +159,12 @@ static const int FILTER_LABEL = 001;
 
 -(void) createPreviewViewsForFilters
 {
+    //gap between each of the filter previews
     int offsetX = 10;
     
     for(int index = 0; index < [filters count]; index++)
     {
+        //size of each filter view that has both the image preview and the text
         UIView *filterView = [[UIView alloc] initWithFrame:CGRectMake(offsetX, 0, 60, 60)];
         
         filterView.tag = index;
@@ -170,34 +172,38 @@ static const int FILTER_LABEL = 001;
         // create a label to display the name
         UILabel *filterNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, filterView.bounds.size.width, 8)];
 
+        //position it below the image that will show. This occurs first because the image will be drawn on top of the existing label view
         filterNameLabel.center = CGPointMake(filterView.bounds.size.width/2, filterView.bounds.size.height + filterNameLabel.bounds.size.height);
         
+        //Grabs the first filter in the Array "filters"
         FilterPreview *filter = (FilterPreview *) [filters objectAtIndex:index];
         
+        //sets the information for the UILabel filterNameLabel that was made above
         filterNameLabel.text =  filter.name;
         filterNameLabel.backgroundColor = [UIColor clearColor];
         filterNameLabel.textColor = [UIColor whiteColor];
-        filterNameLabel.font = [UIFont fontWithName:@"AppleColorEmoji" size:10];
+        filterNameLabel.font = [UIFont fontWithName:@"AppleColorEmoji" size:10]; //I don't know why Emoji is used...
         filterNameLabel.textAlignment = UITextAlignmentCenter;
         
+        //IMAGE PREVIEW TIME - first make a new outputImage based on the imagePicker's selection of outputImage stored in the filter array
         CIImage *outputImage = [filter.filter outputImage];
         
-        CGImageRef cgimg =
-        [_context createCGImage:outputImage fromRect:[outputImage extent]];
+        //Here is where the outputImage is applied to the preview image coming in
+        CGImageRef cgimg =[_context createCGImage:outputImage fromRect:[outputImage extent]];
         
+        //This is pulled from the extensions and rotates cgimg which will now become smallImage so we are BACK to a UIImage class instead of a CIImage to a CGImageRef (aka the data).
         UIImage *smallImage =  [UIImage imageWithCGImage:cgimg];
-        
         if(smallImage.imageOrientation == UIImageOrientationUp)
         {
             smallImage = [smallImage imageRotatedByDegrees:90];
         }
-        
         
         // create filter preview image views
         UIImageView *filterPreviewImageView = [[UIImageView alloc] initWithImage:smallImage];
         
         [filterView setUserInteractionEnabled:YES];
         
+        //Customize the UIImageView so it looks pretty
         filterPreviewImageView.layer.cornerRadius = 15;
         filterPreviewImageView.opaque = NO;
         filterPreviewImageView.backgroundColor = [UIColor clearColor];
@@ -208,9 +214,11 @@ static const int FILTER_LABEL = 001;
         
         [self applyGesturesToFilterPreviewImageView:filterView];
         
+        //I swear this is like Inception at this point...
         [filterView addSubview:filterPreviewImageView];
         [filterView addSubview:filterNameLabel];
         
+        //IT IS DONE.
         [filtersScrollView addSubview:filterView];
         
         offsetX += filterView.bounds.size.width + 10;
