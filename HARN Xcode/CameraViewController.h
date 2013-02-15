@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CameraViewController : UIViewController
-<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface CameraViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 {
     UIImagePickerController *imagePicker;
     
@@ -17,14 +16,16 @@
     NSMutableArray *filters;
     CIImage *beginImage;
     UIScrollView *filtersScrollView;
+    UIView *selectedFilterView;
+    UIImage *finalImage;
     
 }
 -(IBAction)showCameraUI:(id)sender;
 -(IBAction)saveImage:(id)sender;
 -(IBAction)closeCamera:(id)sender;
 
-@property (strong, nonatomic) IBOutlet UIImageView *imageView;
-@property (nonatomic,weak) IBOutlet UIScrollView *filtersScrollView;
+@property (nonatomic, weak) IBOutlet UIImageView *imageView;
+@property (nonatomic, weak) IBOutlet UIScrollView *filtersScrollView;
 @property(strong,nonatomic) CIContext *context;
 
 @end

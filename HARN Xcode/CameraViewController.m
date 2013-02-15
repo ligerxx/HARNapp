@@ -11,11 +11,9 @@
 #import "FilterPreview.h"
 #import "UIImageExtension.h"
 
-//@interface CameraViewController ()
-
-//@end
-
 @implementation CameraViewController
+
+static const int FILTER_LABEL = 001;
 
 -(IBAction)showCameraUI:(id)sender
 {
@@ -73,6 +71,14 @@
     
     //If you do not dismiss the model view controller as done below then you will be stuck at the camera screen. 
     [self dismissModalViewControllerAnimated:YES];
+    
+    filtersScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 300, self.view.bounds.size.width, 90)];
+    
+    [filtersScrollView setScrollEnabled:YES];
+    [filtersScrollView setShowsVerticalScrollIndicator:NO];
+    filtersScrollView.showsHorizontalScrollIndicator = NO;
+    
+    [self.view addSubview:filtersScrollView];
     
     //Load the set of filters again
     [self loadFiltersForImage:image];
@@ -153,10 +159,13 @@
 
 -(void) createPreviewViewsForFilters
 {
-    int offsetX = 0;
+    int offsetX = 10;
+    
     for(int index = 0; index < [filters count]; index++)
     {
         UIView *filterView = [[UIView alloc] initWithFrame:CGRectMake(offsetX, 0, 60, 60)];
+        
+        filterView.tag = index;
         
         // create a label to display the name
         UILabel *filterNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, filterView.bounds.size.width, 8)];
@@ -174,7 +183,7 @@
         CIImage *outputImage = [filter.filter outputImage];
         
         CGImageRef cgimg =
-        [self.context createCGImage:outputImage fromRect:[outputImage extent]];
+        [_context createCGImage:outputImage fromRect:[outputImage extent]];
         
         UIImage *smallImage =  [UIImage imageWithCGImage:cgimg];
         
@@ -189,7 +198,7 @@
         
         [filterView setUserInteractionEnabled:YES];
         
-        filterPreviewImageView.layer.cornerRadius = 10;
+        filterPreviewImageView.layer.cornerRadius = 15;
         filterPreviewImageView.opaque = NO;
         filterPreviewImageView.backgroundColor = [UIColor clearColor];
         filterPreviewImageView.layer.masksToBounds = YES;
@@ -202,13 +211,13 @@
         [filterView addSubview:filterPreviewImageView];
         [filterView addSubview:filterNameLabel];
         
-        [self.filtersScrollView addSubview:filterView];
+        [filtersScrollView addSubview:filterView];
         
         offsetX += filterView.bounds.size.width + 10;
         
     }
     
-    [self.filtersScrollView setContentSize:CGSizeMake(400, 60)];
+    [self.filtersScrollView setContentSize:CGSizeMake(400, 90)];
 }
 
 -(void) applyGesturesToFilterPreviewImageView:(UIView *) view
@@ -244,7 +253,10 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.context =[CIContext contextWithOptions:nil];        // Custom initialization
+        self.context =[CIContext contextWithOptions:nil];
+        [self.view addSubview:filtersScrollView];
+        
+        // Custom initialization
     }
     return self;
 }
@@ -253,7 +265,7 @@
 {
     [super viewDidLoad];
     self.context =[CIContext contextWithOptions:nil];        // Custom initialization
-
+    
 	// Do any additional setup after loading the view.
 }
 

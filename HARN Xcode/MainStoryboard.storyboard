@@ -205,34 +205,6 @@
         <image name="harn logo.png" width="371" height="238"/>
         <image name="menu.png" width="50" height="50"/>
     </resources>
-    <classes>
-        <class className="CameraViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CameraViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="closeCamera:"/>
-                <relationship kind="action" name="saveImage:"/>
-                <relationship kind="action" name="showCameraUI:"/>
-                <relationship kind="outlet" name="filtersScrollView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="PagingScrollViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PagingScrollViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="changePage:"/>
-                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="TitleViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TitleViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="panLayer:" candidateClass="UIPanGestureRecognizer"/>
-                <relationship kind="action" name="tapToPanLayer:"/>
-                <relationship kind="outlet" name="topLayer" candidateClass="UIView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
