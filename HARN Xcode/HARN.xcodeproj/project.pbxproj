@@ -17,6 +17,8 @@
 		1D62063C16CB480900203DA8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D62063B16CB480900203DA8 /* MobileCoreServices.framework */; };
 		1D62063E16CB481100203DA8 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D62063D16CB481100203DA8 /* MediaPlayer.framework */; };
 		1D7090AF16CC063A0074597B /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7090AE16CC063A0074597B /* CameraViewController.m */; };
+		1D7E357616CF081200C5C033 /* HARN icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7E357516CF081200C5C033 /* HARN icon.png */; };
+		1D7E357816CF0EB100C5C033 /* HARN icon low res.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7E357716CF0EB100C5C033 /* HARN icon low res.png */; };
 		1D92A76916B5E9B700F47D7D /* gallerybackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D92A76816B5E9B700F47D7D /* gallerybackground.png */; };
 		1D92A76D16B5F22600F47D7D /* ceramic.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D92A76A16B5F22600F47D7D /* ceramic.png */; };
 		1D92A76E16B5F22600F47D7D /* monet.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D92A76B16B5F22600F47D7D /* monet.png */; };
@@ -55,6 +57,8 @@
 		1D62063D16CB481100203DA8 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		1D7090AD16CC063A0074597B /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraViewController.h; path = ../CameraViewController.h; sourceTree = "<group>"; };
 		1D7090AE16CC063A0074597B /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = ../CameraViewController.m; sourceTree = "<group>"; };
+		1D7E357516CF081200C5C033 /* HARN icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HARN icon.png"; sourceTree = "<group>"; };
+		1D7E357716CF0EB100C5C033 /* HARN icon low res.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HARN icon low res.png"; sourceTree = "<group>"; };
 		1D92A76816B5E9B700F47D7D /* gallerybackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gallerybackground.png; sourceTree = "<group>"; };
 		1D92A76A16B5F22600F47D7D /* ceramic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ceramic.png; sourceTree = "<group>"; };
 		1D92A76B16B5F22600F47D7D /* monet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monet.png; sourceTree = "<group>"; };
@@ -150,6 +154,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				1D7E357716CF0EB100C5C033 /* HARN icon low res.png */,
+				1D7E357516CF081200C5C033 /* HARN icon.png */,
 				1D1EA86216C6E5A70019B139 /* Default.png */,
 				1D1EA86016C6E59A0019B139 /* Default@2x.png */,
 				1D2E2B9816B613F1006F1863 /* Default-568h@2x.png */,
@@ -265,6 +271,8 @@
 				1D1EA86116C6E59A0019B139 /* Default@2x.png in Resources */,
 				1D1EA86316C6E5A70019B139 /* Default.png in Resources */,
 				1DE88E5416CB140600B8804E /* MainStoryboard.storyboard in Resources */,
+				1D7E357616CF081200C5C033 /* HARN icon.png in Resources */,
+				1D7E357816CF0EB100C5C033 /* HARN icon low res.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
