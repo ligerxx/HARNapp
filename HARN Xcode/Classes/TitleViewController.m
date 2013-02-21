@@ -15,6 +15,7 @@
 @implementation TitleViewController
 @synthesize topLayer = _topLayer;
 @synthesize layerPosition = _layerPosition;
+@synthesize dataArray = _dataArray;
 BOOL _bottomVisible;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -30,7 +31,19 @@ BOOL _bottomVisible;
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    self.topLayer.layer.shadowOffset = CGSizeMake(-1,0);
+    self.topLayer.layer.shadowOpacity = .7;
+    self.topLayer.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.topLayer.bounds].CGPath;
+    
     self.layerPosition = self.topLayer.frame.origin.x;
+    self.tableView.delegate = self;
+    // ERROR IS HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    self.tableView.dataSource = self;
+    //empty
+    //self.dataArray = [NSMutableArray array];
+    //full, testing
+    self.dataArray = [NSMutableArray arrayWithObjects:@"", @"", @"", @"", nil];
 }
 
 #define VIEW_HIDDEN 260
@@ -86,6 +99,24 @@ BOOL _bottomVisible;
     }
 }
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.dataArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    // Configure the cell...
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"Cell %i", indexPath.row+1];
+    cell.detailTextLabel.text = @"2013";
+    
+    return cell;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -94,6 +125,7 @@ BOOL _bottomVisible;
 
 - (void)viewDidUnload {
     [self setTopLayer:nil];
+    //[self setTableView:nil];
     [super viewDidUnload];
 }
 @end
