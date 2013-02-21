@@ -66,7 +66,7 @@
                                         </connections>
                                     </containerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="H3K-9T-JXu">
-                                        <rect key="frame" x="10" y="9" width="30" height="30"/>
+                                        <rect key="frame" x="9" y="10" width="27" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" image="menu.png">
@@ -115,7 +115,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="7fw-Fy-YUe" kind="modal" id="ZcS-s0-8Xp"/>
+                                            <segue destination="RUF-U6-agG" kind="modal" id="WJC-Y3-2wz"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -129,7 +129,6 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="iAb-Za-uRe"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="zWt-9L-fD6" id="4Bl-tl-6WC"/>
                         <outlet property="topLayer" destination="ic6-P1-Y3U" id="X8i-TO-4YY"/>
@@ -144,87 +143,74 @@
             </objects>
             <point key="canvasLocation" x="199" y="38"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="gZQ-Vv-Ewm">
+        <!--View Controller-->
+        <scene sceneID="eua-00-rFf">
             <objects>
-                <navigationController definesPresentationContext="YES" id="7fw-Fy-YUe" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="fUN-5e-na5"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Thh-Mz-VfS">
+                <viewController id="iI7-Q4-96N" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UzL-8T-9xp">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nTX-Kk-dRJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24k-zn-AvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1942" y="28"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="X0A-Yh-Qbo">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="RUF-U6-agG" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Nys-8o-HLt"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tWJ-e8-uk9">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="zCL-oL-gc1" kind="relationship" relationship="rootViewController" id="AXj-qc-HKp"/>
+                        <segue destination="JB1-8a-I2e" kind="relationship" relationship="rootViewController" id="WLw-qM-4o4"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="P1P-Eh-32n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KTp-lQ-ZzL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="812" y="44"/>
+            <point key="canvasLocation" x="852" y="28"/>
         </scene>
-        <!--Collection View Controller-->
-        <scene sceneID="efg-fN-rP5">
+        <!--Browse Collection View Controller-->
+        <scene sceneID="pvY-kr-1U5">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="zCL-oL-gc1" customClass="CollectionViewController" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="bZu-P2-Sdu">
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="JB1-8a-I2e" customClass="BrowseCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="COj-5e-xqD">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HRi-6z-cPY">
-                            <size key="itemSize" width="155" height="217"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CE8-km-iXH">
+                            <size key="itemSize" width="50" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="Tqm-LW-gHY" customClass="ArtCell">
-                                <rect key="frame" x="0.0" y="0.0" width="155" height="217"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rwX-Sv-0yg">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="155" height="217"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                     <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="fnj-nn-gnp">
-                                            <rect key="frame" x="0.0" y="0.0" width="155" height="146"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        </imageView>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NX5-XN-JRf">
-                                            <rect key="frame" x="0.0" y="154" width="155" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
-                                            <color key="textColor" red="0.99607849120000003" green="0.99215692280000001" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oGg-Za-4vy">
-                                            <rect key="frame" x="0.0" y="183" width="155" height="34"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
-                                            <color key="textColor" red="0.99607849120000003" green="0.99215692280000001" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <outlet property="description" destination="oGg-Za-4vy" id="zHb-HL-fLh"/>
-                                    <outlet property="previewImage" destination="fnj-nn-gnp" id="sEs-tA-6kz"/>
-                                    <outlet property="title" destination="NX5-XN-JRf" id="cxY-ng-XWA"/>
+                                    <segue destination="iI7-Q4-96N" kind="push" id="0IV-cc-YD1"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
-                            <outlet property="dataSource" destination="zCL-oL-gc1" id="Z48-57-kwI"/>
-                            <outlet property="delegate" destination="zCL-oL-gc1" id="hOo-Fr-T2q"/>
+                            <outlet property="dataSource" destination="JB1-8a-I2e" id="S7z-Yx-CHL"/>
+                            <outlet property="delegate" destination="JB1-8a-I2e" id="kz3-7R-HMX"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="Zez-p3-zJZ">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="Ky0-o8-fM7">
-                            <connections>
-                                <segue destination="523-E5-MiZ" kind="modal" id="Swt-HM-FQh"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="PeW-hj-vxb"/>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="F0J-yA-l66" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k62-1b-U8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1298" y="50"/>
+            <point key="canvasLocation" x="1379" y="37"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="yeU-Jm-p49">
@@ -336,21 +322,11 @@
     <resources>
         <image name="gallerybackground.png" width="640" height="1136"/>
         <image name="harn logo.png" width="371" height="238"/>
-        <image name="menu.png" width="25" height="25"/>
+        <image name="menu.png" width="50" height="50"/>
     </resources>
     <classes>
-<<<<<<< HEAD
         <class className="BrowseCollectionViewController" superclassName="UICollectionViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BrowseCollectionViewController.h"/>
-=======
-        <class className="ArtCell" superclassName="UICollectionViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ArtCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="description" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="previewImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="title" candidateClass="UILabel"/>
-            </relationships>
->>>>>>> Collection View based on an array of titles and reusing one image. Not scrolling. No Detail View yet
         </class>
         <class className="CameraViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CameraViewController.h"/>
@@ -362,12 +338,6 @@
                 <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
             </relationships>
         </class>
-<<<<<<< HEAD
-=======
-        <class className="CollectionViewController" superclassName="UICollectionViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CollectionViewController.h"/>
-        </class>
->>>>>>> Collection View based on an array of titles and reusing one image. Not scrolling. No Detail View yet
         <class className="PagingScrollViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PagingScrollViewController.h"/>
             <relationships>
@@ -379,12 +349,7 @@
         <class className="TitleViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TitleViewController.h"/>
             <relationships>
-<<<<<<< HEAD
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-=======
-                <relationship kind="action" name="panLayer:" candidateClass="UIPanGestureRecognizer"/>
-                <relationship kind="action" name="tapToPanLayer:"/>
->>>>>>> Collection View based on an array of titles and reusing one image. Not scrolling. No Detail View yet
                 <relationship kind="outlet" name="topLayer" candidateClass="UIView"/>
             </relationships>
         </class>
@@ -400,19 +365,10 @@
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
         </class>
-<<<<<<< HEAD
-=======
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
-        </class>
->>>>>>> Collection View based on an array of titles and reusing one image. Not scrolling. No Detail View yet
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="Swt-HM-FQh"/>
-    </inferredMetricsTieBreakers>
 </document>
