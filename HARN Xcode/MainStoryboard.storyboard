@@ -47,7 +47,7 @@
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" id="ic6-P1-Y3U" userLabel="Top View">
-                                <rect key="frame" x="260" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="gallerybackground.png" id="HL7-mA-Tas">
@@ -115,7 +115,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="RUF-U6-agG" kind="modal" id="WJC-Y3-2wz"/>
+                                            <segue destination="ten-3D-5JN" kind="modal" id="TLg-19-A5a"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -143,74 +143,86 @@
             </objects>
             <point key="canvasLocation" x="199" y="38"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="eua-00-rFf">
-            <objects>
-                <viewController id="iI7-Q4-96N" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UzL-8T-9xp">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="nTX-Kk-dRJ"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="24k-zn-AvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1942" y="28"/>
-        </scene>
         <!--Navigation Controller-->
-        <scene sceneID="X0A-Yh-Qbo">
+        <scene sceneID="zSa-Bz-ec2">
             <objects>
-                <navigationController definesPresentationContext="YES" id="RUF-U6-agG" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Nys-8o-HLt"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tWJ-e8-uk9">
+                <navigationController definesPresentationContext="YES" id="ten-3D-5JN" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9K8-og-SeG">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="JB1-8a-I2e" kind="relationship" relationship="rootViewController" id="WLw-qM-4o4"/>
+                        <segue destination="F7t-B6-5ds" kind="relationship" relationship="rootViewController" id="oUQ-Ex-zQe"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KTp-lQ-ZzL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gcH-cn-KSe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="852" y="28"/>
+            <point key="canvasLocation" x="760" y="36"/>
         </scene>
-        <!--Browse Collection View Controller-->
-        <scene sceneID="pvY-kr-1U5">
+        <!--Collection View Controller-->
+        <scene sceneID="LjA-SY-WEc">
             <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="JB1-8a-I2e" customClass="BrowseCollectionViewController" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="COj-5e-xqD">
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="F7t-B6-5ds" customClass="CollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="YTK-l6-Meg">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CE8-km-iXH">
-                            <size key="itemSize" width="50" height="50"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="L2u-d1-t0L">
+                            <size key="itemSize" width="135" height="194"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rwX-Sv-0yg">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="PCG-uP-X5T" customClass="ArtCell">
+                                <rect key="frame" x="0.0" y="0.0" width="135" height="194"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="135" height="194"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iWB-L1-Nyl">
+                                            <rect key="frame" x="0.0" y="128" width="135" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" red="0.99607849120000003" green="0.99215692280000001" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="re3-nt-zP4">
+                                            <rect key="frame" x="0.0" y="157" width="135" height="37"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" red="0.99607849120000003" green="0.99215692280000001" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="nDa-oL-XJ9">
+                                            <rect key="frame" x="0.0" y="0.0" width="135" height="111"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="iI7-Q4-96N" kind="push" id="0IV-cc-YD1"/>
+                                    <outlet property="description" destination="re3-nt-zP4" id="47e-We-SiG"/>
+                                    <outlet property="previewImage" destination="nDa-oL-XJ9" id="U6h-Fx-bFl"/>
+                                    <outlet property="title" destination="iWB-L1-Nyl" id="zbR-Zn-GLH"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
-                            <outlet property="dataSource" destination="JB1-8a-I2e" id="S7z-Yx-CHL"/>
-                            <outlet property="delegate" destination="JB1-8a-I2e" id="kz3-7R-HMX"/>
+                            <outlet property="dataSource" destination="F7t-B6-5ds" id="RTa-Tv-huD"/>
+                            <outlet property="delegate" destination="F7t-B6-5ds" id="M3j-2M-k6G"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="PeW-hj-vxb"/>
+                    <navigationItem key="navigationItem" id="GF1-Ve-JpU">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="kUg-RU-TMJ">
+                            <connections>
+                                <segue destination="523-E5-MiZ" kind="modal" id="1cH-WO-3yV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="k62-1b-U8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u3y-kN-xCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1379" y="37"/>
+            <point key="canvasLocation" x="1204" y="38"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="yeU-Jm-p49">
@@ -325,8 +337,13 @@
         <image name="menu.png" width="50" height="50"/>
     </resources>
     <classes>
-        <class className="BrowseCollectionViewController" superclassName="UICollectionViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/BrowseCollectionViewController.h"/>
+        <class className="ArtCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ArtCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="description" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="previewImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="title" candidateClass="UILabel"/>
+            </relationships>
         </class>
         <class className="CameraViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CameraViewController.h"/>
@@ -337,6 +354,9 @@
                 <relationship kind="outlet" name="filtersScrollView" candidateClass="UIScrollView"/>
                 <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
             </relationships>
+        </class>
+        <class className="CollectionViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CollectionViewController.h"/>
         </class>
         <class className="PagingScrollViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PagingScrollViewController.h"/>
@@ -349,6 +369,8 @@
         <class className="TitleViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TitleViewController.h"/>
             <relationships>
+                <relationship kind="action" name="panLayer:" candidateClass="UIPanGestureRecognizer"/>
+                <relationship kind="action" name="tapToPanLayer:"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="topLayer" candidateClass="UIView"/>
             </relationships>
@@ -365,10 +387,16 @@
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
         </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="1cH-WO-3yV"/>
+    </inferredMetricsTieBreakers>
 </document>
