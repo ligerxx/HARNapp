@@ -69,6 +69,21 @@
                                             <segue destination="bzk-Jl-YLS" kind="modal" modalTransitionStyle="flipHorizontal" id="WPQ-PE-A93"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zEj-LH-NQn">
+                                        <rect key="frame" x="256" y="47" width="55" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                        <state key="normal" title="List">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="RUF-U6-agG" kind="modal" id="WJC-Y3-2wz"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <gestureRecognizers/>
@@ -92,6 +107,75 @@
                 </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="199" y="38"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eua-00-rFf">
+            <objects>
+                <viewController id="iI7-Q4-96N" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UzL-8T-9xp">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nTX-Kk-dRJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="24k-zn-AvW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1942" y="28"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="X0A-Yh-Qbo">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="RUF-U6-agG" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Nys-8o-HLt"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tWJ-e8-uk9">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JB1-8a-I2e" kind="relationship" relationship="rootViewController" id="WLw-qM-4o4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KTp-lQ-ZzL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852" y="28"/>
+        </scene>
+        <!--Browse Collection View Controller-->
+        <scene sceneID="pvY-kr-1U5">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="JB1-8a-I2e" customClass="BrowseCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="COj-5e-xqD">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CE8-km-iXH">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="rwX-Sv-0yg">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="iI7-Q4-96N" kind="push" id="0IV-cc-YD1"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="JB1-8a-I2e" id="S7z-Yx-CHL"/>
+                            <outlet property="delegate" destination="JB1-8a-I2e" id="kz3-7R-HMX"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="PeW-hj-vxb"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k62-1b-U8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1379" y="37"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="yeU-Jm-p49">
@@ -205,34 +289,6 @@
         <image name="harn logo.png" width="371" height="238"/>
         <image name="menu.png" width="50" height="50"/>
     </resources>
-    <classes>
-        <class className="CameraViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CameraViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="closeCamera:"/>
-                <relationship kind="action" name="saveImage:"/>
-                <relationship kind="action" name="showCameraUI:"/>
-                <relationship kind="outlet" name="filtersScrollView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="PagingScrollViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PagingScrollViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="changePage:"/>
-                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="TitleViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TitleViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="panLayer:" candidateClass="UIPanGestureRecognizer"/>
-                <relationship kind="action" name="tapToPanLayer:"/>
-                <relationship kind="outlet" name="topLayer" candidateClass="UIView"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
