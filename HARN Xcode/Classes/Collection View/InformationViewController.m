@@ -15,7 +15,7 @@
 
 @end
 
-currentSize =0;
+NSInteger currentSize = 0;
 
 @implementation InformationViewController
 

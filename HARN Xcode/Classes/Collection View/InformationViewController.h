@@ -19,7 +19,4 @@
 @property (weak, nonatomic) IBOutlet UITextView *descriptionOfWork;
 @property NSInteger currentSize;
 
-- (NSInteger)getCurrentSize;
-- (void)setCurrentSize:(NSInteger)currentSize;
-
 @end
