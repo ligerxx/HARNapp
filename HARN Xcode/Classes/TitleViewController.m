@@ -15,8 +15,13 @@
 @implementation TitleViewController
 @synthesize topLayer = _topLayer;
 @synthesize layerPosition = _layerPosition;
+@synthesize titleArray = _titleArray;
 @synthesize dataArray = _dataArray;
 BOOL _bottomVisible;
+
+
+
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,19 +36,26 @@ BOOL _bottomVisible;
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
+    // create shadows
     self.topLayer.layer.shadowOffset = CGSizeMake(-1,0);
     self.topLayer.layer.shadowOpacity = .7;
+    // optimize them
     self.topLayer.layer.shadowPath = [UIBezierPath bezierPathWithRect:self.topLayer.bounds].CGPath;
-    
+    // here are the layers we'll apply them to!
     self.layerPosition = self.topLayer.frame.origin.x;
     self.tableView.delegate = self;
-    // ERROR IS HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     self.tableView.dataSource = self;
-    //empty
-    //self.dataArray = [NSMutableArray array];
-    //full, testing
-    self.dataArray = [NSMutableArray arrayWithObjects:@"", @"", @"", @"", nil];
+     //Initialize the dataArray
+     _dataArray = [[NSMutableArray alloc] init];
+    //First section data
+    NSArray *firstItemsArray = [[NSArray alloc] initWithObjects:@"Item 1", @"Item 2", @"Item 3", @"Item 1", @"Item 2", @"Item 3", nil];
+     NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:firstItemsArray forKey:@"data"];
+     [_dataArray addObject:firstItemsArrayDict];
+     //Second section data
+     NSArray *secondItemsArray = [[NSArray alloc] initWithObjects:@"Item 4", @"Item 5", @"Item 6", @"Last Item", nil];
+     NSDictionary *secondItemsArrayDict = [NSDictionary dictionaryWithObject:secondItemsArray forKey:@"data"];
+     [_dataArray addObject:secondItemsArrayDict];
+
 }
 
 #define VIEW_HIDDEN 260
@@ -99,22 +111,59 @@ BOOL _bottomVisible;
     }
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    return self.dataArray.count;
+// how many sections to expect
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return [_dataArray count];
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+// how many rows to expect
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    //Number of rows it should expect should be based on the section
+    NSDictionary *dictionary = [_dataArray objectAtIndex:section];
+    NSArray *array = [dictionary objectForKey:@"data"];
+    return [array count];
+}
+
+// our headers
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    if(section == 0)
+        return @"Section 1";
+    else
+        return @"Section 2";
+}
+
+// loop through dataArray and do the hard work
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     static NSString *CellIdentifier = @"Cell";
+    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
     
-    // Configure the cell...
-    
-    cell.textLabel.text = [NSString stringWithFormat:@"Cell %i", indexPath.row+1];
-    cell.detailTextLabel.text = @"2013";
+    NSDictionary *dictionary = [_dataArray objectAtIndex:indexPath.section];
+    NSArray *array = [dictionary objectForKey:@"data"];
+    NSString *cellValue = [array objectAtIndex:indexPath.row];
+    cell.textLabel.text = cellValue;
     
     return cell;
+}
+
+// what??
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+	//Get the selected country
+    
+    NSString *selectedCell = nil;
+    NSDictionary *dictionary = [_dataArray objectAtIndex:indexPath.section];
+    NSArray *array = [dictionary objectForKey:@"data"];
+    selectedCell = [array objectAtIndex:indexPath.row];
+    
+    NSLog(@"%@", selectedCell);
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
