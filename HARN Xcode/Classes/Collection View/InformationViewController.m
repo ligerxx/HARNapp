@@ -8,11 +8,17 @@
 
 #import "InformationViewController.h"
 
+
 @interface InformationViewController ()
 
 @end
 
 @implementation InformationViewController
+
+-(IBAction)donePressed:(id)sender;
+{
+    [self dismissModalViewControllerAnimated:YES];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

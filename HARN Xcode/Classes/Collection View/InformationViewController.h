@@ -11,6 +11,8 @@
 @interface InformationViewController : UIViewController
 {
 }
+
+-(IBAction)donePressed:(id)sender;
 -(IBAction)changeFontSize:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UITextView *descriptionOfWork;

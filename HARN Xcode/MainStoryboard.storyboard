@@ -362,7 +362,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="kg3-Fq-hMW" kind="modal" modalTransitionStyle="flipHorizontal" id="Hrv-Vu-GjB"/>
+                                    <segue destination="kg3-Fq-hMW" kind="modal" modalTransitionStyle="flipHorizontal" id="yfu-H1-ihz"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="hWy-w2-PsC">
@@ -412,7 +412,7 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="CQf-oT-naC">
                                             <connections>
-                                                <segue destination="2AL-bL-RkM" kind="modal" modalTransitionStyle="flipHorizontal" id="CZO-wh-hm6"/>
+                                                <action selector="donePressed:" destination="kg3-Fq-hMW" id="iCs-DO-Xme"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -427,7 +427,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vAf-am-iUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2298" y="304"/>
+            <point key="canvasLocation" x="2282" y="22"/>
         </scene>
     </scenes>
     <resources>
@@ -470,6 +470,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/InformationViewController.h"/>
             <relationships>
                 <relationship kind="action" name="changeFontSize:"/>
+                <relationship kind="action" name="donePressed:"/>
                 <relationship kind="outlet" name="descriptionOfWork" candidateClass="UITextView"/>
             </relationships>
         </class>
@@ -484,6 +485,7 @@
         <class className="TitleViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TitleViewController.h"/>
             <relationships>
+                <relationship kind="action" name="panLayer:" candidateClass="UIPanGestureRecognizer"/>
                 <relationship kind="action" name="tapToPanLayer:"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="topLayer" candidateClass="UIView"/>
@@ -512,6 +514,5 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="1cH-WO-3yV"/>
-        <segue reference="qGh-2M-BUh"/>
     </inferredMetricsTieBreakers>
 </document>
