@@ -10,14 +10,33 @@
 
 
 @interface InformationViewController ()
+{
+}
 
 @end
+
+currentSize =0;
 
 @implementation InformationViewController
 
 -(IBAction)donePressed:(id)sender;
 {
     [self dismissModalViewControllerAnimated:YES];
+}
+
+-(IBAction)changeFontSize:(id)sender;
+{
+    if(currentSize == 0){    
+        [_descriptionOfWork setFont:[UIFont systemFontOfSize:18]];
+        currentSize++;
+    }else if(currentSize == 1)
+    {
+        [_descriptionOfWork setFont:[UIFont systemFontOfSize:22]];
+        currentSize++;
+    }else{
+          [_descriptionOfWork setFont:[UIFont systemFontOfSize:14]];
+        currentSize = 0;
+    }
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
