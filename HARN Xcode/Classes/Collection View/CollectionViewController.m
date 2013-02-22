@@ -9,6 +9,7 @@
 #import "CollectionViewController.h"
 #import "ArtCell.h"
 #import "DetailViewController.h"
+#import "floatingButton.h"
 
 @interface CollectionViewController ()
 
@@ -34,6 +35,12 @@
     
     self.title = @"Asian";
     self.sections = @[@"Title 1",@"Title 2",@"Title 3",@"Title 4",@"Title 5",@"Title 6"];
+    
+    //Load the floating camera subview
+    floatingButton *floatingButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    floatingButton.frame = CGRectMake(100, 30, 90, 90);
+    [self.view addSubview:floatingButton];
+    [self.view bringSubviewToFront:floatingButton];
 }
 
 - (void)didReceiveMemoryWarning
