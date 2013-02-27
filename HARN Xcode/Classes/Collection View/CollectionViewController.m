@@ -74,10 +74,15 @@
     {
         
         NSIndexPath *selectedIndexPath = [[self.collectionView indexPathsForSelectedItems] objectAtIndex:0];
+        
+        
         DetailViewController *detailViewController = [segue destinationViewController];
         detailViewController.title = self.sections[selectedIndexPath.row];
         
-        detailViewController.previewImage.image = [UIImage imageNamed:@"monet.png"];
+        UIImage *imageToSend = [UIImage imageNamed:@"monet.png"];
+    
+        detailViewController.theImage = imageToSend;
+        
         detailViewController.titleOfWork.text = self.sections[selectedIndexPath.row];
     }
 }

@@ -14,6 +14,11 @@
 
 @implementation DetailViewController
 
+-(void)setImage:(UIImage *)image
+{
+    [_previewImage setImage:image];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -26,6 +31,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [_previewImage setImage:_theImage];
 	// Do any additional setup after loading the view.
 }
 
