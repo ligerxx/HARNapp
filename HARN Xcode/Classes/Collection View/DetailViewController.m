@@ -29,6 +29,11 @@
     _artDescription = someDescription;
 }
 
+-(IBAction)swipeHandler:(UIGestureRecognizer *)sender
+{
+    
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

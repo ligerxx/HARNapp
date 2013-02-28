@@ -25,6 +25,9 @@
 @property (strong, nonatomic) NSString *artDescription;
 @property (strong, nonatomic) IBOutlet UILabel* descriptionOfWork;
 
+//Used for gesture navigation
+-(IBAction)swipeHandler:(UIGestureRecognizer *)sender;
+
 -(void)setImage:(UIImage *)image;
 -(void)setArtTitle:(NSString *)name;
 -(void)setArtDescription:(NSString *)someDescription;
