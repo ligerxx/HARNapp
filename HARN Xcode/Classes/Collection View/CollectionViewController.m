@@ -69,12 +69,15 @@
         
         NSIndexPath *selectedIndexPath = [[self.collectionView indexPathsForSelectedItems] objectAtIndex:0];
         
-        NSInteger indexPath = selectedIndexPath.row ;
+        //Used for title of the Detail View
+        NSInteger indexPath = selectedIndexPath.row + 1;
         NSInteger lengthOfArray = [_sections count];
         
+        //Creates the detailView that and begins adding everything for it to present to the users since this is templateted (sp?)
         DetailViewController *detailViewController = [segue destinationViewController];
         detailViewController.title =  [NSString stringWithFormat:@"%u of %u",  indexPath, lengthOfArray ];
 
+        //This will have to be the image stored in the cell
         UIImage *imageToSend = [UIImage imageNamed:@"monet.png"];
     
         detailViewController.theImage = imageToSend;
