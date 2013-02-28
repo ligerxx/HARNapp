@@ -21,12 +21,12 @@
 }
 -(void)setArtTitle:(NSString *)name
 {
-    artTitle = name;
+    _artTitle = name;
     
 }
 -(void)setArtDescription:(NSString *)someDescription
 {
-    artDescription = someDescription;
+    _artDescription = someDescription;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -44,8 +44,8 @@
     
     [_previewImage setImage:_theImage];
     
-    _titleOfWork.text = artTitle;
-    _descriptionOfWork.text = artDescription;
+    _titleOfWork.text = _artTitle;
+    _descriptionOfWork.text = _artDescription;
 	// Do any additional setup after loading the view.
 }
 
@@ -62,8 +62,8 @@
     {
         InformationViewController *infoView = [segue destinationViewController];
         
-        [infoView setArtTitle:_artTitle];
-        [infoView setArtDescription:_artDescription];
+        infoView.artTitle = self.artTitle;
+        infoView.artDescription = self.artDescription;
     }
 }
 
