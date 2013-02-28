@@ -18,6 +18,15 @@
 {
     [_previewImage setImage:image];
 }
+-(void)setArtTitle:(NSString *)name
+{
+    artTitle = name;
+    
+}
+-(void)setArtDescription:(NSString *)someDescription
+{
+    artDescription = someDescription;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +42,9 @@
     [super viewDidLoad];
     
     [_previewImage setImage:_theImage];
+    
+    _titleOfWork.text = artTitle;
+    _descriptionOfWork.text = artDescription;
 	// Do any additional setup after loading the view.
 }
 

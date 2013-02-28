@@ -82,8 +82,8 @@
         UIImage *imageToSend = [UIImage imageNamed:@"monet.png"];
     
         detailViewController.theImage = imageToSend;
-        
-        detailViewController.titleOfWork.text = self.sections[selectedIndexPath.row];
+        [detailViewController setArtTitle:self.sections[selectedIndexPath.row]];
+        [detailViewController setArtDescription:@"The most famous work in all the land!"];
     }
 }
 
