@@ -59,6 +59,11 @@ static const int FILTER_LABEL = 001;
     
     [self presentModalViewController:imagePicker animated:YES];
 }
+-(void)closeCamera:(id)sender
+{
+    
+}
+
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
@@ -89,11 +94,6 @@ static const int FILTER_LABEL = 001;
     UIImage *imageToSave;
     imageToSave = _imageView.image;
     UIImageWriteToSavedPhotosAlbum((imageToSave), nil, nil, nil);
-}
-
--(IBAction)closeCamera:(id)sender
-{
-    
 }
 
 -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker

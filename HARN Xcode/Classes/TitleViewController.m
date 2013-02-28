@@ -58,7 +58,7 @@ BOOL _bottomVisible;
 
 }
 
-#define VIEW_HIDDEN 260
+#define VIEW_HIDDEN 265
 
 - (void)animateLayerToPoint:(CGFloat)x {
     [UIView animateWithDuration:0.3

@@ -37,14 +37,14 @@
                                 </items>
                             </navigationBar>
                             <navigationBar contentMode="scaleToFill" id="oh1-St-kNG">
-                                <rect key="frame" x="0.0" y="0.0" width="260" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="265" height="44"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <items>
                                     <navigationItem title="Menu" id="uDk-4h-p5h"/>
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" id="ic6-P1-Y3U" userLabel="Top View">
-                                <rect key="frame" x="260" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="gallerybackground.png" id="HL7-mA-Tas">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
@@ -59,7 +59,7 @@
                                         </connections>
                                     </containerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="H3K-9T-JXu">
-                                        <rect key="frame" x="9" y="10" width="27" height="27"/>
+                                        <rect key="frame" x="13" y="10" width="27" height="27"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" image="menu.png">
                                             <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -72,29 +72,15 @@
                                             <action selector="tapToPanLayer:" destination="523-E5-MiZ" eventType="touchUpInside" id="uno-4Z-fmw"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Now Featuring" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DhP-Qs-mRc">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Now Featuring" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DhP-Qs-mRc">
                                         <rect key="frame" x="99" y="152" width="123" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.53333050270000004" green="0.53333050270000004" blue="0.53333050270000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" red="0.99607849120000003" green="0.99215692280000001" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ArG-6M-Ktd">
-                                        <rect key="frame" x="256" y="9" width="55" height="31"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
-                                        <state key="normal" title="Camera">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="bzk-Jl-YLS" kind="modal" modalTransitionStyle="flipHorizontal" id="WPQ-PE-A93"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zEj-LH-NQn">
-                                        <rect key="frame" x="256" y="47" width="55" height="37"/>
+                                        <rect key="frame" x="256" y="6" width="55" height="37"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
                                         <state key="normal" title="List">
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -118,6 +104,7 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="iAb-Za-uRe"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="zWt-9L-fD6" id="4Bl-tl-6WC"/>
                         <outlet property="topLayer" destination="ic6-P1-Y3U" id="X8i-TO-4YY"/>
@@ -205,6 +192,11 @@
                                 <segue destination="523-E5-MiZ" kind="modal" id="1cH-WO-3yV"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Ngl-CJ-BF8">
+                            <connections>
+                                <segue destination="bzk-Jl-YLS" kind="push" id="2Fu-9c-kaE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u3y-kN-xCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -216,14 +208,11 @@
             <objects>
                 <viewController id="bzk-Jl-YLS" customClass="CameraViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="orO-jg-NmW">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="p0x-28-xCs">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="484"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vac-Uq-5RI">
-                                <rect key="frame" x="91" y="492" width="105" height="44"/>
+                                <rect key="frame" x="91" y="449" width="105" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Take Photo">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -236,23 +225,8 @@
                                     <action selector="showCameraUI:" destination="bzk-Jl-YLS" eventType="touchUpInside" id="G6b-Dg-c9v"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ycJ-fX-eFY">
-                                <rect key="frame" x="9" y="492" width="74" height="44"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Cancel">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="closeCamera:" destination="bzk-Jl-YLS" eventType="touchUpInside" id="mqg-AZ-JEa"/>
-                                    <segue destination="523-E5-MiZ" kind="modal" modalTransitionStyle="flipHorizontal" id="Sc4-Yd-y4n"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kpr-Pe-86f">
-                                <rect key="frame" x="209" y="492" width="106" height="44"/>
+                                <rect key="frame" x="209" y="449" width="106" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Save Photo">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -268,13 +242,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="imageView" destination="p0x-28-xCs" id="s05-Bl-ldd"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="oJK-qc-wea"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xCM-Uj-pFm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="199" y="-785"/>
+            <point key="canvasLocation" x="1210" y="-739"/>
         </scene>
         <!--Paging Scroll View Controller-->
         <scene sceneID="5Ne-dC-Dod">
@@ -416,12 +388,80 @@
         <image name="harn logo.png" width="371" height="238"/>
         <image name="menu.png" width="50" height="50"/>
     </resources>
+    <classes>
+        <class className="ArtCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ArtCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="description" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="previewImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="title" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="CameraViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CameraViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="closeCamera:"/>
+                <relationship kind="action" name="saveImage:"/>
+                <relationship kind="action" name="showCameraUI:"/>
+                <relationship kind="outlet" name="filtersScrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="CollectionViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CollectionViewController.h"/>
+        </class>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="descriptionOfWork" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="previewImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="titleOfWork" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="InformationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InformationViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changeFontSize:"/>
+                <relationship kind="action" name="donePressed:"/>
+                <relationship kind="outlet" name="descriptionOfWork" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="PagingScrollViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PagingScrollViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changePage:"/>
+                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="TitleViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TitleViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="panLayer:" candidateClass="UIPanGestureRecognizer"/>
+                <relationship kind="action" name="tapToPanLayer:"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="topLayer" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="1cH-WO-3yV"/>
-    </inferredMetricsTieBreakers>
 </document>

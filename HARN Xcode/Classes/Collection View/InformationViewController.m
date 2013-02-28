@@ -26,6 +26,7 @@ NSInteger currentSize = 0;
 
 -(IBAction)changeFontSize:(id)sender;
 {
+    
     if(currentSize == 0){    
         [_descriptionOfWork setFont:[UIFont systemFontOfSize:18]];
         currentSize++;
