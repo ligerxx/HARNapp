@@ -35,13 +35,7 @@
     
     self.title = @"Asian";
     self.sections = @[@"Title 1",@"Title 2",@"Title 3",@"Title 4",@"Title 5",@"Title 6"];
-    
-    //Load the floating camera subview
-    floatingButton *floatingButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    floatingButton.frame = CGRectMake(100, 30, 90, 90);
-    [self.view addSubview:floatingButton];
-    [self.view bringSubviewToFront:floatingButton];
-}
+    }
 
 - (void)didReceiveMemoryWarning
 {
@@ -75,10 +69,12 @@
         
         NSIndexPath *selectedIndexPath = [[self.collectionView indexPathsForSelectedItems] objectAtIndex:0];
         
+        NSInteger indexPath = selectedIndexPath.row ;
+        NSInteger lengthOfArray = [_sections count];
         
         DetailViewController *detailViewController = [segue destinationViewController];
-        detailViewController.title = self.sections[selectedIndexPath.row];
-        
+        detailViewController.title =  [NSString stringWithFormat:@"%u of %u",  indexPath, lengthOfArray ];
+
         UIImage *imageToSend = [UIImage imageNamed:@"monet.png"];
     
         detailViewController.theImage = imageToSend;
