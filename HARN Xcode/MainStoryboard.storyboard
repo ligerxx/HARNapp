@@ -342,7 +342,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="kg3-Fq-hMW" kind="modal" modalTransitionStyle="flipHorizontal" id="yfu-H1-ihz"/>
+                                    <segue destination="kg3-Fq-hMW" kind="modal" identifier="showInfo" modalTransitionStyle="flipHorizontal" id="yfu-H1-ihz"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="hWy-w2-PsC">
@@ -369,7 +369,7 @@
         <!--Information View Controller-->
         <scene sceneID="jDg-Uw-Tnv">
             <objects>
-                <viewController id="kg3-Fq-hMW" customClass="InformationViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="InformationView" id="kg3-Fq-hMW" customClass="InformationViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wUG-DZ-8eH">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

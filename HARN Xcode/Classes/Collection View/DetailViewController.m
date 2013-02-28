@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "InformationViewController.h"
 
 @interface DetailViewController ()
 
@@ -52,6 +53,18 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+//Controls the transfer to the info view
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"showInfo"])
+    {
+        InformationViewController *infoView = [segue destinationViewController];
+        
+        [infoView setArtTitle:_artTitle];
+        [infoView setArtDescription:_artDescription];
+    }
 }
 
 @end

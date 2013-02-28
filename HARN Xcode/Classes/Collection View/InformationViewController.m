@@ -39,6 +39,16 @@ NSInteger currentSize = 0;
     }
 }
 
+-(void)setArtTitle:(NSString *)name
+{
+    _artTitle = name;
+    
+}
+-(void)setArtDescription:(NSString *)someDescription
+{
+    _artDescription = someDescription;
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -51,6 +61,8 @@ NSInteger currentSize = 0;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    _descriptionOfWork.text = [NSString stringWithFormat:@"%@\n%@", _artTitle, _artDescription];
 	// Do any additional setup after loading the view.
 }
 
