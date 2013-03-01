@@ -154,12 +154,6 @@
 				8016D53016CC205C00F20725 /* IISideController.m */,
 				8016D53116CC205C00F20725 /* IIWrapController.h */,
 				8016D53216CC205C00F20725 /* IIWrapController.m */,
-				1D7090AD16CC063A0074597B /* CameraViewController.h */,
-				1D7090AE16CC063A0074597B /* CameraViewController.m */,
-				1DEE8DF816CD855900A3C9B7 /* UIImageExtension.h */,
-				1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */,
-				1D29777416CD77370094FD84 /* FilterPreview.h */,
-				1D29777516CD77370094FD84 /* FilterPreview.m */,
 				1D3623240D0F684500981E51 /* PagingScrollViewAppDelegate.h */,
 				1D3623250D0F684500981E51 /* PagingScrollViewAppDelegate.m */,
 				C9F783610F2AB7600029CA01 /* DataSource.h */,
@@ -203,6 +197,12 @@
 		1DAF8CF416D6E6CA0080224C /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				1D7090AD16CC063A0074597B /* CameraViewController.h */,
+				1D7090AE16CC063A0074597B /* CameraViewController.m */,
+				1DEE8DF816CD855900A3C9B7 /* UIImageExtension.h */,
+				1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */,
+				1D29777416CD77370094FD84 /* FilterPreview.h */,
+				1D29777516CD77370094FD84 /* FilterPreview.m */,
 			);
 			name = Camera;
 			sourceTree = "<group>";
