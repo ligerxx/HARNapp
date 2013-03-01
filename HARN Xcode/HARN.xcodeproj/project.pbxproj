@@ -11,6 +11,10 @@
 		1D1EA86316C6E5A70019B139 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D1EA86216C6E5A70019B139 /* Default.png */; };
 		1D29777616CD77370094FD84 /* FilterPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D29777516CD77370094FD84 /* FilterPreview.m */; };
 		1D3623260D0F684500981E51 /* PagingScrollViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* PagingScrollViewAppDelegate.m */; };
+		1D5CBC4316E05E3E004CAE64 /* HARN Retina Border.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D5CBC4216E05E3E004CAE64 /* HARN Retina Border.png */; };
+		1D5CBC4516E06D3A004CAE64 /* HARN Retina label.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D5CBC4416E06D3A004CAE64 /* HARN Retina label.png */; };
+		1D5CBC4716E06DF0004CAE64 /* HARN Retina no label.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D5CBC4616E06DF0004CAE64 /* HARN Retina no label.png */; };
+		1D5CBC4916E073B6004CAE64 /* HARN no label.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D5CBC4816E073B6004CAE64 /* HARN no label.png */; };
 		1D5DA93016B62504002FBF16 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D2E2B9816B613F1006F1863 /* Default-568h@2x.png */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -60,6 +64,10 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* PagingScrollViewAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagingScrollViewAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* PagingScrollViewAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagingScrollViewAppDelegate.m; sourceTree = "<group>"; };
+		1D5CBC4216E05E3E004CAE64 /* HARN Retina Border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HARN Retina Border.png"; sourceTree = "<group>"; };
+		1D5CBC4416E06D3A004CAE64 /* HARN Retina label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HARN Retina label.png"; sourceTree = "<group>"; };
+		1D5CBC4616E06DF0004CAE64 /* HARN Retina no label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HARN Retina no label.png"; sourceTree = "<group>"; };
+		1D5CBC4816E073B6004CAE64 /* HARN no label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HARN no label.png"; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* HARN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HARN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D62063B16CB480900203DA8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		1D62063D16CB481100203DA8 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -202,6 +210,10 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				1D5CBC4816E073B6004CAE64 /* HARN no label.png */,
+				1D5CBC4616E06DF0004CAE64 /* HARN Retina no label.png */,
+				1D5CBC4416E06D3A004CAE64 /* HARN Retina label.png */,
+				1D5CBC4216E05E3E004CAE64 /* HARN Retina Border.png */,
 				1D7E357716CF0EB100C5C033 /* HARN icon low res.png */,
 				1D7E357516CF081200C5C033 /* HARN icon.png */,
 				1D1EA86216C6E5A70019B139 /* Default.png */,
@@ -326,6 +338,10 @@
 				1DAF8CF616D6ED8D0080224C /* aA.png in Resources */,
 				1DAC466416D7C99200ABF89A /* circleCamera.png in Resources */,
 				1D76D3BE16D7EFA70074284E /* aA@2x.png in Resources */,
+				1D5CBC4316E05E3E004CAE64 /* HARN Retina Border.png in Resources */,
+				1D5CBC4516E06D3A004CAE64 /* HARN Retina label.png in Resources */,
+				1D5CBC4716E06DF0004CAE64 /* HARN Retina no label.png in Resources */,
+				1D5CBC4916E073B6004CAE64 /* HARN no label.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

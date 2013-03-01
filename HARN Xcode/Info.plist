@@ -17,8 +17,10 @@
 			<key>CFBundleIconFiles</key>
 			<array>
 				<string></string>
-				<string>HARN icon.png</string>
-				<string>HARN icon low res.png</string>
+				<string>Retina Icon small rim.png</string>
+				<string>Icon no rim.png</string>
+				<string>HARN Retina no label.png</string>
+				<string>HARN no label.png</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
 			<true/>
