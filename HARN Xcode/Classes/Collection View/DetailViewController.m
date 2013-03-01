@@ -34,6 +34,18 @@
     
 }
 
+-(IBAction)share:(id)sender
+{
+    NSArray *sharedItems;
+    NSString *sharedText = @"";
+    
+    sharedItems = @[sharedText, _previewImage.image];
+    
+    UIActivityViewController *shareSheet = [[UIActivityViewController alloc] initWithActivityItems:sharedItems applicationActivities:nil];
+    
+    [self presentViewController:shareSheet animated:YES completion:NULL];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];

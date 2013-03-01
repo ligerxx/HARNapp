@@ -27,6 +27,7 @@
 
 //Used for gesture navigation
 -(IBAction)swipeHandler:(UIGestureRecognizer *)sender;
+-(IBAction)share:(id)sender;
 
 -(void)setImage:(UIImage *)image;
 -(void)setArtTitle:(NSString *)name;
