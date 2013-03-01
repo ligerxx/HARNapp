@@ -45,21 +45,23 @@ BOOL _bottomVisible;
     self.layerPosition = self.topLayer.frame.origin.x;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-     //Initialize the dataArray
+     // initialize the dataArray
      _dataArray = [[NSMutableArray alloc] init];
-    //First section data
-    NSArray *firstItemsArray = [[NSArray alloc] initWithObjects:@"Item 1", @"Item 2", @"Item 3", @"Item 1", @"Item 2", @"Item 3", nil];
+    // first section data - will need to automate, later
+    NSArray *firstItemsArray = [[NSArray alloc] initWithObjects:@"African", @"Ancient American", @"Asian", @"Contemporary", @"Modern", @"Photography", @"Prints and Drawings Before 1234", nil];
      NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:firstItemsArray forKey:@"data"];
      [_dataArray addObject:firstItemsArrayDict];
-     //Second section data
-     NSArray *secondItemsArray = [[NSArray alloc] initWithObjects:@"Item 4", @"Item 5", @"Item 6", @"Last Item", nil];
+     // second section data
+     NSArray *secondItemsArray = [[NSArray alloc] initWithObjects:@"Favorites", @"Photos", nil];
      NSDictionary *secondItemsArrayDict = [NSDictionary dictionaryWithObject:secondItemsArray forKey:@"data"];
      [_dataArray addObject:secondItemsArrayDict];
 
 }
 
+// the number of pixels we want displayed for our navigation
 #define VIEW_HIDDEN 265
 
+// animate our layer to the specified point in pixels
 - (void)animateLayerToPoint:(CGFloat)x {
     [UIView animateWithDuration:0.3
                           delay:0
@@ -101,6 +103,7 @@ BOOL _bottomVisible;
     }
 }
 
+// now we can use our list view button to do the panning for us
 - (IBAction)tapToPanLayer:(id)sender {
     if (_bottomVisible == NO) {
         [self animateLayerToPoint:VIEW_HIDDEN];
@@ -111,6 +114,8 @@ BOOL _bottomVisible;
     }
 }
 
+// for populating our navigation list:
+
 // how many sections to expect
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return [_dataArray count];
@@ -119,7 +124,7 @@ BOOL _bottomVisible;
 // how many rows to expect
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    //Number of rows it should expect should be based on the section
+    // number of rows it should expect should be based on the section
     NSDictionary *dictionary = [_dataArray objectAtIndex:section];
     NSArray *array = [dictionary objectForKey:@"data"];
     return [array count];
@@ -128,9 +133,9 @@ BOOL _bottomVisible;
 // our headers
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     if(section == 0)
-        return @"Section 1";
+        return @"Collections";
     else
-        return @"Section 2";
+        return @"Personal";
 }
 
 // loop through dataArray and do the hard work
@@ -151,18 +156,19 @@ BOOL _bottomVisible;
     return cell;
 }
 
-// what??
+// user selection
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-	//Get the selected country
-    
+	// get the selected item in our navigation list
     NSString *selectedCell = nil;
     NSDictionary *dictionary = [_dataArray objectAtIndex:indexPath.section];
     NSArray *array = [dictionary objectForKey:@"data"];
     selectedCell = [array objectAtIndex:indexPath.row];
     
+    // write which item we have selected to our output
     NSLog(@"%@", selectedCell);
     
+    // animate the deselection
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
@@ -174,7 +180,7 @@ BOOL _bottomVisible;
 
 - (void)viewDidUnload {
     [self setTopLayer:nil];
-    //[self setTableView:nil];
+    [self setTableView:nil];
     [super viewDidUnload];
 }
 @end
