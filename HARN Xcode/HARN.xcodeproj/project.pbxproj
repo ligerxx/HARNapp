@@ -44,9 +44,6 @@
 		1DEE8DFA16CD855900A3C9B7 /* UIImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
-		8016D52D16CC1E5F00F20725 /* IIViewDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8016D52C16CC1E5F00F20725 /* IIViewDeckController.m */; };
-		8016D53316CC205C00F20725 /* IISideController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8016D53016CC205C00F20725 /* IISideController.m */; };
-		8016D53416CC205C00F20725 /* IIWrapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8016D53216CC205C00F20725 /* IIWrapController.m */; };
 		8016D53716CC220B00F20725 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8016D53516CC21BD00F20725 /* QuartzCore.framework */; };
 		808DB99816CD7E5F00B591D6 /* TitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808DB99716CD7E5F00B591D6 /* TitleViewController.m */; };
 		C9F783630F2AB7600029CA01 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F783620F2AB7600029CA01 /* DataSource.m */; };
@@ -104,12 +101,6 @@
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* HARN_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HARN_Prefix.pch; sourceTree = "<group>"; };
-		8016D52B16CC1E5F00F20725 /* IIViewDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIViewDeckController.h; sourceTree = "<group>"; };
-		8016D52C16CC1E5F00F20725 /* IIViewDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIViewDeckController.m; sourceTree = "<group>"; };
-		8016D52F16CC205C00F20725 /* IISideController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IISideController.h; sourceTree = "<group>"; };
-		8016D53016CC205C00F20725 /* IISideController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IISideController.m; sourceTree = "<group>"; };
-		8016D53116CC205C00F20725 /* IIWrapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IIWrapController.h; sourceTree = "<group>"; };
-		8016D53216CC205C00F20725 /* IIWrapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IIWrapController.m; sourceTree = "<group>"; };
 		8016D53516CC21BD00F20725 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		808DB99616CD7E5F00B591D6 /* TitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleViewController.h; sourceTree = "<group>"; };
 		808DB99716CD7E5F00B591D6 /* TitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleViewController.m; sourceTree = "<group>"; };
@@ -148,12 +139,6 @@
 			children = (
 				1DAF8CF416D6E6CA0080224C /* Camera */,
 				1DAF8CF316D6E6B50080224C /* Collection View */,
-				8016D52B16CC1E5F00F20725 /* IIViewDeckController.h */,
-				8016D52C16CC1E5F00F20725 /* IIViewDeckController.m */,
-				8016D52F16CC205C00F20725 /* IISideController.h */,
-				8016D53016CC205C00F20725 /* IISideController.m */,
-				8016D53116CC205C00F20725 /* IIWrapController.h */,
-				8016D53216CC205C00F20725 /* IIWrapController.m */,
 				1D3623240D0F684500981E51 /* PagingScrollViewAppDelegate.h */,
 				1D3623250D0F684500981E51 /* PagingScrollViewAppDelegate.m */,
 				C9F783610F2AB7600029CA01 /* DataSource.h */,
@@ -358,9 +343,6 @@
 				C9F783A20F2ABAE40029CA01 /* PagingScrollViewController.m in Sources */,
 				C9F783A50F2ABAF10029CA01 /* PageViewController.m in Sources */,
 				1D7090AF16CC063A0074597B /* CameraViewController.m in Sources */,
-				8016D52D16CC1E5F00F20725 /* IIViewDeckController.m in Sources */,
-				8016D53316CC205C00F20725 /* IISideController.m in Sources */,
-				8016D53416CC205C00F20725 /* IIWrapController.m in Sources */,
 				1D29777616CD77370094FD84 /* FilterPreview.m in Sources */,
 				808DB99816CD7E5F00B591D6 /* TitleViewController.m in Sources */,
 				1DEE8DFA16CD855900A3C9B7 /* UIImageExtension.m in Sources */,
