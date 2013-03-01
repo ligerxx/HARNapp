@@ -11,6 +11,7 @@
 
 @interface TitleViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UIView *topLayer;
+@property (strong, nonatomic) IBOutlet UINavigationBar *viewDeckController;
 @property (nonatomic) CGFloat layerPosition;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *titleArray;

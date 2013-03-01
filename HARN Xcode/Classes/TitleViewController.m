@@ -7,6 +7,7 @@
 //
 
 #import "TitleViewController.h"
+#import "CollectionViewController.h"
 
 @interface TitleViewController ()
 
@@ -170,6 +171,12 @@ BOOL _bottomVisible;
     
     // animate the deselection
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    /*// push the collection view when an item is selected
+     CollectionViewController *cvController = [[CollectionViewController alloc] initWithNibName:@"%@" bundle:[NSBundle mainBundle]];
+     [self.navigationController pushViewController:cvController animated:YES];*/
+    
+    //[(UINavigationController*)self.viewDeckController performSegueWithIdentifier:@"navigateToCollection" sender:self];
 }
 
 - (void)didReceiveMemoryWarning

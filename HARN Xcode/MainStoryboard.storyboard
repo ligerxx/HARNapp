@@ -13,19 +13,22 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zWt-9L-fD6">
-                                <rect key="frame" x="0.0" y="44" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="22" width="320" height="504"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="NWB-9Y-mMa">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="NWB-9Y-mMa">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <color key="backgroundColor" red="0.81859290081521741" green="0.81859290081521741" blue="0.81859290081521741" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <segue destination="ten-3D-5JN" kind="modal" identifier="navigateToCollection" modalTransitionStyle="crossDissolve" id="3JQ-9Z-vfd"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -37,14 +40,14 @@
                                 </items>
                             </navigationBar>
                             <navigationBar contentMode="scaleToFill" id="oh1-St-kNG">
-                                <rect key="frame" x="0.0" y="0.0" width="265" height="44"/>
+                                <rect key="frame" x="0.0" y="504" width="265" height="44"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <items>
                                     <navigationItem title="Menu" id="uDk-4h-p5h"/>
                                 </items>
                             </navigationBar>
                             <view contentMode="scaleToFill" id="ic6-P1-Y3U" userLabel="Top View">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="265" y="0.0" width="320" height="548"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="gallerybackground.png" id="HL7-mA-Tas">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
@@ -108,6 +111,7 @@
                     <connections>
                         <outlet property="tableView" destination="zWt-9L-fD6" id="4Bl-tl-6WC"/>
                         <outlet property="topLayer" destination="ic6-P1-Y3U" id="X8i-TO-4YY"/>
+                        <outlet property="viewDeckController" destination="hpK-S1-wZL" id="Ug7-Yu-WSl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZT-0v-xQQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -123,6 +127,7 @@
         <scene sceneID="zSa-Bz-ec2">
             <objects>
                 <navigationController definesPresentationContext="YES" id="ten-3D-5JN" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2zf-Py-cmx"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9K8-og-SeG">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="0.25406976019101646" green="0.60098930027173914" blue="0.29355343671914907" alpha="1" colorSpace="calibratedRGB"/>
@@ -414,4 +419,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="3JQ-9Z-vfd"/>
+    </inferredMetricsTieBreakers>
 </document>
