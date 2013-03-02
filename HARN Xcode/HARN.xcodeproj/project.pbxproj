@@ -26,7 +26,6 @@
 		1D7A6F5316E1802D00DCBFAB /* addToFavoritesActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7A6F5216E1802D00DCBFAB /* addToFavoritesActivity.m */; };
 		1D7A6F5816E1862600DCBFAB /* favorites-activity.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7A6F5616E1862600DCBFAB /* favorites-activity.png */; };
 		1D7A6F5916E1862600DCBFAB /* favorites-activity@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7A6F5716E1862600DCBFAB /* favorites-activity@2x.png */; };
-		1D7A6F5B16E18CF300DCBFAB /* invisible.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7A6F5A16E18CF300DCBFAB /* invisible.png */; };
 		1D7E357616CF081200C5C033 /* HARN icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7E357516CF081200C5C033 /* HARN icon.png */; };
 		1D7E357816CF0EB100C5C033 /* HARN icon low res.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7E357716CF0EB100C5C033 /* HARN icon low res.png */; };
 		1D92A76916B5E9B700F47D7D /* gallerybackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D92A76816B5E9B700F47D7D /* gallerybackground.png */; };
@@ -82,7 +81,6 @@
 		1D7A6F5216E1802D00DCBFAB /* addToFavoritesActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = addToFavoritesActivity.m; path = "Collection View/addToFavoritesActivity.m"; sourceTree = "<group>"; };
 		1D7A6F5616E1862600DCBFAB /* favorites-activity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favorites-activity.png"; sourceTree = "<group>"; };
 		1D7A6F5716E1862600DCBFAB /* favorites-activity@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "favorites-activity@2x.png"; sourceTree = "<group>"; };
-		1D7A6F5A16E18CF300DCBFAB /* invisible.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = invisible.png; sourceTree = "<group>"; };
 		1D7E357516CF081200C5C033 /* HARN icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HARN icon.png"; sourceTree = "<group>"; };
 		1D7E357716CF0EB100C5C033 /* HARN icon low res.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HARN icon low res.png"; sourceTree = "<group>"; };
 		1D92A76816B5E9B700F47D7D /* gallerybackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gallerybackground.png; sourceTree = "<group>"; };
@@ -246,7 +244,6 @@
 				32CA4F630368D1EE00C91783 /* HARN_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */,
-				1D7A6F5A16E18CF300DCBFAB /* invisible.png */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -356,7 +353,6 @@
 				1D5CBC4916E073B6004CAE64 /* HARN no label.png in Resources */,
 				1D7A6F5816E1862600DCBFAB /* favorites-activity.png in Resources */,
 				1D7A6F5916E1862600DCBFAB /* favorites-activity@2x.png in Resources */,
-				1D7A6F5B16E18CF300DCBFAB /* invisible.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
