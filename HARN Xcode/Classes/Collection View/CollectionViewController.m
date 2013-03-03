@@ -83,6 +83,11 @@
         detailViewController.theImage = imageToSend;
         [detailViewController setArtTitle:self.sections[selectedIndexPath.row]];
         [detailViewController setArtDescription:@"The most famous work in all the land!"];
+        
+        //Sending the Array to Detail View for swipe navigation
+        detailViewController.arrayOfArt = [[NSArray alloc]initWithArray:self.sections];
+        detailViewController.currentViewIndex = selectedIndexPath.row;
+        
     }
 }
 

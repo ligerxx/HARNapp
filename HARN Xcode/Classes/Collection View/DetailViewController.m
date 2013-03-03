@@ -30,9 +30,44 @@
     _artDescription = someDescription;
 }
 
--(IBAction)swipeHandler:(UIGestureRecognizer *)sender
+-(IBAction)swipedLeft:(UIGestureRecognizer *)sender
 {
-    //IDK MY BFFL JILL JK X_X
+    if(currentViewIndex != [arrayOfArt count])
+    {
+        currentViewIndex++;
+    }
+
+    _artTitle = [_arrayOfArt objectAtIndex:_currentViewIndex];
+    _titleOfWork.text = [_arrayOfArt objectAtIndex:_currentViewIndex];
+
+    self.title = [NSString stringWithFormat:@"%u of %u",  _currentViewIndex, [_arrayOfArt count] ];
+    //DESCRIPTION CHANGED HERE
+    //_artDescription = _artDescription;
+
+    //PASS LARGER DESCRIPTION HERE
+
+    _previewImage.image = [UIImage imageNamed:@"skeleton.png"];
+    
+}
+
+-(IBAction)swipedRight:(UIGestureRecognizer *)sender
+{
+    if(currentViewIndex != 0)
+    {
+        currentViewIndex--;
+    }
+    
+    _artTitle = [_arrayOfArt objectAtIndex:_currentViewIndex];
+    _titleOfWork.text = [_arrayOfArt objectAtIndex:_currentViewIndex];
+    
+    self.title = [NSString stringWithFormat:@"%u of %u",  _currentViewIndex, [_arrayOfArt count] ];
+    //DESCRIPTION CHANGED HERE
+    //_artDescription = _artDescription;
+    
+    //PASS LARGER DESCRIPTION HERE
+    
+    _previewImage.image = [UIImage imageNamed:@"ceramic.png"];
+    
 }
 
 -(IBAction)share:(id)sender
@@ -71,7 +106,7 @@
     
     _titleOfWork.text = _artTitle;
     _descriptionOfWork.text = _artDescription;
-	// Do any additional setup after loading the view.
+    
 }
 
 - (void)didReceiveMemoryWarning

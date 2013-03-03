@@ -348,14 +348,14 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Gk-FZ-D1Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="lXm-rU-Hb8">
+                <swipeGestureRecognizer direction="left" id="lXm-rU-Hb8">
                     <connections>
-                        <action selector="swipeHandler:" destination="2AL-bL-RkM" id="g5q-6P-rkQ"/>
+                        <action selector="swipedLeft:" destination="2AL-bL-RkM" id="KxM-Mz-Rro"/>
                     </connections>
                 </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="left" id="C8W-vk-i6k">
+                <swipeGestureRecognizer direction="right" id="C8W-vk-i6k">
                     <connections>
-                        <action selector="swipeHandler:" destination="2AL-bL-RkM" id="Nb4-up-65J"/>
+                        <action selector="swipedRight:" destination="2AL-bL-RkM" id="Ndl-9m-hDt"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
@@ -437,7 +437,8 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
             <relationships>
                 <relationship kind="action" name="share:"/>
-                <relationship kind="action" name="swipeHandler:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="action" name="swipedLeft:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="action" name="swipedRight:" candidateClass="UIGestureRecognizer"/>
                 <relationship kind="outlet" name="descriptionOfWork" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="previewImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="titleOfWork" candidateClass="UILabel"/>
@@ -480,6 +481,9 @@
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
