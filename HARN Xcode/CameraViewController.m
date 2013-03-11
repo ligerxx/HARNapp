@@ -274,6 +274,7 @@ static const int FILTER_LABEL = 001;
     [super viewDidLoad];
     self.context =[CIContext contextWithOptions:nil];        // Custom initialization
     
+    [self showCameraUI:nil];
 	// Do any additional setup after loading the view.
 }
 
