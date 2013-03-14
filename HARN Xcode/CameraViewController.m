@@ -99,8 +99,9 @@ static const int FILTER_LABEL = 001;
 {
     shareButton.enabled = NO;
     savePhoto.hidden = YES;
-    [self.filtersScrollView removeFromSuperview];
-    
+    for(UIView *subview in [filtersScrollView subviews]) {
+        [subview removeFromSuperview];
+    }
     [picker dismissModalViewControllerAnimated:YES];
 }
 
