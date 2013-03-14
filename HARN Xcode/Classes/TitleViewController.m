@@ -17,17 +17,8 @@
 @synthesize topLayer = _topLayer;
 @synthesize layerPosition = _layerPosition;
 @synthesize titleArray = _titleArray;
-@synthesize dataArray = _dataArray;
-
-@synthesize properties = _properties;
-@synthesize personalNavigation = _personalNavigation;
-@synthesize currentExhibition = _currentExhibition;
-@synthesize typeSize = _typeSize;
 
 BOOL _bottomVisible;
-
-
-
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -46,9 +37,7 @@ BOOL _bottomVisible;
     
     // plist shit
     NSString *propertiesFile = [[NSBundle mainBundle] pathForResource:@"Properties" ofType:@"plist"];
-    _properties = [[NSDictionary alloc] initWithContentsOfFile:propertiesFile];
-    _personalNavigation = [_properties objectForKey:@"personalNavigation"];
-    _currentExhibition = [_properties objectForKey:@"currentExhibition"];
+    _properties = [[NSMutableArray alloc] initWithContentsOfFile:propertiesFile];
     
     // create shadows
     self.topLayer.layer.shadowOffset = CGSizeMake(-1,0);
@@ -59,17 +48,6 @@ BOOL _bottomVisible;
     self.layerPosition = self.topLayer.frame.origin.x;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-     // initialize the dataArray
-     _dataArray = [[NSMutableArray alloc] init];
-    // first section data - will need to automate, later
-    NSArray *firstItemsArray = [[NSArray alloc] initWithObjects:@"African", @"Ancient American", @"Asian", @"Contemporary", @"Modern", @"Photography", @"Prints and Drawings Before 1234", nil];
-     NSDictionary *firstItemsArrayDict = [NSDictionary dictionaryWithObject:firstItemsArray forKey:@"data"];
-     [_dataArray addObject:firstItemsArrayDict];
-     // second section data
-     NSArray *secondItemsArray = [[NSArray alloc] initWithObjects:@"Favorites", @"Photos", nil];
-     NSDictionary *secondItemsArrayDict = [NSDictionary dictionaryWithObject:secondItemsArray forKey:@"data"];
-     [_dataArray addObject:secondItemsArrayDict];
-
 }
 
 // the number of pixels we want displayed for our navigation
@@ -132,18 +110,18 @@ BOOL _bottomVisible;
 
 // how many sections to expect
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return [_dataArray count];
+    return [_properties count];
 }
 
 // how many rows to expect
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     // number of rows it should expect should be based on the section
-    //NSDictionary *dictionary = [_dataArray objectAtIndex:section];
-    //NSArray *array = [dictionary objectForKey:@"data"];
-    //return [array count];
-    
-    return [_currentExhibition count];
+    NSDictionary *dictionary = [_properties objectAtIndex:section];
+    //NSLog(@"%lu", (unsigned long)[dictionary count]);
+    NSArray *array = [dictionary objectForKey:@"data"];
+    //NSLog(@"%lu", (unsigned long)[array count]);
+    return [array count];
 }
 
 // our headers
@@ -167,13 +145,10 @@ BOOL _bottomVisible;
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
-    //NSDictionary *dictionary = [_dataArray objectAtIndex:indexPath.section];
-    //NSArray *array = [dictionary objectForKey:@"data"];
-    //NSString *cellValue = [array objectAtIndex:indexPath.row];
-    //cell.textLabel.text = cellValue;
-    
-    NSString *currentExhibitionDisplay = [_currentExhibition objectAtIndex:indexPath.row];
-    cell.textLabel.text = currentExhibitionDisplay;
+    NSDictionary *dictionary = [_properties objectAtIndex:indexPath.section];
+    NSArray *array = [dictionary objectForKey:@"data"];
+    NSString *cellValue = [array objectAtIndex:indexPath.row];
+    cell.textLabel.text = cellValue;
     
     return cell;
 }
@@ -183,7 +158,8 @@ BOOL _bottomVisible;
     
 	// get the selected item in our navigation list
     NSString *selectedCell = nil;
-    NSDictionary *dictionary = [_dataArray objectAtIndex:indexPath.section];
+
+    NSDictionary *dictionary = [_properties objectAtIndex:indexPath.section];
     NSArray *array = [dictionary objectForKey:@"data"];
     selectedCell = [array objectAtIndex:indexPath.row];
     
@@ -197,6 +173,7 @@ BOOL _bottomVisible;
      CollectionViewController *cvController = [[CollectionViewController alloc] initWithNibName:@"%@" bundle:[NSBundle mainBundle]];
      [self.navigationController pushViewController:cvController animated:YES];*/
     
+    // what is this? ohhhhh segue.
     //[(UINavigationController*)self.viewDeckController performSegueWithIdentifier:@"navigateToCollection" sender:self];
 }
 

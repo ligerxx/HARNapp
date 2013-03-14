@@ -18,9 +18,6 @@
 @property (nonatomic, strong) NSMutableArray *titleArray;
 @property (nonatomic, strong) NSMutableArray *dataArray;
 
-@property (nonatomic, strong) NSDictionary *properties;
-@property (nonatomic, strong) NSArray *personalNavigation;
-@property (nonatomic, strong) NSArray *currentExhibition;
-@property (nonatomic) NSInteger *typeSize;
+@property (nonatomic, strong) NSMutableArray *properties;
 
 @end
