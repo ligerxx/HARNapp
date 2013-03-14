@@ -45,6 +45,11 @@
 		1DC3B8B716D6E0FB00BFF5ED /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC3B8B616D6E0FB00BFF5ED /* CollectionViewController.m */; };
 		1DC53B5916B60028003591CD /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC53B5816B60028003591CD /* menu.png */; };
 		1DCA55A116F2753800909059 /* comingsoon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCA55A016F2753800909059 /* comingsoon@2x.png */; };
+		1DCA55A416F28FDF00909059 /* filterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCA55A316F28FDF00909059 /* filterView.m */; };
+		1DCA55A916F2927D00909059 /* asia.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCA55A516F2927D00909059 /* asia.png */; };
+		1DCA55AA16F2927D00909059 /* contemporary.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCA55A616F2927D00909059 /* contemporary.png */; };
+		1DCA55AB16F2927D00909059 /* ancientamerica.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCA55A716F2927D00909059 /* ancientamerica.png */; };
+		1DCA55AC16F2927D00909059 /* africa.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCA55A816F2927D00909059 /* africa.png */; };
 		1DE88E5416CB140600B8804E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */; };
 		1DEE8DFA16CD855900A3C9B7 /* UIImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -107,6 +112,12 @@
 		1DC3B8B616D6E0FB00BFF5ED /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewController.m; path = "Collection View/CollectionViewController.m"; sourceTree = "<group>"; };
 		1DC53B5816B60028003591CD /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		1DCA55A016F2753800909059 /* comingsoon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "comingsoon@2x.png"; path = "../comingsoon@2x.png"; sourceTree = "<group>"; };
+		1DCA55A216F28FDF00909059 /* filterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filterView.h; sourceTree = "<group>"; };
+		1DCA55A316F28FDF00909059 /* filterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = filterView.m; sourceTree = "<group>"; };
+		1DCA55A516F2927D00909059 /* asia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = asia.png; sourceTree = "<group>"; };
+		1DCA55A616F2927D00909059 /* contemporary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contemporary.png; sourceTree = "<group>"; };
+		1DCA55A716F2927D00909059 /* ancientamerica.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ancientamerica.png; sourceTree = "<group>"; };
+		1DCA55A816F2927D00909059 /* africa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = africa.png; sourceTree = "<group>"; };
 		1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1DEE8DF816CD855900A3C9B7 /* UIImageExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageExtension.h; sourceTree = "<group>"; };
 		1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageExtension.m; sourceTree = "<group>"; };
@@ -210,13 +221,15 @@
 		1DAF8CF416D6E6CA0080224C /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				1DCA55A016F2753800909059 /* comingsoon@2x.png */,
+				1DCA55A216F28FDF00909059 /* filterView.h */,
+				1DCA55A316F28FDF00909059 /* filterView.m */,
 				1D7090AD16CC063A0074597B /* CameraViewController.h */,
 				1D7090AE16CC063A0074597B /* CameraViewController.m */,
 				1DEE8DF816CD855900A3C9B7 /* UIImageExtension.h */,
 				1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */,
 				1D29777416CD77370094FD84 /* FilterPreview.h */,
 				1D29777516CD77370094FD84 /* FilterPreview.m */,
+				1DCA55A016F2753800909059 /* comingsoon@2x.png */,
 			);
 			name = Camera;
 			sourceTree = "<group>";
@@ -258,6 +271,10 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1DCA55A516F2927D00909059 /* asia.png */,
+				1DCA55A616F2927D00909059 /* contemporary.png */,
+				1DCA55A716F2927D00909059 /* ancientamerica.png */,
+				1DCA55A816F2927D00909059 /* africa.png */,
 				1D76D3BD16D7EFA70074284E /* aA@2x.png */,
 				1DAF8CF516D6ED8D0080224C /* aA.png */,
 				1DC53B5816B60028003591CD /* menu.png */,
@@ -361,6 +378,10 @@
 				1D30FACD16E1938E000B1CE2 /* gallerybackground@2x.png in Resources */,
 				80CFA22B16F218F200F90382 /* Properties.plist in Resources */,
 				1DCA55A116F2753800909059 /* comingsoon@2x.png in Resources */,
+				1DCA55A916F2927D00909059 /* asia.png in Resources */,
+				1DCA55AA16F2927D00909059 /* contemporary.png in Resources */,
+				1DCA55AB16F2927D00909059 /* ancientamerica.png in Resources */,
+				1DCA55AC16F2927D00909059 /* africa.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +408,7 @@
 				1DAC466216D7C78700ABF89A /* floatingButton.m in Sources */,
 				1D7A6F4F16E17D4100DCBFAB /* addToFavorites.m in Sources */,
 				1D7A6F5316E1802D00DCBFAB /* addToFavoritesActivity.m in Sources */,
+				1DCA55A416F28FDF00909059 /* filterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
