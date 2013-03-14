@@ -59,10 +59,6 @@ static const int FILTER_LABEL = 001;
     
     [self presentModalViewController:imagePicker animated:YES];
 }
--(void)closeCamera:(id)sender
-{
-    
-}
 
 
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
@@ -71,8 +67,11 @@ static const int FILTER_LABEL = 001;
     /*When the picture is taken the didFinishPickingMediaWithInfo method of the UIImagePickerControllerDelegate is invoked. The didFinishPickingMediaWithInfo parameter info has the information about the new image. The implementation below shows how to set the new image to the UIImageView control on the view. 
      */
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
-    
+
+    shareButton.enabled = YES;
+    savePhoto.hidden = NO;
     [self.imageView setImage:image];
+
     
     //If you do not dismiss the model view controller as done below then you will be stuck at the camera screen. 
     [self dismissModalViewControllerAnimated:YES];
@@ -98,6 +97,10 @@ static const int FILTER_LABEL = 001;
 
 -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
+    shareButton.enabled = NO;
+    savePhoto.hidden = YES;
+    [self.filtersScrollView removeFromSuperview];
+    
     [picker dismissModalViewControllerAnimated:YES];
 }
 
@@ -256,14 +259,32 @@ static const int FILTER_LABEL = 001;
     CGImageRelease(cgimg);
 }
 
+-(IBAction)share:(id)sender
+{
+    NSArray *sharedItems;   //Items that will be shared
+    
+    NSString *sharedText = @""; //This string would be the initial text that is in the share sheet
+    
+    sharedItems = @[sharedText, _imageView.image]; //adding the text and image into the array that is initializing below
+    
+    
+    UIActivityViewController *shareSheet = [[UIActivityViewController alloc] initWithActivityItems:sharedItems applicationActivities:nil];
+    
+    shareSheet.excludedActivityTypes = @[UIActivityTypeAssignToContact, UIActivityTypeCopyToPasteboard, UIActivityTypePrint, UIActivityTypeSaveToCameraRoll, UIActivityTypeMessage];
+    
+    //Present it to the public
+    [self presentViewController:shareSheet animated:YES completion:NULL];
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.context =[CIContext contextWithOptions:nil];
-        [self.view addSubview:filtersScrollView];
-        
+        if(_imageView.image != nil)
+        {        
+            self.context =[CIContext contextWithOptions:nil];
+            [self.view addSubview:filtersScrollView];
+        }
         // Custom initialization
     }
     return self;
@@ -273,6 +294,9 @@ static const int FILTER_LABEL = 001;
 {
     [super viewDidLoad];
     self.context =[CIContext contextWithOptions:nil];        // Custom initialization
+    
+    shareButton.enabled = NO;
+    savePhoto.hidden = YES;
     
     [self showCameraUI:nil];
 	// Do any additional setup after loading the view.

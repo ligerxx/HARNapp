@@ -11,7 +11,6 @@
 @interface CameraViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 {
     UIImagePickerController *imagePicker;
-    
     CIContext *_context;
     NSMutableArray *filters;
     CIImage *beginImage;
@@ -19,13 +18,16 @@
     UIView *selectedFilterView;
     UIImage *finalImage;
     
+    IBOutlet UIButton *savePhoto;
+    IBOutlet UIBarButtonItem *shareButton;
+    
 }
 -(IBAction)showCameraUI:(id)sender;
 -(IBAction)saveImage:(id)sender;
--(IBAction)closeCamera:(id)sender;
+-(IBAction)share:(id)sender;
 
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
-@property (nonatomic, weak) IBOutlet UIScrollView *filtersScrollView;
+@property (nonatomic, retain) IBOutlet UIScrollView *filtersScrollView;
 @property(strong,nonatomic) CIContext *context;
 
 @end
