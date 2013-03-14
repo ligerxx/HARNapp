@@ -50,6 +50,7 @@
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		8016D53716CC220B00F20725 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8016D53516CC21BD00F20725 /* QuartzCore.framework */; };
 		808DB99816CD7E5F00B591D6 /* TitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808DB99716CD7E5F00B591D6 /* TitleViewController.m */; };
+		80CFA22B16F218F200F90382 /* Properties.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80CFA22A16F218F200F90382 /* Properties.plist */; };
 		C9F783630F2AB7600029CA01 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F783620F2AB7600029CA01 /* DataSource.m */; };
 		C9F783930F2ABA430029CA01 /* PageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9F783920F2ABA430029CA01 /* PageView.xib */; };
 		C9F783A20F2ABAE40029CA01 /* PagingScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F783A10F2ABAE40029CA01 /* PagingScrollViewController.m */; };
@@ -114,6 +115,7 @@
 		8016D53516CC21BD00F20725 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		808DB99616CD7E5F00B591D6 /* TitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleViewController.h; sourceTree = "<group>"; };
 		808DB99716CD7E5F00B591D6 /* TitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleViewController.m; sourceTree = "<group>"; };
+		80CFA22A16F218F200F90382 /* Properties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Properties.plist; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9F783610F2AB7600029CA01 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
 		C9F783620F2AB7600029CA01 /* DataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataSource.m; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 				32CA4F630368D1EE00C91783 /* HARN_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */,
+				80CFA22A16F218F200F90382 /* Properties.plist */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				1D7A6F5816E1862600DCBFAB /* favorites-activity.png in Resources */,
 				1D7A6F5916E1862600DCBFAB /* favorites-activity@2x.png in Resources */,
 				1D30FACD16E1938E000B1CE2 /* gallerybackground@2x.png in Resources */,
+				80CFA22B16F218F200F90382 /* Properties.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

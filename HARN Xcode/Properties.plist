@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>currentExhibition</key>
+	<array>
+		<string>African</string>
+		<string>Ancient American</string>
+		<string>Asian</string>
+		<string>Contemporary</string>
+		<string>Modern</string>
+		<string>Photography</string>
+		<string>Prints and Drawings Before 1234</string>
+	</array>
+	<key>peronalNavigation</key>
+	<array>
+		<string>Favorites</string>
+		<string>Photos</string>
+	</array>
+	<key>typeSize</key>
+	<integer>0</integer>
+</dict>
+</plist>

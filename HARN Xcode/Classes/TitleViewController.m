@@ -18,6 +18,12 @@
 @synthesize layerPosition = _layerPosition;
 @synthesize titleArray = _titleArray;
 @synthesize dataArray = _dataArray;
+
+@synthesize properties = _properties;
+@synthesize personalNavigation = _personalNavigation;
+@synthesize currentExhibition = _currentExhibition;
+@synthesize typeSize = _typeSize;
+
 BOOL _bottomVisible;
 
 
@@ -37,6 +43,13 @@ BOOL _bottomVisible;
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    // plist shit
+    NSString *propertiesFile = [[NSBundle mainBundle] pathForResource:@"Properties" ofType:@"plist"];
+    _properties = [[NSDictionary alloc] initWithContentsOfFile:propertiesFile];
+    _personalNavigation = [_properties objectForKey:@"personalNavigation"];
+    _currentExhibition = [_properties objectForKey:@"currentExhibition"];
+    
     // create shadows
     self.topLayer.layer.shadowOffset = CGSizeMake(-1,0);
     self.topLayer.layer.shadowOpacity = .7;
@@ -126,9 +139,11 @@ BOOL _bottomVisible;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
     // number of rows it should expect should be based on the section
-    NSDictionary *dictionary = [_dataArray objectAtIndex:section];
-    NSArray *array = [dictionary objectForKey:@"data"];
-    return [array count];
+    //NSDictionary *dictionary = [_dataArray objectAtIndex:section];
+    //NSArray *array = [dictionary objectForKey:@"data"];
+    //return [array count];
+    
+    return [_currentExhibition count];
 }
 
 // our headers
@@ -140,6 +155,7 @@ BOOL _bottomVisible;
 }
 
 // loop through dataArray and do the hard work
+// customize the apparence of table view cells
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *CellIdentifier = @"Cell";
@@ -147,12 +163,17 @@ BOOL _bottomVisible;
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+        // cell style: triange/arrow at end/right of cell
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
-    NSDictionary *dictionary = [_dataArray objectAtIndex:indexPath.section];
-    NSArray *array = [dictionary objectForKey:@"data"];
-    NSString *cellValue = [array objectAtIndex:indexPath.row];
-    cell.textLabel.text = cellValue;
+    //NSDictionary *dictionary = [_dataArray objectAtIndex:indexPath.section];
+    //NSArray *array = [dictionary objectForKey:@"data"];
+    //NSString *cellValue = [array objectAtIndex:indexPath.row];
+    //cell.textLabel.text = cellValue;
+    
+    NSString *currentExhibitionDisplay = [_currentExhibition objectAtIndex:indexPath.row];
+    cell.textLabel.text = currentExhibitionDisplay;
     
     return cell;
 }
