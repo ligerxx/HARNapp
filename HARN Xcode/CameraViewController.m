@@ -10,6 +10,8 @@
 
 @implementation CameraViewController
 
+@synthesize imageToBeSaved = _imageToBeSaved;
+
 -(IBAction)saveImage:(id)sender
 {
     UIImage *imageToSave;
@@ -52,7 +54,7 @@
         self.title = @"Share & Save";
     
     //Takes in the image passed from the filtered view
-    [_imageView setImage:_imageToBeSaved];
+    [_imageView setImage:self.imageToBeSaved];
     
     if(_imageView.image == nil)
     {

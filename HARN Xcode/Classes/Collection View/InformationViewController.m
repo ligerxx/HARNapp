@@ -22,7 +22,7 @@ NSInteger currentSize = 0;
 
 -(IBAction)donePressed:(id)sender;
 {
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 -(IBAction)changeFontSize:(id)sender;

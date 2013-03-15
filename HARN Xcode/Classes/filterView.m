@@ -14,6 +14,8 @@
 
 @implementation filterView
 
+@synthesize filtersScrollView = _filterScrollView;
+
 static const int FILTER_LABEL = 001;
 
 -(IBAction)showCameraUI:(id)sender
@@ -33,7 +35,7 @@ static const int FILTER_LABEL = 001;
     
     [imagePicker setDelegate:self];
     
-    [self presentModalViewController:imagePicker animated:YES];
+    [self presentViewController:imagePicker animated:YES completion:nil];
     
     /*THIS WAS THE ORIGINAL SPEC TAKEN FROM APPLE'S DOCS TO OPEN THE CAMERA GUI.
      
@@ -58,7 +60,7 @@ static const int FILTER_LABEL = 001;
     
     [imagePicker setDelegate:self];
     
-    [self presentModalViewController:imagePicker animated:YES];
+    [self presentViewController:imagePicker animated:YES completion:nil];
 }
 
 
@@ -74,15 +76,15 @@ static const int FILTER_LABEL = 001;
     _retake.hidden = YES;
     
     //If you do not dismiss the model view controller as done below then you will be stuck at the camera screen.
-    [self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
     
-    filtersScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 400, self.view.bounds.size.width, 130)];
+    self.filtersScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 400, self.view.bounds.size.width, 130)];
     
-    [filtersScrollView setScrollEnabled:YES];
-    [filtersScrollView setShowsVerticalScrollIndicator:NO];
-    filtersScrollView.showsHorizontalScrollIndicator = NO;
+    [self.filtersScrollView setScrollEnabled:YES];
+    [self.filtersScrollView setShowsVerticalScrollIndicator:NO];
+    self.filtersScrollView.showsHorizontalScrollIndicator = NO;
     
-    [self.view addSubview:filtersScrollView];
+    [self.view addSubview:self.filtersScrollView];
     
     //Load the set of filters again
     [self loadFiltersForImage:image];
@@ -90,14 +92,14 @@ static const int FILTER_LABEL = 001;
 
 -(void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
 {
-    for(UIView *subview in [filtersScrollView subviews]) {
+    for(UIView *subview in [self.filtersScrollView subviews]) {
         [subview removeFromSuperview];
     }
     
     _save.enabled = NO;
     _retake.hidden = NO;
     
-    [picker dismissModalViewControllerAnimated:YES];
+    [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (BOOL) startCameraControllerFromViewController: (UIViewController*) controller
@@ -126,7 +128,7 @@ static const int FILTER_LABEL = 001;
     
     cameraUI.delegate = delegate;
     
-    [controller presentModalViewController: cameraUI animated: YES];
+    [controller presentViewController:cameraUI animated: YES completion:nil];
     return YES;
 }
 
@@ -187,7 +189,7 @@ static const int FILTER_LABEL = 001;
             filterNameLabel.backgroundColor = [UIColor clearColor];
             filterNameLabel.textColor = [UIColor whiteColor];
             filterNameLabel.font = [UIFont fontWithName:@"AppleColorEmoji" size:10]; //I don't know why Emoji is used...
-            filterNameLabel.textAlignment = UITextAlignmentCenter;
+            filterNameLabel.textAlignment = NSTextAlignmentCenter;
             
             // create filter preview image views
             UIImage *cameraIcon = [UIImage imageNamed:@"camerafiltericon@2x.png"];
@@ -212,7 +214,7 @@ static const int FILTER_LABEL = 001;
             [filterView addSubview:filterNameLabel];
             
             //IT IS DONE.
-            [filtersScrollView addSubview:filterView];
+            [self.filtersScrollView addSubview:filterView];
             
             //move to the next filter
             index++;
@@ -224,7 +226,7 @@ static const int FILTER_LABEL = 001;
         filterNameLabel.backgroundColor = [UIColor clearColor];
         filterNameLabel.textColor = [UIColor whiteColor];
         filterNameLabel.font = [UIFont fontWithName:@"AppleColorEmoji" size:10]; //I don't know why Emoji is used...
-        filterNameLabel.textAlignment = UITextAlignmentCenter;
+        filterNameLabel.textAlignment = NSTextAlignmentCenter;
         
         
         //IMAGE PREVIEW TIME - first make a new outputImage based on the imagePicker's selection of outputImage stored in the filter array
@@ -261,7 +263,7 @@ static const int FILTER_LABEL = 001;
         [filterView addSubview:filterNameLabel];
         
         //IT IS DONE.
-        [filtersScrollView addSubview:filterView];
+        [self.filtersScrollView addSubview:filterView];
         
         offsetX += filterView.bounds.size.width + 10;
         
@@ -289,7 +291,7 @@ static const int FILTER_LABEL = 001;
     CGImageRef cgimg =
     [self.context createCGImage:outputImage fromRect:[outputImage extent]];
     
-    UIImage *finalImage = [UIImage imageWithCGImage:cgimg];
+    finalImage = [UIImage imageWithCGImage:cgimg];
     
     finalImage = [finalImage imageRotatedByDegrees:90];
     
@@ -305,7 +307,7 @@ static const int FILTER_LABEL = 001;
         if(_imageView.image != nil)
         {
             self.context =[CIContext contextWithOptions:nil];
-            [self.view addSubview:filtersScrollView];
+            [self.view addSubview:self.filtersScrollView];
         }
         // Custom initialization
     }
