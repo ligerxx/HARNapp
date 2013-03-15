@@ -9,7 +9,6 @@
 #import "CollectionViewController.h"
 #import "ArtCell.h"
 #import "DetailViewController.h"
-#import "floatingButton.h"
 
 @interface CollectionViewController ()
 

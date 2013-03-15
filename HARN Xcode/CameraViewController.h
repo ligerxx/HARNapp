@@ -8,26 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CameraViewController : UIViewController<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface CameraViewController : UIViewController
 {
-    UIImagePickerController *imagePicker;
-    CIContext *_context;
-    NSMutableArray *filters;
-    CIImage *beginImage;
-    UIScrollView *filtersScrollView;
-    UIView *selectedFilterView;
+    UIImage *imageToBeSaved;
     UIImage *finalImage;
     
     IBOutlet UIButton *savePhoto;
     IBOutlet UIBarButtonItem *shareButton;
     
 }
--(IBAction)showCameraUI:(id)sender;
+
 -(IBAction)saveImage:(id)sender;
 -(IBAction)share:(id)sender;
 
+//This property is what is is taken from filterView
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
-@property (nonatomic, retain) IBOutlet UIScrollView *filtersScrollView;
-@property(strong,nonatomic) CIContext *context;
+@property (nonatomic, retain) UIImage *imageToBeSaved;
 
 @end

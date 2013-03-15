@@ -207,10 +207,10 @@
             </objects>
             <point key="canvasLocation" x="1210" y="22"/>
         </scene>
-        <!--Camera View Controller-->
+        <!--Filter View-->
         <scene sceneID="yeU-Jm-p49">
             <objects>
-                <viewController id="bzk-Jl-YLS" customClass="CameraViewController" sceneMemberID="viewController">
+                <viewController id="bzk-Jl-YLS" customClass="filterView" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="orO-jg-NmW">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -225,7 +225,7 @@
                     <navigationItem key="navigationItem" id="oJK-qc-wea">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="4ux-6I-Q4w">
                             <connections>
-                                <segue destination="bAc-KR-bzf" kind="push" id="uP9-hE-Hsv"/>
+                                <segue destination="bAc-KR-bzf" kind="push" identifier="goToGallery" id="uP9-hE-Hsv"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -447,6 +447,89 @@
         <image name="harn logo.png" width="371" height="238"/>
         <image name="menu.png" width="50" height="50"/>
     </resources>
+    <classes>
+        <class className="ArtCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ArtCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="description" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="previewImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="title" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="CameraViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CameraViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="saveImage:"/>
+                <relationship kind="action" name="share:"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="savePhoto" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="shareButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="CollectionViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CollectionViewController.h"/>
+        </class>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="share:"/>
+                <relationship kind="action" name="swipedLeft:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="action" name="swipedRight:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="outlet" name="descriptionOfWork" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="previewImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="titleOfWork" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="InformationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InformationViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changeFontSize:"/>
+                <relationship kind="action" name="donePressed:"/>
+                <relationship kind="outlet" name="descriptionOfWork" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="PagingScrollViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PagingScrollViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changePage:"/>
+                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="TitleViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TitleViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="panLayer:" candidateClass="UIPanGestureRecognizer"/>
+                <relationship kind="action" name="tapToPanLayer:"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="topLayer" candidateClass="UIView"/>
+                <relationship kind="outlet" name="viewDeckController" candidateClass="UINavigationBar"/>
+            </relationships>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
+        <class className="filterView" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/filterView.h"/>
+            <relationships>
+                <relationship kind="action" name="showCameraUI:"/>
+                <relationship kind="outlet" name="filtersScrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

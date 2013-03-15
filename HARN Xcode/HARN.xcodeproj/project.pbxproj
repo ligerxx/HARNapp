@@ -36,7 +36,6 @@
 		1D92A77316B5FAC100F47D7D /* blank frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D92A77216B5FAC100F47D7D /* blank frame.png */; };
 		1DA6A40D16CAFBEE0021267F /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA6A40C16CAFBEE0021267F /* CoreImage.framework */; };
 		1DA8E15D16CD8A9B002914E4 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA8E15C16CD8A9B002914E4 /* OpenGLES.framework */; };
-		1DAC466216D7C78700ABF89A /* floatingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DAC466116D7C78700ABF89A /* floatingButton.m */; };
 		1DAC466416D7C99200ABF89A /* circleCamera.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DAC466316D7C99200ABF89A /* circleCamera.png */; };
 		1DAF8CF116D6E5060080224C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DAF8CF016D6E5060080224C /* DetailViewController.m */; };
 		1DAF8CF616D6ED8D0080224C /* aA.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DAF8CF516D6ED8D0080224C /* aA.png */; };
@@ -98,8 +97,6 @@
 		1D92A77216B5FAC100F47D7D /* blank frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blank frame.png"; sourceTree = "<group>"; };
 		1DA6A40C16CAFBEE0021267F /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		1DA8E15C16CD8A9B002914E4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		1DAC466016D7C78700ABF89A /* floatingButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = floatingButton.h; path = "Collection View/floatingButton.h"; sourceTree = "<group>"; };
-		1DAC466116D7C78700ABF89A /* floatingButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = floatingButton.m; path = "Collection View/floatingButton.m"; sourceTree = "<group>"; };
 		1DAC466316D7C99200ABF89A /* circleCamera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circleCamera.png; sourceTree = "<group>"; };
 		1DAF8CEF16D6E5060080224C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = "Collection View/DetailViewController.h"; sourceTree = "<group>"; };
 		1DAF8CF016D6E5060080224C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = "Collection View/DetailViewController.m"; sourceTree = "<group>"; };
@@ -208,8 +205,6 @@
 				1DAF8CF816D6F1A10080224C /* InformationViewController.m */,
 				1DC3B8B216D6E08F00BFF5ED /* ArtCell.h */,
 				1DC3B8B316D6E08F00BFF5ED /* ArtCell.m */,
-				1DAC466016D7C78700ABF89A /* floatingButton.h */,
-				1DAC466116D7C78700ABF89A /* floatingButton.m */,
 				1DC3B8B516D6E0FB00BFF5ED /* CollectionViewController.h */,
 				1DC3B8B616D6E0FB00BFF5ED /* CollectionViewController.m */,
 				1DAC466316D7C99200ABF89A /* circleCamera.png */,
@@ -405,7 +400,6 @@
 				1DC3B8B716D6E0FB00BFF5ED /* CollectionViewController.m in Sources */,
 				1DAF8CF116D6E5060080224C /* DetailViewController.m in Sources */,
 				1DAF8CF916D6F1A10080224C /* InformationViewController.m in Sources */,
-				1DAC466216D7C78700ABF89A /* floatingButton.m in Sources */,
 				1D7A6F4F16E17D4100DCBFAB /* addToFavorites.m in Sources */,
 				1D7A6F5316E1802D00DCBFAB /* addToFavoritesActivity.m in Sources */,
 				1DCA55A416F28FDF00909059 /* filterView.m in Sources */,
