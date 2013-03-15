@@ -78,7 +78,7 @@ static const int FILTER_LABEL = 001;
     //If you do not dismiss the model view controller as done below then you will be stuck at the camera screen.
     [self dismissViewControllerAnimated:YES completion:nil];
     
-    self.filtersScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 400, self.view.bounds.size.width, 130)];
+    self.filtersScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 420, self.view.bounds.size.width, 130)];
     
     [self.filtersScrollView setScrollEnabled:YES];
     [self.filtersScrollView setShowsVerticalScrollIndicator:NO];
@@ -191,10 +191,7 @@ static const int FILTER_LABEL = 001;
             filterNameLabel.font = [UIFont fontWithName:@"AppleColorEmoji" size:10]; //I don't know why Emoji is used...
             filterNameLabel.textAlignment = NSTextAlignmentCenter;
             
-            // create filter preview image views
-            UIImage *cameraIcon = [UIImage imageNamed:@"camerafiltericon@2x.png"];
-            
-            UIImageView *filterPreviewImageView = [[UIImageView alloc] initWithImage:cameraIcon];
+            UIImageView *filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"camerafiltericon@2x.png"]];
             
             [filterView setUserInteractionEnabled:YES];
             
@@ -214,12 +211,10 @@ static const int FILTER_LABEL = 001;
             [filterView addSubview:filterNameLabel];
             
             //IT IS DONE.
-            [self.filtersScrollView addSubview:filterView];
-            
-            //move to the next filter
-            index++;
-            filter = (FilterPreview * ) [filters objectAtIndex:index];
+            [self.filtersScrollView addSubview:filterView];            
         }
+        else
+        {
         
         //sets the information for the UILabel filterNameLabel that was made above
         filterNameLabel.text =  filter.name;
@@ -264,12 +259,13 @@ static const int FILTER_LABEL = 001;
         
         //IT IS DONE.
         [self.filtersScrollView addSubview:filterView];
+        }
         
         offsetX += filterView.bounds.size.width + 10;
         
     }
     
-    [self.filtersScrollView setContentSize:CGSizeMake(400, 90)];
+    [filtersScrollView setContentSize:CGSizeMake(400, 90)];
 }
 
 -(void) applyGesturesToFilterPreviewImageView:(UIView *) view
@@ -284,6 +280,14 @@ static const int FILTER_LABEL = 001;
 -(void) applyFilter:(id) sender
 {
     int filterIndex = [(UITapGestureRecognizer *) sender view].tag;
+    
+    //REOPEN CAMERA CONDITION
+    if(filterIndex == 0)
+    {
+        [self initializeCameraUI];
+        return;
+    }
+    
     FilterPreview *filter = [filters objectAtIndex:filterIndex];
     
     CIImage *outputImage = [filter.filter outputImage];
@@ -319,7 +323,7 @@ static const int FILTER_LABEL = 001;
     [super viewDidLoad];
     self.context =[CIContext contextWithOptions:nil];        // Custom initialization
     self.title = @"Edit";
-    
+    self.filtersScrollView = _filterScrollView;
     [self initializeCameraUI];
 	// Do any additional setup after loading the view.
 }

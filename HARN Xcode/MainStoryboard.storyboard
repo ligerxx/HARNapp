@@ -234,7 +234,7 @@
                                     <action selector="showCameraUI:" destination="bzk-Jl-YLS" eventType="touchUpInside" id="KU5-EU-F5M"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="mfb-xa-j5R" userLabel="Filtered Image">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="mfb-xa-j5R" userLabel="Filtered Image">
                                 <rect key="frame" x="-7" y="0.0" width="327" height="504"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
