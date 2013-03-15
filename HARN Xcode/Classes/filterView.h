@@ -22,6 +22,7 @@
 
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
 @property IBOutlet UIButton *retake;
+@property IBOutlet UIBarButtonItem *save;
 @property (nonatomic, retain) IBOutlet UIScrollView *filtersScrollView;
 @property(strong,nonatomic) CIContext *context;
 

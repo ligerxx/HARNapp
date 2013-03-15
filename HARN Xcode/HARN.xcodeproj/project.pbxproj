@@ -57,6 +57,7 @@
 		1DCA55AB16F2927D00909059 /* ancientamerican.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCA55A716F2927D00909059 /* ancientamerican.png */; };
 		1DCA55AC16F2927D00909059 /* african.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCA55A816F2927D00909059 /* african.png */; };
 		1DE88E5416CB140600B8804E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */; };
+		1DED7F6416F2D97C0005B3A9 /* camerafiltericon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED7F6316F2D97C0005B3A9 /* camerafiltericon@2x.png */; };
 		1DEE8DFA16CD855900A3C9B7 /* UIImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
@@ -130,6 +131,7 @@
 		1DCA55A716F2927D00909059 /* ancientamerican.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ancientamerican.png; sourceTree = "<group>"; };
 		1DCA55A816F2927D00909059 /* african.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = african.png; sourceTree = "<group>"; };
 		1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		1DED7F6316F2D97C0005B3A9 /* camerafiltericon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camerafiltericon@2x.png"; sourceTree = "<group>"; };
 		1DEE8DF816CD855900A3C9B7 /* UIImageExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageExtension.h; sourceTree = "<group>"; };
 		1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageExtension.m; sourceTree = "<group>"; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -238,6 +240,7 @@
 				1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */,
 				1D29777416CD77370094FD84 /* FilterPreview.h */,
 				1D29777516CD77370094FD84 /* FilterPreview.m */,
+				1DED7F6316F2D97C0005B3A9 /* camerafiltericon@2x.png */,
 				1DC6C89016F2C90000C0B201 /* retake@2x.png */,
 				1DCA55A016F2753800909059 /* comingsoon@2x.png */,
 			);
@@ -405,6 +408,7 @@
 				1D7DDA7116F2A0CF00BF99E1 /* oceanic.png in Resources */,
 				1D7DDA7216F2A0CF00BF99E1 /* photography.png in Resources */,
 				1DC6C89116F2C90000C0B201 /* retake@2x.png in Resources */,
+				1DED7F6416F2D97C0005B3A9 /* camerafiltericon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

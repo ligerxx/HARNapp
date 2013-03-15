@@ -49,9 +49,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];      // Custom initialization
+        self.title = @"Share & Save";
     
     //Takes in the image passed from the filtered view
     [_imageView setImage:_imageToBeSaved];
+    
+    if(_imageView.image == nil)
+    {
+        shareButton.enabled = NO;
+        savePhoto.hidden = YES;
+    }
 
 }
 

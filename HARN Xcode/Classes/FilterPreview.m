@@ -17,8 +17,12 @@
     self = [super init];
 
     self.name = theNameOfTheFilter;
-    self.filter = theFilter;
-    
+    if([theNameOfTheFilter isEqualToString:@"Camera"])
+    {
+        self.filter = nil;
+    }else{
+        self.filter = theFilter;  
+    }
     return self;
 }
 

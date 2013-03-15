@@ -76,7 +76,7 @@ static const int FILTER_LABEL = 001;
     //If you do not dismiss the model view controller as done below then you will be stuck at the camera screen.
     [self dismissModalViewControllerAnimated:YES];
     
-    filtersScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 300, self.view.bounds.size.width, 90)];
+    filtersScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 400, self.view.bounds.size.width, 130)];
     
     [filtersScrollView setScrollEnabled:YES];
     [filtersScrollView setShowsVerticalScrollIndicator:NO];
@@ -94,6 +94,7 @@ static const int FILTER_LABEL = 001;
         [subview removeFromSuperview];
     }
     
+    _save.enabled = NO;
     _retake.hidden = NO;
     
     [picker dismissModalViewControllerAnimated:YES];
@@ -144,13 +145,15 @@ static const int FILTER_LABEL = 001;
     
     filters = [[NSMutableArray alloc] init];
     
-    
+    NSLog(@" filters array is created");
     [filters addObjectsFromArray:[NSArray arrayWithObjects:
+                                  [[FilterPreview alloc] initWithNameAndFilter:@"Camera" filter:nil],
                                   [[FilterPreview alloc] initWithNameAndFilter:@"Sepia" filter:sepiaFilter],
                                   [[FilterPreview alloc] initWithNameAndFilter:@"Mono" filter:colorMonochrome]
                                   
                                   , nil]];
     
+    NSLog(@"everything is in the filters array");
     
     [self createPreviewViewsForFilters];
 }
@@ -176,12 +179,53 @@ static const int FILTER_LABEL = 001;
         //Grabs the first filter in the Array "filters"
         FilterPreview *filter = (FilterPreview *) [filters objectAtIndex:index];
         
+        //SPECIAL CONDITION FOR CAMERA ICON
+        if([filter.name isEqualToString:@"Camera"])
+        {
+            NSLog(@"Starting Building Camera Preview Text");
+            filterNameLabel.text =  filter.name;
+            filterNameLabel.backgroundColor = [UIColor clearColor];
+            filterNameLabel.textColor = [UIColor whiteColor];
+            filterNameLabel.font = [UIFont fontWithName:@"AppleColorEmoji" size:10]; //I don't know why Emoji is used...
+            filterNameLabel.textAlignment = UITextAlignmentCenter;
+            
+            // create filter preview image views
+            UIImage *cameraIcon = [UIImage imageNamed:@"camerafiltericon@2x.png"];
+            
+            UIImageView *filterPreviewImageView = [[UIImageView alloc] initWithImage:cameraIcon];
+            
+            [filterView setUserInteractionEnabled:YES];
+            
+            //Customize the UIImageView so it looks pretty
+            filterPreviewImageView.layer.cornerRadius = 15;
+            filterPreviewImageView.opaque = NO;
+            filterPreviewImageView.backgroundColor = [UIColor clearColor];
+            filterPreviewImageView.layer.masksToBounds = YES;
+            filterPreviewImageView.frame = CGRectMake(0, 0, 60, 60);
+            
+            filterView.tag = index;
+            
+            [self applyGesturesToFilterPreviewImageView:filterView];
+            
+            //I swear this is like Inception at this point...
+            [filterView addSubview:filterPreviewImageView];
+            [filterView addSubview:filterNameLabel];
+            
+            //IT IS DONE.
+            [filtersScrollView addSubview:filterView];
+            
+            //move to the next filter
+            index++;
+            filter = (FilterPreview * ) [filters objectAtIndex:index];
+        }
+        
         //sets the information for the UILabel filterNameLabel that was made above
         filterNameLabel.text =  filter.name;
         filterNameLabel.backgroundColor = [UIColor clearColor];
         filterNameLabel.textColor = [UIColor whiteColor];
         filterNameLabel.font = [UIFont fontWithName:@"AppleColorEmoji" size:10]; //I don't know why Emoji is used...
         filterNameLabel.textAlignment = UITextAlignmentCenter;
+        
         
         //IMAGE PREVIEW TIME - first make a new outputImage based on the imagePicker's selection of outputImage stored in the filter array
         CIImage *outputImage = [filter.filter outputImage];
@@ -272,6 +316,7 @@ static const int FILTER_LABEL = 001;
 {
     [super viewDidLoad];
     self.context =[CIContext contextWithOptions:nil];        // Custom initialization
+    self.title = @"Edit";
     
     [self initializeCameraUI];
 	// Do any additional setup after loading the view.
