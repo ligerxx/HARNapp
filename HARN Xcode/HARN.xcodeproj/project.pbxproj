@@ -49,6 +49,7 @@
 		1DC3B8B416D6E08F00BFF5ED /* ArtCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC3B8B316D6E08F00BFF5ED /* ArtCell.m */; };
 		1DC3B8B716D6E0FB00BFF5ED /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC3B8B616D6E0FB00BFF5ED /* CollectionViewController.m */; };
 		1DC53B5916B60028003591CD /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC53B5816B60028003591CD /* menu.png */; };
+		1DC6C89116F2C90000C0B201 /* retake@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC6C89016F2C90000C0B201 /* retake@2x.png */; };
 		1DCA55A116F2753800909059 /* comingsoon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCA55A016F2753800909059 /* comingsoon@2x.png */; };
 		1DCA55A416F28FDF00909059 /* filterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCA55A316F28FDF00909059 /* filterView.m */; };
 		1DCA55A916F2927D00909059 /* asian.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCA55A516F2927D00909059 /* asian.png */; };
@@ -120,6 +121,7 @@
 		1DC3B8B516D6E0FB00BFF5ED /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewController.h; path = "Collection View/CollectionViewController.h"; sourceTree = "<group>"; };
 		1DC3B8B616D6E0FB00BFF5ED /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewController.m; path = "Collection View/CollectionViewController.m"; sourceTree = "<group>"; };
 		1DC53B5816B60028003591CD /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		1DC6C89016F2C90000C0B201 /* retake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "retake@2x.png"; sourceTree = "<group>"; };
 		1DCA55A016F2753800909059 /* comingsoon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "comingsoon@2x.png"; path = "../comingsoon@2x.png"; sourceTree = "<group>"; };
 		1DCA55A216F28FDF00909059 /* filterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filterView.h; sourceTree = "<group>"; };
 		1DCA55A316F28FDF00909059 /* filterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = filterView.m; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */,
 				1D29777416CD77370094FD84 /* FilterPreview.h */,
 				1D29777516CD77370094FD84 /* FilterPreview.m */,
+				1DC6C89016F2C90000C0B201 /* retake@2x.png */,
 				1DCA55A016F2753800909059 /* comingsoon@2x.png */,
 			);
 			name = Camera;
@@ -401,6 +404,7 @@
 				1D7DDA7016F2A0CF00BF99E1 /* modern.png in Resources */,
 				1D7DDA7116F2A0CF00BF99E1 /* oceanic.png in Resources */,
 				1D7DDA7216F2A0CF00BF99E1 /* photography.png in Resources */,
+				1DC6C89116F2C90000C0B201 /* retake@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

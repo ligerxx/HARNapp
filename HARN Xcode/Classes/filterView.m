@@ -71,6 +71,7 @@ static const int FILTER_LABEL = 001;
     
     [self.imageView setImage:image];
     
+    _retake.hidden = YES;
     
     //If you do not dismiss the model view controller as done below then you will be stuck at the camera screen.
     [self dismissModalViewControllerAnimated:YES];
@@ -92,6 +93,9 @@ static const int FILTER_LABEL = 001;
     for(UIView *subview in [filtersScrollView subviews]) {
         [subview removeFromSuperview];
     }
+    
+    _retake.hidden = NO;
+    
     [picker dismissModalViewControllerAnimated:YES];
 }
 
@@ -269,7 +273,7 @@ static const int FILTER_LABEL = 001;
     [super viewDidLoad];
     self.context =[CIContext contextWithOptions:nil];        // Custom initialization
     
-    [self showCameraUI:nil];
+    [self initializeCameraUI];
 	// Do any additional setup after loading the view.
 }
 
