@@ -3,6 +3,16 @@
 <plist version="1.0">
 <array>
 	<dict>
+		<key>images</key>
+		<array>
+			<string>african.png</string>
+			<string>ancientamerican.png</string>
+			<string>asian.png</string>
+			<string>contemporary.png</string>
+			<string>modern.png</string>
+			<string>photography.png</string>
+			<string>prints.png</string>
+		</array>
 		<key>data</key>
 		<array>
 			<string>African</string>
@@ -15,6 +25,11 @@
 		</array>
 	</dict>
 	<dict>
+		<key>images</key>
+		<array>
+			<string>favorites.png</string>
+			<string>photos.png</string>
+		</array>
 		<key>data</key>
 		<array>
 			<string>Favorites</string>

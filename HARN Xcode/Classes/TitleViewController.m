@@ -150,6 +150,12 @@ BOOL _bottomVisible;
     NSString *cellValue = [array objectAtIndex:indexPath.row];
     cell.textLabel.text = cellValue;
     
+    // add image to cells...
+    NSDictionary *dictionary2 = [_properties objectAtIndex:indexPath.section];
+    NSArray *array2 = [dictionary2 objectForKey:@"images"];
+    NSString *cellValue2 = [array2 objectAtIndex:indexPath.row];
+    cell.imageView.image = [UIImage imageNamed:cellValue2];
+
     return cell;
 }
 
