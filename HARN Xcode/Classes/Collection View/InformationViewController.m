@@ -8,10 +8,7 @@
 
 #import "InformationViewController.h"
 
-
 @interface InformationViewController ()
-{
-}
 
 @end
 
@@ -19,6 +16,9 @@
 NSInteger currentSize = 0;
 
 @implementation InformationViewController
+
+@synthesize artTitle = _artTitle;
+@synthesize artDescription = _artDescription;
 
 -(IBAction)donePressed:(id)sender;
 {

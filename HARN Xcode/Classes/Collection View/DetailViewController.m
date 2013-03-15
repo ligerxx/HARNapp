@@ -32,7 +32,7 @@
 
 -(IBAction)swipedLeft:(UIGestureRecognizer *)sender
 {
-    if(currentViewIndex != [arrayOfArt count])
+    if( (int) currentViewIndex != [arrayOfArt count])
     {
         currentViewIndex++;
     }
@@ -40,7 +40,7 @@
     _artTitle = [_arrayOfArt objectAtIndex:_currentViewIndex];
     _titleOfWork.text = [_arrayOfArt objectAtIndex:_currentViewIndex];
 
-    self.title = [NSString stringWithFormat:@"%u of %u",  _currentViewIndex, [_arrayOfArt count] ];
+    self.title = [NSString stringWithFormat:@"%d of %u",  _currentViewIndex, [_arrayOfArt count] ];
     //DESCRIPTION CHANGED HERE
     //_artDescription = _artDescription;
 
@@ -60,7 +60,7 @@
     _artTitle = [_arrayOfArt objectAtIndex:_currentViewIndex];
     _titleOfWork.text = [_arrayOfArt objectAtIndex:_currentViewIndex];
     
-    self.title = [NSString stringWithFormat:@"%u of %u",  _currentViewIndex, [_arrayOfArt count] ];
+    self.title = [NSString stringWithFormat:@"%d of %u", _currentViewIndex, [_arrayOfArt count] ];
     //DESCRIPTION CHANGED HERE
     //_artDescription = _artDescription;
     

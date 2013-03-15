@@ -22,7 +22,7 @@
 	IBOutlet UITextView *textView;
 }
 
-@property NSInteger pageIndex;
+@property (nonatomic) NSInteger pageIndex;
 
 - (NSInteger)getPageIndex;
 - (void)setPageIndex:(NSInteger)pageIndex;
