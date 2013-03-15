@@ -20,6 +20,10 @@ static const int FILTER_LABEL = 001;
 
 -(IBAction)showCameraUI:(id)sender
 {
+    for(UIView *subview in [self.filtersScrollView subviews]) {
+        [subview removeFromSuperview];
+    }
+    
     _imageView.image = nil;
     
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
@@ -45,6 +49,10 @@ static const int FILTER_LABEL = 001;
 
 -(void)initializeCameraUI
 {
+    for(UIView *subview in [self.filtersScrollView subviews]) {
+        [subview removeFromSuperview];
+    }
+    
     _imageView.image = nil;
     
     UIImagePickerController *imagePicker = [[UIImagePickerController alloc] init];
@@ -73,6 +81,7 @@ static const int FILTER_LABEL = 001;
     
     [self.imageView setImage:image];
     
+    _save.enabled = YES;
     _retake.hidden = YES;
     
     //If you do not dismiss the model view controller as done below then you will be stuck at the camera screen.
