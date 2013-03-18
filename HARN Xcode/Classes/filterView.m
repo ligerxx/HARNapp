@@ -87,7 +87,7 @@ static const int FILTER_LABEL = 001;
     //If you do not dismiss the model view controller as done below then you will be stuck at the camera screen.
     [self dismissViewControllerAnimated:YES completion:nil];
     
-    self.filtersScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 420, self.view.bounds.size.width, 130)];
+    self.filtersScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 405, 320, 100)];
     
     [self.filtersScrollView setScrollEnabled:YES];
     [self.filtersScrollView setShowsVerticalScrollIndicator:NO];
@@ -172,17 +172,17 @@ static const int FILTER_LABEL = 001;
 -(void) createPreviewViewsForFilters
 {
     //gap between each of the filter previews
-    int offsetX = 10;
+    int offsetX = 15;
     
     for(int index = 0; index < [filters count]; index++)
     {
         //size of each filter view that has both the image preview and the text
-        UIView *filterView = [[UIView alloc] initWithFrame:CGRectMake(offsetX, 0, 60, 60)];
+        UIView *filterView = [[UIView alloc] initWithFrame:CGRectMake(offsetX, 15, 60, 60)];
         
         filterView.tag = index;
         
         // create a label to display the name
-        UILabel *filterNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, filterView.bounds.size.width, 8)];
+        UILabel *filterNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, filterView.bounds.size.width, 8)];
         
         //position it below the image that will show. This occurs first because the image will be drawn on top of the existing label view
         filterNameLabel.center = CGPointMake(filterView.bounds.size.width/2, filterView.bounds.size.height + filterNameLabel.bounds.size.height);
@@ -270,11 +270,17 @@ static const int FILTER_LABEL = 001;
         [self.filtersScrollView addSubview:filterView];
         }
         
-        offsetX += filterView.bounds.size.width + 10;
+        offsetX += filterView.bounds.size.width + 15;
         
     }
     
-    [filtersScrollView setContentSize:CGSizeMake(400, 90)];
+    UIGraphicsBeginImageContext(self.view.frame.size);
+    [[UIImage imageNamed:@"filterpanel@2x.png"] drawInRect:self.view.bounds];
+    UIImage *filterBackground = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    [self.filtersScrollView setBackgroundColor:[UIColor colorWithPatternImage:filterBackground]];
+
 }
 
 -(void) applyGesturesToFilterPreviewImageView:(UIView *) view

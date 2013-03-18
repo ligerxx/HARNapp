@@ -46,6 +46,7 @@
 		1DAF8CF116D6E5060080224C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DAF8CF016D6E5060080224C /* DetailViewController.m */; };
 		1DAF8CF616D6ED8D0080224C /* aA.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DAF8CF516D6ED8D0080224C /* aA.png */; };
 		1DAF8CF916D6F1A10080224C /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DAF8CF816D6F1A10080224C /* InformationViewController.m */; };
+		1DB9453B16F6A18800EDB437 /* filterpanel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB9453A16F6A18800EDB437 /* filterpanel@2x.png */; };
 		1DC3B8B416D6E08F00BFF5ED /* ArtCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC3B8B316D6E08F00BFF5ED /* ArtCell.m */; };
 		1DC3B8B716D6E0FB00BFF5ED /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC3B8B616D6E0FB00BFF5ED /* CollectionViewController.m */; };
 		1DC53B5916B60028003591CD /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC53B5816B60028003591CD /* menu.png */; };
@@ -117,6 +118,7 @@
 		1DAF8CF516D6ED8D0080224C /* aA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aA.png; sourceTree = "<group>"; };
 		1DAF8CF716D6F1A10080224C /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InformationViewController.h; path = "Collection View/InformationViewController.h"; sourceTree = "<group>"; };
 		1DAF8CF816D6F1A10080224C /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InformationViewController.m; path = "Collection View/InformationViewController.m"; sourceTree = "<group>"; };
+		1DB9453A16F6A18800EDB437 /* filterpanel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "filterpanel@2x.png"; path = "../filterpanel@2x.png"; sourceTree = "<group>"; };
 		1DC3B8B216D6E08F00BFF5ED /* ArtCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtCell.h; path = "Collection View/ArtCell.h"; sourceTree = "<group>"; };
 		1DC3B8B316D6E08F00BFF5ED /* ArtCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtCell.m; path = "Collection View/ArtCell.m"; sourceTree = "<group>"; };
 		1DC3B8B516D6E0FB00BFF5ED /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewController.h; path = "Collection View/CollectionViewController.h"; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 				1D7090AE16CC063A0074597B /* CameraViewController.m */,
 				1DEE8DF816CD855900A3C9B7 /* UIImageExtension.h */,
 				1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */,
+				1DB9453A16F6A18800EDB437 /* filterpanel@2x.png */,
 				1DED7F6316F2D97C0005B3A9 /* camerafiltericon@2x.png */,
 				1DC6C89016F2C90000C0B201 /* retake@2x.png */,
 				1DCA55A016F2753800909059 /* comingsoon@2x.png */,
@@ -409,6 +412,7 @@
 				1D7DDA7216F2A0CF00BF99E1 /* photography.png in Resources */,
 				1DC6C89116F2C90000C0B201 /* retake@2x.png in Resources */,
 				1DED7F6416F2D97C0005B3A9 /* camerafiltericon@2x.png in Resources */,
+				1DB9453B16F6A18800EDB437 /* filterpanel@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
