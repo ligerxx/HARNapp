@@ -21,6 +21,7 @@
 -(IBAction)showCameraUI:(id)sender;
 
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
+@property (nonatomic, weak) IBOutlet UIImageView *background;
 @property IBOutlet UIButton *retake;
 @property IBOutlet UIBarButtonItem *save;
 @property (nonatomic, retain) IBOutlet UIScrollView *filtersScrollView;

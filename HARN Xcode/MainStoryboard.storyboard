@@ -235,7 +235,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="mfb-xa-j5R" userLabel="Filtered Image">
-                                <rect key="frame" x="-7" y="0.0" width="327" height="504"/>
+                                <rect key="frame" x="-7" y="0.0" width="334" height="406"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -249,6 +249,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="background" destination="EWr-Jk-RvE" id="jiy-gt-e0r"/>
                         <outlet property="imageView" destination="mfb-xa-j5R" id="oXJ-qP-jre"/>
                         <outlet property="retake" destination="d7F-It-TQa" id="kSp-sh-6pZ"/>
                         <outlet property="save" destination="4ux-6I-Q4w" id="nTo-pm-7M3"/>

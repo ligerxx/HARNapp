@@ -108,6 +108,9 @@ static const int FILTER_LABEL = 001;
     _save.enabled = NO;
     _retake.hidden = NO;
     
+    [self.background setImage:[UIImage imageNamed:@"retake@2x.png"]];
+    [self.filtersScrollView setBackgroundColor:[UIColor clearColor]];
+    
     [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -274,12 +277,16 @@ static const int FILTER_LABEL = 001;
         
     }
     
+    
+    //Set the background of the filter selection Scroll View
     UIGraphicsBeginImageContext(self.view.frame.size);
     [[UIImage imageNamed:@"filterpanel@2x.png"] drawInRect:self.view.bounds];
     UIImage *filterBackground = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    
     [self.filtersScrollView setBackgroundColor:[UIColor colorWithPatternImage:filterBackground]];
+    
+    //change the background of the other imageview
+    [self.background setImage:[UIImage imageNamed:@"edit@2x.png"]];
 
 }
 
