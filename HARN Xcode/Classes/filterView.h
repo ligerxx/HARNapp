@@ -13,6 +13,7 @@
     CIContext *_context;
     NSMutableArray *filters;
     CIImage *beginImage;
+    UIImage *originalImage;
     UIScrollView *filtersScrollView;
     UIView *selectedFilterView;
     UIImage *finalImage;

@@ -7,6 +7,7 @@
 //
 
 #import "CameraViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation CameraViewController
 
@@ -53,8 +54,26 @@
     [super viewDidLoad];      // Custom initialization
         self.title = @"Share & Save";
     
-    //Takes in the image passed from the filtered view
+    /*CGRect bounds;
+    
+    bounds.origin = CGPointZero;
+    bounds.size = imageToBeSaved.size;
+    
+    _imageView.bounds = bounds;*/
+    
     [_imageView setImage:self.imageToBeSaved];
+    
+    //Takes in the image passed from the filtered view
+    CALayer *layer = _imageView.layer;
+    
+    //Adds a border
+    [layer setBorderColor: [[UIColor whiteColor] CGColor]];
+    [layer setBorderWidth:6.0f];
+    [layer setShadowColor: [[UIColor blackColor] CGColor]];
+    [layer setShadowOpacity:0.9f];
+    [layer setShadowOffset: CGSizeMake(1, 3)];
+    [layer setShadowRadius:4.0];
+    [_imageView setClipsToBounds:NO];
     
     if(_imageView.image == nil)
     {

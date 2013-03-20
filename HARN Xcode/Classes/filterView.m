@@ -79,6 +79,8 @@ static const int FILTER_LABEL = 001;
      */
     UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
     
+    originalImage = image;
+    
     [self.imageView setImage:image];
     
     _save.enabled = YES;
@@ -149,6 +151,7 @@ static const int FILTER_LABEL = 001;
     
     CIImage *filterPreviewImage = [[CIImage alloc] initWithImage:image];
     
+    
     CIFilter *sepiaFilter = [CIFilter filterWithName:@"CISepiaTone" keysAndValues:kCIInputImageKey,filterPreviewImage,
                              @"inputIntensity",[NSNumber numberWithFloat:0.8],nil];
     
@@ -161,7 +164,7 @@ static const int FILTER_LABEL = 001;
     
     NSLog(@" filters array is created");
     [filters addObjectsFromArray:[NSArray arrayWithObjects:
-                                  [[FilterPreview alloc] initWithNameAndFilter:@"Camera" filter:nil],
+                                  [[FilterPreview alloc] initWithNameAndFilter:@"Camera" filter:nil],[[FilterPreview alloc] initWithNameAndFilter:@"Original" filter: nil],
                                   [[FilterPreview alloc] initWithNameAndFilter:@"Sepia" filter:sepiaFilter],
                                   [[FilterPreview alloc] initWithNameAndFilter:@"Mono" filter:colorMonochrome]
                                   
@@ -224,6 +227,36 @@ static const int FILTER_LABEL = 001;
             
             //IT IS DONE.
             [self.filtersScrollView addSubview:filterView];            
+        }else if([filter.name isEqualToString:@"Original"]){
+            NSLog(@"Start Making Original image preview option");
+            
+            filterNameLabel.text =  filter.name;
+            filterNameLabel.backgroundColor = [UIColor clearColor];
+            filterNameLabel.textColor = [UIColor whiteColor];
+            filterNameLabel.font = [UIFont fontWithName:@"AppleColorEmoji" size:10]; //I don't know why Emoji is used...
+            filterNameLabel.textAlignment = NSTextAlignmentCenter;
+            
+            UIImageView *filterPreviewImageView = [[UIImageView alloc] initWithImage:originalImage];
+            
+            [filterView setUserInteractionEnabled:YES];
+            
+            //Customize the UIImageView so it looks pretty
+            filterPreviewImageView.layer.cornerRadius = 15;
+            filterPreviewImageView.opaque = NO;
+            filterPreviewImageView.backgroundColor = [UIColor clearColor];
+            filterPreviewImageView.layer.masksToBounds = YES;
+            filterPreviewImageView.frame = CGRectMake(0, 0, 60, 60);
+            
+            filterView.tag = index;
+            
+            [self applyGesturesToFilterPreviewImageView:filterView];
+            
+            //I swear this is like Inception at this point...
+            [filterView addSubview:filterPreviewImageView];
+            [filterView addSubview:filterNameLabel];
+            
+            //IT IS DONE.
+            [self.filtersScrollView addSubview:filterView];
         }
         else
         {
@@ -307,6 +340,10 @@ static const int FILTER_LABEL = 001;
     if(filterIndex == 0)
     {
         [self initializeCameraUI];
+        return;
+    }else if( filterIndex == 1)
+    {
+        [self.imageView setImage:originalImage];
         return;
     }
     

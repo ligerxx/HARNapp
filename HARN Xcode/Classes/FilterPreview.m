@@ -17,7 +17,7 @@
     self = [super init];
 
     self.name = theNameOfTheFilter;
-    if([theNameOfTheFilter isEqualToString:@"Camera"])
+    if([theNameOfTheFilter isEqualToString:@"Camera"] || [theNameOfTheFilter isEqualToString:@"Original"])
     {
         self.filter = nil;
     }else{
