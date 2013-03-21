@@ -36,5 +36,19 @@
 			<string>Photos</string>
 		</array>
 	</dict>
+	<dict>
+		<key>images</key>
+		<array>
+			<string>map.png</string>
+			<string>about.png</string>
+			<string>privacy.png</string>
+		</array>
+		<key>data</key>
+		<array>
+			<string>Map</string>
+			<string>About This App</string>
+			<string>Privacy Policy</string>
+		</array>
+	</dict>
 </array>
 </plist>

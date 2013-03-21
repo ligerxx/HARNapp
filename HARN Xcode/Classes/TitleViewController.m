@@ -128,8 +128,10 @@ BOOL _bottomVisible;
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     if(section == 0)
         return @"Collections";
-    else
+    else if(section == 1)
         return @"Personal";
+    else
+        return @"Information";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
