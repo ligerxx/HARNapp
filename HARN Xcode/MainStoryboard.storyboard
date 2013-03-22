@@ -7,7 +7,6 @@
         <!--Navigation Controller-->
         <scene sceneID="SpP-Hx-Bdp">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3C8-k2-Igc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="Qnr-UP-B2q" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VIe-1O-caW">
@@ -17,6 +16,7 @@
                         <segue destination="523-E5-MiZ" kind="relationship" relationship="rootViewController" id="5qN-Ex-95N"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3C8-k2-Igc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-350" y="38"/>
         </scene>
@@ -122,6 +122,7 @@
                     <navigationItem key="navigationItem" id="iAb-Za-uRe"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="container" destination="1FI-OK-9Cx" id="qAE-AD-jZp"/>
                         <outlet property="tableView" destination="zWt-9L-fD6" id="4Bl-tl-6WC"/>
                         <outlet property="topLayer" destination="ic6-P1-Y3U" id="X8i-TO-4YY"/>
                         <outlet property="viewDeckController" destination="hpK-S1-wZL" id="Ug7-Yu-WSl"/>
@@ -139,7 +140,6 @@
         <!--Navigation Controller-->
         <scene sceneID="zSa-Bz-ec2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gcH-cn-KSe" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" id="ten-3D-5JN" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="2zf-Py-cmx"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9K8-og-SeG">
@@ -150,6 +150,7 @@
                         <segue destination="F7t-B6-5ds" kind="relationship" relationship="rootViewController" id="oUQ-Ex-zQe"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gcH-cn-KSe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="760" y="36"/>
         </scene>
@@ -543,6 +544,7 @@
             <relationships>
                 <relationship kind="action" name="panLayer:" candidateClass="UIPanGestureRecognizer"/>
                 <relationship kind="action" name="tapToPanLayer:"/>
+                <relationship kind="outlet" name="container" candidateClass="UIView"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="topLayer" candidateClass="UIView"/>
                 <relationship kind="outlet" name="viewDeckController" candidateClass="UINavigationBar"/>
@@ -559,6 +561,9 @@
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
         <class className="filterView" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/filterView.h"/>

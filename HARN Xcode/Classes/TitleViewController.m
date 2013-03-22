@@ -89,9 +89,12 @@ BOOL _bottomVisible;
         if (self.topLayer.frame.origin.x < 160) {
             [self animateLayerToPoint:0];
             _bottomVisible = NO;
+            self.container.userInteractionEnabled = YES; //Should enable the swiping through the gallery in the top layer
         } else {
             [self animateLayerToPoint:VIEW_HIDDEN];
             _bottomVisible = YES;
+            self.container.userInteractionEnabled = NO; //Should disable the swiping through the gallery in the top layer
+
         }
     }
 }
@@ -101,9 +104,11 @@ BOOL _bottomVisible;
     if (_bottomVisible == NO) {
         [self animateLayerToPoint:VIEW_HIDDEN];
         _bottomVisible = YES;
+        self.container.userInteractionEnabled = NO; //Should disable the swiping through the gallery in the top layer
     } else {
         [self animateLayerToPoint:0];
         _bottomVisible = NO;
+        self.container.userInteractionEnabled = YES; //Should disable the swiping through the gallery in the top layer
     }
 }
 
