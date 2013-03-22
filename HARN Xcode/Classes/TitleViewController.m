@@ -174,7 +174,7 @@ BOOL _bottomVisible;
     
 	// get the selected item in our navigation list
 
-    NSDictionary *dictionary = [_properties objectAtIndex:indexPath.section];
+    /*NSDictionary *dictionary = [_properties objectAtIndex:indexPath.section];
     NSArray *array = [dictionary objectForKey:@"data"];
     self.selectedCell = [array objectAtIndex:indexPath.row];
     
@@ -184,12 +184,13 @@ BOOL _bottomVisible;
     // animate the deselection
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    /*// push the collection view when an item is selected
+    
+    // push the collection view when an item is selected
      CollectionViewController *cvController = [[CollectionViewController alloc] initWithNibName:@"%@" bundle:[NSBundle mainBundle]];
-     [self.navigationController pushViewController:cvController animated:YES];*/
+     [self.navigationController pushViewController:cvController animated:YES];
     
     // what is this? ohhhhh segue.
-    //[(UINavigationController*)self.viewDeckController performSegueWithIdentifier:@"navigateToCollection" sender:self];
+    //[(UINavigationController*)self.viewDeckController performSegueWithIdentifier:@"navigateToCollection" sender:self];*/
 }
 
 - (void)didReceiveMemoryWarning
@@ -203,18 +204,36 @@ BOOL _bottomVisible;
 {
     if ([[segue identifier] isEqualToString:@"navigateToCollection"])
     {
-        CollectionViewController *collection = [segue destinationViewController];
+        // get the selected item in our navigation list
+        
+        NSDictionary *dictionary = [_properties objectAtIndex:[self.tableView indexPathForSelectedRow].section];
+        NSArray *array = [dictionary objectForKey:@"data"];
+        self.selectedCell = [array objectAtIndex:[self.tableView indexPathForSelectedRow].row];
+        
+        // write which item we have selected to our output
+        NSLog(@"%@", self.selectedCell);      
+        
+        UINavigationController *collection = [segue destinationViewController];
         collection.title = self.selectedCell;
         
         if([self.selectedCell isEqualToString:@"African"])
         {
-            collection.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.964 green:0.584 blue:0.266 alpha:1];
+            collection.navigationBar.tintColor = [UIColor colorWithRed:0.964 green:0.584 blue:0.266 alpha:1];
         }else if([self.selectedCell isEqualToString:@"Asian"])
         {
-            collection.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.2509 green:0.6 blue:0.2901 alpha:1];
+            collection.navigationBar.tintColor = [UIColor colorWithRed:0.2509 green:0.6 blue:0.2901 alpha:1];
+        }else if([self.selectedCell isEqualToString:@"Asian"])
+        {
+            collection.navigationBar.tintColor = [UIColor colorWithRed:0.2509 green:0.6 blue:0.2901 alpha:1];
+        }else if([self.selectedCell isEqualToString:@"Asian"])
+        {
+            collection.navigationBar.tintColor = [UIColor colorWithRed:0.2509 green:0.6 blue:0.2901 alpha:1];
+        }else if([self.selectedCell isEqualToString:@"Asian"])
+        {
+            collection.navigationBar.tintColor = [UIColor colorWithRed:0.2509 green:0.6 blue:0.2901 alpha:1];
         }else
         {
-            collection.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.667 green:0.667 blue:0.667 alpha:1];
+            collection.navigationBar.tintColor = [UIColor colorWithRed:0.667 green:0.667 blue:0.667 alpha:1];
         }
     }
 }
