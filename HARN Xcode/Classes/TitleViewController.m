@@ -172,8 +172,7 @@ BOOL _bottomVisible;
 // user selection
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-	// get the selected item in our navigation list
-
+	// grab collection names
     /*NSDictionary *dictionary = [_properties objectAtIndex:indexPath.section];
     NSArray *array = [dictionary objectForKey:@"data"];
     self.selectedCell = [array objectAtIndex:indexPath.row];
@@ -189,7 +188,7 @@ BOOL _bottomVisible;
      CollectionViewController *cvController = [[CollectionViewController alloc] initWithNibName:@"%@" bundle:[NSBundle mainBundle]];
      [self.navigationController pushViewController:cvController animated:YES];
     
-    // what is this? ohhhhh segue.
+    // segue.
     //[(UINavigationController*)self.viewDeckController performSegueWithIdentifier:@"navigateToCollection" sender:self];*/
 }
 

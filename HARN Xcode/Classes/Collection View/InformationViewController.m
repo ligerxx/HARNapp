@@ -13,83 +13,17 @@
 @end
 
 // @3/1/13 - Make this a preference
-NSInteger currentSize = 0;
+//NSInteger currentSize = 0;
 
 @implementation InformationViewController
 
 @synthesize artTitle = _artTitle;
 @synthesize artDescription = _artDescription;
 
+
 -(IBAction)donePressed:(id)sender;
 {
     [self dismissViewControllerAnimated:YES completion:nil];
-}
-
--(IBAction)changeFontSize:(id)sender;
-{
- 
-    UIColor *_black=[UIColor blackColor];   
-    
-    if(currentSize == 0)        //LARGE SIZE
-    {
-        NSString *titleOfArt = [NSString stringWithFormat:@"%@\n", _artTitle];
-        NSMutableAttributedString *attTitle=[[NSMutableAttributedString alloc] initWithString:titleOfArt];
-        NSInteger _stringLength=[titleOfArt length];
-        UIFont *font=[UIFont fontWithName:@"Helvetica-Bold" size:36.0f];
-        [attTitle addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, _stringLength)];
-        [attTitle addAttribute:NSForegroundColorAttributeName value:_black range:NSMakeRange(0, _stringLength)];
-        
-        NSMutableAttributedString *descriptionOfArt = [[NSMutableAttributedString alloc] initWithString:_artDescription];
-        UIFont *smallerFont =[UIFont fontWithName:@"Helvetica" size:24.0f];
-        [descriptionOfArt addAttribute:NSFontAttributeName value:smallerFont range:NSMakeRange(0, [_artDescription length])];
-        [descriptionOfArt addAttribute:NSForegroundColorAttributeName value:_black range:NSMakeRange(0, [_artDescription length])];
-        
-        [attTitle appendAttributedString:descriptionOfArt];
-        
-        [_descriptionOfWork setAttributedText: attTitle];
-        
-        currentSize++;
-    }else if(currentSize == 1)      //LARGEST SIZE
-    {
-        NSString *titleOfArt = [NSString stringWithFormat:@"%@\n", _artTitle];
-        
-        NSMutableAttributedString *attTitle=[[NSMutableAttributedString alloc] initWithString:titleOfArt];
-        NSInteger _stringLength=[titleOfArt length];
-        UIFont *font=[UIFont fontWithName:@"Helvetica-Bold" size:42.0f];
-        [attTitle addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, _stringLength)];
-        [attTitle addAttribute:NSForegroundColorAttributeName value:_black range:NSMakeRange(0, _stringLength)];
-        
-        NSMutableAttributedString *descriptionOfArt = [[NSMutableAttributedString alloc] initWithString:_artDescription];
-        UIFont *smallerFont =[UIFont fontWithName:@"Helvetica" size:30.0f];
-        [descriptionOfArt addAttribute:NSFontAttributeName value:smallerFont range:NSMakeRange(0, [_artDescription length])];
-        [descriptionOfArt addAttribute:NSForegroundColorAttributeName value:_black range:NSMakeRange(0, [_artDescription length])];
-        
-        [attTitle appendAttributedString:descriptionOfArt];
-        
-        [_descriptionOfWork setAttributedText: attTitle];
-        
-        currentSize++;
-    }else                           //ORIGINAL SIZE
-    {
-        NSString *titleOfArt = [NSString stringWithFormat:@"%@\n", _artTitle];
-        
-        NSMutableAttributedString *attTitle=[[NSMutableAttributedString alloc] initWithString:titleOfArt];
-        NSInteger _stringLength=[titleOfArt length];
-        UIFont *font=[UIFont fontWithName:@"Helvetica-Bold" size:30.0f];
-        [attTitle addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, _stringLength)];
-        [attTitle addAttribute:NSForegroundColorAttributeName value:_black range:NSMakeRange(0, _stringLength)];
-        
-        NSMutableAttributedString *descriptionOfArt = [[NSMutableAttributedString alloc] initWithString:_artDescription];
-        UIFont *smallerFont =[UIFont fontWithName:@"Helvetica" size:18.0f];
-        [descriptionOfArt addAttribute:NSFontAttributeName value:smallerFont range:NSMakeRange(0, [_artDescription length])];
-        [descriptionOfArt addAttribute:NSForegroundColorAttributeName value:_black range:NSMakeRange(0, [_artDescription length])];
-        
-        [attTitle appendAttributedString:descriptionOfArt];
-        
-        [_descriptionOfWork setAttributedText: attTitle];
-        
-        currentSize = 0;
-    }
 }
 
 -(void)setArtTitle:(NSString *)name
@@ -115,17 +49,26 @@ NSInteger currentSize = 0;
 {
     [super viewDidLoad];
     
+    // property list
+    NSString *preferencesFile = [[NSBundle mainBundle] pathForResource:@"Preferences" ofType:@"plist"];
+    _preferences = [[NSDictionary alloc] initWithContentsOfFile:preferencesFile];
+    _fontSize = [_preferences objectForKey:@"typeSize"];
+    _smallerFontSize = [_preferences objectForKey:@"smallerTypeSize"];
+    [self updateDisplay];
+}
+
+- (void)updateDisplay {
     //Color and size of text
     UIColor *_black=[UIColor blackColor];
-    UIFont *font=[UIFont fontWithName:@"Helvetica-Bold" size:30.0f];
-    UIFont *smallerFont =[UIFont fontWithName:@"Helvetica" size:18.0f];
+    UIFont *font=[UIFont fontWithName:@"Helvetica-Bold" size:[_fontSize floatValue]];
+    UIFont *smallerFont =[UIFont fontWithName:@"Helvetica" size:[_smallerFontSize floatValue]];
     
     //Start by making a normal String with a line break that is equal to the title of the work of art
     NSString *titleOfArt = [NSString stringWithFormat:@"%@\n", _artTitle];
     
     //Format it the way we want (bold text that will be larger than the description).
     //This NSMutableAttributedString will eventually be the main one we add stuff too.
-    NSMutableAttributedString *attTitle=[[NSMutableAttributedString alloc] initWithString:titleOfArt];    
+    NSMutableAttributedString *attTitle=[[NSMutableAttributedString alloc] initWithString:titleOfArt];
     NSInteger _stringLength=[titleOfArt length];
     [attTitle addAttribute:NSFontAttributeName value:font range:NSMakeRange(0, _stringLength)]; //for the length of the title make it big, bold, and beautiful
     [attTitle addAttribute:NSForegroundColorAttributeName value:_black range:NSMakeRange(0, _stringLength)]; //now PAINT IT, PAINT IT, PAINT IT, PAINT IT BLACK!
@@ -140,6 +83,26 @@ NSInteger currentSize = 0;
     
     //Add the one big string with different styles to the textview
     [_descriptionOfWork setAttributedText: attTitle];
+}
+
+//******************************************************************************************************************//
+// not getting saved to my plist permanently, because i'm writing to the instance only.
+// in order to save, must create a copy of my plist - read only.
+// look into using NSUserDefaults instead. horrible.
+-(IBAction)changeFontSize:(id)sender;
+{
+    _fontSize = [NSNumber numberWithInt:[_fontSize intValue]+6];
+    _smallerFontSize = [NSNumber numberWithInt:[_smallerFontSize intValue]+6];
+    
+    if ([_fontSize intValue] > 42) {
+        _fontSize = [NSNumber numberWithInt:30];
+        _smallerFontSize = [NSNumber numberWithInt:18];
+    }
+    
+    [self updateDisplay];
+    
+    NSLog(@"%@", _fontSize);
+    NSLog(@"%@", _smallerFontSize);
 }
 
 - (void)didReceiveMemoryWarning

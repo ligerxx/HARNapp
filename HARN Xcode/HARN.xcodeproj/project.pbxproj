@@ -66,6 +66,7 @@
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		8016D53716CC220B00F20725 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8016D53516CC21BD00F20725 /* QuartzCore.framework */; };
 		808DB99816CD7E5F00B591D6 /* TitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808DB99716CD7E5F00B591D6 /* TitleViewController.m */; };
+		80C16DF316FC06BC009F7913 /* Preferences.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80C16DF216FC06BC009F7913 /* Preferences.plist */; };
 		80CFA22B16F218F200F90382 /* Properties.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80CFA22A16F218F200F90382 /* Properties.plist */; };
 		C9F783630F2AB7600029CA01 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F783620F2AB7600029CA01 /* DataSource.m */; };
 		C9F783930F2ABA430029CA01 /* PageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9F783920F2ABA430029CA01 /* PageView.xib */; };
@@ -147,6 +148,7 @@
 		8016D53516CC21BD00F20725 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		808DB99616CD7E5F00B591D6 /* TitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleViewController.h; sourceTree = "<group>"; };
 		808DB99716CD7E5F00B591D6 /* TitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleViewController.m; sourceTree = "<group>"; };
+		80C16DF216FC06BC009F7913 /* Preferences.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Preferences.plist; sourceTree = "<group>"; };
 		80CFA22A16F218F200F90382 /* Properties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Properties.plist; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9F783610F2AB7600029CA01 /* DataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSource.h; sourceTree = "<group>"; };
@@ -283,6 +285,7 @@
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */,
 				80CFA22A16F218F200F90382 /* Properties.plist */,
+				80C16DF216FC06BC009F7913 /* Preferences.plist */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				1D3F272216FB884800451DCE /* about.png in Resources */,
 				1D3F272416FB895000451DCE /* privacy.png in Resources */,
 				1D3F272616FB8E1100451DCE /* map.png in Resources */,
+				80C16DF316FC06BC009F7913 /* Preferences.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

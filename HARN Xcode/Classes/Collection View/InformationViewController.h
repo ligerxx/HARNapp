@@ -24,5 +24,11 @@
 
 -(void)setArtTitle:(NSString *)name;
 -(void)setArtDescription:(NSString *)someDescription;
+-(void)updateDisplay;
+
+@property (nonatomic, strong) NSDictionary *preferences;
+
+@property (nonatomic) NSNumber *fontSize;
+@property (nonatomic) NSNumber *smallerFontSize;
 
 @end
