@@ -4,6 +4,22 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="SpP-Hx-Bdp">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3C8-k2-Igc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="Qnr-UP-B2q" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VIe-1O-caW">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="523-E5-MiZ" kind="relationship" relationship="rootViewController" id="5qN-Ex-95N"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-350" y="38"/>
+        </scene>
         <!--Title View Controller-->
         <scene sceneID="76r-G1-DF6">
             <objects>
@@ -40,7 +56,7 @@
                                 </items>
                             </navigationBar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cpL-P4-j1m">
-                                <rect key="frame" x="102" y="11" width="65" height="21"/>
+                                <rect key="frame" x="103" y="11" width="65" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" staticText="YES" notEnabled="YES"/>
@@ -58,7 +74,7 @@
                                 <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                             <view contentMode="scaleToFill" id="ic6-P1-Y3U" userLabel="Top View">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="268" y="0.0" width="320" height="548"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="gallerybackground@2x.png" id="HL7-mA-Tas">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
@@ -123,17 +139,17 @@
         <!--Navigation Controller-->
         <scene sceneID="zSa-Bz-ec2">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gcH-cn-KSe" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController definesPresentationContext="YES" id="ten-3D-5JN" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="2zf-Py-cmx"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9K8-og-SeG">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.25406976019101646" green="0.60098930027173914" blue="0.29355343671914907" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.25098039215686274" green="0.59999999999999998" blue="0.29019607843137257" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="F7t-B6-5ds" kind="relationship" relationship="rootViewController" id="oUQ-Ex-zQe"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gcH-cn-KSe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="760" y="36"/>
         </scene>
@@ -424,7 +440,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iEM-4Z-pTe">
-                                <rect key="frame" x="107" y="441" width="106" height="44"/>
+                                <rect key="frame" x="108" y="440" width="106" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Save Photo">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -491,6 +507,9 @@
         </class>
         <class className="CollectionViewController" superclassName="UICollectionViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CollectionViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="navBar" candidateClass="UINavigationBar"/>
+            </relationships>
         </class>
         <class className="DetailViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
@@ -522,8 +541,6 @@
         <class className="TitleViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TitleViewController.h"/>
             <relationships>
-                <relationship kind="action" name="panLayer:" candidateClass="UIPanGestureRecognizer"/>
-                <relationship kind="action" name="tapToPanLayer:"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
                 <relationship kind="outlet" name="topLayer" candidateClass="UIView"/>
                 <relationship kind="outlet" name="viewDeckController" candidateClass="UINavigationBar"/>
@@ -540,9 +557,6 @@
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
         <class className="filterView" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/filterView.h"/>
@@ -561,4 +575,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="5qN-Ex-95N"/>
+    </inferredMetricsTieBreakers>
 </document>
