@@ -218,22 +218,28 @@ BOOL _bottomVisible;
         
         if([self.selectedCell isEqualToString:@"African"])
         {
-            collection.navigationBar.tintColor = [UIColor colorWithRed:0.964 green:0.584 blue:0.266 alpha:1];
+            collection.navigationBar.tintColor = [UIColor colorWithRed:0.964 green:0.584 blue:0.266 alpha:1]; //ORANGE
+        }else if([self.selectedCell isEqualToString:@"Ancient American"])
+        {
+            collection.navigationBar.tintColor = [UIColor colorWithRed:0.565 green:0.411 blue:0.8 alpha:1]; //PURPLE
         }else if([self.selectedCell isEqualToString:@"Asian"])
         {
-            collection.navigationBar.tintColor = [UIColor colorWithRed:0.2509 green:0.6 blue:0.2901 alpha:1];
-        }else if([self.selectedCell isEqualToString:@"Asian"])
+            collection.navigationBar.tintColor = [UIColor colorWithRed:0.2509 green:0.6 blue:0.2901 alpha:1]; //GREEN
+        }else if([self.selectedCell isEqualToString:@"Contemporary"])
         {
-            collection.navigationBar.tintColor = [UIColor colorWithRed:0.2509 green:0.6 blue:0.2901 alpha:1];
-        }else if([self.selectedCell isEqualToString:@"Asian"])
+            collection.navigationBar.tintColor = [UIColor colorWithRed:0.88 green:0.05 blue:0.05 alpha:1]; //RED
+        }else if([self.selectedCell isEqualToString:@"Modern"])
         {
-            collection.navigationBar.tintColor = [UIColor colorWithRed:0.2509 green:0.6 blue:0.2901 alpha:1];
-        }else if([self.selectedCell isEqualToString:@"Asian"])
+            collection.navigationBar.tintColor = [UIColor colorWithRed:0.886 green:0.83 blue:0.034 alpha:1]; //YELLOW
+        }else if([self.selectedCell isEqualToString:@"Oceanic"])
         {
-            collection.navigationBar.tintColor = [UIColor colorWithRed:0.2509 green:0.6 blue:0.2901 alpha:1];
+            collection.navigationBar.tintColor = [UIColor colorWithRed:0.329 green:0.604 blue:0.95 alpha:1]; //BLUE
+        }else if([self.selectedCell isEqualToString:@"Photography"])
+        {
+            collection.navigationBar.tintColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1]; //BLACK
         }else
         {
-            collection.navigationBar.tintColor = [UIColor colorWithRed:0.667 green:0.667 blue:0.667 alpha:1];
+            collection.navigationBar.tintColor = [UIColor colorWithRed:0.667 green:0.667 blue:0.667 alpha:1]; //GRAY
         }
     }
 }
