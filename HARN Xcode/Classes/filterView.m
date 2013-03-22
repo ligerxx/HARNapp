@@ -155,10 +155,13 @@ static const int FILTER_LABEL = 001;
     CIFilter *sepiaFilter = [CIFilter filterWithName:@"CISepiaTone" keysAndValues:kCIInputImageKey,filterPreviewImage,
                              @"inputIntensity",[NSNumber numberWithFloat:0.8],nil];
     
+    CIFilter *jadeFilter = [CIFilter filterWithName:@"CIHueAdjust" keysAndValues:kCIInputImageKey, filterPreviewImage, nil];
+    [jadeFilter setValue:[NSNumber numberWithFloat:2.389] forKey:@"inputAngle"];
     
-    CIFilter *colorMonochrome = [CIFilter filterWithName:@"CIColorMonochrome" keysAndValues:kCIInputImageKey,filterPreviewImage,
+   //was CIFilter *colorMonochrome
+   /*CIFilter *colorMonochrome = [CIFilter filterWithName:@"CIColorMonochrome" keysAndValues:kCIInputImageKey,filterPreviewImage,
                                  @"inputColor",[CIColor colorWithString:@"Red"],
-                                 @"inputIntensity",[NSNumber numberWithFloat:0.8], nil];
+                                 @"inputIntensity",[NSNumber numberWithFloat:0.8], nil];*/
     
     filters = [[NSMutableArray alloc] init];
     
@@ -166,7 +169,7 @@ static const int FILTER_LABEL = 001;
     [filters addObjectsFromArray:[NSArray arrayWithObjects:
                                   [[FilterPreview alloc] initWithNameAndFilter:@"Camera" filter:nil],[[FilterPreview alloc] initWithNameAndFilter:@"Original" filter: nil],
                                   [[FilterPreview alloc] initWithNameAndFilter:@"Sepia" filter:sepiaFilter],
-                                  [[FilterPreview alloc] initWithNameAndFilter:@"Mono" filter:colorMonochrome]
+                                  [[FilterPreview alloc] initWithNameAndFilter:@"Jade" filter:jadeFilter]
                                   
                                   , nil]];
     
@@ -383,6 +386,7 @@ static const int FILTER_LABEL = 001;
     self.context =[CIContext contextWithOptions:nil];        // Custom initialization
     self.title = @"Edit";
     self.filtersScrollView = _filterScrollView;
+    
     [self initializeCameraUI];
 	// Do any additional setup after loading the view.
 }
