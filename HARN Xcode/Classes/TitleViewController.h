@@ -20,4 +20,6 @@
 
 @property (nonatomic, strong) NSMutableArray *properties;
 
+@property (nonatomic) NSString * selectedCell;
+
 @end

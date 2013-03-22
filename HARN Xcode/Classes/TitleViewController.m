@@ -17,6 +17,7 @@
 @synthesize topLayer = _topLayer;
 @synthesize layerPosition = _layerPosition;
 @synthesize titleArray = _titleArray;
+@synthesize selectedCell;
 
 BOOL _bottomVisible;
 
@@ -172,14 +173,13 @@ BOOL _bottomVisible;
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
 	// get the selected item in our navigation list
-    NSString *selectedCell = nil;
 
     NSDictionary *dictionary = [_properties objectAtIndex:indexPath.section];
     NSArray *array = [dictionary objectForKey:@"data"];
-    selectedCell = [array objectAtIndex:indexPath.row];
+    self.selectedCell = [array objectAtIndex:indexPath.row];
     
     // write which item we have selected to our output
-    NSLog(@"%@", selectedCell);
+    NSLog(@"%@", self.selectedCell);
     
     // animate the deselection
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -196,6 +196,27 @@ BOOL _bottomVisible;
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+//Area where the color and title of the Navigation Bar will be set when someone has clicked on a cell.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"navigateToCollection"])
+    {
+        CollectionViewController *collection = [segue destinationViewController];
+        collection.title = self.selectedCell;
+        
+        if([self.selectedCell isEqualToString:@"African"])
+        {
+            collection.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.964 green:0.584 blue:0.266 alpha:1];
+        }else if([self.selectedCell isEqualToString:@"Asian"])
+        {
+            collection.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.2509 green:0.6 blue:0.2901 alpha:1];
+        }else
+        {
+            collection.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.667 green:0.667 blue:0.667 alpha:1];
+        }
+    }
 }
 
 - (void)viewDidUnload {

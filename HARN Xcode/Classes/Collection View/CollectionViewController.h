@@ -10,6 +10,8 @@
 
 @interface CollectionViewController : UICollectionViewController
 
+@property (nonatomic, retain) IBOutlet UINavigationBar *navBar;
+
 @property (nonatomic, retain, readonly) NSArray *sections;
 
 @end

@@ -32,7 +32,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    self.title = @"Asian";
+    //self.title = @"Asian";
     self.sections = @[@"Title 1",@"Title 2",@"Title 3",@"Title 4",@"Title 5",@"Title 6"];
     }
 
