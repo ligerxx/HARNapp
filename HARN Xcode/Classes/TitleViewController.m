@@ -213,7 +213,7 @@ BOOL _bottomVisible;
         NSLog(@"%@", self.selectedCell);      
         
         UINavigationController *collection = [segue destinationViewController];
-        collection.title = self.selectedCell;
+        collection.navigationBar.topItem.title = self.selectedCell;
         
         if([self.selectedCell isEqualToString:@"African"])
         {
