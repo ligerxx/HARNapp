@@ -46,8 +46,12 @@
 {
     [super viewDidLoad];
     
-    // first load - what is the original float set at??
+    // first load - if size too small, too big - reset.
     _fontSizeF = [[NSUserDefaults standardUserDefaults] floatForKey:@"Font Size"];
+    if(_fontSizeF < 30 || _fontSizeF > 42) {
+        [[NSUserDefaults standardUserDefaults] setFloat:30.0f forKey:@"Font Size"];
+        _fontSizeF = [[NSUserDefaults standardUserDefaults] floatForKey:@"Font Size"];
+    }
     _smallerFontSizeF = _fontSizeF-12;
     
     [self updateDisplay];
