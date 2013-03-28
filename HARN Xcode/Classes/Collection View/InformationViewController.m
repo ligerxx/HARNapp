@@ -12,9 +12,6 @@
 
 @end
 
-// @3/1/13 - Make this a preference
-//NSInteger currentSize = 0;
-
 @implementation InformationViewController
 
 @synthesize artTitle = _artTitle;
@@ -29,8 +26,8 @@
 -(void)setArtTitle:(NSString *)name
 {
     _artTitle = name;
-    
 }
+
 -(void)setArtDescription:(NSString *)someDescription
 {
     _artDescription = someDescription;
@@ -49,19 +46,22 @@
 {
     [super viewDidLoad];
     
-    // property list
-    NSString *preferencesFile = [[NSBundle mainBundle] pathForResource:@"Preferences" ofType:@"plist"];
-    _preferences = [[NSDictionary alloc] initWithContentsOfFile:preferencesFile];
-    _fontSize = [_preferences objectForKey:@"typeSize"];
-    _smallerFontSize = [_preferences objectForKey:@"smallerTypeSize"];
+    // first load - what is the original float set at??
+    _fontSizeF = [[NSUserDefaults standardUserDefaults] floatForKey:@"Font Size"];
+    _smallerFontSizeF = _fontSizeF-12;
+    
     [self updateDisplay];
+    
+    // write the size the font loaded at
+    NSLog(@"%f", _fontSizeF);
+    NSLog(@"%f", _smallerFontSizeF);
 }
 
 - (void)updateDisplay {
     //Color and size of text
     UIColor *_black=[UIColor blackColor];
-    UIFont *font=[UIFont fontWithName:@"Helvetica-Bold" size:[_fontSize floatValue]];
-    UIFont *smallerFont =[UIFont fontWithName:@"Helvetica" size:[_smallerFontSize floatValue]];
+    UIFont *font=[UIFont fontWithName:@"Helvetica-Bold" size:_fontSizeF];
+    UIFont *smallerFont=[UIFont fontWithName:@"Helvetica" size:_smallerFontSizeF];
     
     //Start by making a normal String with a line break that is equal to the title of the work of art
     NSString *titleOfArt = [NSString stringWithFormat:@"%@\n", _artTitle];
@@ -85,24 +85,26 @@
     [_descriptionOfWork setAttributedText: attTitle];
 }
 
-//******************************************************************************************************************//
-// not getting saved to my plist permanently, because i'm writing to the instance only.
-// in order to save, must create a copy of my plist - read only.
-// look into using NSUserDefaults instead. horrible.
 -(IBAction)changeFontSize:(id)sender;
 {
-    _fontSize = [NSNumber numberWithInt:[_fontSize intValue]+6];
-    _smallerFontSize = [NSNumber numberWithInt:[_smallerFontSize intValue]+6];
+    // change the font size
+    _fontSizeF = _fontSizeF+6;
+    _smallerFontSizeF = _smallerFontSizeF+6;
     
-    if ([_fontSize intValue] > 42) {
-        _fontSize = [NSNumber numberWithInt:30];
-        _smallerFontSize = [NSNumber numberWithInt:18];
+    // if it's too big, go back round
+    if (_fontSizeF > 42) {
+        _fontSizeF = 30;
+        _smallerFontSizeF = 18;
     }
+    
+    // always set user default
+    [[NSUserDefaults standardUserDefaults] setFloat:_fontSizeF forKey:@"Font Size"];
     
     [self updateDisplay];
     
-    NSLog(@"%@", _fontSize);
-    NSLog(@"%@", _smallerFontSize);
+    // lemme know dat font size
+    NSLog(@"%f", _fontSizeF);
+    NSLog(@"%f", _smallerFontSizeF);
 }
 
 - (void)didReceiveMemoryWarning

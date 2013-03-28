@@ -28,7 +28,7 @@
 
 @property (nonatomic, strong) NSDictionary *preferences;
 
-@property (nonatomic) NSNumber *fontSize;
-@property (nonatomic) NSNumber *smallerFontSize;
+@property (nonatomic) float fontSizeF;
+@property (nonatomic) float smallerFontSizeF;
 
 @end
