@@ -7,6 +7,7 @@
 //
 
 #import "InformationViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface InformationViewController ()
 
@@ -45,6 +46,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.descriptionOfWork.clipsToBounds = YES;
+    self.descriptionOfWork.layer.cornerRadius = 10.0f;
     
     // first load - if size too small, too big - reset.
     _fontSizeF = [[NSUserDefaults standardUserDefaults] floatForKey:@"Font Size"];
