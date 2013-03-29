@@ -40,6 +40,11 @@
     [self presentViewController:shareSheet animated:YES completion:NULL];
 }
 
+-(IBAction)cancelView:(id)sender
+{
+    [self.navigationController popToRootViewControllerAnimated:TRUE];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -67,8 +72,8 @@
     CALayer *layer = _imageView.layer;
     
     //Adds a border
-    [layer setBorderColor: [[UIColor whiteColor] CGColor]];
-    [layer setBorderWidth:6.0f];
+    [layer setBorderColor: [[UIColor grayColor] CGColor]];
+    [layer setBorderWidth:3.0f];
     [layer setShadowColor: [[UIColor blackColor] CGColor]];
     [layer setShadowOpacity:0.9f];
     [layer setShadowOffset: CGSizeMake(1, 3)];
