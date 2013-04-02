@@ -15,6 +15,7 @@
 #import "PagingScrollViewController.h"
 #import "PageViewController.h"
 #import "DataSource.h"
+#import "DetailViewController.h"
 
 @implementation PagingScrollViewController
 
@@ -140,6 +141,27 @@
     frame.origin.x = frame.size.width * pageIndex;
     frame.origin.y = 0;
     [scrollView scrollRectToVisible:frame animated:YES];
+}
+
+- (IBAction)goToDetailView:(id)sender
+{
+    NSLog(@"Button Touched");
+    [self performSegueWithIdentifier:@"goToDetail" sender:self];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    
+    //Creates the detailView that and begins adding everything for it to present to the users since this is templateted (sp?)
+    DetailViewController *detailViewController = [segue destinationViewController];
+    
+    //This will have to be the image stored in the cell
+    
+    UIImage *imageToSend = currentPage.theImage;
+    
+    detailViewController.theImage = imageToSend;
+    [detailViewController setArtTitle:@"A Title from the main screen"];
+    [detailViewController setArtDescription:@"The most famous work in all the land!"];
 }
 
 

@@ -18,6 +18,7 @@
 @property (nonatomic, strong) NSMutableArray *titleArray;
 @property (nonatomic, strong) NSMutableArray *dataArray;
 
+
 @property (nonatomic) IBOutlet UIView *container;
 
 @property (nonatomic, strong) NSMutableArray *properties;

@@ -32,15 +32,15 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(DataSource);
 		dataPages = [[NSArray alloc] initWithObjects:
 			[NSDictionary dictionaryWithObjectsAndKeys:
 				@"Feature 1", @"pageName",
-				@"Highlights from the Modern Collection", @"pageText",
+				@"Highlights from the Modern Collection", @"pageText", @"monet.png", @"pageImage",
 				nil],
 			[NSDictionary dictionaryWithObjectsAndKeys:
 				@"Feature 2", @"pageName",
-				@"Ceramics: Avenues of Exchange", @"pageText",
+				@"Ceramics: Avenues of Exchange", @"pageText", @"ceramic.png", @"pageImage",
 				nil],
 			[NSDictionary dictionaryWithObjectsAndKeys:
 				@"Feature 3", @"pageName",
-				@"Things That Go Bump In The Night", @"pageText",
+				@"Things That Go Bump In The Night", @"pageText", @"skeleton.png", @"pageImage",
 				nil],
 			nil];
 	}

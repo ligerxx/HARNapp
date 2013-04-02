@@ -18,15 +18,17 @@
 {
 	NSInteger pageIndex;
 	BOOL textViewNeedsUpdate;
+    BOOL imageViewNeedsUpdate;
 	IBOutlet UILabel *label;
 	IBOutlet UITextView *textView;
+    IBOutlet UIImageView *imageView;
 }
 
 @property (nonatomic) NSInteger pageIndex;
+@property (nonatomic) UIImage * theImage;
 
 - (NSInteger)getPageIndex;
 - (void)setPageIndex:(NSInteger)pageIndex;
-
 - (void)updateTextViews:(BOOL)force;
 
 @end

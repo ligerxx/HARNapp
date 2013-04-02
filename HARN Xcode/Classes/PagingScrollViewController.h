@@ -26,5 +26,6 @@
 }
 
 - (IBAction)changePage:(id)sender;
+- (IBAction)goToDetailView:(id)sender;
 
 @end
