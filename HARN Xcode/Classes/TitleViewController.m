@@ -49,6 +49,11 @@ BOOL _bottomVisible;
     self.layerPosition = self.topLayer.frame.origin.x;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
+    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapToPanLayer:)];
+    tapRecognizer.numberOfTapsRequired = 1;
+    [self.topLayer addGestureRecognizer:tapRecognizer];
+    
 }
 
 // the number of pixels we want displayed for our navigation
