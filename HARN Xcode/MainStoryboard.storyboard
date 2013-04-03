@@ -305,6 +305,7 @@
                     <connections>
                         <outlet property="pageControl" destination="hki-ab-AGK" id="kFA-Xc-g8a"/>
                         <outlet property="scrollView" destination="6LX-Y5-bRU" id="tXy-YT-wbK"/>
+                        <segue destination="2AL-bL-RkM" kind="modal" identifier="goToDetail" modalTransitionStyle="crossDissolve" id="M8Z-AE-feP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QrT-jx-7PI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -357,6 +358,11 @@
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="ny6-88-pXV">
+                        <barButtonItem key="leftBarButtonItem" title="Home" id="dc4-dT-AB1">
+                            <connections>
+                                <segue destination="523-E5-MiZ" kind="modal" identifier="returnHome" modalTransitionStyle="crossDissolve" id="HIp-HR-2YJ"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="Qht-I5-q1T">
                             <connections>
                                 <action selector="share:" destination="2AL-bL-RkM" id="cik-Ir-Ip3"/>
@@ -367,7 +373,9 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackTranslucent" prompted="NO"/>
                     <connections>
                         <outlet property="descriptionOfWork" destination="s27-G7-jtx" id="eCA-aI-DR1"/>
+                        <outlet property="homeButton" destination="dc4-dT-AB1" id="sch-C4-aUX"/>
                         <outlet property="previewImage" destination="hWy-w2-PsC" id="WEz-xx-O2R"/>
+                        <outlet property="shareButton" destination="Qht-I5-q1T" id="QcP-qF-890"/>
                         <outlet property="titleOfWork" destination="y8A-Ju-Wkb" id="j3Y-Vs-KD7"/>
                     </connections>
                 </viewController>
@@ -383,7 +391,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1784" y="22"/>
+            <point key="canvasLocation" x="1748" y="36"/>
         </scene>
         <!--Information View Controller-->
         <scene sceneID="jDg-Uw-Tnv">
@@ -441,7 +449,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iEM-4Z-pTe">
-                                <rect key="frame" x="194" y="440" width="106" height="44"/>
+                                <rect key="frame" x="189" y="440" width="106" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Save Photo" backgroundImage="blackbutton.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -455,12 +463,12 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="8gP-fu-xxh">
-                                <rect key="frame" x="20" y="53" width="280" height="355"/>
+                                <rect key="frame" x="25" y="53" width="270" height="355"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="soD-oF-5OU">
-                                <rect key="frame" x="20" y="440" width="106" height="44"/>
+                                <rect key="frame" x="25" y="440" width="106" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Cancel" backgroundImage="blackbutton.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -538,7 +546,9 @@
                 <relationship kind="action" name="swipedLeft:" candidateClass="UIGestureRecognizer"/>
                 <relationship kind="action" name="swipedRight:" candidateClass="UIGestureRecognizer"/>
                 <relationship kind="outlet" name="descriptionOfWork" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="homeButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="previewImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="shareButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="titleOfWork" candidateClass="UILabel"/>
             </relationships>
         </class>
@@ -603,6 +613,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="1cH-WO-3yV"/>
+        <segue reference="HIp-HR-2YJ"/>
+        <segue reference="M8Z-AE-feP"/>
     </inferredMetricsTieBreakers>
 </document>

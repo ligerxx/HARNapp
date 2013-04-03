@@ -48,6 +48,13 @@
 	[scrollView addSubview:currentPage.view];
 	[scrollView addSubview:nextPage.view];
 
+    /* This gesture is added to the scrollview if a user taps a work of art or its label and then goes to the method goToDetailView
+     * which opens the segue "goToDetail" and presents the detail view of the featured work.
+     */
+    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(goToDetailView:)];
+    tapRecognizer.numberOfTapsRequired = 1;
+    [scrollView addGestureRecognizer:tapRecognizer];
+    
 	NSInteger widthCount = [[DataSource sharedDataSource] numDataPages];
 	if (widthCount == 0)
 	{
@@ -145,7 +152,7 @@
 
 - (IBAction)goToDetailView:(id)sender
 {
-    NSLog(@"Button Touched");
+ //NSLog(@"Button Touched");
     [self performSegueWithIdentifier:@"goToDetail" sender:self];
 }
 
@@ -155,13 +162,15 @@
     //Creates the detailView that and begins adding everything for it to present to the users since this is templateted (sp?)
     DetailViewController *detailViewController = [segue destinationViewController];
     
-    //This will have to be the image stored in the cell
+    //This will have to be the changed to the image stored in the CoreData
     
     UIImage *imageToSend = currentPage.theImage;
     
+    
+    //ALL OF THESE MUST BE UPDATED TO THE ACTUAL INFORMATION VIA COREDATA
     detailViewController.theImage = imageToSend;
     [detailViewController setArtTitle:@"A Title from the main screen"];
-    [detailViewController setArtDescription:@"The most famous work in all the land!"];
+    [detailViewController setArtDescription:@"The most featured work in all the land!"];
 }
 
 

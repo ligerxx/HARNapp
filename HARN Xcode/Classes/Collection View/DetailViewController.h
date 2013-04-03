@@ -18,6 +18,10 @@
     int *currentViewIndex;
 }
 
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *homeButton; //Only used for front page navigation
+
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *shareButton; 
+
 @property (strong, nonatomic) IBOutlet UIImageView* previewImage;
 @property (nonatomic, retain) UIImage *theImage;
 
@@ -34,7 +38,7 @@
 -(IBAction)swipedLeft:(UIGestureRecognizer *)sender;
 -(IBAction)swipedRight:(UIGestureRecognizer *)sender;
 
-//Share Button
+//Share Button Action
 -(IBAction)share:(id)sender;
 
 -(void)setImage:(UIImage *)image;

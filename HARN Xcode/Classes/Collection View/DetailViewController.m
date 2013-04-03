@@ -14,6 +14,7 @@
 
 @end
 
+
 @implementation DetailViewController
 
 -(void)setImage:(UIImage *)image
@@ -102,6 +103,27 @@
 {
     [super viewDidLoad];
     
+    /*This is called when navigating from the front page. In this situation, there would be no UINavigationBar or UINavigationController 
+     * created already so we generate a Navigation Bar and share button
+     */
+    if(self.navigationController == nil)
+    {
+        UINavigationBar *navBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 44.0f)];
+        navBar.barStyle = 2;
+        UINavigationItem *navItem = [[UINavigationItem alloc] init];
+        [navBar pushNavigationItem:navItem animated:NO];
+        navItem.rightBarButtonItem = _shareButton;
+        navItem.leftBarButtonItem = _homeButton;
+        [self.view addSubview: navBar];
+        
+    }else
+    {
+        //We don't need the homebutton in this situation because they navigated here via the collection so remove it from the navigationbar.
+        //They should see the normal back button to return to that collection
+        _homeButton = nil;
+        self.navigationItem.leftBarButtonItem = nil;
+    }
+        
     [_previewImage setImage:_theImage];
     
     _titleOfWork.text = _artTitle;
