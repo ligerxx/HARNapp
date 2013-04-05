@@ -146,17 +146,46 @@ static const int FILTER_LABEL = 001;
     return YES;
 }
 
+-(UIImage *)resizeTexture:(UIImage *)image width:(CGFloat)resizedWidth height:(CGFloat)resizedHeight
+{
+    UIGraphicsBeginImageContext(CGSizeMake(resizedWidth ,resizedHeight));
+    [image drawInRect:CGRectMake(0, 0, resizedWidth, resizedHeight)];
+    UIImage *result = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return result;
+}
+
 -(void) loadFiltersForImage:(UIImage *) image
 {
     
     CIImage *filterPreviewImage = [[CIImage alloc] initWithImage:image];
+    CGFloat width = _imageView.image.size.height;
+    CGFloat height = _imageView.image.size.width;
     
+    UIImage *zenPic = [UIImage imageNamed:@"zen.png"];
+    zenPic = [self resizeTexture:zenPic width:width height:height];
+    CIImage *zenTexture = [[CIImage alloc] initWithImage:zenPic];
     
     CIFilter *sepiaFilter = [CIFilter filterWithName:@"CISepiaTone" keysAndValues:kCIInputImageKey,filterPreviewImage,
-                             @"inputIntensity",[NSNumber numberWithFloat:0.8],nil];
+                             @"inputIntensity",[NSNumber numberWithFloat:0.4],nil];
+    CIFilter *zen = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, zenTexture, kCIInputImageKey, sepiaFilter.outputImage, nil];
     
-    CIFilter *jadeFilter = [CIFilter filterWithName:@"CIHueAdjust" keysAndValues:kCIInputImageKey, filterPreviewImage, nil];
-    [jadeFilter setValue:[NSNumber numberWithFloat:2.389] forKey:@"inputAngle"];
+    //CIFilter *calligraphyFilter = [CIFilter filterWithName:@"CIGloom" keysAndValues:kCIInputImageKey, filterPreviewImage, nil];
+    //[calligraphyFilter setValue:[NSNumber numberWithFloat:3.0f] forKey:@"inputIntensity"];
+    
+    //CIFilter *hueFilter = [CIFilter filterWithName:@"CIHueAdjust" keysAndValues:kCIInputImageKey, filterPreviewImage, nil];
+    //[hueFilter setValue:[NSNumber numberWithFloat:2.389] forKey:@"inputAngle"];
+    
+    UIImage *jadePic = [UIImage imageNamed:@"jade.png"];
+    jadePic = [self resizeTexture:jadePic width:width height:height];
+    CIImage *jadeTexture = [[CIImage alloc] initWithImage:jadePic];
+    
+    CIFilter *vignette = [CIFilter filterWithName:@"CIVignette"];
+    [vignette setValue:filterPreviewImage forKey:kCIInputImageKey];
+    [vignette setValue:[NSNumber numberWithFloat:1.0f] forKey:@"inputIntensity"];
+    [vignette setValue:[NSNumber numberWithFloat:30.0f] forKey:@"inputRadius"];
+    
+    CIFilter *neueJade = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, jadeTexture, kCIInputImageKey, vignette.outputImage, nil];
     
    //was CIFilter *colorMonochrome
    /*CIFilter *colorMonochrome = [CIFilter filterWithName:@"CIColorMonochrome" keysAndValues:kCIInputImageKey,filterPreviewImage,
@@ -168,8 +197,8 @@ static const int FILTER_LABEL = 001;
     NSLog(@" filters array is created");
     [filters addObjectsFromArray:[NSArray arrayWithObjects:
                                   [[FilterPreview alloc] initWithNameAndFilter:@"Camera" filter:nil],[[FilterPreview alloc] initWithNameAndFilter:@"Original" filter: nil],
-                                  [[FilterPreview alloc] initWithNameAndFilter:@"Sepia" filter:sepiaFilter],
-                                  [[FilterPreview alloc] initWithNameAndFilter:@"Jade" filter:jadeFilter]
+                                  [[FilterPreview alloc] initWithNameAndFilter:@"Zen" filter:zen],
+                                  [[FilterPreview alloc] initWithNameAndFilter:@"Jade" filter:neueJade]
                                   
                                   , nil]];
     
