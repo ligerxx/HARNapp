@@ -311,6 +311,7 @@ static const int FILTER_LABEL = 001;
         UIImage *smallImage =  [UIImage imageWithCGImage:cgimg];
         if(smallImage.imageOrientation == UIImageOrientationUp)
         {
+            //DONT THINK THIS DOES ANYTHING GOOD
             smallImage = [smallImage imageRotatedByDegrees:90];
         }
         
@@ -387,8 +388,12 @@ static const int FILTER_LABEL = 001;
     [self.context createCGImage:outputImage fromRect:[outputImage extent]];
     
     finalImage = [UIImage imageWithCGImage:cgimg];
-    
-    finalImage = [finalImage imageRotatedByDegrees:90];
+
+    if(finalImage.imageOrientation == UIImageOrientationUp)
+    {
+        //DONT THINK THIS DOES ANYTHING GOOD
+        finalImage = [finalImage imageRotatedByDegrees:90];
+    }
     
     [self.imageView setImage:finalImage];
     

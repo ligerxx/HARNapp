@@ -79,8 +79,8 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="gallerybackground@2x.png" id="HL7-mA-Tas">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="harn logo.png" id="brI-Eh-j9V">
-                                        <rect key="frame" x="63" y="31" width="195" height="122"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="HarnLogoSquare.png" id="brI-Eh-j9V">
+                                        <rect key="frame" x="93" y="20" width="135" height="127"/>
                                     </imageView>
                                     <containerView contentMode="scaleToFill" id="1FI-OK-9Cx">
                                         <rect key="frame" x="0.0" y="189" width="320" height="359"/>
@@ -504,11 +504,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="HarnLogoSquare.png" width="540" height="540"/>
         <image name="aA.png" width="30" height="19"/>
         <image name="blackbutton.png" width="300" height="100"/>
         <image name="comingsoon@2x.png" width="640" height="1136"/>
         <image name="gallerybackground@2x.png" width="640" height="1136"/>
-        <image name="harn logo.png" width="371" height="238"/>
         <image name="mainmenu.png" width="50" height="50"/>
         <image name="retake@2x.png" width="640" height="1136"/>
     </resources>
