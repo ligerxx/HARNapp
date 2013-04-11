@@ -8,11 +8,13 @@
 
 #import "CollectionViewController.h"
 #import "ArtCell.h"
+#import "ArtworkInformation.h"
 #import "DetailViewController.h"
 
 @interface CollectionViewController ()
 
 @property (nonatomic, retain) NSMutableArray *sections;
+@property (nonatomic, retain) ArtworkInformation *collectionInfo;
 
 @end
 
@@ -32,6 +34,13 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    if([self.navigationController.navigationBar.topItem.title isEqualToString:@"Asian"])
+    {
+        NSLog(@"CORRECT!");
+        NSString *collectionPicked = self.navigationController.navigationBar.topItem.title;
+        [_collectionInfo generateInfo:collectionPicked];
+    }
+    
     //self.title = @"Asian";
     self.sections = @[@"Title 1",@"Title 2",@"Title 3",@"Title 4",@"Title 5",@"Title 6"];
     }
@@ -47,11 +56,26 @@
 }
 - (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section {
     
+    if(_collectionInfo != nil)
+    {
+        NSLog(@"We have returned count");
+        return _collectionInfo.titles.count;
+    }
+    
     return [self.sections count];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath;
 {
+    
+    if(_collectionInfo != nil)
+    {
+        ArtCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
+        cell.title.text = _collectionInfo.titles[indexPath.row];
+        cell.previewImage.image = _collectionInfo.imageThumbnails[indexPath.row];
+        
+        return cell;
+    }
     
     ArtCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     cell.title.text = self.sections[indexPath.row];

@@ -66,18 +66,17 @@
 		1DCA55AA16F2927D00909059 /* contemporary.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCA55A616F2927D00909059 /* contemporary.png */; };
 		1DCA55AB16F2927D00909059 /* ancientamerican.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCA55A716F2927D00909059 /* ancientamerican.png */; };
 		1DCA55AC16F2927D00909059 /* african.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCA55A816F2927D00909059 /* african.png */; };
+		1DD0AE80171744EE00CC8507 /* ArtworkInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD0AE7F171744EE00CC8507 /* ArtworkInformation.m */; };
 		1DE88E5416CB140600B8804E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */; };
 		1DED7F6416F2D97C0005B3A9 /* camerafiltericon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED7F6316F2D97C0005B3A9 /* camerafiltericon@2x.png */; };
 		1DEE8DFA16CD855900A3C9B7 /* UIImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		8016D53716CC220B00F20725 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8016D53516CC21BD00F20725 /* QuartzCore.framework */; };
-		8074E8FE17172FDD0057664C /* Collections.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8074E8FC17172FDD0057664C /* Collections.xcdatamodeld */; };
 		8074E905171735510057664C /* Seated Bodhisattva-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E901171735510057664C /* Seated Bodhisattva-1.jpg */; };
 		8074E906171735510057664C /* Seated Bodhisattva-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E902171735510057664C /* Seated Bodhisattva-tb.jpg */; };
 		8074E907171735510057664C /* Seated Bodhisattva.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E903171735510057664C /* Seated Bodhisattva.jpg */; };
 		8074E908171735510057664C /* Vajravarahi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E904171735510057664C /* Vajravarahi.jpg */; };
-		8074E90B17173A400057664C /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8074E90A17173A400057664C /* CoreDataHelper.m */; };
 		808DB99816CD7E5F00B591D6 /* TitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808DB99716CD7E5F00B591D6 /* TitleViewController.m */; };
 		80CFA22B16F218F200F90382 /* Properties.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80CFA22A16F218F200F90382 /* Properties.plist */; };
 		C9F783630F2AB7600029CA01 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F783620F2AB7600029CA01 /* DataSource.m */; };
@@ -156,6 +155,8 @@
 		1DCA55A616F2927D00909059 /* contemporary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contemporary.png; sourceTree = "<group>"; };
 		1DCA55A716F2927D00909059 /* ancientamerican.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ancientamerican.png; sourceTree = "<group>"; };
 		1DCA55A816F2927D00909059 /* african.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = african.png; sourceTree = "<group>"; };
+		1DD0AE7E171744EE00CC8507 /* ArtworkInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtworkInformation.h; sourceTree = "<group>"; };
+		1DD0AE7F171744EE00CC8507 /* ArtworkInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtworkInformation.m; sourceTree = "<group>"; };
 		1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1DED7F6316F2D97C0005B3A9 /* camerafiltericon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camerafiltericon@2x.png"; sourceTree = "<group>"; };
 		1DEE8DF816CD855900A3C9B7 /* UIImageExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageExtension.h; sourceTree = "<group>"; };
@@ -165,13 +166,10 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* HARN_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HARN_Prefix.pch; sourceTree = "<group>"; };
 		8016D53516CC21BD00F20725 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		8074E8FD17172FDD0057664C /* Collections.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Collections.xcdatamodel; sourceTree = "<group>"; };
 		8074E901171735510057664C /* Seated Bodhisattva-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Seated Bodhisattva-1.jpg"; sourceTree = "<group>"; };
 		8074E902171735510057664C /* Seated Bodhisattva-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Seated Bodhisattva-tb.jpg"; sourceTree = "<group>"; };
 		8074E903171735510057664C /* Seated Bodhisattva.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Seated Bodhisattva.jpg"; sourceTree = "<group>"; };
 		8074E904171735510057664C /* Vajravarahi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vajravarahi.jpg; sourceTree = "<group>"; };
-		8074E90917173A400057664C /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
-		8074E90A17173A400057664C /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
 		808DB99616CD7E5F00B591D6 /* TitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleViewController.h; sourceTree = "<group>"; };
 		808DB99716CD7E5F00B591D6 /* TitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleViewController.m; sourceTree = "<group>"; };
 		80CFA22A16F218F200F90382 /* Properties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Properties.plist; sourceTree = "<group>"; };
@@ -256,6 +254,8 @@
 				1DC3B8B316D6E08F00BFF5ED /* ArtCell.m */,
 				1DC3B8B516D6E0FB00BFF5ED /* CollectionViewController.h */,
 				1DC3B8B616D6E0FB00BFF5ED /* CollectionViewController.m */,
+				1DD0AE7E171744EE00CC8507 /* ArtworkInformation.h */,
+				1DD0AE7F171744EE00CC8507 /* ArtworkInformation.m */,
 				1DAC466316D7C99200ABF89A /* circleCamera.png */,
 				1D7A6F5016E17FC500DCBFAB /* Custom Activity */,
 			);
@@ -314,9 +314,6 @@
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				C9F783920F2ABA430029CA01 /* PageView.xib */,
 				1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */,
-				8074E8FC17172FDD0057664C /* Collections.xcdatamodeld */,
-				8074E90917173A400057664C /* CoreDataHelper.h */,
-				8074E90A17173A400057664C /* CoreDataHelper.m */,
 				80CFA22A16F218F200F90382 /* Properties.plist */,
 			);
 			name = "Other Sources";
@@ -515,8 +512,7 @@
 				1D7A6F4F16E17D4100DCBFAB /* addToFavorites.m in Sources */,
 				1D7A6F5316E1802D00DCBFAB /* addToFavoritesActivity.m in Sources */,
 				1DCA55A416F28FDF00909059 /* filterView.m in Sources */,
-				8074E8FE17172FDD0057664C /* Collections.xcdatamodeld in Sources */,
-				8074E90B17173A400057664C /* CoreDataHelper.m in Sources */,
+				1DD0AE80171744EE00CC8507 /* ArtworkInformation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,19 +600,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		8074E8FC17172FDD0057664C /* Collections.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				8074E8FD17172FDD0057664C /* Collections.xcdatamodel */,
-			);
-			currentVersion = 8074E8FD17172FDD0057664C /* Collections.xcdatamodel */;
-			path = Collections.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
 }
