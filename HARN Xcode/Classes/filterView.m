@@ -159,33 +159,63 @@ static const int FILTER_LABEL = 001;
 {
     
     CIImage *filterPreviewImage = [[CIImage alloc] initWithImage:image];
-    CGFloat width = _imageView.image.size.height;
-    CGFloat height = _imageView.image.size.width;
+    CGFloat width;
+    CGFloat height;
     
-    UIImage *zenPic = [UIImage imageNamed:@"zen.png"];
-    zenPic = [self resizeTexture:zenPic width:width height:height];
-    CIImage *zenTexture = [[CIImage alloc] initWithImage:zenPic];
     
+    if(originalImage.size.width > originalImage.size.height )
+    {
+        //landscape dimensions
+        width = _imageView.image.size.width;
+        height = _imageView.image.size.height;
+    }else
+    {
+        //portrait dimensions
+        width = _imageView.image.size.height;
+        height = _imageView.image.size.width;
+    }
+    
+
+/*AFRICA FILTERS
+    //SAHARA
+    UIImage *saharaPic = [UIImage imageNamed:@"sahara.png"];
+    saharaPic = [self resizeTexture:saharaPic width:width height:height];
+    CIImage *saharaTexture = [[CIImage alloc] initWithImage:saharaPic];
     CIFilter *sepiaFilter = [CIFilter filterWithName:@"CISepiaTone" keysAndValues:kCIInputImageKey,filterPreviewImage,
                              @"inputIntensity",[NSNumber numberWithFloat:0.4],nil];
-    CIFilter *zen = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, zenTexture, kCIInputImageKey, sepiaFilter.outputImage, nil];
+    CIFilter *sahara = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, saharaTexture, kCIInputImageKey, sepiaFilter.outputImage, nil];
+ */
     
-    //CIFilter *calligraphyFilter = [CIFilter filterWithName:@"CIGloom" keysAndValues:kCIInputImageKey, filterPreviewImage, nil];
-    //[calligraphyFilter setValue:[NSNumber numberWithFloat:3.0f] forKey:@"inputIntensity"];
+/*ASIA FILTERS*/
+    //ZEN
+    UIImage *zenPic = [UIImage imageNamed:@"zen.png"];
+    zenPic = [self resizeTexture:zenPic width:width height:height];
+    /*CIImage *zenTexture = [[CIImage alloc] initWithImage:zenPic];
+    CIFilter *sepiaFilter = [CIFilter filterWithName:@"CISepiaTone" keysAndValues:kCIInputImageKey,filterPreviewImage,
+                             @"inputIntensity",[NSNumber numberWithFloat:0.4],nil];
+    CIFilter *zen = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, zenTexture, kCIInputImageKey, sepiaFilter.outputImage, nil];*/
     
-    //CIFilter *hueFilter = [CIFilter filterWithName:@"CIHueAdjust" keysAndValues:kCIInputImageKey, filterPreviewImage, nil];
-    //[hueFilter setValue:[NSNumber numberWithFloat:2.389] forKey:@"inputAngle"];
-    
+    //JADE
     UIImage *jadePic = [UIImage imageNamed:@"jade.png"];
     jadePic = [self resizeTexture:jadePic width:width height:height];
     CIImage *jadeTexture = [[CIImage alloc] initWithImage:jadePic];
-    
     CIFilter *vignette = [CIFilter filterWithName:@"CIVignette"];
     [vignette setValue:filterPreviewImage forKey:kCIInputImageKey];
     [vignette setValue:[NSNumber numberWithFloat:1.0f] forKey:@"inputIntensity"];
     [vignette setValue:[NSNumber numberWithFloat:30.0f] forKey:@"inputRadius"];
-    
     CIFilter *neueJade = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, jadeTexture, kCIInputImageKey, vignette.outputImage, nil];
+    
+/*CONTEMPORARY*/
+    //Warhol
+    CIFilter *warholHalftone = [CIFilter filterWithName:@"CIDotScreen" keysAndValues:kCIInputImageKey, filterPreviewImage, @"inputAngle", [NSNumber numberWithFloat:0.86], @"inputWidth", [NSNumber numberWithFloat:18.34], @"inputSharpness", [NSNumber numberWithFloat:0.20], nil];
+    CIFilter *warholOverlay = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, filterPreviewImage, kCIInputImageKey, warholHalftone.outputImage, nil];
+    CIFilter *warholGamma = [CIFilter filterWithName:@"CIGammaAdjust" keysAndValues:kCIInputImageKey, warholOverlay.outputImage, @"inputPower", [NSNumber numberWithFloat:0.45], nil];
+    CIFilter *warhol = [CIFilter filterWithName:@"CIColorControls" keysAndValues:kCIInputImageKey, warholGamma.outputImage, @"inputSaturation", [NSNumber numberWithFloat:1.57], @"inputBrightness", [NSNumber numberWithFloat:0.05], nil];
+    
+    
+    
+    //CIFilter *hueFilter = [CIFilter filterWithName:@"CIHueAdjust" keysAndValues:kCIInputImageKey, filterPreviewImage, nil];
+    //[hueFilter setValue:[NSNumber numberWithFloat:2.389] forKey:@"inputAngle"];
     
    //was CIFilter *colorMonochrome
    /*CIFilter *colorMonochrome = [CIFilter filterWithName:@"CIColorMonochrome" keysAndValues:kCIInputImageKey,filterPreviewImage,
@@ -197,7 +227,7 @@ static const int FILTER_LABEL = 001;
     NSLog(@" filters array is created");
     [filters addObjectsFromArray:[NSArray arrayWithObjects:
                                   [[FilterPreview alloc] initWithNameAndFilter:@"Camera" filter:nil],[[FilterPreview alloc] initWithNameAndFilter:@"Original" filter: nil],
-                                  [[FilterPreview alloc] initWithNameAndFilter:@"Zen" filter:zen],
+                                  [[FilterPreview alloc] initWithNameAndFilter:@"Warhol" filter:warhol],
                                   [[FilterPreview alloc] initWithNameAndFilter:@"Jade" filter:neueJade]
                                   
                                   , nil]];
@@ -306,13 +336,15 @@ static const int FILTER_LABEL = 001;
         
         //Here is where the outputImage is applied to the preview image coming in
         CGImageRef cgimg =[_context createCGImage:outputImage fromRect:[outputImage extent]];
+ 
         
         //This is pulled from the extensions and rotates cgimg which will now become smallImage so we are BACK to a UIImage class instead of a CIImage to a CGImageRef (aka the data).
         UIImage *smallImage =  [UIImage imageWithCGImage:cgimg];
-        if(smallImage.imageOrientation == UIImageOrientationUp)
+        
+            //if(originalImage.size.width < originalImage.size.height)
         {
             //DONT THINK THIS DOES ANYTHING GOOD
-            smallImage = [smallImage imageRotatedByDegrees:90];
+            //smallImage = [smallImage imageRotatedByDegrees:90];
         }
         
         // create filter preview image views
@@ -389,9 +421,10 @@ static const int FILTER_LABEL = 001;
     
     finalImage = [UIImage imageWithCGImage:cgimg];
 
-    if(finalImage.imageOrientation == UIImageOrientationUp)
+    if(originalImage.size.width < originalImage.size.height)
     {
-        //DONT THINK THIS DOES ANYTHING GOOD
+        //Portrait Needs to be rotated
+        NSLog(@"Rotated");
         finalImage = [finalImage imageRotatedByDegrees:90];
     }
     
