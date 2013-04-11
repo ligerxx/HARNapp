@@ -77,6 +77,7 @@
 		8074E906171735510057664C /* Seated Bodhisattva-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E902171735510057664C /* Seated Bodhisattva-tb.jpg */; };
 		8074E907171735510057664C /* Seated Bodhisattva.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E903171735510057664C /* Seated Bodhisattva.jpg */; };
 		8074E908171735510057664C /* Vajravarahi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E904171735510057664C /* Vajravarahi.jpg */; };
+		8074E90B17173A400057664C /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8074E90A17173A400057664C /* CoreDataHelper.m */; };
 		808DB99816CD7E5F00B591D6 /* TitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808DB99716CD7E5F00B591D6 /* TitleViewController.m */; };
 		80CFA22B16F218F200F90382 /* Properties.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80CFA22A16F218F200F90382 /* Properties.plist */; };
 		C9F783630F2AB7600029CA01 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F783620F2AB7600029CA01 /* DataSource.m */; };
@@ -169,6 +170,8 @@
 		8074E902171735510057664C /* Seated Bodhisattva-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Seated Bodhisattva-tb.jpg"; sourceTree = "<group>"; };
 		8074E903171735510057664C /* Seated Bodhisattva.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Seated Bodhisattva.jpg"; sourceTree = "<group>"; };
 		8074E904171735510057664C /* Vajravarahi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vajravarahi.jpg; sourceTree = "<group>"; };
+		8074E90917173A400057664C /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
+		8074E90A17173A400057664C /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
 		808DB99616CD7E5F00B591D6 /* TitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleViewController.h; sourceTree = "<group>"; };
 		808DB99716CD7E5F00B591D6 /* TitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleViewController.m; sourceTree = "<group>"; };
 		80CFA22A16F218F200F90382 /* Properties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Properties.plist; sourceTree = "<group>"; };
@@ -312,6 +315,8 @@
 				C9F783920F2ABA430029CA01 /* PageView.xib */,
 				1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */,
 				8074E8FC17172FDD0057664C /* Collections.xcdatamodeld */,
+				8074E90917173A400057664C /* CoreDataHelper.h */,
+				8074E90A17173A400057664C /* CoreDataHelper.m */,
 				80CFA22A16F218F200F90382 /* Properties.plist */,
 			);
 			name = "Other Sources";
@@ -511,6 +516,7 @@
 				1D7A6F5316E1802D00DCBFAB /* addToFavoritesActivity.m in Sources */,
 				1DCA55A416F28FDF00909059 /* filterView.m in Sources */,
 				8074E8FE17172FDD0057664C /* Collections.xcdatamodeld in Sources */,
+				8074E90B17173A400057664C /* CoreDataHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
