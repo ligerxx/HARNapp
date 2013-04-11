@@ -21,6 +21,8 @@
 
 -(IBAction)showCameraUI:(id)sender;
 
+@property (nonatomic) NSString *typeOfFilters;
+
 @property (nonatomic, weak) IBOutlet UIImageView *imageView;
 @property (nonatomic, weak) IBOutlet UIImageView *background;
 @property IBOutlet UIButton *retake;

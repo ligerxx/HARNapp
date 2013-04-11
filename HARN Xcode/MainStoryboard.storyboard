@@ -215,7 +215,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Ngl-CJ-BF8">
                             <connections>
-                                <segue destination="bzk-Jl-YLS" kind="push" id="2Fu-9c-kaE"/>
+                                <segue destination="bzk-Jl-YLS" kind="push" identifier="showCamera" id="2Fu-9c-kaE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -610,7 +610,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="HIp-HR-2YJ"/>
+        <segue reference="1cH-WO-3yV"/>
         <segue reference="qGh-2M-BUh"/>
     </inferredMetricsTieBreakers>
 </document>

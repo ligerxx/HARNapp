@@ -10,6 +10,7 @@
 #import "ArtCell.h"
 #import "ArtworkInformation.h"
 #import "DetailViewController.h"
+#import "filterView.h"
 
 @interface CollectionViewController ()
 
@@ -93,6 +94,12 @@
 //Controls the transfer to the detail view
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    if ([[segue identifier] isEqualToString:@"showCamera"])
+    {
+        filterView *filter = [segue destinationViewController];
+        filter.typeOfFilters = self.navigationController.navigationBar.topItem.title;
+    }
+    
     if ([[segue identifier] isEqualToString:@"showDetail"])
     {
         if([self.navigationController.navigationBar.topItem.title isEqualToString:@"Asian"])

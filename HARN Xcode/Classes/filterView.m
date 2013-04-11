@@ -16,6 +16,8 @@
 
 @synthesize filtersScrollView = _filterScrollView;
 
+@synthesize typeOfFilters;
+
 static const int FILTER_LABEL = 001;
 
 -(IBAction)showCameraUI:(id)sender
@@ -161,7 +163,8 @@ static const int FILTER_LABEL = 001;
     CIImage *filterPreviewImage = [[CIImage alloc] initWithImage:image];
     CGFloat width;
     CGFloat height;
-    
+    NSString *filterName1, *filterName2;
+    CIFilter *filter1, *filter2;
     
     if(originalImage.size.width > originalImage.size.height )
     {
@@ -175,60 +178,72 @@ static const int FILTER_LABEL = 001;
         height = _imageView.image.size.width;
     }
     
-
-/*AFRICA FILTERS
-    //SAHARA
-    UIImage *saharaPic = [UIImage imageNamed:@"sahara.png"];
-    saharaPic = [self resizeTexture:saharaPic width:width height:height];
-    CIImage *saharaTexture = [[CIImage alloc] initWithImage:saharaPic];
-    CIFilter *sepiaFilter = [CIFilter filterWithName:@"CISepiaTone" keysAndValues:kCIInputImageKey,filterPreviewImage,
-                             @"inputIntensity",[NSNumber numberWithFloat:0.4],nil];
-    CIFilter *sahara = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, saharaTexture, kCIInputImageKey, sepiaFilter.outputImage, nil];
- */
+    if([typeOfFilters isEqualToString:@"Asian"])
+    {
+        /*ASIA FILTERS*/
+        //ZEN
+        filterName1 = @"Zen";
+        UIImage *zenPic = [UIImage imageNamed:@"zen.png"];
+        zenPic = [self resizeTexture:zenPic width:width height:height];
+        CIImage *zenTexture = [[CIImage alloc] initWithImage:zenPic];
+         CIFilter *sepiaFilter = [CIFilter filterWithName:@"CISepiaTone" keysAndValues:kCIInputImageKey,filterPreviewImage,
+         @"inputIntensity",[NSNumber numberWithFloat:0.4],nil];
+         CIFilter *zen = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, zenTexture, kCIInputImageKey, sepiaFilter.outputImage, nil];
+        filter1 = zen;
+        
+        //JADE
+        filterName2 = @"Jade";
+        UIImage *jadePic = [UIImage imageNamed:@"jade.png"];
+        jadePic = [self resizeTexture:jadePic width:width height:height];
+        CIImage *jadeTexture = [[CIImage alloc] initWithImage:jadePic];
+        CIFilter *vignette = [CIFilter filterWithName:@"CIVignette"];
+        [vignette setValue:filterPreviewImage forKey:kCIInputImageKey];
+        [vignette setValue:[NSNumber numberWithFloat:1.0f] forKey:@"inputIntensity"];
+        [vignette setValue:[NSNumber numberWithFloat:30.0f] forKey:@"inputRadius"];
+        CIFilter *neueJade = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, jadeTexture, kCIInputImageKey, vignette.outputImage, nil];
+        filter2 = neueJade;
+    }else if( [typeOfFilters isEqualToString:@"African"])
+    {
+        /*AFRICA FILTERS*/
+        //SAHARA
+        filterName1 = @"Sahara";
+        UIImage *saharaPic = [UIImage imageNamed:@"sahara.png"];
+        saharaPic = [self resizeTexture:saharaPic width:width height:height];
+        CIImage *saharaTexture = [[CIImage alloc] initWithImage:saharaPic];
+        CIFilter *sepiaFilter = [CIFilter filterWithName:@"CISepiaTone" keysAndValues:kCIInputImageKey,filterPreviewImage,
+                                 @"inputIntensity",[NSNumber numberWithFloat:0.4],nil];
+        CIFilter *sahara = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, saharaTexture, kCIInputImageKey, sepiaFilter.outputImage, nil];
+        filter1 = sahara;
+        
+    }else if ([typeOfFilters isEqualToString:@"Contemporary"])
+    {
+        /*CONTEMPORARY*/
+        //Warhol
+        filterName1 = @"Warhol";
+        CIFilter *warholHalftone = [CIFilter filterWithName:@"CIDotScreen" keysAndValues:kCIInputImageKey, filterPreviewImage, @"inputAngle", [NSNumber numberWithFloat:0.86], @"inputWidth", [NSNumber numberWithFloat:18.34], @"inputSharpness", [NSNumber numberWithFloat:0.20], nil];
+        CIFilter *warholOverlay = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, filterPreviewImage, kCIInputImageKey, warholHalftone.outputImage, nil];
+        CIFilter *warholGamma = [CIFilter filterWithName:@"CIGammaAdjust" keysAndValues:kCIInputImageKey, warholOverlay.outputImage, @"inputPower", [NSNumber numberWithFloat:0.45], nil];
+        CIFilter *warhol = [CIFilter filterWithName:@"CIColorControls" keysAndValues:kCIInputImageKey, warholGamma.outputImage, @"inputSaturation", [NSNumber numberWithFloat:1.57], @"inputBrightness", [NSNumber numberWithFloat:0.05], nil];
+        filter1 = warhol;
+        
+    }
     
-/*ASIA FILTERS*/
-    //ZEN
-    UIImage *zenPic = [UIImage imageNamed:@"zen.png"];
-    zenPic = [self resizeTexture:zenPic width:width height:height];
-    /*CIImage *zenTexture = [[CIImage alloc] initWithImage:zenPic];
-    CIFilter *sepiaFilter = [CIFilter filterWithName:@"CISepiaTone" keysAndValues:kCIInputImageKey,filterPreviewImage,
-                             @"inputIntensity",[NSNumber numberWithFloat:0.4],nil];
-    CIFilter *zen = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, zenTexture, kCIInputImageKey, sepiaFilter.outputImage, nil];*/
-    
-    //JADE
-    UIImage *jadePic = [UIImage imageNamed:@"jade.png"];
-    jadePic = [self resizeTexture:jadePic width:width height:height];
-    CIImage *jadeTexture = [[CIImage alloc] initWithImage:jadePic];
-    CIFilter *vignette = [CIFilter filterWithName:@"CIVignette"];
-    [vignette setValue:filterPreviewImage forKey:kCIInputImageKey];
-    [vignette setValue:[NSNumber numberWithFloat:1.0f] forKey:@"inputIntensity"];
-    [vignette setValue:[NSNumber numberWithFloat:30.0f] forKey:@"inputRadius"];
-    CIFilter *neueJade = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, jadeTexture, kCIInputImageKey, vignette.outputImage, nil];
-    
-/*CONTEMPORARY*/
-    //Warhol
-    CIFilter *warholHalftone = [CIFilter filterWithName:@"CIDotScreen" keysAndValues:kCIInputImageKey, filterPreviewImage, @"inputAngle", [NSNumber numberWithFloat:0.86], @"inputWidth", [NSNumber numberWithFloat:18.34], @"inputSharpness", [NSNumber numberWithFloat:0.20], nil];
-    CIFilter *warholOverlay = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, filterPreviewImage, kCIInputImageKey, warholHalftone.outputImage, nil];
-    CIFilter *warholGamma = [CIFilter filterWithName:@"CIGammaAdjust" keysAndValues:kCIInputImageKey, warholOverlay.outputImage, @"inputPower", [NSNumber numberWithFloat:0.45], nil];
-    CIFilter *warhol = [CIFilter filterWithName:@"CIColorControls" keysAndValues:kCIInputImageKey, warholGamma.outputImage, @"inputSaturation", [NSNumber numberWithFloat:1.57], @"inputBrightness", [NSNumber numberWithFloat:0.05], nil];
-    
-    
-    
-    //CIFilter *hueFilter = [CIFilter filterWithName:@"CIHueAdjust" keysAndValues:kCIInputImageKey, filterPreviewImage, nil];
-    //[hueFilter setValue:[NSNumber numberWithFloat:2.389] forKey:@"inputAngle"];
-    
-   //was CIFilter *colorMonochrome
-   /*CIFilter *colorMonochrome = [CIFilter filterWithName:@"CIColorMonochrome" keysAndValues:kCIInputImageKey,filterPreviewImage,
-                                 @"inputColor",[CIColor colorWithString:@"Red"],
-                                 @"inputIntensity",[NSNumber numberWithFloat:0.8], nil];*/
+    if(filterName2 == nil)
+    {
+        filterName2 = @"Hue";
+        CIFilter *hueFilter = [CIFilter filterWithName:@"CIHueAdjust" keysAndValues:kCIInputImageKey, filterPreviewImage, nil];
+        [hueFilter setValue:[NSNumber numberWithFloat:2.389] forKey:@"inputAngle"];
+        filter2 = hueFilter;
+    }
+     
     
     filters = [[NSMutableArray alloc] init];
     
     NSLog(@" filters array is created");
     [filters addObjectsFromArray:[NSArray arrayWithObjects:
                                   [[FilterPreview alloc] initWithNameAndFilter:@"Camera" filter:nil],[[FilterPreview alloc] initWithNameAndFilter:@"Original" filter: nil],
-                                  [[FilterPreview alloc] initWithNameAndFilter:@"Warhol" filter:warhol],
-                                  [[FilterPreview alloc] initWithNameAndFilter:@"Jade" filter:neueJade]
+                                  [[FilterPreview alloc] initWithNameAndFilter:filterName1 filter:filter1],
+                                  [[FilterPreview alloc] initWithNameAndFilter:filterName2 filter:filter2]
                                   
                                   , nil]];
     
