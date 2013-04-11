@@ -10,8 +10,13 @@
 
 @interface CollectionViewController : UICollectionViewController
 
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (strong, nonatomic) NSMutableArray *pictureListData;
+
 @property (nonatomic, retain) IBOutlet UINavigationBar *navBar;
 
 @property (nonatomic, retain, readonly) NSArray *sections;
+
+- (void)readDataForTable;
 
 @end
