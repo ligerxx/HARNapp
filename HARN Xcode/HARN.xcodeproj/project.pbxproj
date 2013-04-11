@@ -72,6 +72,11 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		8016D53716CC220B00F20725 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8016D53516CC21BD00F20725 /* QuartzCore.framework */; };
+		8074E8FE17172FDD0057664C /* Collections.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8074E8FC17172FDD0057664C /* Collections.xcdatamodeld */; };
+		8074E905171735510057664C /* Seated Bodhisattva-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E901171735510057664C /* Seated Bodhisattva-1.jpg */; };
+		8074E906171735510057664C /* Seated Bodhisattva-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E902171735510057664C /* Seated Bodhisattva-tb.jpg */; };
+		8074E907171735510057664C /* Seated Bodhisattva.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E903171735510057664C /* Seated Bodhisattva.jpg */; };
+		8074E908171735510057664C /* Vajravarahi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E904171735510057664C /* Vajravarahi.jpg */; };
 		808DB99816CD7E5F00B591D6 /* TitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808DB99716CD7E5F00B591D6 /* TitleViewController.m */; };
 		80CFA22B16F218F200F90382 /* Properties.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80CFA22A16F218F200F90382 /* Properties.plist */; };
 		C9F783630F2AB7600029CA01 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F783620F2AB7600029CA01 /* DataSource.m */; };
@@ -159,6 +164,11 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* HARN_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HARN_Prefix.pch; sourceTree = "<group>"; };
 		8016D53516CC21BD00F20725 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8074E8FD17172FDD0057664C /* Collections.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Collections.xcdatamodel; sourceTree = "<group>"; };
+		8074E901171735510057664C /* Seated Bodhisattva-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Seated Bodhisattva-1.jpg"; sourceTree = "<group>"; };
+		8074E902171735510057664C /* Seated Bodhisattva-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Seated Bodhisattva-tb.jpg"; sourceTree = "<group>"; };
+		8074E903171735510057664C /* Seated Bodhisattva.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Seated Bodhisattva.jpg"; sourceTree = "<group>"; };
+		8074E904171735510057664C /* Vajravarahi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vajravarahi.jpg; sourceTree = "<group>"; };
 		808DB99616CD7E5F00B591D6 /* TitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleViewController.h; sourceTree = "<group>"; };
 		808DB99716CD7E5F00B591D6 /* TitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleViewController.m; sourceTree = "<group>"; };
 		80CFA22A16F218F200F90382 /* Properties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Properties.plist; sourceTree = "<group>"; };
@@ -275,6 +285,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				8074E8FF1717353A0057664C /* Images */,
 				1D30FACC16E1938E000B1CE2 /* gallerybackground@2x.png */,
 				1D5CBC4816E073B6004CAE64 /* HARN no label.png */,
 				1D5CBC4616E06DF0004CAE64 /* HARN Retina no label.png */,
@@ -300,6 +311,7 @@
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				C9F783920F2ABA430029CA01 /* PageView.xib */,
 				1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */,
+				8074E8FC17172FDD0057664C /* Collections.xcdatamodeld */,
 				80CFA22A16F218F200F90382 /* Properties.plist */,
 			);
 			name = "Other Sources";
@@ -351,6 +363,25 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8074E8FF1717353A0057664C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8074E900171735510057664C /* Asian Collection */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		8074E900171735510057664C /* Asian Collection */ = {
+			isa = PBXGroup;
+			children = (
+				8074E901171735510057664C /* Seated Bodhisattva-1.jpg */,
+				8074E902171735510057664C /* Seated Bodhisattva-tb.jpg */,
+				8074E903171735510057664C /* Seated Bodhisattva.jpg */,
+				8074E904171735510057664C /* Vajravarahi.jpg */,
+			);
+			path = "Asian Collection";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -449,6 +480,10 @@
 				1DA8969E1715B88100881D50 /* harn logo orange.png in Resources */,
 				1D66A5711715B98700641B84 /* HarnLogoSquare.png in Resources */,
 				1D641B081716F06800C26210 /* sahara.png in Resources */,
+				8074E905171735510057664C /* Seated Bodhisattva-1.jpg in Resources */,
+				8074E906171735510057664C /* Seated Bodhisattva-tb.jpg in Resources */,
+				8074E907171735510057664C /* Seated Bodhisattva.jpg in Resources */,
+				8074E908171735510057664C /* Vajravarahi.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +510,7 @@
 				1D7A6F4F16E17D4100DCBFAB /* addToFavorites.m in Sources */,
 				1D7A6F5316E1802D00DCBFAB /* addToFavoritesActivity.m in Sources */,
 				1DCA55A416F28FDF00909059 /* filterView.m in Sources */,
+				8074E8FE17172FDD0057664C /* Collections.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,6 +598,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8074E8FC17172FDD0057664C /* Collections.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8074E8FD17172FDD0057664C /* Collections.xcdatamodel */,
+			);
+			currentVersion = 8074E8FD17172FDD0057664C /* Collections.xcdatamodel */;
+			path = Collections.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
 }
