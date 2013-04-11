@@ -31,6 +31,8 @@
 @property (strong, nonatomic) NSString *artDescription;
 @property (strong, nonatomic) IBOutlet UILabel* descriptionOfWork;
 
+@property (strong, nonatomic) NSString *extendedDescription;
+
 @property int *currentViewIndex;
 @property (strong, nonatomic) NSArray *arrayOfArt;
 

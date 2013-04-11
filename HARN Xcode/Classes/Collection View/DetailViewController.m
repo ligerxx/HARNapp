@@ -17,6 +17,8 @@
 
 @implementation DetailViewController
 
+@synthesize extendedDescription;
+
 -(void)setImage:(UIImage *)image
 {
     [_previewImage setImage:image];
@@ -145,7 +147,7 @@
         InformationViewController *infoView = [segue destinationViewController];
         
         infoView.artTitle = self.artTitle;
-        infoView.artDescription = self.artDescription;
+        infoView.artDescription = extendedDescription;
     }
 }
 
