@@ -77,6 +77,153 @@
 		8074E906171735510057664C /* Seated Bodhisattva-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E902171735510057664C /* Seated Bodhisattva-tb.jpg */; };
 		8074E907171735510057664C /* Seated Bodhisattva.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E903171735510057664C /* Seated Bodhisattva.jpg */; };
 		8074E908171735510057664C /* Vajravarahi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E904171735510057664C /* Vajravarahi.jpg */; };
+		8074E9A6171770350057664C /* African.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8074E90D171770350057664C /* African.txt */; };
+		8074E9A7171770350057664C /* Cloth-with-Olokun-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E90E171770350057664C /* Cloth-with-Olokun-tb.jpg */; };
+		8074E9A8171770350057664C /* Cloth-with-Olokun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E90F171770350057664C /* Cloth-with-Olokun.jpg */; };
+		8074E9A9171770350057664C /* Face-Mask-tb.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8074E910171770350057664C /* Face-Mask-tb.JPG */; };
+		8074E9AA171770350057664C /* Face-Mask.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8074E911171770350057664C /* Face-Mask.JPG */; };
+		8074E9AB171770350057664C /* Gala-Blanket-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E912171770350057664C /* Gala-Blanket-tb.jpg */; };
+		8074E9AC171770350057664C /* Gala-Blanket.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E913171770350057664C /* Gala-Blanket.jpg */; };
+		8074E9AD171770350057664C /* Indigo-Resist-Dyed-Cloth-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E914171770350057664C /* Indigo-Resist-Dyed-Cloth-tb.jpg */; };
+		8074E9AE171770350057664C /* Indigo-Resist-Dyed-Cloth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E915171770350057664C /* Indigo-Resist-Dyed-Cloth.jpg */; };
+		8074E9AF171770350057664C /* Koranic-Board-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E916171770350057664C /* Koranic-Board-tb.jpg */; };
+		8074E9B0171770350057664C /* Koranic-Board.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E917171770350057664C /* Koranic-Board.jpg */; };
+		8074E9B1171770350057664C /* Maternity-Figure-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E918171770350057664C /* Maternity-Figure-tb.jpg */; };
+		8074E9B2171770350057664C /* Maternity-Figure.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E919171770350057664C /* Maternity-Figure.jpg */; };
+		8074E9B3171770350057664C /* Scrolls-of-the-Ancestor-IV-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E91A171770350057664C /* Scrolls-of-the-Ancestor-IV-tb.jpg */; };
+		8074E9B4171770350057664C /* Scrolls-of-the-Ancestor-IV.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E91B171770350057664C /* Scrolls-of-the-Ancestor-IV.jpg */; };
+		8074E9B5171770350057664C /* Spirit-at-the-Door-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E91C171770350057664C /* Spirit-at-the-Door-tb.jpg */; };
+		8074E9B6171770350057664C /* Spirit-at-the-Door.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E91D171770350057664C /* Spirit-at-the-Door.jpg */; };
+		8074E9B7171770350057664C /* Time-Cycle-III-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E91E171770350057664C /* Time-Cycle-III-tb.jpg */; };
+		8074E9B8171770350057664C /* Time-Cycle-III.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E91F171770350057664C /* Time-Cycle-III.jpg */; };
+		8074E9B9171770350057664C /* Wedding-Cape-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E920171770350057664C /* Wedding-Cape-tb.jpg */; };
+		8074E9BA171770350057664C /* Wedding-Cape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E921171770350057664C /* Wedding-Cape.jpg */; };
+		8074E9BB171770350057664C /* Ancient American.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8074E923171770350057664C /* Ancient American.txt */; };
+		8074E9BC171770350057664C /* Burial-Urn-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E924171770350057664C /* Burial-Urn-tb.jpg */; };
+		8074E9BD171770350057664C /* Burial-Urn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E925171770350057664C /* Burial-Urn.jpg */; };
+		8074E9BE171770350057664C /* Cylindrical-vase-with-heads-of-Lord-of-Underworld-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E926171770350057664C /* Cylindrical-vase-with-heads-of-Lord-of-Underworld-tb.jpg */; };
+		8074E9BF171770350057664C /* Cylindrical-vase-with-heads-of-Lord-of-Underworld.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E927171770350057664C /* Cylindrical-vase-with-heads-of-Lord-of-Underworld.jpg */; };
+		8074E9C0171770350057664C /* Head-of-Ruler-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E928171770350057664C /* Head-of-Ruler-tb.jpg */; };
+		8074E9C1171770350057664C /* Head-of-Ruler.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E929171770350057664C /* Head-of-Ruler.jpg */; };
+		8074E9C2171770350057664C /* Jaguar-effigy-metate-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E92A171770350057664C /* Jaguar-effigy-metate-tb.jpg */; };
+		8074E9C3171770350057664C /* Jaguar-effigy-metate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E92B171770350057664C /* Jaguar-effigy-metate.jpg */; };
+		8074E9C4171770350057664C /* Poncho-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E92C171770350057664C /* Poncho-tb.jpg */; };
+		8074E9C5171770350057664C /* Poncho.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E92D171770350057664C /* Poncho.jpg */; };
+		8074E9C6171770350057664C /* Seated-Companion-Urn-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E92E171770350057664C /* Seated-Companion-Urn-tb.jpg */; };
+		8074E9C7171770350057664C /* Seated-Companion-Urn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E92F171770350057664C /* Seated-Companion-Urn.jpg */; };
+		8074E9C8171770350057664C /* Seated-Female-Figurine-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E930171770350057664C /* Seated-Female-Figurine-tb.jpg */; };
+		8074E9C9171770350057664C /* Seated-Female-Figurine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E931171770350057664C /* Seated-Female-Figurine.jpg */; };
+		8074E9CA171770350057664C /* Standing-figure-in-the-Laughing-Child-form-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E932171770350057664C /* Standing-figure-in-the-Laughing-Child-form-tb.jpg */; };
+		8074E9CB171770350057664C /* Standing-figure-in-the-Laughing-Child-form.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E933171770350057664C /* Standing-figure-in-the-Laughing-Child-form.jpg */; };
+		8074E9CC171770350057664C /* Tripod-Bowl-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E934171770350057664C /* Tripod-Bowl-tb.jpg */; };
+		8074E9CD171770350057664C /* Tripod-Bowl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E935171770350057664C /* Tripod-Bowl.jpg */; };
+		8074E9CE171770350057664C /* Tripod-Plate-with-Rain-Serpent-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E936171770350057664C /* Tripod-Plate-with-Rain-Serpent-tb.jpg */; };
+		8074E9CF171770350057664C /* Tripod-Plate-with-Rain-Serpent.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E937171770350057664C /* Tripod-Plate-with-Rain-Serpent.jpg */; };
+		8074E9D0171770350057664C /* Asian.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8074E939171770350057664C /* Asian.txt */; };
+		8074E9D1171770350057664C /* Beauties-in-the-Garden-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E93A171770350057664C /* Beauties-in-the-Garden-tb.jpg */; };
+		8074E9D2171770350057664C /* Beauties-in-the-Garden.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E93B171770350057664C /* Beauties-in-the-Garden.jpg */; };
+		8074E9D3171770350057664C /* Blue-Glazed-Cong-Shaped-Vase-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E93C171770350057664C /* Blue-Glazed-Cong-Shaped-Vase-tb.jpg */; };
+		8074E9D4171770350057664C /* Blue-Glazed-Cong-Shaped-Vase.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E93D171770350057664C /* Blue-Glazed-Cong-Shaped-Vase.jpg */; };
+		8074E9D5171770350057664C /* Fuchu-Female-Tea-Pickers-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E93E171770350057664C /* Fuchu-Female-Tea-Pickers-tb.jpg */; };
+		8074E9D6171770350057664C /* Fuchu-Female-Tea-Pickers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E93F171770350057664C /* Fuchu-Female-Tea-Pickers.jpg */; };
+		8074E9D7171770350057664C /* Hanging-Basket-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E940171770350057664C /* Hanging-Basket-tb.jpg */; };
+		8074E9D8171770350057664C /* Hanging-Basket.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E941171770350057664C /* Hanging-Basket.jpg */; };
+		8074E9D9171770350057664C /* Large-Vase-with-Lotus-Design-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E942171770350057664C /* Large-Vase-with-Lotus-Design-tb.jpg */; };
+		8074E9DA171770350057664C /* Large-Vase-with-Lotus-Design.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E943171770350057664C /* Large-Vase-with-Lotus-Design.jpg */; };
+		8074E9DB171770350057664C /* Lion-form-Water-Dropper-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E944171770350057664C /* Lion-form-Water-Dropper-tb.jpg */; };
+		8074E9DC171770350057664C /* Lion-form-Water-Dropper.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E945171770350057664C /* Lion-form-Water-Dropper.jpg */; };
+		8074E9DD171770350057664C /* Moonflask-with-Birds-and-Flowers-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E946171770350057664C /* Moonflask-with-Birds-and-Flowers-tb.jpg */; };
+		8074E9DE171770350057664C /* Moonflask-with-Birds-and-Flowers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E947171770350057664C /* Moonflask-with-Birds-and-Flowers.jpg */; };
+		8074E9DF171770350057664C /* Santal-Boy-with-Drum-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E948171770350057664C /* Santal-Boy-with-Drum-tb.jpg */; };
+		8074E9E0171770350057664C /* Santal-Boy-with-Drum.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E949171770350057664C /* Santal-Boy-with-Drum.jpg */; };
+		8074E9E1171770350057664C /* The-Lute-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E94A171770350057664C /* The-Lute-tb.jpg */; };
+		8074E9E2171770350057664C /* The-Lute.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E94B171770350057664C /* The-Lute.jpg */; };
+		8074E9E3171770350057664C /* Tray-with-Birds-and-Cherry-Blossoms-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E94C171770350057664C /* Tray-with-Birds-and-Cherry-Blossoms-tb.jpg */; };
+		8074E9E4171770350057664C /* Tray-with-Birds-and-Cherry-Blossoms.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E94D171770350057664C /* Tray-with-Birds-and-Cherry-Blossoms.jpg */; };
+		8074E9E5171770350057664C /* Biblioteca-Nazionale-Marciana-Venezia-III-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E94F171770350057664C /* Biblioteca-Nazionale-Marciana-Venezia-III-tb.jpg */; };
+		8074E9E6171770350057664C /* Biblioteca-Nazionale-Marciana-Venezia-III.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E950171770350057664C /* Biblioteca-Nazionale-Marciana-Venezia-III.jpg */; };
+		8074E9E7171770350057664C /* Complejo-Marti-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E951171770350057664C /* Complejo-Marti-tb.jpg */; };
+		8074E9E8171770350057664C /* Complejo-Marti.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E952171770350057664C /* Complejo-Marti.jpg */; };
+		8074E9E9171770350057664C /* Contemporary.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8074E953171770350057664C /* Contemporary.txt */; };
+		8074E9EA171770350057664C /* Dogon-Couple-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E954171770350057664C /* Dogon-Couple-tb.jpg */; };
+		8074E9EB171770350057664C /* Dogon-Couple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E955171770350057664C /* Dogon-Couple.jpg */; };
+		8074E9EC171770350057664C /* Gay-Lussac-Nite-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E956171770350057664C /* Gay-Lussac-Nite-tb.jpg */; };
+		8074E9ED171770350057664C /* Gay-Lussac-Nite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E957171770350057664C /* Gay-Lussac-Nite.jpg */; };
+		8074E9EE171770350057664C /* IMAGinING-Tobia-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E958171770350057664C /* IMAGinING-Tobia-tb.jpg */; };
+		8074E9EF171770350057664C /* IMAGinING-Tobia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E959171770350057664C /* IMAGinING-Tobia.jpg */; };
+		8074E9F0171770350057664C /* Nets-Infinitity-TWOS-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E95A171770350057664C /* Nets-Infinitity-TWOS-tb.jpg */; };
+		8074E9F1171770350057664C /* Nets-Infinitity-TWOS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E95B171770350057664C /* Nets-Infinitity-TWOS.jpg */; };
+		8074E9F2171770350057664C /* Ode-a-lOubli-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E95C171770350057664C /* Ode-a-lOubli-tb.jpg */; };
+		8074E9F3171770350057664C /* Ode-a-lOubli.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E95D171770350057664C /* Ode-a-lOubli.jpg */; };
+		8074E9F4171770350057664C /* Shanty-Nucleus-after-Derrida-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E95E171770350057664C /* Shanty-Nucleus-after-Derrida-tb.jpg */; };
+		8074E9F5171770350057664C /* Shanty-Nucleus-after-Derrida.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E95F171770350057664C /* Shanty-Nucleus-after-Derrida.jpg */; };
+		8074E9F6171770350057664C /* Vessel-Series-I-no-1-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E960171770350057664C /* Vessel-Series-I-no-1-tb.jpg */; };
+		8074E9F7171770350057664C /* Vessel-Series-I-no-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E961171770350057664C /* Vessel-Series-I-no-1.jpg */; };
+		8074E9F8171770350057664C /* Well-4-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E962171770350057664C /* Well-4-tb.jpg */; };
+		8074E9F9171770350057664C /* Well-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E963171770350057664C /* Well-4.jpg */; };
+		8074E9FA171770350057664C /* Austrian-Copper-Rose-IV-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E965171770350057664C /* Austrian-Copper-Rose-IV-tb.jpg */; };
+		8074E9FB171770350057664C /* Austrian-Copper-Rose-IV.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E966171770350057664C /* Austrian-Copper-Rose-IV.jpg */; };
+		8074E9FC171770350057664C /* Cubist-Still-Life-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E967171770350057664C /* Cubist-Still-Life-tb.jpg */; };
+		8074E9FD171770350057664C /* Cubist-Still-Life.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E968171770350057664C /* Cubist-Still-Life.jpg */; };
+		8074E9FE171770350057664C /* El-Encuentro-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E969171770350057664C /* El-Encuentro-tb.jpg */; };
+		8074E9FF171770350057664C /* El-Encuentro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E96A171770350057664C /* El-Encuentro.jpg */; };
+		8074EA00171770350057664C /* Figuras-Constructivas-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E96B171770350057664C /* Figuras-Constructivas-tb.jpg */; };
+		8074EA01171770350057664C /* Figuras-Constructivas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E96C171770350057664C /* Figuras-Constructivas.jpg */; };
+		8074EA02171770350057664C /* Florida-Lake-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E96D171770350057664C /* Florida-Lake-tb.jpg */; };
+		8074EA03171770350057664C /* Florida-Lake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E96E171770350057664C /* Florida-Lake.jpg */; };
+		8074EA04171770350057664C /* Manhattan-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E96F171770350057664C /* Manhattan-tb.jpg */; };
+		8074EA05171770350057664C /* Manhattan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E970171770350057664C /* Manhattan.jpg */; };
+		8074EA06171770350057664C /* Modern.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8074E971171770350057664C /* Modern.txt */; };
+		8074EA07171770350057664C /* Rider-of-the-Apocalypse-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E972171770350057664C /* Rider-of-the-Apocalypse-tb.jpg */; };
+		8074EA08171770350057664C /* Rider-of-the-Apocalypse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E973171770350057664C /* Rider-of-the-Apocalypse.jpg */; };
+		8074EA09171770350057664C /* Television-2-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E974171770350057664C /* Television-2-tb.jpg */; };
+		8074EA0A171770350057664C /* Television-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E975171770350057664C /* Television-2.jpg */; };
+		8074EA0B171770350057664C /* The-Art-of-the-Negro-Native-Forms-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E976171770350057664C /* The-Art-of-the-Negro-Native-Forms-tb.jpg */; };
+		8074EA0C171770350057664C /* The-Art-of-the-Negro-Native-Forms.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E977171770350057664C /* The-Art-of-the-Negro-Native-Forms.jpg */; };
+		8074EA0D171770350057664C /* The-Woodcutter-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E978171770350057664C /* The-Woodcutter-tb.jpg */; };
+		8074EA0E171770350057664C /* The-Woodcutter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E979171770350057664C /* The-Woodcutter.jpg */; };
+		8074EA0F171770350057664C /* A-sphere-lit-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E97B171770350057664C /* A-sphere-lit-tb.jpg */; };
+		8074EA10171770350057664C /* A-sphere-lit.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E97C171770350057664C /* A-sphere-lit.jpg */; };
+		8074EA11171770350057664C /* Cavewomen-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E97D171770350057664C /* Cavewomen-tb.jpg */; };
+		8074EA12171770350057664C /* Cavewomen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E97E171770350057664C /* Cavewomen.jpg */; };
+		8074EA13171770350057664C /* Clownmirror-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E97F171770350057664C /* Clownmirror-tb.jpg */; };
+		8074EA14171770350057664C /* Clownmirror.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E980171770350057664C /* Clownmirror.jpg */; };
+		8074EA15171770350057664C /* Four-views-from-four-times-and-one-shoreline-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E981171770350057664C /* Four-views-from-four-times-and-one-shoreline-tb.jpg */; };
+		8074EA16171770350057664C /* Four-views-from-four-times-and-one-shoreline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E982171770350057664C /* Four-views-from-four-times-and-one-shoreline.jpg */; };
+		8074EA17171770350057664C /* Getting-Lindsay-Linton-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E983171770350057664C /* Getting-Lindsay-Linton-tb.jpg */; };
+		8074EA18171770350057664C /* Getting-Lindsay-Linton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E984171770350057664C /* Getting-Lindsay-Linton.jpg */; };
+		8074EA19171770350057664C /* Photography.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8074E985171770350057664C /* Photography.txt */; };
+		8074EA1A171770350057664C /* Scenographer's-Mind-VIII-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E986171770350057664C /* Scenographer's-Mind-VIII-tb.jpg */; };
+		8074EA1B171770350057664C /* Scenographer's-Mind-VIII.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E987171770350057664C /* Scenographer's-Mind-VIII.jpg */; };
+		8074EA1C171770350057664C /* Swamp-and-Pipeline-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E988171770350057664C /* Swamp-and-Pipeline-tb.jpg */; };
+		8074EA1D171770350057664C /* Swamp-and-Pipeline.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E989171770350057664C /* Swamp-and-Pipeline.jpg */; };
+		8074EA1E171770350057664C /* The-patient-gardener-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E98A171770350057664C /* The-patient-gardener-tb.jpg */; };
+		8074EA1F171770350057664C /* The-patient-gardener.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E98B171770350057664C /* The-patient-gardener.jpg */; };
+		8074EA20171770350057664C /* Tropical-Rococo-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E98C171770350057664C /* Tropical-Rococo-tb.jpg */; };
+		8074EA21171770350057664C /* Tropical-Rococo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E98D171770350057664C /* Tropical-Rococo.jpg */; };
+		8074EA22171770350057664C /* Valerie-in-the-light-Bruno-in-the-dark-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E98E171770350057664C /* Valerie-in-the-light-Bruno-in-the-dark-tb.jpg */; };
+		8074EA23171770350057664C /* Valerie-in-the-light-Bruno-in-the-dark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E98F171770350057664C /* Valerie-in-the-light-Bruno-in-the-dark.jpg */; };
+		8074EA24171770350057664C /* Black-Chinned-Garrulax-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E991171770350057664C /* Black-Chinned-Garrulax-tb.jpg */; };
+		8074EA25171770350057664C /* Black-Chinned-Garrulax.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E992171770350057664C /* Black-Chinned-Garrulax.jpg */; };
+		8074EA26171770350057664C /* California-Hare-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E993171770350057664C /* California-Hare-tb.jpg */; };
+		8074EA27171770350057664C /* California-Hare.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E994171770350057664C /* California-Hare.jpg */; };
+		8074EA28171770350057664C /* China-Limodoron-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E995171770350057664C /* China-Limodoron-tb.jpg */; };
+		8074EA29171770350057664C /* China-Limodoron.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E996171770350057664C /* China-Limodoron.jpg */; };
+		8074EA2A171770350057664C /* Dante-in-Hell-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E997171770350057664C /* Dante-in-Hell-tb.jpg */; };
+		8074EA2B171770350057664C /* Dante-in-Hell.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E998171770350057664C /* Dante-in-Hell.jpg */; };
+		8074EA2C171770350057664C /* Disparte-General-tb.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8074E999171770350057664C /* Disparte-General-tb.JPG */; };
+		8074EA2D171770350057664C /* Disparte-General.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8074E99A171770350057664C /* Disparte-General.JPG */; };
+		8074EA2E171770350057664C /* Inscriptions-Sepulchrales-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E99B171770350057664C /* Inscriptions-Sepulchrales-tb.jpg */; };
+		8074EA2F171770350057664C /* Inscriptions-Sepulchrales.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E99C171770350057664C /* Inscriptions-Sepulchrales.jpg */; };
+		8074EA30171770350057664C /* Marguerite-au-Rouet-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E99D171770350057664C /* Marguerite-au-Rouet-tb.jpg */; };
+		8074EA31171770350057664C /* Marguerite-au-Rouet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E99E171770350057664C /* Marguerite-au-Rouet.jpg */; };
+		8074EA32171770350057664C /* Noisetier-Franca-Gros-Fruits-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E99F171770350057664C /* Noisetier-Franca-Gros-Fruits-tb.jpg */; };
+		8074EA33171770350057664C /* Noisetier-Franca-Gros-Fruits.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E9A0171770350057664C /* Noisetier-Franca-Gros-Fruits.jpg */; };
+		8074EA34171770350057664C /* Prints and Drawings.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8074E9A1171770350057664C /* Prints and Drawings.txt */; };
+		8074EA35171770350057664C /* The-Deconstruction-of-the-French-Armada-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E9A2171770350057664C /* The-Deconstruction-of-the-French-Armada-tb.jpg */; };
+		8074EA36171770350057664C /* The-Deconstruction-of-the-French-Armada.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E9A3171770350057664C /* The-Deconstruction-of-the-French-Armada.jpg */; };
+		8074EA37171770350057664C /* The-Fall-of-the-Walls-of-Jericho-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E9A4171770350057664C /* The-Fall-of-the-Walls-of-Jericho-tb.jpg */; };
+		8074EA38171770350057664C /* The-Fall-of-the-Walls-of-Jericho.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E9A5171770350057664C /* The-Fall-of-the-Walls-of-Jericho.jpg */; };
 		808DB99816CD7E5F00B591D6 /* TitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808DB99716CD7E5F00B591D6 /* TitleViewController.m */; };
 		80CFA22B16F218F200F90382 /* Properties.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80CFA22A16F218F200F90382 /* Properties.plist */; };
 		C9F783630F2AB7600029CA01 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F783620F2AB7600029CA01 /* DataSource.m */; };
@@ -170,6 +317,153 @@
 		8074E902171735510057664C /* Seated Bodhisattva-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Seated Bodhisattva-tb.jpg"; sourceTree = "<group>"; };
 		8074E903171735510057664C /* Seated Bodhisattva.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Seated Bodhisattva.jpg"; sourceTree = "<group>"; };
 		8074E904171735510057664C /* Vajravarahi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Vajravarahi.jpg; sourceTree = "<group>"; };
+		8074E90D171770350057664C /* African.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = African.txt; sourceTree = "<group>"; };
+		8074E90E171770350057664C /* Cloth-with-Olokun-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cloth-with-Olokun-tb.jpg"; sourceTree = "<group>"; };
+		8074E90F171770350057664C /* Cloth-with-Olokun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cloth-with-Olokun.jpg"; sourceTree = "<group>"; };
+		8074E910171770350057664C /* Face-Mask-tb.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Face-Mask-tb.JPG"; sourceTree = "<group>"; };
+		8074E911171770350057664C /* Face-Mask.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Face-Mask.JPG"; sourceTree = "<group>"; };
+		8074E912171770350057664C /* Gala-Blanket-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Gala-Blanket-tb.jpg"; sourceTree = "<group>"; };
+		8074E913171770350057664C /* Gala-Blanket.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Gala-Blanket.jpg"; sourceTree = "<group>"; };
+		8074E914171770350057664C /* Indigo-Resist-Dyed-Cloth-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Indigo-Resist-Dyed-Cloth-tb.jpg"; sourceTree = "<group>"; };
+		8074E915171770350057664C /* Indigo-Resist-Dyed-Cloth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Indigo-Resist-Dyed-Cloth.jpg"; sourceTree = "<group>"; };
+		8074E916171770350057664C /* Koranic-Board-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Koranic-Board-tb.jpg"; sourceTree = "<group>"; };
+		8074E917171770350057664C /* Koranic-Board.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Koranic-Board.jpg"; sourceTree = "<group>"; };
+		8074E918171770350057664C /* Maternity-Figure-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Maternity-Figure-tb.jpg"; sourceTree = "<group>"; };
+		8074E919171770350057664C /* Maternity-Figure.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Maternity-Figure.jpg"; sourceTree = "<group>"; };
+		8074E91A171770350057664C /* Scrolls-of-the-Ancestor-IV-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scrolls-of-the-Ancestor-IV-tb.jpg"; sourceTree = "<group>"; };
+		8074E91B171770350057664C /* Scrolls-of-the-Ancestor-IV.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scrolls-of-the-Ancestor-IV.jpg"; sourceTree = "<group>"; };
+		8074E91C171770350057664C /* Spirit-at-the-Door-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Spirit-at-the-Door-tb.jpg"; sourceTree = "<group>"; };
+		8074E91D171770350057664C /* Spirit-at-the-Door.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Spirit-at-the-Door.jpg"; sourceTree = "<group>"; };
+		8074E91E171770350057664C /* Time-Cycle-III-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Time-Cycle-III-tb.jpg"; sourceTree = "<group>"; };
+		8074E91F171770350057664C /* Time-Cycle-III.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Time-Cycle-III.jpg"; sourceTree = "<group>"; };
+		8074E920171770350057664C /* Wedding-Cape-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Wedding-Cape-tb.jpg"; sourceTree = "<group>"; };
+		8074E921171770350057664C /* Wedding-Cape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Wedding-Cape.jpg"; sourceTree = "<group>"; };
+		8074E923171770350057664C /* Ancient American.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Ancient American.txt"; sourceTree = "<group>"; };
+		8074E924171770350057664C /* Burial-Urn-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Burial-Urn-tb.jpg"; sourceTree = "<group>"; };
+		8074E925171770350057664C /* Burial-Urn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Burial-Urn.jpg"; sourceTree = "<group>"; };
+		8074E926171770350057664C /* Cylindrical-vase-with-heads-of-Lord-of-Underworld-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cylindrical-vase-with-heads-of-Lord-of-Underworld-tb.jpg"; sourceTree = "<group>"; };
+		8074E927171770350057664C /* Cylindrical-vase-with-heads-of-Lord-of-Underworld.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cylindrical-vase-with-heads-of-Lord-of-Underworld.jpg"; sourceTree = "<group>"; };
+		8074E928171770350057664C /* Head-of-Ruler-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Head-of-Ruler-tb.jpg"; sourceTree = "<group>"; };
+		8074E929171770350057664C /* Head-of-Ruler.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Head-of-Ruler.jpg"; sourceTree = "<group>"; };
+		8074E92A171770350057664C /* Jaguar-effigy-metate-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jaguar-effigy-metate-tb.jpg"; sourceTree = "<group>"; };
+		8074E92B171770350057664C /* Jaguar-effigy-metate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jaguar-effigy-metate.jpg"; sourceTree = "<group>"; };
+		8074E92C171770350057664C /* Poncho-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Poncho-tb.jpg"; sourceTree = "<group>"; };
+		8074E92D171770350057664C /* Poncho.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Poncho.jpg; sourceTree = "<group>"; };
+		8074E92E171770350057664C /* Seated-Companion-Urn-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Seated-Companion-Urn-tb.jpg"; sourceTree = "<group>"; };
+		8074E92F171770350057664C /* Seated-Companion-Urn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Seated-Companion-Urn.jpg"; sourceTree = "<group>"; };
+		8074E930171770350057664C /* Seated-Female-Figurine-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Seated-Female-Figurine-tb.jpg"; sourceTree = "<group>"; };
+		8074E931171770350057664C /* Seated-Female-Figurine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Seated-Female-Figurine.jpg"; sourceTree = "<group>"; };
+		8074E932171770350057664C /* Standing-figure-in-the-Laughing-Child-form-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Standing-figure-in-the-Laughing-Child-form-tb.jpg"; sourceTree = "<group>"; };
+		8074E933171770350057664C /* Standing-figure-in-the-Laughing-Child-form.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Standing-figure-in-the-Laughing-Child-form.jpg"; sourceTree = "<group>"; };
+		8074E934171770350057664C /* Tripod-Bowl-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tripod-Bowl-tb.jpg"; sourceTree = "<group>"; };
+		8074E935171770350057664C /* Tripod-Bowl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tripod-Bowl.jpg"; sourceTree = "<group>"; };
+		8074E936171770350057664C /* Tripod-Plate-with-Rain-Serpent-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tripod-Plate-with-Rain-Serpent-tb.jpg"; sourceTree = "<group>"; };
+		8074E937171770350057664C /* Tripod-Plate-with-Rain-Serpent.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tripod-Plate-with-Rain-Serpent.jpg"; sourceTree = "<group>"; };
+		8074E939171770350057664C /* Asian.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Asian.txt; sourceTree = "<group>"; };
+		8074E93A171770350057664C /* Beauties-in-the-Garden-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Beauties-in-the-Garden-tb.jpg"; sourceTree = "<group>"; };
+		8074E93B171770350057664C /* Beauties-in-the-Garden.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Beauties-in-the-Garden.jpg"; sourceTree = "<group>"; };
+		8074E93C171770350057664C /* Blue-Glazed-Cong-Shaped-Vase-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Blue-Glazed-Cong-Shaped-Vase-tb.jpg"; sourceTree = "<group>"; };
+		8074E93D171770350057664C /* Blue-Glazed-Cong-Shaped-Vase.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Blue-Glazed-Cong-Shaped-Vase.jpg"; sourceTree = "<group>"; };
+		8074E93E171770350057664C /* Fuchu-Female-Tea-Pickers-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fuchu-Female-Tea-Pickers-tb.jpg"; sourceTree = "<group>"; };
+		8074E93F171770350057664C /* Fuchu-Female-Tea-Pickers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Fuchu-Female-Tea-Pickers.jpg"; sourceTree = "<group>"; };
+		8074E940171770350057664C /* Hanging-Basket-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hanging-Basket-tb.jpg"; sourceTree = "<group>"; };
+		8074E941171770350057664C /* Hanging-Basket.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Hanging-Basket.jpg"; sourceTree = "<group>"; };
+		8074E942171770350057664C /* Large-Vase-with-Lotus-Design-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Large-Vase-with-Lotus-Design-tb.jpg"; sourceTree = "<group>"; };
+		8074E943171770350057664C /* Large-Vase-with-Lotus-Design.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Large-Vase-with-Lotus-Design.jpg"; sourceTree = "<group>"; };
+		8074E944171770350057664C /* Lion-form-Water-Dropper-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lion-form-Water-Dropper-tb.jpg"; sourceTree = "<group>"; };
+		8074E945171770350057664C /* Lion-form-Water-Dropper.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lion-form-Water-Dropper.jpg"; sourceTree = "<group>"; };
+		8074E946171770350057664C /* Moonflask-with-Birds-and-Flowers-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Moonflask-with-Birds-and-Flowers-tb.jpg"; sourceTree = "<group>"; };
+		8074E947171770350057664C /* Moonflask-with-Birds-and-Flowers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Moonflask-with-Birds-and-Flowers.jpg"; sourceTree = "<group>"; };
+		8074E948171770350057664C /* Santal-Boy-with-Drum-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Santal-Boy-with-Drum-tb.jpg"; sourceTree = "<group>"; };
+		8074E949171770350057664C /* Santal-Boy-with-Drum.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Santal-Boy-with-Drum.jpg"; sourceTree = "<group>"; };
+		8074E94A171770350057664C /* The-Lute-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The-Lute-tb.jpg"; sourceTree = "<group>"; };
+		8074E94B171770350057664C /* The-Lute.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The-Lute.jpg"; sourceTree = "<group>"; };
+		8074E94C171770350057664C /* Tray-with-Birds-and-Cherry-Blossoms-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tray-with-Birds-and-Cherry-Blossoms-tb.jpg"; sourceTree = "<group>"; };
+		8074E94D171770350057664C /* Tray-with-Birds-and-Cherry-Blossoms.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tray-with-Birds-and-Cherry-Blossoms.jpg"; sourceTree = "<group>"; };
+		8074E94F171770350057664C /* Biblioteca-Nazionale-Marciana-Venezia-III-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Biblioteca-Nazionale-Marciana-Venezia-III-tb.jpg"; sourceTree = "<group>"; };
+		8074E950171770350057664C /* Biblioteca-Nazionale-Marciana-Venezia-III.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Biblioteca-Nazionale-Marciana-Venezia-III.jpg"; sourceTree = "<group>"; };
+		8074E951171770350057664C /* Complejo-Marti-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Complejo-Marti-tb.jpg"; sourceTree = "<group>"; };
+		8074E952171770350057664C /* Complejo-Marti.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Complejo-Marti.jpg"; sourceTree = "<group>"; };
+		8074E953171770350057664C /* Contemporary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Contemporary.txt; sourceTree = "<group>"; };
+		8074E954171770350057664C /* Dogon-Couple-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dogon-Couple-tb.jpg"; sourceTree = "<group>"; };
+		8074E955171770350057664C /* Dogon-Couple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dogon-Couple.jpg"; sourceTree = "<group>"; };
+		8074E956171770350057664C /* Gay-Lussac-Nite-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Gay-Lussac-Nite-tb.jpg"; sourceTree = "<group>"; };
+		8074E957171770350057664C /* Gay-Lussac-Nite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Gay-Lussac-Nite.jpg"; sourceTree = "<group>"; };
+		8074E958171770350057664C /* IMAGinING-Tobia-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IMAGinING-Tobia-tb.jpg"; sourceTree = "<group>"; };
+		8074E959171770350057664C /* IMAGinING-Tobia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IMAGinING-Tobia.jpg"; sourceTree = "<group>"; };
+		8074E95A171770350057664C /* Nets-Infinitity-TWOS-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Nets-Infinitity-TWOS-tb.jpg"; sourceTree = "<group>"; };
+		8074E95B171770350057664C /* Nets-Infinitity-TWOS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Nets-Infinitity-TWOS.jpg"; sourceTree = "<group>"; };
+		8074E95C171770350057664C /* Ode-a-lOubli-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ode-a-lOubli-tb.jpg"; sourceTree = "<group>"; };
+		8074E95D171770350057664C /* Ode-a-lOubli.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ode-a-lOubli.jpg"; sourceTree = "<group>"; };
+		8074E95E171770350057664C /* Shanty-Nucleus-after-Derrida-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Shanty-Nucleus-after-Derrida-tb.jpg"; sourceTree = "<group>"; };
+		8074E95F171770350057664C /* Shanty-Nucleus-after-Derrida.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Shanty-Nucleus-after-Derrida.jpg"; sourceTree = "<group>"; };
+		8074E960171770350057664C /* Vessel-Series-I-no-1-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Vessel-Series-I-no-1-tb.jpg"; sourceTree = "<group>"; };
+		8074E961171770350057664C /* Vessel-Series-I-no-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Vessel-Series-I-no-1.jpg"; sourceTree = "<group>"; };
+		8074E962171770350057664C /* Well-4-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Well-4-tb.jpg"; sourceTree = "<group>"; };
+		8074E963171770350057664C /* Well-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Well-4.jpg"; sourceTree = "<group>"; };
+		8074E965171770350057664C /* Austrian-Copper-Rose-IV-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Austrian-Copper-Rose-IV-tb.jpg"; sourceTree = "<group>"; };
+		8074E966171770350057664C /* Austrian-Copper-Rose-IV.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Austrian-Copper-Rose-IV.jpg"; sourceTree = "<group>"; };
+		8074E967171770350057664C /* Cubist-Still-Life-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cubist-Still-Life-tb.jpg"; sourceTree = "<group>"; };
+		8074E968171770350057664C /* Cubist-Still-Life.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cubist-Still-Life.jpg"; sourceTree = "<group>"; };
+		8074E969171770350057664C /* El-Encuentro-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "El-Encuentro-tb.jpg"; sourceTree = "<group>"; };
+		8074E96A171770350057664C /* El-Encuentro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "El-Encuentro.jpg"; sourceTree = "<group>"; };
+		8074E96B171770350057664C /* Figuras-Constructivas-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Figuras-Constructivas-tb.jpg"; sourceTree = "<group>"; };
+		8074E96C171770350057664C /* Figuras-Constructivas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Figuras-Constructivas.jpg"; sourceTree = "<group>"; };
+		8074E96D171770350057664C /* Florida-Lake-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Florida-Lake-tb.jpg"; sourceTree = "<group>"; };
+		8074E96E171770350057664C /* Florida-Lake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Florida-Lake.jpg"; sourceTree = "<group>"; };
+		8074E96F171770350057664C /* Manhattan-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Manhattan-tb.jpg"; sourceTree = "<group>"; };
+		8074E970171770350057664C /* Manhattan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Manhattan.jpg; sourceTree = "<group>"; };
+		8074E971171770350057664C /* Modern.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Modern.txt; sourceTree = "<group>"; };
+		8074E972171770350057664C /* Rider-of-the-Apocalypse-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Rider-of-the-Apocalypse-tb.jpg"; sourceTree = "<group>"; };
+		8074E973171770350057664C /* Rider-of-the-Apocalypse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Rider-of-the-Apocalypse.jpg"; sourceTree = "<group>"; };
+		8074E974171770350057664C /* Television-2-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Television-2-tb.jpg"; sourceTree = "<group>"; };
+		8074E975171770350057664C /* Television-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Television-2.jpg"; sourceTree = "<group>"; };
+		8074E976171770350057664C /* The-Art-of-the-Negro-Native-Forms-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The-Art-of-the-Negro-Native-Forms-tb.jpg"; sourceTree = "<group>"; };
+		8074E977171770350057664C /* The-Art-of-the-Negro-Native-Forms.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The-Art-of-the-Negro-Native-Forms.jpg"; sourceTree = "<group>"; };
+		8074E978171770350057664C /* The-Woodcutter-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The-Woodcutter-tb.jpg"; sourceTree = "<group>"; };
+		8074E979171770350057664C /* The-Woodcutter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The-Woodcutter.jpg"; sourceTree = "<group>"; };
+		8074E97B171770350057664C /* A-sphere-lit-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "A-sphere-lit-tb.jpg"; sourceTree = "<group>"; };
+		8074E97C171770350057664C /* A-sphere-lit.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "A-sphere-lit.jpg"; sourceTree = "<group>"; };
+		8074E97D171770350057664C /* Cavewomen-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cavewomen-tb.jpg"; sourceTree = "<group>"; };
+		8074E97E171770350057664C /* Cavewomen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cavewomen.jpg; sourceTree = "<group>"; };
+		8074E97F171770350057664C /* Clownmirror-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Clownmirror-tb.jpg"; sourceTree = "<group>"; };
+		8074E980171770350057664C /* Clownmirror.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Clownmirror.jpg; sourceTree = "<group>"; };
+		8074E981171770350057664C /* Four-views-from-four-times-and-one-shoreline-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Four-views-from-four-times-and-one-shoreline-tb.jpg"; sourceTree = "<group>"; };
+		8074E982171770350057664C /* Four-views-from-four-times-and-one-shoreline.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Four-views-from-four-times-and-one-shoreline.jpg"; sourceTree = "<group>"; };
+		8074E983171770350057664C /* Getting-Lindsay-Linton-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Getting-Lindsay-Linton-tb.jpg"; sourceTree = "<group>"; };
+		8074E984171770350057664C /* Getting-Lindsay-Linton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Getting-Lindsay-Linton.jpg"; sourceTree = "<group>"; };
+		8074E985171770350057664C /* Photography.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Photography.txt; sourceTree = "<group>"; };
+		8074E986171770350057664C /* Scenographer's-Mind-VIII-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scenographer's-Mind-VIII-tb.jpg"; sourceTree = "<group>"; };
+		8074E987171770350057664C /* Scenographer's-Mind-VIII.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scenographer's-Mind-VIII.jpg"; sourceTree = "<group>"; };
+		8074E988171770350057664C /* Swamp-and-Pipeline-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Swamp-and-Pipeline-tb.jpg"; sourceTree = "<group>"; };
+		8074E989171770350057664C /* Swamp-and-Pipeline.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Swamp-and-Pipeline.jpg"; sourceTree = "<group>"; };
+		8074E98A171770350057664C /* The-patient-gardener-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The-patient-gardener-tb.jpg"; sourceTree = "<group>"; };
+		8074E98B171770350057664C /* The-patient-gardener.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The-patient-gardener.jpg"; sourceTree = "<group>"; };
+		8074E98C171770350057664C /* Tropical-Rococo-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tropical-Rococo-tb.jpg"; sourceTree = "<group>"; };
+		8074E98D171770350057664C /* Tropical-Rococo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tropical-Rococo.jpg"; sourceTree = "<group>"; };
+		8074E98E171770350057664C /* Valerie-in-the-light-Bruno-in-the-dark-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Valerie-in-the-light-Bruno-in-the-dark-tb.jpg"; sourceTree = "<group>"; };
+		8074E98F171770350057664C /* Valerie-in-the-light-Bruno-in-the-dark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Valerie-in-the-light-Bruno-in-the-dark.jpg"; sourceTree = "<group>"; };
+		8074E991171770350057664C /* Black-Chinned-Garrulax-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Black-Chinned-Garrulax-tb.jpg"; sourceTree = "<group>"; };
+		8074E992171770350057664C /* Black-Chinned-Garrulax.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Black-Chinned-Garrulax.jpg"; sourceTree = "<group>"; };
+		8074E993171770350057664C /* California-Hare-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "California-Hare-tb.jpg"; sourceTree = "<group>"; };
+		8074E994171770350057664C /* California-Hare.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "California-Hare.jpg"; sourceTree = "<group>"; };
+		8074E995171770350057664C /* China-Limodoron-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "China-Limodoron-tb.jpg"; sourceTree = "<group>"; };
+		8074E996171770350057664C /* China-Limodoron.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "China-Limodoron.jpg"; sourceTree = "<group>"; };
+		8074E997171770350057664C /* Dante-in-Hell-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dante-in-Hell-tb.jpg"; sourceTree = "<group>"; };
+		8074E998171770350057664C /* Dante-in-Hell.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dante-in-Hell.jpg"; sourceTree = "<group>"; };
+		8074E999171770350057664C /* Disparte-General-tb.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Disparte-General-tb.JPG"; sourceTree = "<group>"; };
+		8074E99A171770350057664C /* Disparte-General.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Disparte-General.JPG"; sourceTree = "<group>"; };
+		8074E99B171770350057664C /* Inscriptions-Sepulchrales-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Inscriptions-Sepulchrales-tb.jpg"; sourceTree = "<group>"; };
+		8074E99C171770350057664C /* Inscriptions-Sepulchrales.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Inscriptions-Sepulchrales.jpg"; sourceTree = "<group>"; };
+		8074E99D171770350057664C /* Marguerite-au-Rouet-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Marguerite-au-Rouet-tb.jpg"; sourceTree = "<group>"; };
+		8074E99E171770350057664C /* Marguerite-au-Rouet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Marguerite-au-Rouet.jpg"; sourceTree = "<group>"; };
+		8074E99F171770350057664C /* Noisetier-Franca-Gros-Fruits-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Noisetier-Franca-Gros-Fruits-tb.jpg"; sourceTree = "<group>"; };
+		8074E9A0171770350057664C /* Noisetier-Franca-Gros-Fruits.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Noisetier-Franca-Gros-Fruits.jpg"; sourceTree = "<group>"; };
+		8074E9A1171770350057664C /* Prints and Drawings.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Prints and Drawings.txt"; sourceTree = "<group>"; };
+		8074E9A2171770350057664C /* The-Deconstruction-of-the-French-Armada-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The-Deconstruction-of-the-French-Armada-tb.jpg"; sourceTree = "<group>"; };
+		8074E9A3171770350057664C /* The-Deconstruction-of-the-French-Armada.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The-Deconstruction-of-the-French-Armada.jpg"; sourceTree = "<group>"; };
+		8074E9A4171770350057664C /* The-Fall-of-the-Walls-of-Jericho-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The-Fall-of-the-Walls-of-Jericho-tb.jpg"; sourceTree = "<group>"; };
+		8074E9A5171770350057664C /* The-Fall-of-the-Walls-of-Jericho.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The-Fall-of-the-Walls-of-Jericho.jpg"; sourceTree = "<group>"; };
 		808DB99616CD7E5F00B591D6 /* TitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleViewController.h; sourceTree = "<group>"; };
 		808DB99716CD7E5F00B591D6 /* TitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleViewController.m; sourceTree = "<group>"; };
 		80CFA22A16F218F200F90382 /* Properties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Properties.plist; sourceTree = "<group>"; };
@@ -322,6 +616,13 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8074E90C171770350057664C /* African */,
+				8074E922171770350057664C /* Ancient American */,
+				8074E938171770350057664C /* Asian */,
+				8074E94E171770350057664C /* Contemporary */,
+				8074E964171770350057664C /* Modern */,
+				8074E97A171770350057664C /* Photography */,
+				8074E990171770350057664C /* Prints and Drawings */,
 				1D66A5701715B98700641B84 /* HarnLogoSquare.png */,
 				1D61A4AF17074A40007CC2F4 /* newmodern.png */,
 				1D00C31C1705F4E000A40D79 /* blackbutton.png */,
@@ -384,6 +685,202 @@
 				8074E904171735510057664C /* Vajravarahi.jpg */,
 			);
 			path = "Asian Collection";
+			sourceTree = "<group>";
+		};
+		8074E90C171770350057664C /* African */ = {
+			isa = PBXGroup;
+			children = (
+				8074E90D171770350057664C /* African.txt */,
+				8074E90E171770350057664C /* Cloth-with-Olokun-tb.jpg */,
+				8074E90F171770350057664C /* Cloth-with-Olokun.jpg */,
+				8074E910171770350057664C /* Face-Mask-tb.JPG */,
+				8074E911171770350057664C /* Face-Mask.JPG */,
+				8074E912171770350057664C /* Gala-Blanket-tb.jpg */,
+				8074E913171770350057664C /* Gala-Blanket.jpg */,
+				8074E914171770350057664C /* Indigo-Resist-Dyed-Cloth-tb.jpg */,
+				8074E915171770350057664C /* Indigo-Resist-Dyed-Cloth.jpg */,
+				8074E916171770350057664C /* Koranic-Board-tb.jpg */,
+				8074E917171770350057664C /* Koranic-Board.jpg */,
+				8074E918171770350057664C /* Maternity-Figure-tb.jpg */,
+				8074E919171770350057664C /* Maternity-Figure.jpg */,
+				8074E91A171770350057664C /* Scrolls-of-the-Ancestor-IV-tb.jpg */,
+				8074E91B171770350057664C /* Scrolls-of-the-Ancestor-IV.jpg */,
+				8074E91C171770350057664C /* Spirit-at-the-Door-tb.jpg */,
+				8074E91D171770350057664C /* Spirit-at-the-Door.jpg */,
+				8074E91E171770350057664C /* Time-Cycle-III-tb.jpg */,
+				8074E91F171770350057664C /* Time-Cycle-III.jpg */,
+				8074E920171770350057664C /* Wedding-Cape-tb.jpg */,
+				8074E921171770350057664C /* Wedding-Cape.jpg */,
+			);
+			path = African;
+			sourceTree = "<group>";
+		};
+		8074E922171770350057664C /* Ancient American */ = {
+			isa = PBXGroup;
+			children = (
+				8074E923171770350057664C /* Ancient American.txt */,
+				8074E924171770350057664C /* Burial-Urn-tb.jpg */,
+				8074E925171770350057664C /* Burial-Urn.jpg */,
+				8074E926171770350057664C /* Cylindrical-vase-with-heads-of-Lord-of-Underworld-tb.jpg */,
+				8074E927171770350057664C /* Cylindrical-vase-with-heads-of-Lord-of-Underworld.jpg */,
+				8074E928171770350057664C /* Head-of-Ruler-tb.jpg */,
+				8074E929171770350057664C /* Head-of-Ruler.jpg */,
+				8074E92A171770350057664C /* Jaguar-effigy-metate-tb.jpg */,
+				8074E92B171770350057664C /* Jaguar-effigy-metate.jpg */,
+				8074E92C171770350057664C /* Poncho-tb.jpg */,
+				8074E92D171770350057664C /* Poncho.jpg */,
+				8074E92E171770350057664C /* Seated-Companion-Urn-tb.jpg */,
+				8074E92F171770350057664C /* Seated-Companion-Urn.jpg */,
+				8074E930171770350057664C /* Seated-Female-Figurine-tb.jpg */,
+				8074E931171770350057664C /* Seated-Female-Figurine.jpg */,
+				8074E932171770350057664C /* Standing-figure-in-the-Laughing-Child-form-tb.jpg */,
+				8074E933171770350057664C /* Standing-figure-in-the-Laughing-Child-form.jpg */,
+				8074E934171770350057664C /* Tripod-Bowl-tb.jpg */,
+				8074E935171770350057664C /* Tripod-Bowl.jpg */,
+				8074E936171770350057664C /* Tripod-Plate-with-Rain-Serpent-tb.jpg */,
+				8074E937171770350057664C /* Tripod-Plate-with-Rain-Serpent.jpg */,
+			);
+			path = "Ancient American";
+			sourceTree = "<group>";
+		};
+		8074E938171770350057664C /* Asian */ = {
+			isa = PBXGroup;
+			children = (
+				8074E939171770350057664C /* Asian.txt */,
+				8074E93A171770350057664C /* Beauties-in-the-Garden-tb.jpg */,
+				8074E93B171770350057664C /* Beauties-in-the-Garden.jpg */,
+				8074E93C171770350057664C /* Blue-Glazed-Cong-Shaped-Vase-tb.jpg */,
+				8074E93D171770350057664C /* Blue-Glazed-Cong-Shaped-Vase.jpg */,
+				8074E93E171770350057664C /* Fuchu-Female-Tea-Pickers-tb.jpg */,
+				8074E93F171770350057664C /* Fuchu-Female-Tea-Pickers.jpg */,
+				8074E940171770350057664C /* Hanging-Basket-tb.jpg */,
+				8074E941171770350057664C /* Hanging-Basket.jpg */,
+				8074E942171770350057664C /* Large-Vase-with-Lotus-Design-tb.jpg */,
+				8074E943171770350057664C /* Large-Vase-with-Lotus-Design.jpg */,
+				8074E944171770350057664C /* Lion-form-Water-Dropper-tb.jpg */,
+				8074E945171770350057664C /* Lion-form-Water-Dropper.jpg */,
+				8074E946171770350057664C /* Moonflask-with-Birds-and-Flowers-tb.jpg */,
+				8074E947171770350057664C /* Moonflask-with-Birds-and-Flowers.jpg */,
+				8074E948171770350057664C /* Santal-Boy-with-Drum-tb.jpg */,
+				8074E949171770350057664C /* Santal-Boy-with-Drum.jpg */,
+				8074E94A171770350057664C /* The-Lute-tb.jpg */,
+				8074E94B171770350057664C /* The-Lute.jpg */,
+				8074E94C171770350057664C /* Tray-with-Birds-and-Cherry-Blossoms-tb.jpg */,
+				8074E94D171770350057664C /* Tray-with-Birds-and-Cherry-Blossoms.jpg */,
+			);
+			path = Asian;
+			sourceTree = "<group>";
+		};
+		8074E94E171770350057664C /* Contemporary */ = {
+			isa = PBXGroup;
+			children = (
+				8074E94F171770350057664C /* Biblioteca-Nazionale-Marciana-Venezia-III-tb.jpg */,
+				8074E950171770350057664C /* Biblioteca-Nazionale-Marciana-Venezia-III.jpg */,
+				8074E951171770350057664C /* Complejo-Marti-tb.jpg */,
+				8074E952171770350057664C /* Complejo-Marti.jpg */,
+				8074E953171770350057664C /* Contemporary.txt */,
+				8074E954171770350057664C /* Dogon-Couple-tb.jpg */,
+				8074E955171770350057664C /* Dogon-Couple.jpg */,
+				8074E956171770350057664C /* Gay-Lussac-Nite-tb.jpg */,
+				8074E957171770350057664C /* Gay-Lussac-Nite.jpg */,
+				8074E958171770350057664C /* IMAGinING-Tobia-tb.jpg */,
+				8074E959171770350057664C /* IMAGinING-Tobia.jpg */,
+				8074E95A171770350057664C /* Nets-Infinitity-TWOS-tb.jpg */,
+				8074E95B171770350057664C /* Nets-Infinitity-TWOS.jpg */,
+				8074E95C171770350057664C /* Ode-a-lOubli-tb.jpg */,
+				8074E95D171770350057664C /* Ode-a-lOubli.jpg */,
+				8074E95E171770350057664C /* Shanty-Nucleus-after-Derrida-tb.jpg */,
+				8074E95F171770350057664C /* Shanty-Nucleus-after-Derrida.jpg */,
+				8074E960171770350057664C /* Vessel-Series-I-no-1-tb.jpg */,
+				8074E961171770350057664C /* Vessel-Series-I-no-1.jpg */,
+				8074E962171770350057664C /* Well-4-tb.jpg */,
+				8074E963171770350057664C /* Well-4.jpg */,
+			);
+			path = Contemporary;
+			sourceTree = "<group>";
+		};
+		8074E964171770350057664C /* Modern */ = {
+			isa = PBXGroup;
+			children = (
+				8074E965171770350057664C /* Austrian-Copper-Rose-IV-tb.jpg */,
+				8074E966171770350057664C /* Austrian-Copper-Rose-IV.jpg */,
+				8074E967171770350057664C /* Cubist-Still-Life-tb.jpg */,
+				8074E968171770350057664C /* Cubist-Still-Life.jpg */,
+				8074E969171770350057664C /* El-Encuentro-tb.jpg */,
+				8074E96A171770350057664C /* El-Encuentro.jpg */,
+				8074E96B171770350057664C /* Figuras-Constructivas-tb.jpg */,
+				8074E96C171770350057664C /* Figuras-Constructivas.jpg */,
+				8074E96D171770350057664C /* Florida-Lake-tb.jpg */,
+				8074E96E171770350057664C /* Florida-Lake.jpg */,
+				8074E96F171770350057664C /* Manhattan-tb.jpg */,
+				8074E970171770350057664C /* Manhattan.jpg */,
+				8074E971171770350057664C /* Modern.txt */,
+				8074E972171770350057664C /* Rider-of-the-Apocalypse-tb.jpg */,
+				8074E973171770350057664C /* Rider-of-the-Apocalypse.jpg */,
+				8074E974171770350057664C /* Television-2-tb.jpg */,
+				8074E975171770350057664C /* Television-2.jpg */,
+				8074E976171770350057664C /* The-Art-of-the-Negro-Native-Forms-tb.jpg */,
+				8074E977171770350057664C /* The-Art-of-the-Negro-Native-Forms.jpg */,
+				8074E978171770350057664C /* The-Woodcutter-tb.jpg */,
+				8074E979171770350057664C /* The-Woodcutter.jpg */,
+			);
+			path = Modern;
+			sourceTree = "<group>";
+		};
+		8074E97A171770350057664C /* Photography */ = {
+			isa = PBXGroup;
+			children = (
+				8074E97B171770350057664C /* A-sphere-lit-tb.jpg */,
+				8074E97C171770350057664C /* A-sphere-lit.jpg */,
+				8074E97D171770350057664C /* Cavewomen-tb.jpg */,
+				8074E97E171770350057664C /* Cavewomen.jpg */,
+				8074E97F171770350057664C /* Clownmirror-tb.jpg */,
+				8074E980171770350057664C /* Clownmirror.jpg */,
+				8074E981171770350057664C /* Four-views-from-four-times-and-one-shoreline-tb.jpg */,
+				8074E982171770350057664C /* Four-views-from-four-times-and-one-shoreline.jpg */,
+				8074E983171770350057664C /* Getting-Lindsay-Linton-tb.jpg */,
+				8074E984171770350057664C /* Getting-Lindsay-Linton.jpg */,
+				8074E985171770350057664C /* Photography.txt */,
+				8074E986171770350057664C /* Scenographer's-Mind-VIII-tb.jpg */,
+				8074E987171770350057664C /* Scenographer's-Mind-VIII.jpg */,
+				8074E988171770350057664C /* Swamp-and-Pipeline-tb.jpg */,
+				8074E989171770350057664C /* Swamp-and-Pipeline.jpg */,
+				8074E98A171770350057664C /* The-patient-gardener-tb.jpg */,
+				8074E98B171770350057664C /* The-patient-gardener.jpg */,
+				8074E98C171770350057664C /* Tropical-Rococo-tb.jpg */,
+				8074E98D171770350057664C /* Tropical-Rococo.jpg */,
+				8074E98E171770350057664C /* Valerie-in-the-light-Bruno-in-the-dark-tb.jpg */,
+				8074E98F171770350057664C /* Valerie-in-the-light-Bruno-in-the-dark.jpg */,
+			);
+			path = Photography;
+			sourceTree = "<group>";
+		};
+		8074E990171770350057664C /* Prints and Drawings */ = {
+			isa = PBXGroup;
+			children = (
+				8074E991171770350057664C /* Black-Chinned-Garrulax-tb.jpg */,
+				8074E992171770350057664C /* Black-Chinned-Garrulax.jpg */,
+				8074E993171770350057664C /* California-Hare-tb.jpg */,
+				8074E994171770350057664C /* California-Hare.jpg */,
+				8074E995171770350057664C /* China-Limodoron-tb.jpg */,
+				8074E996171770350057664C /* China-Limodoron.jpg */,
+				8074E997171770350057664C /* Dante-in-Hell-tb.jpg */,
+				8074E998171770350057664C /* Dante-in-Hell.jpg */,
+				8074E999171770350057664C /* Disparte-General-tb.JPG */,
+				8074E99A171770350057664C /* Disparte-General.JPG */,
+				8074E99B171770350057664C /* Inscriptions-Sepulchrales-tb.jpg */,
+				8074E99C171770350057664C /* Inscriptions-Sepulchrales.jpg */,
+				8074E99D171770350057664C /* Marguerite-au-Rouet-tb.jpg */,
+				8074E99E171770350057664C /* Marguerite-au-Rouet.jpg */,
+				8074E99F171770350057664C /* Noisetier-Franca-Gros-Fruits-tb.jpg */,
+				8074E9A0171770350057664C /* Noisetier-Franca-Gros-Fruits.jpg */,
+				8074E9A1171770350057664C /* Prints and Drawings.txt */,
+				8074E9A2171770350057664C /* The-Deconstruction-of-the-French-Armada-tb.jpg */,
+				8074E9A3171770350057664C /* The-Deconstruction-of-the-French-Armada.jpg */,
+				8074E9A4171770350057664C /* The-Fall-of-the-Walls-of-Jericho-tb.jpg */,
+				8074E9A5171770350057664C /* The-Fall-of-the-Walls-of-Jericho.jpg */,
+			);
+			path = "Prints and Drawings";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -486,6 +983,153 @@
 				8074E906171735510057664C /* Seated Bodhisattva-tb.jpg in Resources */,
 				8074E907171735510057664C /* Seated Bodhisattva.jpg in Resources */,
 				8074E908171735510057664C /* Vajravarahi.jpg in Resources */,
+				8074E9A6171770350057664C /* African.txt in Resources */,
+				8074E9A7171770350057664C /* Cloth-with-Olokun-tb.jpg in Resources */,
+				8074E9A8171770350057664C /* Cloth-with-Olokun.jpg in Resources */,
+				8074E9A9171770350057664C /* Face-Mask-tb.JPG in Resources */,
+				8074E9AA171770350057664C /* Face-Mask.JPG in Resources */,
+				8074E9AB171770350057664C /* Gala-Blanket-tb.jpg in Resources */,
+				8074E9AC171770350057664C /* Gala-Blanket.jpg in Resources */,
+				8074E9AD171770350057664C /* Indigo-Resist-Dyed-Cloth-tb.jpg in Resources */,
+				8074E9AE171770350057664C /* Indigo-Resist-Dyed-Cloth.jpg in Resources */,
+				8074E9AF171770350057664C /* Koranic-Board-tb.jpg in Resources */,
+				8074E9B0171770350057664C /* Koranic-Board.jpg in Resources */,
+				8074E9B1171770350057664C /* Maternity-Figure-tb.jpg in Resources */,
+				8074E9B2171770350057664C /* Maternity-Figure.jpg in Resources */,
+				8074E9B3171770350057664C /* Scrolls-of-the-Ancestor-IV-tb.jpg in Resources */,
+				8074E9B4171770350057664C /* Scrolls-of-the-Ancestor-IV.jpg in Resources */,
+				8074E9B5171770350057664C /* Spirit-at-the-Door-tb.jpg in Resources */,
+				8074E9B6171770350057664C /* Spirit-at-the-Door.jpg in Resources */,
+				8074E9B7171770350057664C /* Time-Cycle-III-tb.jpg in Resources */,
+				8074E9B8171770350057664C /* Time-Cycle-III.jpg in Resources */,
+				8074E9B9171770350057664C /* Wedding-Cape-tb.jpg in Resources */,
+				8074E9BA171770350057664C /* Wedding-Cape.jpg in Resources */,
+				8074E9BB171770350057664C /* Ancient American.txt in Resources */,
+				8074E9BC171770350057664C /* Burial-Urn-tb.jpg in Resources */,
+				8074E9BD171770350057664C /* Burial-Urn.jpg in Resources */,
+				8074E9BE171770350057664C /* Cylindrical-vase-with-heads-of-Lord-of-Underworld-tb.jpg in Resources */,
+				8074E9BF171770350057664C /* Cylindrical-vase-with-heads-of-Lord-of-Underworld.jpg in Resources */,
+				8074E9C0171770350057664C /* Head-of-Ruler-tb.jpg in Resources */,
+				8074E9C1171770350057664C /* Head-of-Ruler.jpg in Resources */,
+				8074E9C2171770350057664C /* Jaguar-effigy-metate-tb.jpg in Resources */,
+				8074E9C3171770350057664C /* Jaguar-effigy-metate.jpg in Resources */,
+				8074E9C4171770350057664C /* Poncho-tb.jpg in Resources */,
+				8074E9C5171770350057664C /* Poncho.jpg in Resources */,
+				8074E9C6171770350057664C /* Seated-Companion-Urn-tb.jpg in Resources */,
+				8074E9C7171770350057664C /* Seated-Companion-Urn.jpg in Resources */,
+				8074E9C8171770350057664C /* Seated-Female-Figurine-tb.jpg in Resources */,
+				8074E9C9171770350057664C /* Seated-Female-Figurine.jpg in Resources */,
+				8074E9CA171770350057664C /* Standing-figure-in-the-Laughing-Child-form-tb.jpg in Resources */,
+				8074E9CB171770350057664C /* Standing-figure-in-the-Laughing-Child-form.jpg in Resources */,
+				8074E9CC171770350057664C /* Tripod-Bowl-tb.jpg in Resources */,
+				8074E9CD171770350057664C /* Tripod-Bowl.jpg in Resources */,
+				8074E9CE171770350057664C /* Tripod-Plate-with-Rain-Serpent-tb.jpg in Resources */,
+				8074E9CF171770350057664C /* Tripod-Plate-with-Rain-Serpent.jpg in Resources */,
+				8074E9D0171770350057664C /* Asian.txt in Resources */,
+				8074E9D1171770350057664C /* Beauties-in-the-Garden-tb.jpg in Resources */,
+				8074E9D2171770350057664C /* Beauties-in-the-Garden.jpg in Resources */,
+				8074E9D3171770350057664C /* Blue-Glazed-Cong-Shaped-Vase-tb.jpg in Resources */,
+				8074E9D4171770350057664C /* Blue-Glazed-Cong-Shaped-Vase.jpg in Resources */,
+				8074E9D5171770350057664C /* Fuchu-Female-Tea-Pickers-tb.jpg in Resources */,
+				8074E9D6171770350057664C /* Fuchu-Female-Tea-Pickers.jpg in Resources */,
+				8074E9D7171770350057664C /* Hanging-Basket-tb.jpg in Resources */,
+				8074E9D8171770350057664C /* Hanging-Basket.jpg in Resources */,
+				8074E9D9171770350057664C /* Large-Vase-with-Lotus-Design-tb.jpg in Resources */,
+				8074E9DA171770350057664C /* Large-Vase-with-Lotus-Design.jpg in Resources */,
+				8074E9DB171770350057664C /* Lion-form-Water-Dropper-tb.jpg in Resources */,
+				8074E9DC171770350057664C /* Lion-form-Water-Dropper.jpg in Resources */,
+				8074E9DD171770350057664C /* Moonflask-with-Birds-and-Flowers-tb.jpg in Resources */,
+				8074E9DE171770350057664C /* Moonflask-with-Birds-and-Flowers.jpg in Resources */,
+				8074E9DF171770350057664C /* Santal-Boy-with-Drum-tb.jpg in Resources */,
+				8074E9E0171770350057664C /* Santal-Boy-with-Drum.jpg in Resources */,
+				8074E9E1171770350057664C /* The-Lute-tb.jpg in Resources */,
+				8074E9E2171770350057664C /* The-Lute.jpg in Resources */,
+				8074E9E3171770350057664C /* Tray-with-Birds-and-Cherry-Blossoms-tb.jpg in Resources */,
+				8074E9E4171770350057664C /* Tray-with-Birds-and-Cherry-Blossoms.jpg in Resources */,
+				8074E9E5171770350057664C /* Biblioteca-Nazionale-Marciana-Venezia-III-tb.jpg in Resources */,
+				8074E9E6171770350057664C /* Biblioteca-Nazionale-Marciana-Venezia-III.jpg in Resources */,
+				8074E9E7171770350057664C /* Complejo-Marti-tb.jpg in Resources */,
+				8074E9E8171770350057664C /* Complejo-Marti.jpg in Resources */,
+				8074E9E9171770350057664C /* Contemporary.txt in Resources */,
+				8074E9EA171770350057664C /* Dogon-Couple-tb.jpg in Resources */,
+				8074E9EB171770350057664C /* Dogon-Couple.jpg in Resources */,
+				8074E9EC171770350057664C /* Gay-Lussac-Nite-tb.jpg in Resources */,
+				8074E9ED171770350057664C /* Gay-Lussac-Nite.jpg in Resources */,
+				8074E9EE171770350057664C /* IMAGinING-Tobia-tb.jpg in Resources */,
+				8074E9EF171770350057664C /* IMAGinING-Tobia.jpg in Resources */,
+				8074E9F0171770350057664C /* Nets-Infinitity-TWOS-tb.jpg in Resources */,
+				8074E9F1171770350057664C /* Nets-Infinitity-TWOS.jpg in Resources */,
+				8074E9F2171770350057664C /* Ode-a-lOubli-tb.jpg in Resources */,
+				8074E9F3171770350057664C /* Ode-a-lOubli.jpg in Resources */,
+				8074E9F4171770350057664C /* Shanty-Nucleus-after-Derrida-tb.jpg in Resources */,
+				8074E9F5171770350057664C /* Shanty-Nucleus-after-Derrida.jpg in Resources */,
+				8074E9F6171770350057664C /* Vessel-Series-I-no-1-tb.jpg in Resources */,
+				8074E9F7171770350057664C /* Vessel-Series-I-no-1.jpg in Resources */,
+				8074E9F8171770350057664C /* Well-4-tb.jpg in Resources */,
+				8074E9F9171770350057664C /* Well-4.jpg in Resources */,
+				8074E9FA171770350057664C /* Austrian-Copper-Rose-IV-tb.jpg in Resources */,
+				8074E9FB171770350057664C /* Austrian-Copper-Rose-IV.jpg in Resources */,
+				8074E9FC171770350057664C /* Cubist-Still-Life-tb.jpg in Resources */,
+				8074E9FD171770350057664C /* Cubist-Still-Life.jpg in Resources */,
+				8074E9FE171770350057664C /* El-Encuentro-tb.jpg in Resources */,
+				8074E9FF171770350057664C /* El-Encuentro.jpg in Resources */,
+				8074EA00171770350057664C /* Figuras-Constructivas-tb.jpg in Resources */,
+				8074EA01171770350057664C /* Figuras-Constructivas.jpg in Resources */,
+				8074EA02171770350057664C /* Florida-Lake-tb.jpg in Resources */,
+				8074EA03171770350057664C /* Florida-Lake.jpg in Resources */,
+				8074EA04171770350057664C /* Manhattan-tb.jpg in Resources */,
+				8074EA05171770350057664C /* Manhattan.jpg in Resources */,
+				8074EA06171770350057664C /* Modern.txt in Resources */,
+				8074EA07171770350057664C /* Rider-of-the-Apocalypse-tb.jpg in Resources */,
+				8074EA08171770350057664C /* Rider-of-the-Apocalypse.jpg in Resources */,
+				8074EA09171770350057664C /* Television-2-tb.jpg in Resources */,
+				8074EA0A171770350057664C /* Television-2.jpg in Resources */,
+				8074EA0B171770350057664C /* The-Art-of-the-Negro-Native-Forms-tb.jpg in Resources */,
+				8074EA0C171770350057664C /* The-Art-of-the-Negro-Native-Forms.jpg in Resources */,
+				8074EA0D171770350057664C /* The-Woodcutter-tb.jpg in Resources */,
+				8074EA0E171770350057664C /* The-Woodcutter.jpg in Resources */,
+				8074EA0F171770350057664C /* A-sphere-lit-tb.jpg in Resources */,
+				8074EA10171770350057664C /* A-sphere-lit.jpg in Resources */,
+				8074EA11171770350057664C /* Cavewomen-tb.jpg in Resources */,
+				8074EA12171770350057664C /* Cavewomen.jpg in Resources */,
+				8074EA13171770350057664C /* Clownmirror-tb.jpg in Resources */,
+				8074EA14171770350057664C /* Clownmirror.jpg in Resources */,
+				8074EA15171770350057664C /* Four-views-from-four-times-and-one-shoreline-tb.jpg in Resources */,
+				8074EA16171770350057664C /* Four-views-from-four-times-and-one-shoreline.jpg in Resources */,
+				8074EA17171770350057664C /* Getting-Lindsay-Linton-tb.jpg in Resources */,
+				8074EA18171770350057664C /* Getting-Lindsay-Linton.jpg in Resources */,
+				8074EA19171770350057664C /* Photography.txt in Resources */,
+				8074EA1A171770350057664C /* Scenographer's-Mind-VIII-tb.jpg in Resources */,
+				8074EA1B171770350057664C /* Scenographer's-Mind-VIII.jpg in Resources */,
+				8074EA1C171770350057664C /* Swamp-and-Pipeline-tb.jpg in Resources */,
+				8074EA1D171770350057664C /* Swamp-and-Pipeline.jpg in Resources */,
+				8074EA1E171770350057664C /* The-patient-gardener-tb.jpg in Resources */,
+				8074EA1F171770350057664C /* The-patient-gardener.jpg in Resources */,
+				8074EA20171770350057664C /* Tropical-Rococo-tb.jpg in Resources */,
+				8074EA21171770350057664C /* Tropical-Rococo.jpg in Resources */,
+				8074EA22171770350057664C /* Valerie-in-the-light-Bruno-in-the-dark-tb.jpg in Resources */,
+				8074EA23171770350057664C /* Valerie-in-the-light-Bruno-in-the-dark.jpg in Resources */,
+				8074EA24171770350057664C /* Black-Chinned-Garrulax-tb.jpg in Resources */,
+				8074EA25171770350057664C /* Black-Chinned-Garrulax.jpg in Resources */,
+				8074EA26171770350057664C /* California-Hare-tb.jpg in Resources */,
+				8074EA27171770350057664C /* California-Hare.jpg in Resources */,
+				8074EA28171770350057664C /* China-Limodoron-tb.jpg in Resources */,
+				8074EA29171770350057664C /* China-Limodoron.jpg in Resources */,
+				8074EA2A171770350057664C /* Dante-in-Hell-tb.jpg in Resources */,
+				8074EA2B171770350057664C /* Dante-in-Hell.jpg in Resources */,
+				8074EA2C171770350057664C /* Disparte-General-tb.JPG in Resources */,
+				8074EA2D171770350057664C /* Disparte-General.JPG in Resources */,
+				8074EA2E171770350057664C /* Inscriptions-Sepulchrales-tb.jpg in Resources */,
+				8074EA2F171770350057664C /* Inscriptions-Sepulchrales.jpg in Resources */,
+				8074EA30171770350057664C /* Marguerite-au-Rouet-tb.jpg in Resources */,
+				8074EA31171770350057664C /* Marguerite-au-Rouet.jpg in Resources */,
+				8074EA32171770350057664C /* Noisetier-Franca-Gros-Fruits-tb.jpg in Resources */,
+				8074EA33171770350057664C /* Noisetier-Franca-Gros-Fruits.jpg in Resources */,
+				8074EA34171770350057664C /* Prints and Drawings.txt in Resources */,
+				8074EA35171770350057664C /* The-Deconstruction-of-the-French-Armada-tb.jpg in Resources */,
+				8074EA36171770350057664C /* The-Deconstruction-of-the-French-Armada.jpg in Resources */,
+				8074EA37171770350057664C /* The-Fall-of-the-Walls-of-Jericho-tb.jpg in Resources */,
+				8074EA38171770350057664C /* The-Fall-of-the-Walls-of-Jericho.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
