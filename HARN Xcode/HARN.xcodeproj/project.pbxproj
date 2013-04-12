@@ -175,8 +175,6 @@
 		8074E9FD171770350057664C /* Cubist-Still-Life.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E968171770350057664C /* Cubist-Still-Life.jpg */; };
 		8074E9FE171770350057664C /* El-Encuentro-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E969171770350057664C /* El-Encuentro-tb.jpg */; };
 		8074E9FF171770350057664C /* El-Encuentro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E96A171770350057664C /* El-Encuentro.jpg */; };
-		8074EA02171770350057664C /* Florida-Lake-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E96D171770350057664C /* Florida-Lake-tb.jpg */; };
-		8074EA03171770350057664C /* Florida-Lake.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E96E171770350057664C /* Florida-Lake.jpg */; };
 		8074EA04171770350057664C /* Manhattan-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E96F171770350057664C /* Manhattan-tb.jpg */; };
 		8074EA05171770350057664C /* Manhattan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E970171770350057664C /* Manhattan.jpg */; };
 		8074EA06171770350057664C /* Modern.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8074E971171770350057664C /* Modern.txt */; };
@@ -417,8 +415,6 @@
 		8074E968171770350057664C /* Cubist-Still-Life.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Cubist-Still-Life.jpg"; sourceTree = "<group>"; };
 		8074E969171770350057664C /* El-Encuentro-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "El-Encuentro-tb.jpg"; sourceTree = "<group>"; };
 		8074E96A171770350057664C /* El-Encuentro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "El-Encuentro.jpg"; sourceTree = "<group>"; };
-		8074E96D171770350057664C /* Florida-Lake-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Florida-Lake-tb.jpg"; sourceTree = "<group>"; };
-		8074E96E171770350057664C /* Florida-Lake.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Florida-Lake.jpg"; sourceTree = "<group>"; };
 		8074E96F171770350057664C /* Manhattan-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Manhattan-tb.jpg"; sourceTree = "<group>"; };
 		8074E970171770350057664C /* Manhattan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Manhattan.jpg; sourceTree = "<group>"; };
 		8074E971171770350057664C /* Modern.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Modern.txt; sourceTree = "<group>"; };
@@ -812,8 +808,6 @@
 				8074E968171770350057664C /* Cubist-Still-Life.jpg */,
 				8074E969171770350057664C /* El-Encuentro-tb.jpg */,
 				8074E96A171770350057664C /* El-Encuentro.jpg */,
-				8074E96D171770350057664C /* Florida-Lake-tb.jpg */,
-				8074E96E171770350057664C /* Florida-Lake.jpg */,
 				8074E96F171770350057664C /* Manhattan-tb.jpg */,
 				8074E970171770350057664C /* Manhattan.jpg */,
 				8074E971171770350057664C /* Modern.txt */,
@@ -1049,8 +1043,6 @@
 				8074E9FD171770350057664C /* Cubist-Still-Life.jpg in Resources */,
 				8074E9FE171770350057664C /* El-Encuentro-tb.jpg in Resources */,
 				8074E9FF171770350057664C /* El-Encuentro.jpg in Resources */,
-				8074EA02171770350057664C /* Florida-Lake-tb.jpg in Resources */,
-				8074EA03171770350057664C /* Florida-Lake.jpg in Resources */,
 				8074EA04171770350057664C /* Manhattan-tb.jpg in Resources */,
 				8074EA05171770350057664C /* Manhattan.jpg in Resources */,
 				8074EA06171770350057664C /* Modern.txt in Resources */,

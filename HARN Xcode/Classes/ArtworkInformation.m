@@ -150,7 +150,61 @@
          ]];
     }else if([chosenCollection isEqualToString:@"Modern"])
     {
-        
+        [self setImageThumbnails:@[[UIImage imageNamed:@"Ireland Reef-tb.jpg"],
+         [UIImage imageNamed:@"Three Men at Union Square-tb.jpg"],
+         [UIImage imageNamed:@"Faunesse-tb.jpg"],
+         [UIImage imageNamed:@"El-Encuentro-tb.jpg"],
+         [UIImage imageNamed:@"champ-tb.jpg"],
+         [UIImage imageNamed:@"reclining-tb.jpg"],
+         [UIImage imageNamed:@"Manhattan-tb.jpg"],
+         [UIImage imageNamed:@"The-Art-of-the-Negro-Native-Forms-tb.jpg"],
+         [UIImage imageNamed:@"The-Woodcutter-tb.jpg"],
+         [UIImage imageNamed:@"Cubist-Still-Life-tb.jpg"],
+         ]];
+        [self setLargeImages:@[[UIImage imageNamed:@"Ireland Reef.jpg"],
+         [UIImage imageNamed:@"Three Men at Union Square.jpg"],
+         [UIImage imageNamed:@"Faunesse.jpg"],
+         [UIImage imageNamed:@"El-Encuentro.jpg"],
+         [UIImage imageNamed:@"champ.jpg"],
+         [UIImage imageNamed:@"reclining.jpg"],
+         [UIImage imageNamed:@"Manhattan.jpg"],
+         [UIImage imageNamed:@"The-Art-of-the-Negro-Native-Forms.jpg"],
+         [UIImage imageNamed:@"The-Woodcutter.jpg"],
+         [UIImage imageNamed:@"Cubist-Still-Life.jpg"],
+         ]];
+        [self setTitles:@[@"Ireland Reef",
+         @"Three Men at Union Square",
+         @"Faunesse debout (Standing Fauness)",
+         @"El Encuentro (The Encounter)",
+         @"Champ d'avoine (Oat Field)",
+         @"Reclining",
+         @"Manhattan",
+         @"The Art of the Negro: Native Forms (study)",
+         @"The Woodcutter",
+         @"Cubist Still Life"
+         ]];
+        [self setSmallDescription:@[@"Rockwell Kent, American, 1926",
+         @"Isabel Bishop, American, 1930",
+         @"Auguste Rodin, French, 1884",
+         @"Angel Botello, Puerto Rican, born Spainish, 1950",
+         @"Claude Monet, French, 1890",
+         @"Alexander Archipenko, American, born Ukraine, 1922",
+         @"George Grosz, German, 1946",
+         @"Hale Aspacio Woodruff, American, 1945",
+         @"Robert Gwathmey, American, 1945",
+         @"Suzy Frelinghuysen, American, 1943"
+         ]];
+        [self setExtendedDescription:@[@"\nArtist: Rockwell Kent\nAmerican, 1882 - 1971\n\nDimensions: 24 x 30 in. (61 x 76.2 cm)\nMedium: Oil on panel\nCredit Line: Gift from the Stephen and Carol Shey Collection\n\nDescription: A dramatic landscape of a remote and unihabited reef set against an expansive sky of blues and pinks, rendered with precise forms and strong contrasts of light and dark.",
+         @"\nArtist: Isabel Bishop\nAmerican, 1902 - 1988\n\nDimensions: Other: 24 1/4 x 20 in. (61.6 x 50.8 cm) 31 x 27 1/4 in. (78.7 x 69.2 cm)\nMedium: Oil on canvas, mounted over Masonite\nCredit Line: Museum purchase, funds provided by an anonymous donor and the James G. and Caroline Julier Richardson Fund\n\nSubject: North and Central America\nDescription: Three males and one female in a cityscape.",
+         @"\nArtist: Auguste Rodin\nFrench, 1840 - 1917\n\nDimensions: 23 x 10 1/2 x 9 in. (58.4 x 26.7 x 22.9 cm)\nMedium: Bronze\nCredit Line: Bequest of Ruth P. Phillips\n\nDescription: Model made in 1884, cast probably early 20th century. Standing nude female figure cast from the artist's Gates of Hell project, inspired by Dante's Divine Comedy.",
+         @"\nArtist: Angel Botello\nPuerto Rican, born Spain, 1913 - 1986\n\nDimensions: 31 5/8 x 35 3/4 in. (80.3 x 90.8 cm)\nMedium: Oil on burlap\nCredit Line: Museum purchase, funds provided by friends of the Harn Museum of Art\n\nDescription: Abstract composition with figures: signed lower right.",
+         @"\nArtist: Claude Monet\nFrench, 1840 - 1926\n\nDimensions: 26 x 36 7/16 in. (66 x 92.6 cm) frame: 36 x 48 x 4 1/2 in. (91.4 x 121.9 x 11.4 cm)\nMedium: Oil on canvas\nCredit Line: Gift of Michael A. Singer\nMade/manufactured: Europe, Giverny\n\nSubject: Europe, Giverny",
+         @"\nArtist: Alexander Archipenko\nAmerican, born Ukraine, 1887 - 1964\n\nDimensions: 17 1/2 x 11 x 11 1/4 in. (44.5 x 27.9 x 28.6 cm)\nMedium: Bronze\nCredit Line: Bequest of Ruth P. Phillips\n\nDescription: Reclining figure of a female nude.",
+         @"\nArtist: George Grosz\nGerman, 1893 - 1959\n\nDimensions: 24 x 20 in. (61 x 50.8 cm)\nMedium: Oil on board\nCredit Line: Gift of William H. and Eloise R. Chandler\n\nSubject: North and Central America, New York",
+         @"\nArtist: Hale Aspacio Woodruff\nAmerican, 1900 - 1980\n\nDimensions: framed: 28 3/4 x 26 3/4 x 1 1/4 in. (73 x 67.9 x 3.2 cm) Visible canvas: 22 3/4 x 20 7/8 in. (57.8 x 53 cm)\nMedium: Oil on canvas\nCredit Line: Museum purchase, gift of an anonymous donor with additional funds provided by exchange, gift of Helen Sawyer Farnsworth\n\nDescription: This is a study for one of six canvases in the mural series entitled 'Art of the Negro', commissioned for the Trevor Arnett Library (in-situ) at Atlanta University (now Clark-Atlanta University), completed in 1952.",
+         @"\nArtist: Robert Gwathmey\nAmerican, 1903 - 1988\n\nDimensions: image: 22 x 15 in. (55.9 x 38.1 cm) Other (frame): 30 5/8 x 23 1/2 in. (77.8 x 59.7 cm)\nMedium: Oil on canvas\nCredit Line: Museum purchase, funds provided by the Caroline Julier and James G. Richardson Art Acquisition Fund",
+         @"\nArtist: Suzy Frelinghuysen\nAmerican, 1911 - 1988\n\nDimensions: 9 x 13 in. (22.9 x 33 cm)\nMedium: Oil and Collage on board\nCredit Line: Museum purchase, funds provided by the Caroline Julier and James G. Richardson Acquisition Fund, with additional fund provided by exchange, gift of Helen Sawyer Farnsworth\n\nDescription: An abstract still life composition of objects rendered in black, white and purple paint as well as corrugated cardboard, set against a blue background.",
+         ]];
     }else if([chosenCollection isEqualToString:@"Ancient American"])
     {
         

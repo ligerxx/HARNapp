@@ -39,7 +39,7 @@
     
     collectionInfo = [[ArtworkInformation alloc] init];
     
-    if([self.navigationController.navigationBar.topItem.title isEqualToString:@"Asian"] || [self.navigationController.navigationBar.topItem.title isEqualToString:@"Contemporary"])
+    if([self.navigationController.navigationBar.topItem.title isEqualToString:@"Asian"] || [self.navigationController.navigationBar.topItem.title isEqualToString:@"Contemporary"] || [self.navigationController.navigationBar.topItem.title isEqualToString:@"Modern"])
     {
         NSLog(@"CORRECT!");
         NSString *collectionPicked = self.navigationController.navigationBar.topItem.title;
@@ -62,7 +62,7 @@
 }
 - (NSInteger)collectionView:(UICollectionView *)view numberOfItemsInSection:(NSInteger)section {
     
-    if([self.navigationController.navigationBar.topItem.title isEqualToString:@"Asian"] || [self.navigationController.navigationBar.topItem.title isEqualToString:@"Contemporary"])
+    if([self.navigationController.navigationBar.topItem.title isEqualToString:@"Asian"] || [self.navigationController.navigationBar.topItem.title isEqualToString:@"Contemporary"] || [self.navigationController.navigationBar.topItem.title isEqualToString:@"Modern"])
     {
         NSLog(@"We have returned count");
         return collectionInfo.titles.count;
@@ -74,7 +74,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath;
 {
     
-    if([self.navigationController.navigationBar.topItem.title isEqualToString:@"Asian"] || [self.navigationController.navigationBar.topItem.title isEqualToString:@"Contemporary"])
+    if([self.navigationController.navigationBar.topItem.title isEqualToString:@"Asian"] || [self.navigationController.navigationBar.topItem.title isEqualToString:@"Contemporary"] || [self.navigationController.navigationBar.topItem.title isEqualToString:@"Modern"])
     {
         ArtCell *cell = [cv dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
         cell.title.text = collectionInfo.titles[indexPath.row];
@@ -102,7 +102,7 @@
     
     if ([[segue identifier] isEqualToString:@"showDetail"])
     {
-        if([self.navigationController.navigationBar.topItem.title isEqualToString:@"Asian"] || [self.navigationController.navigationBar.topItem.title isEqualToString:@"Contemporary"])
+        if([self.navigationController.navigationBar.topItem.title isEqualToString:@"Asian"] || [self.navigationController.navigationBar.topItem.title isEqualToString:@"Contemporary"] || [self.navigationController.navigationBar.topItem.title isEqualToString:@"Modern"])
         {
             NSIndexPath *selectedIndexPath = [[self.collectionView indexPathsForSelectedItems] objectAtIndex:0];
             
