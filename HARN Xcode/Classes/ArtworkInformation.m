@@ -212,7 +212,61 @@
          ]];
     }else if([chosenCollection isEqualToString:@"Ancient American"])
     {
-        
+        [self setImageThumbnails:@[[UIImage imageNamed:@"stirrup-tb.jpg"],
+         [UIImage imageNamed:@"bridge-tb.jpg"],
+         [UIImage imageNamed:@"Burial-Urn-tb.jpg"],
+         [UIImage imageNamed:@"Jaguar-effigy-metate-tb.jpg"],
+         [UIImage imageNamed:@"Cylindrical-vase-with-heads-of-Lord-of-Underworld-tb.jpg"],
+         [UIImage imageNamed:@"Tripod-Plate-with-Rain-Serpent-tb.jpg"],
+         [UIImage imageNamed:@"Head-of-Ruler-tb.jpg"],
+         [UIImage imageNamed:@"Standing-figure-in-the-Laughing-Child-form-tb.jpg"],
+         [UIImage imageNamed:@"Seated-Female-Figurine-tb.jpg"],
+         [UIImage imageNamed:@"Seated-Companion-Urn-tb.jpg"],
+         ]];
+        [self setLargeImages:@[[UIImage imageNamed:@"stirrup.jpg"],
+         [UIImage imageNamed:@"bridge.jpg"],
+         [UIImage imageNamed:@"Burial-Urn.jpg"],
+         [UIImage imageNamed:@"Jaguar-effigy-metate.jpg"],
+         [UIImage imageNamed:@"Cylindrical-vase-with-heads-of-Lord-of-Underworld.jpg"],
+         [UIImage imageNamed:@"Tripod-Plate-with-Rain-Serpent.jpg"],
+         [UIImage imageNamed:@"Head-of-Ruler.jpg"],
+         [UIImage imageNamed:@"Standing-figure-in-the-Laughing-Child-form.jpg"],
+         [UIImage imageNamed:@"Seated-Female-Figurine.jpg"],
+         [UIImage imageNamed:@"Seated-Companion-Urn.jpg"],
+         ]];
+        [self setTitles:@[@"Stirrup-Spout Bottle of Crab God with Fanged Feline Mouth",
+         @"Bridge-spout bottle of Cat God wearing trophy head",
+         @"Burial Urn",
+         @"Jaguar effigy metate",
+         @"Cylindrical vase with heads of Lord of Underworld",
+         @"Tripod Plate with Rain Serpent",
+         @"Head of Ruler",
+         @"Standing figure in the 'Laughing Child' form",
+         @"Seated Female Figurine",
+         @"Seated Companion Urn"
+         ]];
+        [self setSmallDescription:@[@"Moche culture, 200-300, Early Intermediate Period",
+         @"Nazca culture, Peru, South Coast, 100-300",
+         @"Colombian, Lower Magdalena River, Moskito, 1200-1500",
+         @"Costa Rican, Central Highlands, Period VI (Late Period, 100-1522)",
+         @"Guatemala, northern Peten, Mayan, 700-830",
+         @"Mayan, Mexico/Guatemala, 700-830",
+         @"Mayan, Mexico, Yucatan, 600-950",
+         @"Nahuat culture, Mexico, 550-850",
+         @"Mayan, Mexico, Campeche, 550-830",
+         @"Zapotec people, Valley of Oaxaca, 300-500"
+         ]];
+        [self setExtendedDescription:@[@"\nMaker: Moche people\n\nDimensions: 9 1/4 x 5 1/2 x 7 1/4 in. (23.5 x 14 x 18.4 cm)\nMedium: Burnished red-slipped ceramic\nCredit Line: Museum collection, University Gallery purchase\nMade/manufactured: South America\n\nDescription: From the Moche III phase. Stirrup spout vessel, flat bottom with spherical body, figure of crab-man lying on top of vessel - body of crab with claws looped around in front, human or frog legs in back, human head with bared teeth and fangs, flat-disk cap, stirrup spout running from back of head down into vessel of body",
+         @"\nMaker: Nazca culture\nPeru, South Coast\n\nDimensions: 7 3/4 x 5 3/4 x 5 3/4 in. (19.7 x 14.6 x 14.6 cm)\nMedium: Burnished polychrome ceramic\nCredit Line: Museum Collection, University Gallery purchase\n\nDescription: Spherical vessel, bottom slightly widened, top slightly tapered with 2 tubular spouts rising around center of top, connected by wide flat band to make a handle. Painted in burnished polychrome of feline figure and head on one side with connecting body over top and trophy head on other side, at base of tail, wall segmented by thin white lines and black vertical bands.",
+         @"\nMaker: Colombia, Lower Magdalena River, Moskito\n\nDimensions: urn: 16 5/8 x 8 7/8 x 8 7/8 in. (42.2 x 22.5 x 22.5 cm) lid: 16 5/8 x 8 3/8 x 8 3/8 in. (42.2 x 21.3 x 21.3 cm)\nMedium: Ceramic\nCredit Line: Gift of Rod McGalliard\nMade/manufactured: South America\n\nDescription: Lid surmounted by a seated figure on a stool, ovoid body, pigment.",
+         @"\nMaker: Costa Rica, Central Highlands\n\nDimensions: 8 1/2 x 14 1/8 x 21 3/8 in. (21.6 x 35.9 x 54.3 cm)\nMedium: Carved volcanic stone (basalt)\nCredit Line: Gift of Dr. Cecil M. Smith and Family\nMade/manufactured: North and Central America,\n\nDescription: four legged metate with oval shaped grinding plate, at one end is a jaguar head, at the other a tail, around the rim are images of trophy heads",
+         @"\nMaker: Guatemala, northern Peten, Maya\n\nDimensions: 4 3/8 x 4 1/8 x 4 1/8 in. (11.1 x 10.5 x 10.5 cm)\nMedium: Polychrome painted ceramic\nCredit Line: Gift of Lawrence J. and Eileen Cassard, M.D.\nMade/manufactured: North and Central America\n\nDescription: Cylindrical vase-shaped vessel, deep polychrome; complex figure glyphs.",
+         @"\nMaker: Maya peoples, Mexico/Guatemala\n\nDimensions: 3 1/4 x 13 1/4 in. (8.3 x 33.7 cm)\nMedium: Ceramic with polychrome\nCredit Line: Gift of Lawrence J. Cassard, M.D.\nMade/manufactured: North and Central America\n\nDescription: Large tripod plate with hieroglyphic in center bordered by geometric black and red feather-type forms, left side slightly eroded, hollow legs with rattles, calcification on one edge of surface.",
+         @"\nMaker: Maya peoples, Mexico, Yucatan\n\nDimensions: 10 1/2 x 7 x 4 1/4 in. (26.7 x 17.8 x 10.8 cm)\nMedium: Stucco with red pigment\nCredit Line: Gift of Lawrence J. and Eileen Cassard, M.D.\nMade/manufactured: North and Central America\n\nDescription: Stucco head with rounded features, large mouth with heavy lips; broad flat nose, eyes are puffed out with bottom half cut away, making appearance of double eye lids; heavy headdress with large thick brow band, central circular medallion with raised center and radiating grooves. (from accession worksheet) White stucco molded over coarse aggregate; traces of red paint on the face, blue on headdress band. (from UFG publication)",
+         @"\nMaker: Nahuat culture, Mexico, south-central Veracruz\n\nDimensions: 16 x 10 3/16 x 2 7/8 in. (40.6 x 25.9 x 7.3 cm)\nMedium: Red painted ceramic\nCredit Line: Gift of Lawrence J. Cassard, M.D.\nMade/manufactured: North and Central America",
+         @"\nMaker: Maya peoples, Mexico, Campeche\n\nDimensions: 7 x 5 1/4 x 3 3/4 in. (17.8 x 13.3 x 9.5 cm)\nMedium: Ceramic with blue and white pigment\nCredit Line: Gift of Lawrence J. Cassard, M.D.\nMade/manufactured: North and Central America\n\nDescription: Seated hand-fashioned female figure, large wedged nose extending from center of forehead to full lips, almond-shaped eyes, large earrings with white slip, pilled necklace, mantle around shoulders down to waist, small arms with hands attached to folded legs, heavy bracelets on arms; white, red, and blue traces of paint.",
+         @"\nMaker: Zapotec people, Valley of Oaxaca, Mexico\n\nDimensions: 18 x 11 3/4 x 10 3/4 in. (45.7 x 29.8 x 27.3 cm)\nMedium: White-slipped ceramic with traces of cinnabar\nCredit Line: Gift of Mrs. A. H. Spivack, in memory of Dr. A. H. Spivack\n\nDescription: Seated male figure with legs crossed in front, hands on knees hollow cylindrical body with opening at top of headdress good proportions to figure, good modeling of features, wears large ornamental headdress, ear spools, necklace with large pendant and bracelets. White pigment on part of the face and body, also at spots in headdress and pendant. Monte Alban IIIA phase."
+          ]];
     }else if([chosenCollection isEqualToString:@"Oceanic"])
     {
         
