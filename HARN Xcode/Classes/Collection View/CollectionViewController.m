@@ -108,7 +108,7 @@
             
             //Used for title of the Detail View
             NSInteger indexPath = selectedIndexPath.row + 1;
-            NSInteger lengthOfArray = [_sections count];
+            NSInteger lengthOfArray = [collectionInfo.titles count];
             
             //Creates the detailView that and begins adding everything for it to present to the users since this is templateted (sp?)
             DetailViewController *detailViewController = [segue destinationViewController];
