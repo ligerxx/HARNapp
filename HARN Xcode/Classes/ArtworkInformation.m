@@ -93,7 +93,61 @@
         
     }else if([chosenCollection isEqualToString:@"Contemporary"])
     {
-        
+        [self setImageThumbnails:@[[UIImage imageNamed:@"Dogon-Couple-tb.jpg"],
+         [UIImage imageNamed:@"old-mans-cloth-tb.jpg"],
+         [UIImage imageNamed:@"promenade-tb.jpg"],
+         [UIImage imageNamed:@"Well-4-tb.jpg"],
+         [UIImage imageNamed:@"tokyo-tb.jpg"],
+         [UIImage imageNamed:@"IMAGinING-Tobia-tb.jpg"],
+         [UIImage imageNamed:@"Ode-a-lOubli-tb.jpg"],
+         [UIImage imageNamed:@"Vessel-Series-I-no-1-tb.jpg"],
+         [UIImage imageNamed:@"Nets-Infinitity-TWOS-tb.jpg"],
+         [UIImage imageNamed:@"Biblioteca-Nazionale-Marciana-Venezia-III-tb.jpg"]
+         ]];
+        [self setLargeImages:@[[UIImage imageNamed:@"Dogon-Couple.jpg"],
+         [UIImage imageNamed:@"old-mans-cloth.jpg"],
+         [UIImage imageNamed:@"promenade.jpg"],
+         [UIImage imageNamed:@"Well-4.jpg"],
+         [UIImage imageNamed:@"tokyo.jpg"],
+         [UIImage imageNamed:@"IMAGinING-Tobia.jpg"],
+         [UIImage imageNamed:@"Ode-a-lOubli.jpg"],
+         [UIImage imageNamed:@"Vessel-Series-I-no-1.jpg"],
+         [UIImage imageNamed:@"Nets-Infinitity-TWOS.jpg"],
+         [UIImage imageNamed:@"Biblioteca-Nazionale-Marciana-Venezia-III.jpg"]
+         ]];
+        [self setTitles:@[@"Dogon Couple",
+         @"Old Man's Cloth",
+         @"Promenade II",
+         @"Well 4",
+         @"Tokyo Street with Pachinko Parlor II",
+         @"IMAGinING Tobia",
+         @"Ode à l'Oubli",
+         @"Vessel Series I, no. 1",
+         @"Nets-Infinity (TWO)",
+         @"Biblioteca Nazionale Marciana Venezia III"
+         ]];
+        [self setSmallDescription:@[@"Kehinde Wiley, American, 2008",
+         @"El Anatsui, Ghanaian, 2003",
+         @"William Kentridge, South African, 2002",
+         @"Chul-Hyun Ahn, 2007",
+         @"Yvonne Jacquette, American, 1985",
+         @"Salem Makuria, 2006",
+         @"Louise Bourgeois, American, born French, 2004",
+         @"Magdalene Anyango N. Odundo, British, born Kenya, 2004",
+         @"Yayoi Kusama, Japanese, 2004",
+         @"Candida Höfer, German, 2003"
+         ]];
+        [self setExtendedDescription:@[@"\nArtist: Kehinde Wiley\nAmerican, born 1977\n\nDimensions: 8 x 7 ft. (243.8 x 213.4 cm)\nMedium: Oil on canvas\nCredit Line: Museum purchase, funds provided by the David A. Cofrin Acquisition Endowment and Caroline Julier and James G. Richardson Acquisition Fund\nMade/manufactured: United States\n\nDescription: Two young Senegalese men sit holding special poses that emulate figures of Dogon sculpture. The background has a vivid pattern of vines and flowers in orange, red and white.",
+         @"\nArtist: El Anatsui\nGhanaian, born 1944\n\nDimensions: 16 ft. x 17 ft. 1 in. (487.7 x 520.7 cm)\nMedium: Aluminum and copper wire\nCredit Line: Museum purchase with funds from friends of the Harn Museum\n\nDescription: Disks and strips made of bottle tops connected with thin copper wire; predominately gold and red.",
+         @"\nArtist: William Kentridge\nSouth African, b. 1955\n\nDimensions: maximum : 15 9/16 x 16 1/8 x 16 1/4 in. (39.5 x 41 x 41.3 cm)\nMedium: Four bronze sculptures with dark patina\nCredit Line: Museum purchase by exchange, gift of Louise H. Courtelis with additional funds provided by the Caroline Julier and James G. Richardson Acquisition Endowment and an anonymous donor.\n\nDescription: four bronze sculptures with dark brown patina.",
+         @"\nArtist: Chul-Hyun Ahn\nborn 1971\n\nDimensions: 20 x 39 x 39 in. (50.8 x 99.1 x 99.1 cm)\nMedium: Concrete, mirrors, light\nCredit Line: Museum purchase, funds provided by the David A. Cofrin Acquisition Endowment and friends of the Harn Museum of Art\n\nDescription: A florescent light is placed in a square concrete enclosure topped by a one-way mirror. The work creates and effect of light stretching out into infinity.",
+         @"\nArtist: Yvonne Jacquette\nAmerican, born 1934\n\nDimensions: 7 ft. 2 1/2 in. x 55 1/4 in. (219.7 x 140.3 cm) frame: 7 ft. 3 5/8 in. x 56 1/2 in. (222.6 x 143.5 cm)\nMedium: Oil on canvas\nCredit Line: Museum purchase, gift of Mary Ann P. Cofrin\n\nDescription: Cityscape.",
+         @"\nArtist: Salem Mekuria\nborn 1947\n\nMedium: Triptych video installation\nCredit Line: Museum purchase, Phillips Art Acquisition Funds\n\nDescription: This work provides a documentary tribute to Ethiopia with an extensive record of people and the landscape. The video is projected on three screens with images that synchronize across them.",
+         @"\nArtist: Louise Bourgeois\nAmerican, born France, 1911 - 2010\n\nDimensions: bound: 10 3/4 x 13 1/4 in. (27.3 x 33.7 cm) 36 pages, each: 10 3/4 x 13 1/4 in. (27.3 x 33.7 cm)\nMedium: Book, hand-sewn and stitched cloth with lithography\nCredit Line: Museum Purchase, funds provided by the David A. Cofrin Art Acquisition Endowment\n\nDescription: The book contains 36 pages including cover and back page. Each page is framed separately except for the cover with its frames as a whole. The pages are printed or sewn with abstract designs or text in primarily subtle reds and blues. The edition includes 25 copies, with 7 AP copies. The work has been produced by Solo Impressions, New York under the supervision of Louise Bourgeois. The book was published as Peter Blum Edition, New York.",
+         @"\nArtist: Magdalene Anyango N. Odundo\nBritish, born Kenya, 1950\n\nDimensions: 17 3/4 x 13 in. (45.1 x 33 cm)\nMedium: Red clay, fired once\nCredit Line: Museum purchase, funds provided by friends of the Harn Museum\nMade/manufactured: England, Farnham\n\nDescription: Symmetrical vessel with globular belly, narrow neck, wide flared rim, small foot, orange-red, burnished surface with even coloration.",
+         @"\nArtist: Yayoi Kusama\nJapanese, born 1929\n\nDimensions: 28 5/8 x 35 13/16 in. (72.7 x 91 cm)\nMedium: Acrylic on canvas\nCredit Line: Museum purchase, funds provided by the David A. Cofrin Art Acquisition Endowment and friends of the Harn Museum.\n\nDescription: Abstract painting with overall red paint on white in a repetitive pattern that resembles a net.",
+         @"\nArtist: Candida Höfer\nGerman, born 1944\n\nDimensions: 59 7/8 x 59 7/8 in. (152.1 x 152.1 cm)\nMedium: Chromogenic development print\nCredit Line: Museum purchase, funds provided by the Caroline Julier and James G. Richardson Art Acquisition Fund with additional funds provided by the David A. Cofrin Art Acquisition Endowment\n\nSubject: Europe, Venice\nDescription: Color photograph of the National Library of Venice taken with a wide-angle lens accentuating the perspective of the room, causing the floor to rise illusionistically. The room contains library tables on both sides, a painted ceiling and a pedimented door at the end of the room."
+         ]];
     }else if([chosenCollection isEqualToString:@"Modern"])
     {
         
