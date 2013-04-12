@@ -81,6 +81,12 @@
 		1DD946FC1717AB49006DD9D8 /* champ-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD946FA1717AB49006DD9D8 /* champ-tb.jpg */; };
 		1DD946FF1717AB96006DD9D8 /* reclining.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD946FD1717AB96006DD9D8 /* reclining.jpg */; };
 		1DD947001717AB96006DD9D8 /* reclining-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD946FE1717AB96006DD9D8 /* reclining-tb.jpg */; };
+		1DD947031717ACE5006DD9D8 /* ritual ax.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD947011717ACE5006DD9D8 /* ritual ax.jpg */; };
+		1DD947041717ACE5006DD9D8 /* ritual ax-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD947021717ACE5006DD9D8 /* ritual ax-tb.jpg */; };
+		1DD947071717AD58006DD9D8 /* post.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD947051717AD58006DD9D8 /* post.jpg */; };
+		1DD947081717AD58006DD9D8 /* post-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD947061717AD58006DD9D8 /* post-tb.jpg */; };
+		1DD9470B1717ADCD006DD9D8 /* ancestral-head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD947091717ADCD006DD9D8 /* ancestral-head.jpg */; };
+		1DD9470C1717ADCD006DD9D8 /* ancestral-head-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9470A1717ADCD006DD9D8 /* ancestral-head-tb.jpg */; };
 		1DE88E5416CB140600B8804E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */; };
 		1DED7F6416F2D97C0005B3A9 /* camerafiltericon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED7F6316F2D97C0005B3A9 /* camerafiltericon@2x.png */; };
 		1DEE8DFA16CD855900A3C9B7 /* UIImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */; };
@@ -104,12 +110,6 @@
 		8074E9B0171770350057664C /* Koranic-Board.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E917171770350057664C /* Koranic-Board.jpg */; };
 		8074E9B1171770350057664C /* Maternity-Figure-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E918171770350057664C /* Maternity-Figure-tb.jpg */; };
 		8074E9B2171770350057664C /* Maternity-Figure.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E919171770350057664C /* Maternity-Figure.jpg */; };
-		8074E9B3171770350057664C /* Scrolls-of-the-Ancestor-IV-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E91A171770350057664C /* Scrolls-of-the-Ancestor-IV-tb.jpg */; };
-		8074E9B4171770350057664C /* Scrolls-of-the-Ancestor-IV.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E91B171770350057664C /* Scrolls-of-the-Ancestor-IV.jpg */; };
-		8074E9B5171770350057664C /* Spirit-at-the-Door-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E91C171770350057664C /* Spirit-at-the-Door-tb.jpg */; };
-		8074E9B6171770350057664C /* Spirit-at-the-Door.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E91D171770350057664C /* Spirit-at-the-Door.jpg */; };
-		8074E9B7171770350057664C /* Time-Cycle-III-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E91E171770350057664C /* Time-Cycle-III-tb.jpg */; };
-		8074E9B8171770350057664C /* Time-Cycle-III.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E91F171770350057664C /* Time-Cycle-III.jpg */; };
 		8074E9B9171770350057664C /* Wedding-Cape-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E920171770350057664C /* Wedding-Cape-tb.jpg */; };
 		8074E9BA171770350057664C /* Wedding-Cape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E921171770350057664C /* Wedding-Cape.jpg */; };
 		8074E9BB171770350057664C /* Ancient American.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8074E923171770350057664C /* Ancient American.txt */; };
@@ -320,6 +320,12 @@
 		1DD946FA1717AB49006DD9D8 /* champ-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "champ-tb.jpg"; sourceTree = "<group>"; };
 		1DD946FD1717AB96006DD9D8 /* reclining.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = reclining.jpg; sourceTree = "<group>"; };
 		1DD946FE1717AB96006DD9D8 /* reclining-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "reclining-tb.jpg"; sourceTree = "<group>"; };
+		1DD947011717ACE5006DD9D8 /* ritual ax.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ritual ax.jpg"; sourceTree = "<group>"; };
+		1DD947021717ACE5006DD9D8 /* ritual ax-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ritual ax-tb.jpg"; sourceTree = "<group>"; };
+		1DD947051717AD58006DD9D8 /* post.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = post.jpg; sourceTree = "<group>"; };
+		1DD947061717AD58006DD9D8 /* post-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "post-tb.jpg"; sourceTree = "<group>"; };
+		1DD947091717ADCD006DD9D8 /* ancestral-head.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ancestral-head.jpg"; sourceTree = "<group>"; };
+		1DD9470A1717ADCD006DD9D8 /* ancestral-head-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ancestral-head-tb.jpg"; sourceTree = "<group>"; };
 		1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1DED7F6316F2D97C0005B3A9 /* camerafiltericon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camerafiltericon@2x.png"; sourceTree = "<group>"; };
 		1DEE8DF816CD855900A3C9B7 /* UIImageExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageExtension.h; sourceTree = "<group>"; };
@@ -346,12 +352,6 @@
 		8074E917171770350057664C /* Koranic-Board.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Koranic-Board.jpg"; sourceTree = "<group>"; };
 		8074E918171770350057664C /* Maternity-Figure-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Maternity-Figure-tb.jpg"; sourceTree = "<group>"; };
 		8074E919171770350057664C /* Maternity-Figure.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Maternity-Figure.jpg"; sourceTree = "<group>"; };
-		8074E91A171770350057664C /* Scrolls-of-the-Ancestor-IV-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scrolls-of-the-Ancestor-IV-tb.jpg"; sourceTree = "<group>"; };
-		8074E91B171770350057664C /* Scrolls-of-the-Ancestor-IV.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Scrolls-of-the-Ancestor-IV.jpg"; sourceTree = "<group>"; };
-		8074E91C171770350057664C /* Spirit-at-the-Door-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Spirit-at-the-Door-tb.jpg"; sourceTree = "<group>"; };
-		8074E91D171770350057664C /* Spirit-at-the-Door.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Spirit-at-the-Door.jpg"; sourceTree = "<group>"; };
-		8074E91E171770350057664C /* Time-Cycle-III-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Time-Cycle-III-tb.jpg"; sourceTree = "<group>"; };
-		8074E91F171770350057664C /* Time-Cycle-III.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Time-Cycle-III.jpg"; sourceTree = "<group>"; };
 		8074E920171770350057664C /* Wedding-Cape-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Wedding-Cape-tb.jpg"; sourceTree = "<group>"; };
 		8074E921171770350057664C /* Wedding-Cape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Wedding-Cape.jpg"; sourceTree = "<group>"; };
 		8074E923171770350057664C /* Ancient American.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Ancient American.txt"; sourceTree = "<group>"; };
@@ -675,22 +675,20 @@
 		8074E8FF1717353A0057664C /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				8074E900171735510057664C /* Asian Collection */,
 			);
 			name = Images;
-			sourceTree = "<group>";
-		};
-		8074E900171735510057664C /* Asian Collection */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Asian Collection";
 			sourceTree = "<group>";
 		};
 		8074E90C171770350057664C /* African */ = {
 			isa = PBXGroup;
 			children = (
+				1DD947091717ADCD006DD9D8 /* ancestral-head.jpg */,
+				1DD9470A1717ADCD006DD9D8 /* ancestral-head-tb.jpg */,
+				1DD947051717AD58006DD9D8 /* post.jpg */,
+				1DD947061717AD58006DD9D8 /* post-tb.jpg */,
 				8074E90D171770350057664C /* African.txt */,
+				1DD947011717ACE5006DD9D8 /* ritual ax.jpg */,
+				1DD947021717ACE5006DD9D8 /* ritual ax-tb.jpg */,
 				8074E90E171770350057664C /* Cloth-with-Olokun-tb.jpg */,
 				8074E90F171770350057664C /* Cloth-with-Olokun.jpg */,
 				8074E910171770350057664C /* Face-Mask-tb.JPG */,
@@ -703,12 +701,6 @@
 				8074E917171770350057664C /* Koranic-Board.jpg */,
 				8074E918171770350057664C /* Maternity-Figure-tb.jpg */,
 				8074E919171770350057664C /* Maternity-Figure.jpg */,
-				8074E91A171770350057664C /* Scrolls-of-the-Ancestor-IV-tb.jpg */,
-				8074E91B171770350057664C /* Scrolls-of-the-Ancestor-IV.jpg */,
-				8074E91C171770350057664C /* Spirit-at-the-Door-tb.jpg */,
-				8074E91D171770350057664C /* Spirit-at-the-Door.jpg */,
-				8074E91E171770350057664C /* Time-Cycle-III-tb.jpg */,
-				8074E91F171770350057664C /* Time-Cycle-III.jpg */,
 				8074E920171770350057664C /* Wedding-Cape-tb.jpg */,
 				8074E921171770350057664C /* Wedding-Cape.jpg */,
 			);
@@ -1002,12 +994,6 @@
 				8074E9B0171770350057664C /* Koranic-Board.jpg in Resources */,
 				8074E9B1171770350057664C /* Maternity-Figure-tb.jpg in Resources */,
 				8074E9B2171770350057664C /* Maternity-Figure.jpg in Resources */,
-				8074E9B3171770350057664C /* Scrolls-of-the-Ancestor-IV-tb.jpg in Resources */,
-				8074E9B4171770350057664C /* Scrolls-of-the-Ancestor-IV.jpg in Resources */,
-				8074E9B5171770350057664C /* Spirit-at-the-Door-tb.jpg in Resources */,
-				8074E9B6171770350057664C /* Spirit-at-the-Door.jpg in Resources */,
-				8074E9B7171770350057664C /* Time-Cycle-III-tb.jpg in Resources */,
-				8074E9B8171770350057664C /* Time-Cycle-III.jpg in Resources */,
 				8074E9B9171770350057664C /* Wedding-Cape-tb.jpg in Resources */,
 				8074E9BA171770350057664C /* Wedding-Cape.jpg in Resources */,
 				8074E9BB171770350057664C /* Ancient American.txt in Resources */,
@@ -1138,6 +1124,12 @@
 				1DD946FC1717AB49006DD9D8 /* champ-tb.jpg in Resources */,
 				1DD946FF1717AB96006DD9D8 /* reclining.jpg in Resources */,
 				1DD947001717AB96006DD9D8 /* reclining-tb.jpg in Resources */,
+				1DD947031717ACE5006DD9D8 /* ritual ax.jpg in Resources */,
+				1DD947041717ACE5006DD9D8 /* ritual ax-tb.jpg in Resources */,
+				1DD947071717AD58006DD9D8 /* post.jpg in Resources */,
+				1DD947081717AD58006DD9D8 /* post-tb.jpg in Resources */,
+				1DD9470B1717ADCD006DD9D8 /* ancestral-head.jpg in Resources */,
+				1DD9470C1717ADCD006DD9D8 /* ancestral-head-tb.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
