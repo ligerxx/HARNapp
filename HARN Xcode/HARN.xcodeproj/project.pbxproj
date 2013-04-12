@@ -93,6 +93,10 @@
 		1DD947141717AFD6006DD9D8 /* promenade-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD947121717AFD6006DD9D8 /* promenade-tb.jpg */; };
 		1DD947171717B033006DD9D8 /* tokyo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD947151717B032006DD9D8 /* tokyo.jpg */; };
 		1DD947181717B033006DD9D8 /* tokyo-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD947161717B033006DD9D8 /* tokyo-tb.jpg */; };
+		1DD9471B1717B1D6006DD9D8 /* stirrup.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD947191717B1D6006DD9D8 /* stirrup.jpg */; };
+		1DD9471C1717B1D6006DD9D8 /* stirrup-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9471A1717B1D6006DD9D8 /* stirrup-tb.jpg */; };
+		1DD9471F1717B232006DD9D8 /* bridge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9471D1717B232006DD9D8 /* bridge.jpg */; };
+		1DD947201717B232006DD9D8 /* bridge-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9471E1717B232006DD9D8 /* bridge-tb.jpg */; };
 		1DE88E5416CB140600B8804E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */; };
 		1DED7F6416F2D97C0005B3A9 /* camerafiltericon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED7F6316F2D97C0005B3A9 /* camerafiltericon@2x.png */; };
 		1DEE8DFA16CD855900A3C9B7 /* UIImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */; };
@@ -127,16 +131,12 @@
 		8074E9C1171770350057664C /* Head-of-Ruler.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E929171770350057664C /* Head-of-Ruler.jpg */; };
 		8074E9C2171770350057664C /* Jaguar-effigy-metate-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E92A171770350057664C /* Jaguar-effigy-metate-tb.jpg */; };
 		8074E9C3171770350057664C /* Jaguar-effigy-metate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E92B171770350057664C /* Jaguar-effigy-metate.jpg */; };
-		8074E9C4171770350057664C /* Poncho-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E92C171770350057664C /* Poncho-tb.jpg */; };
-		8074E9C5171770350057664C /* Poncho.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E92D171770350057664C /* Poncho.jpg */; };
 		8074E9C6171770350057664C /* Seated-Companion-Urn-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E92E171770350057664C /* Seated-Companion-Urn-tb.jpg */; };
 		8074E9C7171770350057664C /* Seated-Companion-Urn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E92F171770350057664C /* Seated-Companion-Urn.jpg */; };
 		8074E9C8171770350057664C /* Seated-Female-Figurine-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E930171770350057664C /* Seated-Female-Figurine-tb.jpg */; };
 		8074E9C9171770350057664C /* Seated-Female-Figurine.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E931171770350057664C /* Seated-Female-Figurine.jpg */; };
 		8074E9CA171770350057664C /* Standing-figure-in-the-Laughing-Child-form-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E932171770350057664C /* Standing-figure-in-the-Laughing-Child-form-tb.jpg */; };
 		8074E9CB171770350057664C /* Standing-figure-in-the-Laughing-Child-form.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E933171770350057664C /* Standing-figure-in-the-Laughing-Child-form.jpg */; };
-		8074E9CC171770350057664C /* Tripod-Bowl-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E934171770350057664C /* Tripod-Bowl-tb.jpg */; };
-		8074E9CD171770350057664C /* Tripod-Bowl.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E935171770350057664C /* Tripod-Bowl.jpg */; };
 		8074E9CE171770350057664C /* Tripod-Plate-with-Rain-Serpent-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E936171770350057664C /* Tripod-Plate-with-Rain-Serpent-tb.jpg */; };
 		8074E9CF171770350057664C /* Tripod-Plate-with-Rain-Serpent.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E937171770350057664C /* Tripod-Plate-with-Rain-Serpent.jpg */; };
 		8074E9D0171770350057664C /* Asian.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8074E939171770350057664C /* Asian.txt */; };
@@ -332,6 +332,10 @@
 		1DD947121717AFD6006DD9D8 /* promenade-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "promenade-tb.jpg"; sourceTree = "<group>"; };
 		1DD947151717B032006DD9D8 /* tokyo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tokyo.jpg; sourceTree = "<group>"; };
 		1DD947161717B033006DD9D8 /* tokyo-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tokyo-tb.jpg"; sourceTree = "<group>"; };
+		1DD947191717B1D6006DD9D8 /* stirrup.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stirrup.jpg; sourceTree = "<group>"; };
+		1DD9471A1717B1D6006DD9D8 /* stirrup-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "stirrup-tb.jpg"; sourceTree = "<group>"; };
+		1DD9471D1717B232006DD9D8 /* bridge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bridge.jpg; sourceTree = "<group>"; };
+		1DD9471E1717B232006DD9D8 /* bridge-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bridge-tb.jpg"; sourceTree = "<group>"; };
 		1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1DED7F6316F2D97C0005B3A9 /* camerafiltericon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camerafiltericon@2x.png"; sourceTree = "<group>"; };
 		1DEE8DF816CD855900A3C9B7 /* UIImageExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageExtension.h; sourceTree = "<group>"; };
@@ -369,16 +373,12 @@
 		8074E929171770350057664C /* Head-of-Ruler.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Head-of-Ruler.jpg"; sourceTree = "<group>"; };
 		8074E92A171770350057664C /* Jaguar-effigy-metate-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jaguar-effigy-metate-tb.jpg"; sourceTree = "<group>"; };
 		8074E92B171770350057664C /* Jaguar-effigy-metate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jaguar-effigy-metate.jpg"; sourceTree = "<group>"; };
-		8074E92C171770350057664C /* Poncho-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Poncho-tb.jpg"; sourceTree = "<group>"; };
-		8074E92D171770350057664C /* Poncho.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Poncho.jpg; sourceTree = "<group>"; };
 		8074E92E171770350057664C /* Seated-Companion-Urn-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Seated-Companion-Urn-tb.jpg"; sourceTree = "<group>"; };
 		8074E92F171770350057664C /* Seated-Companion-Urn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Seated-Companion-Urn.jpg"; sourceTree = "<group>"; };
 		8074E930171770350057664C /* Seated-Female-Figurine-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Seated-Female-Figurine-tb.jpg"; sourceTree = "<group>"; };
 		8074E931171770350057664C /* Seated-Female-Figurine.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Seated-Female-Figurine.jpg"; sourceTree = "<group>"; };
 		8074E932171770350057664C /* Standing-figure-in-the-Laughing-Child-form-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Standing-figure-in-the-Laughing-Child-form-tb.jpg"; sourceTree = "<group>"; };
 		8074E933171770350057664C /* Standing-figure-in-the-Laughing-Child-form.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Standing-figure-in-the-Laughing-Child-form.jpg"; sourceTree = "<group>"; };
-		8074E934171770350057664C /* Tripod-Bowl-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tripod-Bowl-tb.jpg"; sourceTree = "<group>"; };
-		8074E935171770350057664C /* Tripod-Bowl.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tripod-Bowl.jpg"; sourceTree = "<group>"; };
 		8074E936171770350057664C /* Tripod-Plate-with-Rain-Serpent-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tripod-Plate-with-Rain-Serpent-tb.jpg"; sourceTree = "<group>"; };
 		8074E937171770350057664C /* Tripod-Plate-with-Rain-Serpent.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tripod-Plate-with-Rain-Serpent.jpg"; sourceTree = "<group>"; };
 		8074E939171770350057664C /* Asian.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Asian.txt; sourceTree = "<group>"; };
@@ -710,6 +710,10 @@
 		8074E922171770350057664C /* Ancient American */ = {
 			isa = PBXGroup;
 			children = (
+				1DD9471D1717B232006DD9D8 /* bridge.jpg */,
+				1DD9471E1717B232006DD9D8 /* bridge-tb.jpg */,
+				1DD947191717B1D6006DD9D8 /* stirrup.jpg */,
+				1DD9471A1717B1D6006DD9D8 /* stirrup-tb.jpg */,
 				8074E923171770350057664C /* Ancient American.txt */,
 				8074E924171770350057664C /* Burial-Urn-tb.jpg */,
 				8074E925171770350057664C /* Burial-Urn.jpg */,
@@ -719,16 +723,12 @@
 				8074E929171770350057664C /* Head-of-Ruler.jpg */,
 				8074E92A171770350057664C /* Jaguar-effigy-metate-tb.jpg */,
 				8074E92B171770350057664C /* Jaguar-effigy-metate.jpg */,
-				8074E92C171770350057664C /* Poncho-tb.jpg */,
-				8074E92D171770350057664C /* Poncho.jpg */,
 				8074E92E171770350057664C /* Seated-Companion-Urn-tb.jpg */,
 				8074E92F171770350057664C /* Seated-Companion-Urn.jpg */,
 				8074E930171770350057664C /* Seated-Female-Figurine-tb.jpg */,
 				8074E931171770350057664C /* Seated-Female-Figurine.jpg */,
 				8074E932171770350057664C /* Standing-figure-in-the-Laughing-Child-form-tb.jpg */,
 				8074E933171770350057664C /* Standing-figure-in-the-Laughing-Child-form.jpg */,
-				8074E934171770350057664C /* Tripod-Bowl-tb.jpg */,
-				8074E935171770350057664C /* Tripod-Bowl.jpg */,
 				8074E936171770350057664C /* Tripod-Plate-with-Rain-Serpent-tb.jpg */,
 				8074E937171770350057664C /* Tripod-Plate-with-Rain-Serpent.jpg */,
 			);
@@ -1005,16 +1005,12 @@
 				8074E9C1171770350057664C /* Head-of-Ruler.jpg in Resources */,
 				8074E9C2171770350057664C /* Jaguar-effigy-metate-tb.jpg in Resources */,
 				8074E9C3171770350057664C /* Jaguar-effigy-metate.jpg in Resources */,
-				8074E9C4171770350057664C /* Poncho-tb.jpg in Resources */,
-				8074E9C5171770350057664C /* Poncho.jpg in Resources */,
 				8074E9C6171770350057664C /* Seated-Companion-Urn-tb.jpg in Resources */,
 				8074E9C7171770350057664C /* Seated-Companion-Urn.jpg in Resources */,
 				8074E9C8171770350057664C /* Seated-Female-Figurine-tb.jpg in Resources */,
 				8074E9C9171770350057664C /* Seated-Female-Figurine.jpg in Resources */,
 				8074E9CA171770350057664C /* Standing-figure-in-the-Laughing-Child-form-tb.jpg in Resources */,
 				8074E9CB171770350057664C /* Standing-figure-in-the-Laughing-Child-form.jpg in Resources */,
-				8074E9CC171770350057664C /* Tripod-Bowl-tb.jpg in Resources */,
-				8074E9CD171770350057664C /* Tripod-Bowl.jpg in Resources */,
 				8074E9CE171770350057664C /* Tripod-Plate-with-Rain-Serpent-tb.jpg in Resources */,
 				8074E9CF171770350057664C /* Tripod-Plate-with-Rain-Serpent.jpg in Resources */,
 				8074E9D0171770350057664C /* Asian.txt in Resources */,
@@ -1130,6 +1126,10 @@
 				1DD947141717AFD6006DD9D8 /* promenade-tb.jpg in Resources */,
 				1DD947171717B033006DD9D8 /* tokyo.jpg in Resources */,
 				1DD947181717B033006DD9D8 /* tokyo-tb.jpg in Resources */,
+				1DD9471B1717B1D6006DD9D8 /* stirrup.jpg in Resources */,
+				1DD9471C1717B1D6006DD9D8 /* stirrup-tb.jpg in Resources */,
+				1DD9471F1717B232006DD9D8 /* bridge.jpg in Resources */,
+				1DD947201717B232006DD9D8 /* bridge-tb.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
