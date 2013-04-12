@@ -20,6 +20,8 @@
 
 static const int FILTER_LABEL = 001;
 
+bool firstTimeOpen = true;
+
 -(IBAction)showCameraUI:(id)sender
 {
     for(UIView *subview in [self.filtersScrollView subviews]) {
@@ -469,8 +471,17 @@ static const int FILTER_LABEL = 001;
     self.title = @"Edit";
     self.filtersScrollView = _filterScrollView;
     
-    [self initializeCameraUI];
+    firstTimeOpen = true;
 	// Do any additional setup after loading the view.
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+  if(firstTimeOpen)
+  {
+    firstTimeOpen = false;
+    [self initializeCameraUI];  
+  }
 }
 
 - (void)didReceiveMemoryWarning
