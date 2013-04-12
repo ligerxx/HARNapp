@@ -94,6 +94,7 @@
     }else if([chosenCollection isEqualToString:@"Contemporary"])
     {
         [self setImageThumbnails:@[[UIImage imageNamed:@"Dogon-Couple-tb.jpg"],
+         [UIImage imageNamed:@"warhol-tb.jpg"],
          [UIImage imageNamed:@"old-mans-cloth-tb.jpg"],
          [UIImage imageNamed:@"promenade-tb.jpg"],
          [UIImage imageNamed:@"Well-4-tb.jpg"],
@@ -105,6 +106,7 @@
          [UIImage imageNamed:@"Biblioteca-Nazionale-Marciana-Venezia-III-tb.jpg"]
          ]];
         [self setLargeImages:@[[UIImage imageNamed:@"Dogon-Couple.jpg"],
+         [UIImage imageNamed:@"warhol.jpg"],
          [UIImage imageNamed:@"old-mans-cloth.jpg"],
          [UIImage imageNamed:@"promenade.jpg"],
          [UIImage imageNamed:@"Well-4.jpg"],
@@ -116,6 +118,7 @@
          [UIImage imageNamed:@"Biblioteca-Nazionale-Marciana-Venezia-III.jpg"]
          ]];
         [self setTitles:@[@"Dogon Couple",
+         @"Soup Can, Vegetarian Vegetable",
          @"Old Man's Cloth",
          @"Promenade II",
          @"Well 4",
@@ -127,6 +130,7 @@
          @"Biblioteca Nazionale Marciana Venezia III"
          ]];
         [self setSmallDescription:@[@"Kehinde Wiley, American, 2008",
+         @"Andy Warhol, American, 1964",
          @"El Anatsui, Ghanaian, 2003",
          @"William Kentridge, South African, 2002",
          @"Chul-Hyun Ahn, 2007",
@@ -138,6 +142,7 @@
          @"Candida Höfer, German, 2003"
          ]];
         [self setExtendedDescription:@[@"\nArtist: Kehinde Wiley\nAmerican, born 1977\n\nDimensions: 8 x 7 ft. (243.8 x 213.4 cm)\nMedium: Oil on canvas\nCredit Line: Museum purchase, funds provided by the David A. Cofrin Acquisition Endowment and Caroline Julier and James G. Richardson Acquisition Fund\nMade/manufactured: United States\n\nDescription: Two young Senegalese men sit holding special poses that emulate figures of Dogon sculpture. The background has a vivid pattern of vines and flowers in orange, red and white.",
+         @"\nArtist: Andy Warhol\nAmerican, 1928 - 1987\n\nDimensions: frame: 41 5/8 x 29 1/4 in. (105.7 x 74.3 cm) mat: 34 1/4 x 22 1/4 in. (87 x 56.5 cm) Print mark: 32 x 18 3/4 in. (81.3 x 47.6 cm)\nMedium: Silkscreen\nCredit Line: Gift of Richard Anuszkiewicz",
          @"\nArtist: El Anatsui\nGhanaian, born 1944\n\nDimensions: 16 ft. x 17 ft. 1 in. (487.7 x 520.7 cm)\nMedium: Aluminum and copper wire\nCredit Line: Museum purchase with funds from friends of the Harn Museum\n\nDescription: Disks and strips made of bottle tops connected with thin copper wire; predominately gold and red.",
          @"\nArtist: William Kentridge\nSouth African, b. 1955\n\nDimensions: maximum : 15 9/16 x 16 1/8 x 16 1/4 in. (39.5 x 41 x 41.3 cm)\nMedium: Four bronze sculptures with dark patina\nCredit Line: Museum purchase by exchange, gift of Louise H. Courtelis with additional funds provided by the Caroline Julier and James G. Richardson Acquisition Endowment and an anonymous donor.\n\nDescription: four bronze sculptures with dark brown patina.",
          @"\nArtist: Chul-Hyun Ahn\nborn 1971\n\nDimensions: 20 x 39 x 39 in. (50.8 x 99.1 x 99.1 cm)\nMedium: Concrete, mirrors, light\nCredit Line: Museum purchase, funds provided by the David A. Cofrin Acquisition Endowment and friends of the Harn Museum of Art\n\nDescription: A florescent light is placed in a square concrete enclosure topped by a one-way mirror. The work creates and effect of light stretching out into infinity.",

@@ -56,6 +56,8 @@
 		1DAF8CF916D6F1A10080224C /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DAF8CF816D6F1A10080224C /* InformationViewController.m */; };
 		1DB9453B16F6A18800EDB437 /* filterpanel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB9453A16F6A18800EDB437 /* filterpanel@2x.png */; };
 		1DB9453D16F6A97400EDB437 /* edit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB9453C16F6A97400EDB437 /* edit@2x.png */; };
+		1DBADA5C17184D66008CADD0 /* warhol.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DBADA5A17184D66008CADD0 /* warhol.jpg */; };
+		1DBADA5D17184D66008CADD0 /* warhol-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DBADA5B17184D66008CADD0 /* warhol-tb.jpg */; };
 		1DC3B8B416D6E08F00BFF5ED /* ArtCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC3B8B316D6E08F00BFF5ED /* ArtCell.m */; };
 		1DC3B8B716D6E0FB00BFF5ED /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC3B8B616D6E0FB00BFF5ED /* CollectionViewController.m */; };
 		1DC53B5916B60028003591CD /* mainmenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC53B5816B60028003591CD /* mainmenu.png */; };
@@ -289,6 +291,8 @@
 		1DAF8CF816D6F1A10080224C /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InformationViewController.m; path = "Collection View/InformationViewController.m"; sourceTree = "<group>"; };
 		1DB9453A16F6A18800EDB437 /* filterpanel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "filterpanel@2x.png"; path = "../filterpanel@2x.png"; sourceTree = "<group>"; };
 		1DB9453C16F6A97400EDB437 /* edit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit@2x.png"; sourceTree = "<group>"; };
+		1DBADA5A17184D66008CADD0 /* warhol.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = warhol.jpg; sourceTree = "<group>"; };
+		1DBADA5B17184D66008CADD0 /* warhol-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "warhol-tb.jpg"; sourceTree = "<group>"; };
 		1DC3B8B216D6E08F00BFF5ED /* ArtCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArtCell.h; path = "Collection View/ArtCell.h"; sourceTree = "<group>"; };
 		1DC3B8B316D6E08F00BFF5ED /* ArtCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ArtCell.m; path = "Collection View/ArtCell.m"; sourceTree = "<group>"; };
 		1DC3B8B516D6E0FB00BFF5ED /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewController.h; path = "Collection View/CollectionViewController.h"; sourceTree = "<group>"; };
@@ -766,6 +770,8 @@
 		8074E94E171770350057664C /* Contemporary */ = {
 			isa = PBXGroup;
 			children = (
+				1DBADA5A17184D66008CADD0 /* warhol.jpg */,
+				1DBADA5B17184D66008CADD0 /* warhol-tb.jpg */,
 				1DD947151717B032006DD9D8 /* tokyo.jpg */,
 				1DD947161717B033006DD9D8 /* tokyo-tb.jpg */,
 				1DD947111717AFD6006DD9D8 /* promenade.jpg */,
@@ -1122,6 +1128,8 @@
 				1DD9471C1717B1D6006DD9D8 /* stirrup-tb.jpg in Resources */,
 				1DD9471F1717B232006DD9D8 /* bridge.jpg in Resources */,
 				1DD947201717B232006DD9D8 /* bridge-tb.jpg in Resources */,
+				1DBADA5C17184D66008CADD0 /* warhol.jpg in Resources */,
+				1DBADA5D17184D66008CADD0 /* warhol-tb.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
