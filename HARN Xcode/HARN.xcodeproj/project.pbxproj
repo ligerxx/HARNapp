@@ -87,6 +87,12 @@
 		1DD947081717AD58006DD9D8 /* post-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD947061717AD58006DD9D8 /* post-tb.jpg */; };
 		1DD9470B1717ADCD006DD9D8 /* ancestral-head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD947091717ADCD006DD9D8 /* ancestral-head.jpg */; };
 		1DD9470C1717ADCD006DD9D8 /* ancestral-head-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9470A1717ADCD006DD9D8 /* ancestral-head-tb.jpg */; };
+		1DD9470F1717AF54006DD9D8 /* old-mans-cloth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9470D1717AF54006DD9D8 /* old-mans-cloth.jpg */; };
+		1DD947101717AF54006DD9D8 /* old-mans-cloth-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9470E1717AF54006DD9D8 /* old-mans-cloth-tb.jpg */; };
+		1DD947131717AFD6006DD9D8 /* promenade.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD947111717AFD6006DD9D8 /* promenade.jpg */; };
+		1DD947141717AFD6006DD9D8 /* promenade-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD947121717AFD6006DD9D8 /* promenade-tb.jpg */; };
+		1DD947171717B033006DD9D8 /* tokyo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD947151717B032006DD9D8 /* tokyo.jpg */; };
+		1DD947181717B033006DD9D8 /* tokyo-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD947161717B033006DD9D8 /* tokyo-tb.jpg */; };
 		1DE88E5416CB140600B8804E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */; };
 		1DED7F6416F2D97C0005B3A9 /* camerafiltericon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED7F6316F2D97C0005B3A9 /* camerafiltericon@2x.png */; };
 		1DEE8DFA16CD855900A3C9B7 /* UIImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */; };
@@ -152,21 +158,15 @@
 		8074E9E4171770350057664C /* Tray-with-Birds-and-Cherry-Blossoms.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E94D171770350057664C /* Tray-with-Birds-and-Cherry-Blossoms.jpg */; };
 		8074E9E5171770350057664C /* Biblioteca-Nazionale-Marciana-Venezia-III-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E94F171770350057664C /* Biblioteca-Nazionale-Marciana-Venezia-III-tb.jpg */; };
 		8074E9E6171770350057664C /* Biblioteca-Nazionale-Marciana-Venezia-III.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E950171770350057664C /* Biblioteca-Nazionale-Marciana-Venezia-III.jpg */; };
-		8074E9E7171770350057664C /* Complejo-Marti-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E951171770350057664C /* Complejo-Marti-tb.jpg */; };
-		8074E9E8171770350057664C /* Complejo-Marti.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E952171770350057664C /* Complejo-Marti.jpg */; };
 		8074E9E9171770350057664C /* Contemporary.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8074E953171770350057664C /* Contemporary.txt */; };
 		8074E9EA171770350057664C /* Dogon-Couple-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E954171770350057664C /* Dogon-Couple-tb.jpg */; };
 		8074E9EB171770350057664C /* Dogon-Couple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E955171770350057664C /* Dogon-Couple.jpg */; };
-		8074E9EC171770350057664C /* Gay-Lussac-Nite-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E956171770350057664C /* Gay-Lussac-Nite-tb.jpg */; };
-		8074E9ED171770350057664C /* Gay-Lussac-Nite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E957171770350057664C /* Gay-Lussac-Nite.jpg */; };
 		8074E9EE171770350057664C /* IMAGinING-Tobia-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E958171770350057664C /* IMAGinING-Tobia-tb.jpg */; };
 		8074E9EF171770350057664C /* IMAGinING-Tobia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E959171770350057664C /* IMAGinING-Tobia.jpg */; };
 		8074E9F0171770350057664C /* Nets-Infinitity-TWOS-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E95A171770350057664C /* Nets-Infinitity-TWOS-tb.jpg */; };
 		8074E9F1171770350057664C /* Nets-Infinitity-TWOS.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E95B171770350057664C /* Nets-Infinitity-TWOS.jpg */; };
 		8074E9F2171770350057664C /* Ode-a-lOubli-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E95C171770350057664C /* Ode-a-lOubli-tb.jpg */; };
 		8074E9F3171770350057664C /* Ode-a-lOubli.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E95D171770350057664C /* Ode-a-lOubli.jpg */; };
-		8074E9F4171770350057664C /* Shanty-Nucleus-after-Derrida-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E95E171770350057664C /* Shanty-Nucleus-after-Derrida-tb.jpg */; };
-		8074E9F5171770350057664C /* Shanty-Nucleus-after-Derrida.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E95F171770350057664C /* Shanty-Nucleus-after-Derrida.jpg */; };
 		8074E9F6171770350057664C /* Vessel-Series-I-no-1-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E960171770350057664C /* Vessel-Series-I-no-1-tb.jpg */; };
 		8074E9F7171770350057664C /* Vessel-Series-I-no-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E961171770350057664C /* Vessel-Series-I-no-1.jpg */; };
 		8074E9F8171770350057664C /* Well-4-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E962171770350057664C /* Well-4-tb.jpg */; };
@@ -326,6 +326,12 @@
 		1DD947061717AD58006DD9D8 /* post-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "post-tb.jpg"; sourceTree = "<group>"; };
 		1DD947091717ADCD006DD9D8 /* ancestral-head.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ancestral-head.jpg"; sourceTree = "<group>"; };
 		1DD9470A1717ADCD006DD9D8 /* ancestral-head-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ancestral-head-tb.jpg"; sourceTree = "<group>"; };
+		1DD9470D1717AF54006DD9D8 /* old-mans-cloth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "old-mans-cloth.jpg"; sourceTree = "<group>"; };
+		1DD9470E1717AF54006DD9D8 /* old-mans-cloth-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "old-mans-cloth-tb.jpg"; sourceTree = "<group>"; };
+		1DD947111717AFD6006DD9D8 /* promenade.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = promenade.jpg; sourceTree = "<group>"; };
+		1DD947121717AFD6006DD9D8 /* promenade-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "promenade-tb.jpg"; sourceTree = "<group>"; };
+		1DD947151717B032006DD9D8 /* tokyo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tokyo.jpg; sourceTree = "<group>"; };
+		1DD947161717B033006DD9D8 /* tokyo-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "tokyo-tb.jpg"; sourceTree = "<group>"; };
 		1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1DED7F6316F2D97C0005B3A9 /* camerafiltericon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camerafiltericon@2x.png"; sourceTree = "<group>"; };
 		1DEE8DF816CD855900A3C9B7 /* UIImageExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageExtension.h; sourceTree = "<group>"; };
@@ -394,21 +400,15 @@
 		8074E94D171770350057664C /* Tray-with-Birds-and-Cherry-Blossoms.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tray-with-Birds-and-Cherry-Blossoms.jpg"; sourceTree = "<group>"; };
 		8074E94F171770350057664C /* Biblioteca-Nazionale-Marciana-Venezia-III-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Biblioteca-Nazionale-Marciana-Venezia-III-tb.jpg"; sourceTree = "<group>"; };
 		8074E950171770350057664C /* Biblioteca-Nazionale-Marciana-Venezia-III.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Biblioteca-Nazionale-Marciana-Venezia-III.jpg"; sourceTree = "<group>"; };
-		8074E951171770350057664C /* Complejo-Marti-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Complejo-Marti-tb.jpg"; sourceTree = "<group>"; };
-		8074E952171770350057664C /* Complejo-Marti.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Complejo-Marti.jpg"; sourceTree = "<group>"; };
 		8074E953171770350057664C /* Contemporary.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Contemporary.txt; sourceTree = "<group>"; };
 		8074E954171770350057664C /* Dogon-Couple-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dogon-Couple-tb.jpg"; sourceTree = "<group>"; };
 		8074E955171770350057664C /* Dogon-Couple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dogon-Couple.jpg"; sourceTree = "<group>"; };
-		8074E956171770350057664C /* Gay-Lussac-Nite-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Gay-Lussac-Nite-tb.jpg"; sourceTree = "<group>"; };
-		8074E957171770350057664C /* Gay-Lussac-Nite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Gay-Lussac-Nite.jpg"; sourceTree = "<group>"; };
 		8074E958171770350057664C /* IMAGinING-Tobia-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IMAGinING-Tobia-tb.jpg"; sourceTree = "<group>"; };
 		8074E959171770350057664C /* IMAGinING-Tobia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "IMAGinING-Tobia.jpg"; sourceTree = "<group>"; };
 		8074E95A171770350057664C /* Nets-Infinitity-TWOS-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Nets-Infinitity-TWOS-tb.jpg"; sourceTree = "<group>"; };
 		8074E95B171770350057664C /* Nets-Infinitity-TWOS.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Nets-Infinitity-TWOS.jpg"; sourceTree = "<group>"; };
 		8074E95C171770350057664C /* Ode-a-lOubli-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ode-a-lOubli-tb.jpg"; sourceTree = "<group>"; };
 		8074E95D171770350057664C /* Ode-a-lOubli.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Ode-a-lOubli.jpg"; sourceTree = "<group>"; };
-		8074E95E171770350057664C /* Shanty-Nucleus-after-Derrida-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Shanty-Nucleus-after-Derrida-tb.jpg"; sourceTree = "<group>"; };
-		8074E95F171770350057664C /* Shanty-Nucleus-after-Derrida.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Shanty-Nucleus-after-Derrida.jpg"; sourceTree = "<group>"; };
 		8074E960171770350057664C /* Vessel-Series-I-no-1-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Vessel-Series-I-no-1-tb.jpg"; sourceTree = "<group>"; };
 		8074E961171770350057664C /* Vessel-Series-I-no-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Vessel-Series-I-no-1.jpg"; sourceTree = "<group>"; };
 		8074E962171770350057664C /* Well-4-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Well-4-tb.jpg"; sourceTree = "<group>"; };
@@ -770,23 +770,23 @@
 		8074E94E171770350057664C /* Contemporary */ = {
 			isa = PBXGroup;
 			children = (
+				1DD947151717B032006DD9D8 /* tokyo.jpg */,
+				1DD947161717B033006DD9D8 /* tokyo-tb.jpg */,
+				1DD947111717AFD6006DD9D8 /* promenade.jpg */,
+				1DD947121717AFD6006DD9D8 /* promenade-tb.jpg */,
+				1DD9470D1717AF54006DD9D8 /* old-mans-cloth.jpg */,
+				1DD9470E1717AF54006DD9D8 /* old-mans-cloth-tb.jpg */,
 				8074E94F171770350057664C /* Biblioteca-Nazionale-Marciana-Venezia-III-tb.jpg */,
 				8074E950171770350057664C /* Biblioteca-Nazionale-Marciana-Venezia-III.jpg */,
-				8074E951171770350057664C /* Complejo-Marti-tb.jpg */,
-				8074E952171770350057664C /* Complejo-Marti.jpg */,
 				8074E953171770350057664C /* Contemporary.txt */,
 				8074E954171770350057664C /* Dogon-Couple-tb.jpg */,
 				8074E955171770350057664C /* Dogon-Couple.jpg */,
-				8074E956171770350057664C /* Gay-Lussac-Nite-tb.jpg */,
-				8074E957171770350057664C /* Gay-Lussac-Nite.jpg */,
 				8074E958171770350057664C /* IMAGinING-Tobia-tb.jpg */,
 				8074E959171770350057664C /* IMAGinING-Tobia.jpg */,
 				8074E95A171770350057664C /* Nets-Infinitity-TWOS-tb.jpg */,
 				8074E95B171770350057664C /* Nets-Infinitity-TWOS.jpg */,
 				8074E95C171770350057664C /* Ode-a-lOubli-tb.jpg */,
 				8074E95D171770350057664C /* Ode-a-lOubli.jpg */,
-				8074E95E171770350057664C /* Shanty-Nucleus-after-Derrida-tb.jpg */,
-				8074E95F171770350057664C /* Shanty-Nucleus-after-Derrida.jpg */,
 				8074E960171770350057664C /* Vessel-Series-I-no-1-tb.jpg */,
 				8074E961171770350057664C /* Vessel-Series-I-no-1.jpg */,
 				8074E962171770350057664C /* Well-4-tb.jpg */,
@@ -1036,21 +1036,15 @@
 				8074E9E4171770350057664C /* Tray-with-Birds-and-Cherry-Blossoms.jpg in Resources */,
 				8074E9E5171770350057664C /* Biblioteca-Nazionale-Marciana-Venezia-III-tb.jpg in Resources */,
 				8074E9E6171770350057664C /* Biblioteca-Nazionale-Marciana-Venezia-III.jpg in Resources */,
-				8074E9E7171770350057664C /* Complejo-Marti-tb.jpg in Resources */,
-				8074E9E8171770350057664C /* Complejo-Marti.jpg in Resources */,
 				8074E9E9171770350057664C /* Contemporary.txt in Resources */,
 				8074E9EA171770350057664C /* Dogon-Couple-tb.jpg in Resources */,
 				8074E9EB171770350057664C /* Dogon-Couple.jpg in Resources */,
-				8074E9EC171770350057664C /* Gay-Lussac-Nite-tb.jpg in Resources */,
-				8074E9ED171770350057664C /* Gay-Lussac-Nite.jpg in Resources */,
 				8074E9EE171770350057664C /* IMAGinING-Tobia-tb.jpg in Resources */,
 				8074E9EF171770350057664C /* IMAGinING-Tobia.jpg in Resources */,
 				8074E9F0171770350057664C /* Nets-Infinitity-TWOS-tb.jpg in Resources */,
 				8074E9F1171770350057664C /* Nets-Infinitity-TWOS.jpg in Resources */,
 				8074E9F2171770350057664C /* Ode-a-lOubli-tb.jpg in Resources */,
 				8074E9F3171770350057664C /* Ode-a-lOubli.jpg in Resources */,
-				8074E9F4171770350057664C /* Shanty-Nucleus-after-Derrida-tb.jpg in Resources */,
-				8074E9F5171770350057664C /* Shanty-Nucleus-after-Derrida.jpg in Resources */,
 				8074E9F6171770350057664C /* Vessel-Series-I-no-1-tb.jpg in Resources */,
 				8074E9F7171770350057664C /* Vessel-Series-I-no-1.jpg in Resources */,
 				8074E9F8171770350057664C /* Well-4-tb.jpg in Resources */,
@@ -1130,6 +1124,12 @@
 				1DD947081717AD58006DD9D8 /* post-tb.jpg in Resources */,
 				1DD9470B1717ADCD006DD9D8 /* ancestral-head.jpg in Resources */,
 				1DD9470C1717ADCD006DD9D8 /* ancestral-head-tb.jpg in Resources */,
+				1DD9470F1717AF54006DD9D8 /* old-mans-cloth.jpg in Resources */,
+				1DD947101717AF54006DD9D8 /* old-mans-cloth-tb.jpg in Resources */,
+				1DD947131717AFD6006DD9D8 /* promenade.jpg in Resources */,
+				1DD947141717AFD6006DD9D8 /* promenade-tb.jpg in Resources */,
+				1DD947171717B033006DD9D8 /* tokyo.jpg in Resources */,
+				1DD947181717B033006DD9D8 /* tokyo-tb.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
