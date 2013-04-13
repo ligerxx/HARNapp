@@ -323,10 +323,6 @@
                             <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" id="hWy-w2-PsC">
                                 <rect key="frame" x="0.0" y="64" width="320" height="384"/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="lXm-rU-Hb8" appends="YES" id="o9b-Bf-hw5"/>
-                                    <outletCollection property="gestureRecognizers" destination="C8W-vk-i6k" appends="YES" id="Iy9-hj-Lzo"/>
-                                </connections>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title of Work" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y8A-Ju-Wkb">
                                 <rect key="frame" x="20" y="486" width="280" height="21"/>
@@ -543,8 +539,6 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
             <relationships>
                 <relationship kind="action" name="share:"/>
-                <relationship kind="action" name="swipedLeft:" candidateClass="UIGestureRecognizer"/>
-                <relationship kind="action" name="swipedRight:" candidateClass="UIGestureRecognizer"/>
                 <relationship kind="outlet" name="descriptionOfWork" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="homeButton" candidateClass="UIBarButtonItem"/>
                 <relationship kind="outlet" name="previewImage" candidateClass="UIImageView"/>
@@ -610,7 +604,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="1cH-WO-3yV"/>
+        <segue reference="HIp-HR-2YJ"/>
         <segue reference="qGh-2M-BUh"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -33,6 +33,7 @@
     _artDescription = someDescription;
 }
 
+/*
 -(IBAction)swipedLeft:(UIGestureRecognizer *)sender
 {
     if( (int) currentViewIndex != [arrayOfArt count])
@@ -72,7 +73,8 @@
     _previewImage.image = [UIImage imageNamed:@"ceramic.png"];
     
 }
-
+*/
+ 
 -(IBAction)share:(id)sender
 {
     NSArray *sharedItems;   //Items that will be shared

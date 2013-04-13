@@ -37,8 +37,8 @@
 @property (strong, nonatomic) NSArray *arrayOfArt;
 
 //Used for gesture navigation
--(IBAction)swipedLeft:(UIGestureRecognizer *)sender;
--(IBAction)swipedRight:(UIGestureRecognizer *)sender;
+//-(IBAction)swipedLeft:(UIGestureRecognizer *)sender;
+//-(IBAction)swipedRight:(UIGestureRecognizer *)sender;
 
 //Share Button Action
 -(IBAction)share:(id)sender;
