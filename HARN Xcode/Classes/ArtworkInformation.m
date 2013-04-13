@@ -18,12 +18,13 @@
    {
        chosenCollection = collectionPicked;
    }else{
-       NSLog(@"Ruh Roh!");
+       NSLog(@"Ruh Roh! The chosen collection was passed in as nil!");
        return;
    }
    
     if([chosenCollection isEqualToString:@"African"])
     {
+        //AFRICA
         [self setImageThumbnails:@[[UIImage imageNamed:@"ancestral-head-tb.jpg"],
          [UIImage imageNamed:@"post-tb.jpg"],
          [UIImage imageNamed:@"ritual ax-tb.jpg"],
@@ -86,6 +87,7 @@
         
     }else if([chosenCollection isEqualToString:@"Asian"] )
     {
+        //ASIA
         [self setImageThumbnails:@[[UIImage imageNamed:@"Seated Bodhisattva-tb.jpg"],
                                    [UIImage imageNamed:@"Vajravarahi.jpg"],
                                    [UIImage imageNamed:@"Dancing Ganesh-tb.jpg"],
@@ -153,6 +155,8 @@
         
     }else if([chosenCollection isEqualToString:@"Contemporary"])
     {
+        //CONTEMPORARY
+        
         [self setImageThumbnails:@[[UIImage imageNamed:@"Dogon-Couple-tb.jpg"],
          [UIImage imageNamed:@"warhol-tb.jpg"],
          [UIImage imageNamed:@"old-mans-cloth-tb.jpg"],
@@ -215,6 +219,8 @@
          ]];
     }else if([chosenCollection isEqualToString:@"Modern"])
     {
+        //MODERN
+        
         [self setImageThumbnails:@[[UIImage imageNamed:@"Ireland Reef-tb.jpg"],
          [UIImage imageNamed:@"Three Men at Union Square-tb.jpg"],
          [UIImage imageNamed:@"Faunesse-tb.jpg"],
@@ -272,6 +278,8 @@
          ]];
     }else if([chosenCollection isEqualToString:@"Ancient American"])
     {
+        //ANCIENT AMERICAN
+        
         [self setImageThumbnails:@[[UIImage imageNamed:@"stirrup-tb.jpg"],
          [UIImage imageNamed:@"bridge-tb.jpg"],
          [UIImage imageNamed:@"Burial-Urn-tb.jpg"],
@@ -329,12 +337,71 @@
           ]];
     }else if([chosenCollection isEqualToString:@"Oceanic"])
     {
+        //OCEANIC
         
     }else if([chosenCollection isEqualToString:@"Photography"])
     {
+        //PHOTOGRAPHY
         
+        [self setImageThumbnails:@[[UIImage imageNamed:@"The-patient-gardener-tb.jpg"],
+         [UIImage imageNamed:@"A-sphere-lit-tb.jpg"],
+         [UIImage imageNamed:@"Tropical-Rococo-tb.jpg"],
+         [UIImage imageNamed:@"Scenographer's-Mind-VIII-tb.jpg"],
+         [UIImage imageNamed:@"Four-views-from-four-times-and-one-shoreline-tb.jpg"],
+         [UIImage imageNamed:@"Valerie-in-the-light-Bruno-in-the-dark-tb.jpg"],
+         [UIImage imageNamed:@"Clownmirror-tb.jpg"],
+         [UIImage imageNamed:@"Cavewomen-tb.jpg"],
+         [UIImage imageNamed:@"Getting-Lindsay-Linton-tb.jpg"],
+         [UIImage imageNamed:@"Swamp-and-Pipeline-tb.jpg"],
+         ]];
+        [self setLargeImages:@[[UIImage imageNamed:@"The-patient-gardener.jpg"],
+         [UIImage imageNamed:@"A-sphere-lit.jpg"],
+         [UIImage imageNamed:@"Tropical-Rococo.jpg"],
+         [UIImage imageNamed:@"Scenographer's-Mind-VIII.jpg"],
+         [UIImage imageNamed:@"Four-views-from-four-times-and-one-shoreline.jpg"],
+         [UIImage imageNamed:@"Valerie-in-the-light-Bruno-in-the-dark.jpg"],
+         [UIImage imageNamed:@"Clownmirror.jpg"],
+         [UIImage imageNamed:@"Cavewomen.jpg"],
+         [UIImage imageNamed:@"Getting-Lindsay-Linton.jpg"],
+         [UIImage imageNamed:@"Swamp-and-Pipeline.jpg"],
+         ]];
+        [self setTitles:@[@"The Patient Gardener",
+         @"A Sphere Lit from the Top, Four Sides, & All their Combinations",
+         @"Tropical Rococo",
+         @"Scenographer's Mind VIII",
+         @"Four Views from Four Times and One Shoreline",
+         @"Valerie in the Light, Bruno in the Dark, Paris",
+         @"Clownmirror",
+         @"Cavewomen",
+         @"Getting Lindsay Linton",
+         @"Swamp and Pipeline, Cancer Alley, Louisiana"
+         ]];
+        [self setSmallDescription:@[@"Maggie Taylor, American, 2007",
+         @"Sol LeWitt, American, 2004",
+         @"Sergio Vega, American, 2002",
+         @"Eija-Liisa Ahtila, Finnish, 2002",
+         @"Mark Klett and Byron Wolfe, American, 2002",
+         @"Nan Goldin, American, 2001",
+         @"Roni Horn, American, 2001",
+         @"Olaf Breuning, Swiss, 2001",
+         @"Charlie White, American, 2000",
+         @"Richard Misrach, American, 1998"
+         ]];
+        [self setExtendedDescription:@[@"\nArtist: Maggie Taylor\nAmerican, b. 1961\n\nDimensions: frame: 6 ft. 2 in. x 6 ft. 2 in. x 3 1/2 in. (188 x 188 x 8.9 cm) sheet: 5 ft. 2 1/2 in. x 5 ft. 3/8 in. (158.8 x 153.4 cm) image: 57 3/4 x 58 1/4 in. (146.7 x 148 cm)\nMedium: Pigment inkjet print [Epson]\nCredit Line: Gift of Jerry N. Uelsmann and Maggie Taylor",
+         @"\nArtist: Sol LeWitt\nAmerican, 1928 - 2007\n\nDimensions: installed: 6 ft. 8 in. x 11 ft. 9 1/2 in. (203.2 x 359.4 cm) each image: 18 x 18 in. (45.7 x 45.7 cm) each sheet: 18 x 18 in. (45.7 x 45.7 cm)\nMedium: Pigment ink jet prints\nCredit Line: Museum purchase with funds provided by David A. Cofrin Art Acquisition Endowment\n\nDescription: Portfolio consisting of 29 (28+ title) pure pigment ink jet prints on Hahnemuhle rag paper, to be individually framed for display.",
+         @"\nArtist: Sergio Vega\nAmerican, born Argentina, 1959\n\nDimensions: each sheet: 16 x 20 in. (40.6 x 50.8 cm)\nMedium: RC print\nCredit Line: Museum purchase, funds provided by the Caroline Julier and James G. Richardson Acquisition Fund\n\nDescription: This triptych is part [of] a larger series on the subject of Paradise juxtaposing 17th and 18th century notions of a literal place in South America with contemporary conceptual art. Three nearly identical images of parrots are portrayed as if in a fine Rococo painting.",
+         @"\nArtist: Eija-Liisa Ahtila\nFinnish, born 1959\n\nDimensions: 39 1/2 in. x 7 ft. 5 in. (100.3 x 226.1 cm)\nMedium: Two chromogenic development prints\nCredit Line: Gift of Martin Z. Margulies\n\nDescription: Two framed C-prints",
+         @"\nLake Tenaya, 2002 Left to Right: Eadweard Muybridge, 1872, Ansel Adams, 1942, Edward Weston, 1937. Back panels: Swatting high-country mosquitoes, 2002\nArtist: Mark Klett and Byron Wolfe\nAmerican, b. 1952 and American, b. 1967\n\nDimensions: Image: 20 in. x 5 ft. 1 in. (50.8 x 154.9 cm) Sheet size: 24 in. x 5 ft. 6 in. (61 x 167.6 cm)\nMedium: Pigment inkjet print\nCredit Line: Museum purchase with funds provided by the David A. Cofrin Art Acquisition Endowment",
+         @"\nArtist: Nan Goldin\nAmerican, born 1953\n\nDimensions: frame: 28 1/2 x 41 in. (72.4 x 104.1 cm) sheet size: 26 3/4 x 40 in. (67.9 x 101.6 cm) image: 25 5/8 x 38 1/2 in. (65.1 x 97.8 cm)\nMedium: Silver dye bleached print [cibachrome]\nCredit Line: Museum purchase, gift of Michael A. Singer with additional funds provided by the Caroline Julier and James G. Richardson Acquisition Fund",
+         @"\nArtist: Roni Horn\nAmerican, born 1955\n\nDimensions: entire piece: 5 ft. 3/4 in. x 5 ft. 3/4 in. (154.3 x 154.3 cm) each print: 30 x 30 in. (76.2 x 76.2 cm) each frame: 30 3/8 x 30 3/8 in. (77.2 x 77.2 cm)\nMedium: Chromogenic development prints\nCredit Line: Museum purchase, funds provided by the Caroline Julier and James G. Richardson Acquisition Fund",
+         @"\nArtist: Olaf Breuning\nSwiss, born 1970\n\nDimensions: 32 x 40 in. (81.3 x 101.6 cm)\nMedium: Chromogenic development print\nCredit Line: Gift of Martin Z. Margulies\n\nDescription: Five barefoot women with brilliant light ad wide-open eyes and long dark hair stand with a rough 'cavewoman' dress on holding rough-cut rocks.",
+         @"\nArtist: Charlie White\nAmerican, born 1972\n\nDimensions: panel size: 36 1/8 in. x 5 ft. 1/4 in. x 3/8 in. (91.8 x 153 x 1 cm) Image: 36 1/8 in. x 5 ft. 1/4 in. x 3/8 in. (91.8 x 153 x 1 cm)\nMedium: Chromogenic development print mounted on plexi\nCredit Line: Gift of Martin Z. Margulies\n\nDescription: An interior tiled like a bathroom shower, shows Joshua, the puppet representing male ego joins a gang of young men who are forcibly restraining a young woman pouring what looks like beer on her head. Innocent horseplay turns violent.",
+         @"\nArtist: Richard Misrach\nAmerican, born 1949\n\nDimensions: frame: 49 1/2 in. x 5 ft. 1 11/16 in. (125.7 x 156.7 cm) image: 38 1/2 x 48 3/16 in. (97.8 x 122.4 cm)\nMedium: Chromogenic development print [Fuji Crystal Archive]\nCredit Line: Museum purchase, gift of Dr. and Mrs. David A. Cofrin\n\nDescription: Crystal Archive Fuji print, flat green swamp, 1/3 up the picture plane is crossed by a rusty pipeline, above that bare trees stand in teh swamp, several have fallen in to the muck, others are obviously dead but still stand."
+         ]];
     }else if([chosenCollection isEqualToString:@"Prints and Drawings Bef..."])
     {
+        //PRINTS AND DRAWINGS
+        
         [self setImageThumbnails:@[[UIImage imageNamed:@"papauer-tb.jpg"],
          [UIImage imageNamed:@"pancratium-tb.jpg"],
          [UIImage imageNamed:@"heliconia-tb.jpg"],

@@ -4,22 +4,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="SpP-Hx-Bdp">
-            <objects>
-                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="Qnr-UP-B2q" sceneMemberID="viewController">
-                    <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VIe-1O-caW">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="523-E5-MiZ" kind="relationship" relationship="rootViewController" id="5qN-Ex-95N"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3C8-k2-Igc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-213" y="36"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="4Gd-eM-BbC">
             <objects>
@@ -302,7 +286,7 @@ Last Updated: 4/13/13</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="stR-FB-vOB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="241" y="-653"/>
+            <point key="canvasLocation" x="-172" y="-734"/>
         </scene>
         <!--Title View Controller-->
         <scene sceneID="76r-G1-DF6">
@@ -774,17 +758,118 @@ Last Updated: 4/13/13</string>
             </objects>
             <point key="canvasLocation" x="1632" y="-747"/>
         </scene>
+        <!--About Page View Controller-->
+        <scene sceneID="l27-67-bXM">
+            <objects>
+                <viewController storyboardIdentifier="About" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ItQ-k4-DfS" customClass="AboutPageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="61W-73-Rth">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="RTF-9m-7Z3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <navigationItem title="About This App" id="Dq7-WM-oHe">
+                                        <barButtonItem key="leftBarButtonItem" title="Home" id="5fS-Mc-G70">
+                                            <connections>
+                                                <segue destination="523-E5-MiZ" kind="modal" modalTransitionStyle="crossDissolve" id="za4-fP-9ZH"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="gallerybackground@2x.png" id="1hJ-6o-kN4">
+                                <rect key="frame" x="0.0" y="44" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="casey.png" id="NrS-Eo-Amt">
+                                <rect key="frame" x="20" y="68" width="127" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="lauren.png" id="Hoz-fc-O0G">
+                                <rect key="frame" x="173" y="68" width="127" height="132"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" id="2vH-9h-suJ">
+                                <rect key="frame" x="20" y="220" width="280" height="226"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The HARN app was crafted with care by Casey Feldman and Lauren Gray (Exception Mark Inc.) in collaboration with the University of Florida's HARN Museum of Art for their undergraduate senior project in University of Florida's Department of Computer Science. Casey and Lauren are both Digital Arts &amp; Sciences majors.
+
+Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath, Jessica Park, and Kristofer Kraul
+</string>
+                                <color key="textColor" red="0.53333050270000004" green="0.53333050270000004" blue="0.53333050270000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="SDU-cD-dnQ">
+                                <rect key="frame" x="24" y="489" width="118" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Follow Casey" backgroundImage="blackbutton.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="visitSite:" destination="ItQ-k4-DfS" eventType="touchUpInside" id="2jC-Pi-jkx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gqC-Ix-eSC">
+                                <rect key="frame" x="177" y="489" width="118" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Follow Lauren" backgroundImage="blackbutton.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="visitSite:" destination="ItQ-k4-DfS" eventType="touchUpInside" id="KDm-kB-qw5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="caseyImage" destination="NrS-Eo-Amt" id="tkA-GC-C0K"/>
+                        <outlet property="followCasey" destination="SDU-cD-dnQ" id="MyA-my-Kcq"/>
+                        <outlet property="followLauren" destination="gqC-Ix-eSC" id="7ey-fJ-VUX"/>
+                        <outlet property="laurenImage" destination="Hoz-fc-O0G" id="1r2-qn-ogn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u0W-mG-qlL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="-734"/>
+        </scene>
     </scenes>
     <resources>
         <image name="HarnLogoSquare.png" width="540" height="540"/>
         <image name="aA.png" width="30" height="19"/>
         <image name="blackbutton.png" width="300" height="100"/>
+        <image name="casey.png" width="384" height="402"/>
         <image name="comingsoon@2x.png" width="640" height="1136"/>
         <image name="gallerybackground@2x.png" width="640" height="1136"/>
+        <image name="lauren.png" width="576" height="576"/>
         <image name="mainmenu.png" width="50" height="50"/>
         <image name="retake@2x.png" width="640" height="1136"/>
     </resources>
     <classes>
+        <class className="AboutPageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutPageViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="visitSite:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="caseyImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="followCasey" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="followLauren" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="laurenImage" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
         <class className="ArtCell" superclassName="UICollectionViewCell">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ArtCell.h"/>
             <relationships>
@@ -842,6 +927,7 @@ Last Updated: 4/13/13</string>
         <class className="TitleViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TitleViewController.h"/>
             <relationships>
+                <relationship kind="action" name="panLayer:" candidateClass="UIPanGestureRecognizer"/>
                 <relationship kind="action" name="tapToPanLayer:"/>
                 <relationship kind="outlet" name="container" candidateClass="UIView"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
@@ -861,6 +947,9 @@ Last Updated: 4/13/13</string>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
         </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
         <class className="filterView" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/filterView.h"/>
             <relationships>
@@ -879,7 +968,7 @@ Last Updated: 4/13/13</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="HIp-HR-2YJ"/>
-        <segue reference="qGh-2M-BUh"/>
+        <segue reference="za4-fP-9ZH"/>
+        <segue reference="M8Z-AE-feP"/>
     </inferredMetricsTieBreakers>
 </document>

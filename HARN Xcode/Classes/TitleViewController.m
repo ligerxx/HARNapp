@@ -8,6 +8,7 @@
 
 #import "TitleViewController.h"
 #import "CollectionViewController.h"
+#import "AboutPageViewController.h"
 
 @interface TitleViewController ()
 
@@ -193,15 +194,22 @@ BOOL _bottomVisible;
     NSArray *array = [dictionary objectForKey:@"data"];
     self.selectedCell = [array objectAtIndex:[self.tableView indexPathForSelectedRow].row];
     
+    UIStoryboard *storyboard = self.storyboard;
     //Special Cases like if someone clicks info, privacy policy, map, etc. This is currently throwing a warning but does work.
     if([self.selectedCell isEqualToString:@"Privacy Policy"])
     {
-        UIStoryboard *storyboard = self.storyboard;
         UIViewController *privacy = [storyboard instantiateViewControllerWithIdentifier:@"Privacy"];
         [self presentViewController:privacy animated:YES completion:nil];
         
         return;
     }
+    
+    if ([self.selectedCell isEqualToString:@"About This App"]) {
+        
+        AboutPageViewController *aboutPage = [storyboard instantiateViewControllerWithIdentifier:@"About"];
+        [self presentViewController:aboutPage animated:YES completion:nil];
+    }
+    
     
     if ([[segue identifier] isEqualToString:@"navigateToCollection"])
     {

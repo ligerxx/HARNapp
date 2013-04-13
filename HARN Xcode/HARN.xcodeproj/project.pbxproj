@@ -117,6 +117,9 @@
 		1DF9C2C81719ECA400F85656 /* ancientamerican-main.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DF9C2C51719ECA200F85656 /* ancientamerican-main.png */; };
 		1DF9C2C91719ECA400F85656 /* contemporary-main.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DF9C2C61719ECA300F85656 /* contemporary-main.png */; };
 		1DF9C2CA1719ECA400F85656 /* modern-main.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DF9C2C71719ECA300F85656 /* modern-main.png */; };
+		1DF9C2CE171A0FB100F85656 /* casey.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DF9C2CC171A0FB000F85656 /* casey.png */; };
+		1DF9C2CF171A0FB100F85656 /* lauren.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DF9C2CD171A0FB100F85656 /* lauren.png */; };
+		1DF9C2D2171A118E00F85656 /* AboutPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF9C2D1171A118D00F85656 /* AboutPageViewController.m */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		8016D53716CC220B00F20725 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8016D53516CC21BD00F20725 /* QuartzCore.framework */; };
 		8074E905171735510057664C /* Seated Bodhisattva-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E901171735510057664C /* Seated Bodhisattva-1.jpg */; };
@@ -359,6 +362,10 @@
 		1DF9C2C51719ECA200F85656 /* ancientamerican-main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ancientamerican-main.png"; sourceTree = "<group>"; };
 		1DF9C2C61719ECA300F85656 /* contemporary-main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contemporary-main.png"; sourceTree = "<group>"; };
 		1DF9C2C71719ECA300F85656 /* modern-main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "modern-main.png"; sourceTree = "<group>"; };
+		1DF9C2CC171A0FB000F85656 /* casey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = casey.png; sourceTree = "<group>"; };
+		1DF9C2CD171A0FB100F85656 /* lauren.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lauren.png; sourceTree = "<group>"; };
+		1DF9C2D0171A118D00F85656 /* AboutPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutPageViewController.h; sourceTree = "<group>"; };
+		1DF9C2D1171A118D00F85656 /* AboutPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutPageViewController.m; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* HARN_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HARN_Prefix.pch; sourceTree = "<group>"; };
@@ -508,6 +515,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1DF9C2D0171A118D00F85656 /* AboutPageViewController.h */,
+				1DF9C2D1171A118D00F85656 /* AboutPageViewController.m */,
 				1DAF8CF416D6E6CA0080224C /* Camera */,
 				1DAF8CF316D6E6B50080224C /* Collection View */,
 				1D3623240D0F684500981E51 /* PagingScrollViewAppDelegate.h */,
@@ -646,6 +655,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1DF9C2CC171A0FB000F85656 /* casey.png */,
+				1DF9C2CD171A0FB100F85656 /* lauren.png */,
 				8074E90C171770350057664C /* African */,
 				8074E922171770350057664C /* Ancient American */,
 				8074E938171770350057664C /* Asian */,
@@ -1146,6 +1157,8 @@
 				1DF9C2C81719ECA400F85656 /* ancientamerican-main.png in Resources */,
 				1DF9C2C91719ECA400F85656 /* contemporary-main.png in Resources */,
 				1DF9C2CA1719ECA400F85656 /* modern-main.png in Resources */,
+				1DF9C2CE171A0FB100F85656 /* casey.png in Resources */,
+				1DF9C2CF171A0FB100F85656 /* lauren.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1173,6 +1186,7 @@
 				1D7A6F5316E1802D00DCBFAB /* addToFavoritesActivity.m in Sources */,
 				1DCA55A416F28FDF00909059 /* filterView.m in Sources */,
 				1DD0AE80171744EE00CC8507 /* ArtworkInformation.m in Sources */,
+				1DF9C2D2171A118E00F85656 /* AboutPageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
