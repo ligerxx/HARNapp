@@ -102,6 +102,18 @@
 		1DE88E5416CB140600B8804E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */; };
 		1DED7F6416F2D97C0005B3A9 /* camerafiltericon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED7F6316F2D97C0005B3A9 /* camerafiltericon@2x.png */; };
 		1DEE8DFA16CD855900A3C9B7 /* UIImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */; };
+		1DF4A386171900F200598443 /* papauer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DF4A384171900F200598443 /* papauer.jpg */; };
+		1DF4A387171900F200598443 /* papauer-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DF4A385171900F200598443 /* papauer-tb.jpg */; };
+		1DF4A38A1719048800598443 /* pancratium.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DF4A3881719048700598443 /* pancratium.jpg */; };
+		1DF4A38B1719048800598443 /* pancratium-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DF4A3891719048700598443 /* pancratium-tb.jpg */; };
+		1DF4A38E1719057700598443 /* heliconia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DF4A38C1719057700598443 /* heliconia.jpg */; };
+		1DF4A38F1719057700598443 /* heliconia-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DF4A38D1719057700598443 /* heliconia-tb.jpg */; };
+		1DF4A3921719062B00598443 /* deer.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 1DF4A3901719062B00598443 /* deer.JPG */; };
+		1DF4A3931719062B00598443 /* deer-tb.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 1DF4A3911719062B00598443 /* deer-tb.JPG */; };
+		1DF4A3961719068100598443 /* dream.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 1DF4A3941719068100598443 /* dream.JPG */; };
+		1DF4A3971719068100598443 /* dream-tb.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 1DF4A3951719068100598443 /* dream-tb.JPG */; };
+		1DF4A39A1719073C00598443 /* madhouse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DF4A3981719073C00598443 /* madhouse.jpg */; };
+		1DF4A39B1719073C00598443 /* madhouse-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DF4A3991719073C00598443 /* madhouse-tb.jpg */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		8016D53716CC220B00F20725 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8016D53516CC21BD00F20725 /* QuartzCore.framework */; };
@@ -205,27 +217,15 @@
 		8074EA21171770350057664C /* Tropical-Rococo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E98D171770350057664C /* Tropical-Rococo.jpg */; };
 		8074EA22171770350057664C /* Valerie-in-the-light-Bruno-in-the-dark-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E98E171770350057664C /* Valerie-in-the-light-Bruno-in-the-dark-tb.jpg */; };
 		8074EA23171770350057664C /* Valerie-in-the-light-Bruno-in-the-dark.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E98F171770350057664C /* Valerie-in-the-light-Bruno-in-the-dark.jpg */; };
-		8074EA24171770350057664C /* Black-Chinned-Garrulax-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E991171770350057664C /* Black-Chinned-Garrulax-tb.jpg */; };
-		8074EA25171770350057664C /* Black-Chinned-Garrulax.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E992171770350057664C /* Black-Chinned-Garrulax.jpg */; };
-		8074EA26171770350057664C /* California-Hare-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E993171770350057664C /* California-Hare-tb.jpg */; };
-		8074EA27171770350057664C /* California-Hare.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E994171770350057664C /* California-Hare.jpg */; };
 		8074EA28171770350057664C /* China-Limodoron-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E995171770350057664C /* China-Limodoron-tb.jpg */; };
 		8074EA29171770350057664C /* China-Limodoron.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E996171770350057664C /* China-Limodoron.jpg */; };
-		8074EA2A171770350057664C /* Dante-in-Hell-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E997171770350057664C /* Dante-in-Hell-tb.jpg */; };
-		8074EA2B171770350057664C /* Dante-in-Hell.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E998171770350057664C /* Dante-in-Hell.jpg */; };
 		8074EA2C171770350057664C /* Disparte-General-tb.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8074E999171770350057664C /* Disparte-General-tb.JPG */; };
 		8074EA2D171770350057664C /* Disparte-General.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 8074E99A171770350057664C /* Disparte-General.JPG */; };
 		8074EA2E171770350057664C /* Inscriptions-Sepulchrales-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E99B171770350057664C /* Inscriptions-Sepulchrales-tb.jpg */; };
 		8074EA2F171770350057664C /* Inscriptions-Sepulchrales.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E99C171770350057664C /* Inscriptions-Sepulchrales.jpg */; };
-		8074EA30171770350057664C /* Marguerite-au-Rouet-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E99D171770350057664C /* Marguerite-au-Rouet-tb.jpg */; };
-		8074EA31171770350057664C /* Marguerite-au-Rouet.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E99E171770350057664C /* Marguerite-au-Rouet.jpg */; };
-		8074EA32171770350057664C /* Noisetier-Franca-Gros-Fruits-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E99F171770350057664C /* Noisetier-Franca-Gros-Fruits-tb.jpg */; };
-		8074EA33171770350057664C /* Noisetier-Franca-Gros-Fruits.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E9A0171770350057664C /* Noisetier-Franca-Gros-Fruits.jpg */; };
 		8074EA34171770350057664C /* Prints and Drawings.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8074E9A1171770350057664C /* Prints and Drawings.txt */; };
 		8074EA35171770350057664C /* The-Deconstruction-of-the-French-Armada-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E9A2171770350057664C /* The-Deconstruction-of-the-French-Armada-tb.jpg */; };
 		8074EA36171770350057664C /* The-Deconstruction-of-the-French-Armada.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E9A3171770350057664C /* The-Deconstruction-of-the-French-Armada.jpg */; };
-		8074EA37171770350057664C /* The-Fall-of-the-Walls-of-Jericho-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E9A4171770350057664C /* The-Fall-of-the-Walls-of-Jericho-tb.jpg */; };
-		8074EA38171770350057664C /* The-Fall-of-the-Walls-of-Jericho.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E9A5171770350057664C /* The-Fall-of-the-Walls-of-Jericho.jpg */; };
 		808DB99816CD7E5F00B591D6 /* TitleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 808DB99716CD7E5F00B591D6 /* TitleViewController.m */; };
 		80CFA22B16F218F200F90382 /* Properties.plist in Resources */ = {isa = PBXBuildFile; fileRef = 80CFA22A16F218F200F90382 /* Properties.plist */; };
 		C9F783630F2AB7600029CA01 /* DataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F783620F2AB7600029CA01 /* DataSource.m */; };
@@ -342,6 +342,18 @@
 		1DED7F6316F2D97C0005B3A9 /* camerafiltericon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camerafiltericon@2x.png"; sourceTree = "<group>"; };
 		1DEE8DF816CD855900A3C9B7 /* UIImageExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageExtension.h; sourceTree = "<group>"; };
 		1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageExtension.m; sourceTree = "<group>"; };
+		1DF4A384171900F200598443 /* papauer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = papauer.jpg; sourceTree = "<group>"; };
+		1DF4A385171900F200598443 /* papauer-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "papauer-tb.jpg"; sourceTree = "<group>"; };
+		1DF4A3881719048700598443 /* pancratium.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pancratium.jpg; sourceTree = "<group>"; };
+		1DF4A3891719048700598443 /* pancratium-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "pancratium-tb.jpg"; sourceTree = "<group>"; };
+		1DF4A38C1719057700598443 /* heliconia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = heliconia.jpg; sourceTree = "<group>"; };
+		1DF4A38D1719057700598443 /* heliconia-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "heliconia-tb.jpg"; sourceTree = "<group>"; };
+		1DF4A3901719062B00598443 /* deer.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = deer.JPG; sourceTree = "<group>"; };
+		1DF4A3911719062B00598443 /* deer-tb.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "deer-tb.JPG"; sourceTree = "<group>"; };
+		1DF4A3941719068100598443 /* dream.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dream.JPG; sourceTree = "<group>"; };
+		1DF4A3951719068100598443 /* dream-tb.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dream-tb.JPG"; sourceTree = "<group>"; };
+		1DF4A3981719073C00598443 /* madhouse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = madhouse.jpg; sourceTree = "<group>"; };
+		1DF4A3991719073C00598443 /* madhouse-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "madhouse-tb.jpg"; sourceTree = "<group>"; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -447,27 +459,15 @@
 		8074E98D171770350057664C /* Tropical-Rococo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tropical-Rococo.jpg"; sourceTree = "<group>"; };
 		8074E98E171770350057664C /* Valerie-in-the-light-Bruno-in-the-dark-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Valerie-in-the-light-Bruno-in-the-dark-tb.jpg"; sourceTree = "<group>"; };
 		8074E98F171770350057664C /* Valerie-in-the-light-Bruno-in-the-dark.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Valerie-in-the-light-Bruno-in-the-dark.jpg"; sourceTree = "<group>"; };
-		8074E991171770350057664C /* Black-Chinned-Garrulax-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Black-Chinned-Garrulax-tb.jpg"; sourceTree = "<group>"; };
-		8074E992171770350057664C /* Black-Chinned-Garrulax.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Black-Chinned-Garrulax.jpg"; sourceTree = "<group>"; };
-		8074E993171770350057664C /* California-Hare-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "California-Hare-tb.jpg"; sourceTree = "<group>"; };
-		8074E994171770350057664C /* California-Hare.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "California-Hare.jpg"; sourceTree = "<group>"; };
 		8074E995171770350057664C /* China-Limodoron-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "China-Limodoron-tb.jpg"; sourceTree = "<group>"; };
 		8074E996171770350057664C /* China-Limodoron.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "China-Limodoron.jpg"; sourceTree = "<group>"; };
-		8074E997171770350057664C /* Dante-in-Hell-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dante-in-Hell-tb.jpg"; sourceTree = "<group>"; };
-		8074E998171770350057664C /* Dante-in-Hell.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Dante-in-Hell.jpg"; sourceTree = "<group>"; };
 		8074E999171770350057664C /* Disparte-General-tb.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Disparte-General-tb.JPG"; sourceTree = "<group>"; };
 		8074E99A171770350057664C /* Disparte-General.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Disparte-General.JPG"; sourceTree = "<group>"; };
 		8074E99B171770350057664C /* Inscriptions-Sepulchrales-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Inscriptions-Sepulchrales-tb.jpg"; sourceTree = "<group>"; };
 		8074E99C171770350057664C /* Inscriptions-Sepulchrales.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Inscriptions-Sepulchrales.jpg"; sourceTree = "<group>"; };
-		8074E99D171770350057664C /* Marguerite-au-Rouet-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Marguerite-au-Rouet-tb.jpg"; sourceTree = "<group>"; };
-		8074E99E171770350057664C /* Marguerite-au-Rouet.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Marguerite-au-Rouet.jpg"; sourceTree = "<group>"; };
-		8074E99F171770350057664C /* Noisetier-Franca-Gros-Fruits-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Noisetier-Franca-Gros-Fruits-tb.jpg"; sourceTree = "<group>"; };
-		8074E9A0171770350057664C /* Noisetier-Franca-Gros-Fruits.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Noisetier-Franca-Gros-Fruits.jpg"; sourceTree = "<group>"; };
 		8074E9A1171770350057664C /* Prints and Drawings.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Prints and Drawings.txt"; sourceTree = "<group>"; };
 		8074E9A2171770350057664C /* The-Deconstruction-of-the-French-Armada-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The-Deconstruction-of-the-French-Armada-tb.jpg"; sourceTree = "<group>"; };
 		8074E9A3171770350057664C /* The-Deconstruction-of-the-French-Armada.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The-Deconstruction-of-the-French-Armada.jpg"; sourceTree = "<group>"; };
-		8074E9A4171770350057664C /* The-Fall-of-the-Walls-of-Jericho-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The-Fall-of-the-Walls-of-Jericho-tb.jpg"; sourceTree = "<group>"; };
-		8074E9A5171770350057664C /* The-Fall-of-the-Walls-of-Jericho.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The-Fall-of-the-Walls-of-Jericho.jpg"; sourceTree = "<group>"; };
 		808DB99616CD7E5F00B591D6 /* TitleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleViewController.h; sourceTree = "<group>"; };
 		808DB99716CD7E5F00B591D6 /* TitleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleViewController.m; sourceTree = "<group>"; };
 		80CFA22A16F218F200F90382 /* Properties.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Properties.plist; sourceTree = "<group>"; };
@@ -856,27 +856,27 @@
 		8074E990171770350057664C /* Prints and Drawings */ = {
 			isa = PBXGroup;
 			children = (
-				8074E991171770350057664C /* Black-Chinned-Garrulax-tb.jpg */,
-				8074E992171770350057664C /* Black-Chinned-Garrulax.jpg */,
-				8074E993171770350057664C /* California-Hare-tb.jpg */,
-				8074E994171770350057664C /* California-Hare.jpg */,
+				1DF4A3981719073C00598443 /* madhouse.jpg */,
+				1DF4A3991719073C00598443 /* madhouse-tb.jpg */,
+				1DF4A3941719068100598443 /* dream.JPG */,
+				1DF4A3951719068100598443 /* dream-tb.JPG */,
+				1DF4A3901719062B00598443 /* deer.JPG */,
+				1DF4A3911719062B00598443 /* deer-tb.JPG */,
+				1DF4A38C1719057700598443 /* heliconia.jpg */,
+				1DF4A38D1719057700598443 /* heliconia-tb.jpg */,
+				1DF4A3881719048700598443 /* pancratium.jpg */,
+				1DF4A3891719048700598443 /* pancratium-tb.jpg */,
+				1DF4A384171900F200598443 /* papauer.jpg */,
+				1DF4A385171900F200598443 /* papauer-tb.jpg */,
 				8074E995171770350057664C /* China-Limodoron-tb.jpg */,
 				8074E996171770350057664C /* China-Limodoron.jpg */,
-				8074E997171770350057664C /* Dante-in-Hell-tb.jpg */,
-				8074E998171770350057664C /* Dante-in-Hell.jpg */,
 				8074E999171770350057664C /* Disparte-General-tb.JPG */,
 				8074E99A171770350057664C /* Disparte-General.JPG */,
 				8074E99B171770350057664C /* Inscriptions-Sepulchrales-tb.jpg */,
 				8074E99C171770350057664C /* Inscriptions-Sepulchrales.jpg */,
-				8074E99D171770350057664C /* Marguerite-au-Rouet-tb.jpg */,
-				8074E99E171770350057664C /* Marguerite-au-Rouet.jpg */,
-				8074E99F171770350057664C /* Noisetier-Franca-Gros-Fruits-tb.jpg */,
-				8074E9A0171770350057664C /* Noisetier-Franca-Gros-Fruits.jpg */,
 				8074E9A1171770350057664C /* Prints and Drawings.txt */,
 				8074E9A2171770350057664C /* The-Deconstruction-of-the-French-Armada-tb.jpg */,
 				8074E9A3171770350057664C /* The-Deconstruction-of-the-French-Armada.jpg */,
-				8074E9A4171770350057664C /* The-Fall-of-the-Walls-of-Jericho-tb.jpg */,
-				8074E9A5171770350057664C /* The-Fall-of-the-Walls-of-Jericho.jpg */,
 			);
 			path = "Prints and Drawings";
 			sourceTree = "<group>";
@@ -1077,27 +1077,15 @@
 				8074EA21171770350057664C /* Tropical-Rococo.jpg in Resources */,
 				8074EA22171770350057664C /* Valerie-in-the-light-Bruno-in-the-dark-tb.jpg in Resources */,
 				8074EA23171770350057664C /* Valerie-in-the-light-Bruno-in-the-dark.jpg in Resources */,
-				8074EA24171770350057664C /* Black-Chinned-Garrulax-tb.jpg in Resources */,
-				8074EA25171770350057664C /* Black-Chinned-Garrulax.jpg in Resources */,
-				8074EA26171770350057664C /* California-Hare-tb.jpg in Resources */,
-				8074EA27171770350057664C /* California-Hare.jpg in Resources */,
 				8074EA28171770350057664C /* China-Limodoron-tb.jpg in Resources */,
 				8074EA29171770350057664C /* China-Limodoron.jpg in Resources */,
-				8074EA2A171770350057664C /* Dante-in-Hell-tb.jpg in Resources */,
-				8074EA2B171770350057664C /* Dante-in-Hell.jpg in Resources */,
 				8074EA2C171770350057664C /* Disparte-General-tb.JPG in Resources */,
 				8074EA2D171770350057664C /* Disparte-General.JPG in Resources */,
 				8074EA2E171770350057664C /* Inscriptions-Sepulchrales-tb.jpg in Resources */,
 				8074EA2F171770350057664C /* Inscriptions-Sepulchrales.jpg in Resources */,
-				8074EA30171770350057664C /* Marguerite-au-Rouet-tb.jpg in Resources */,
-				8074EA31171770350057664C /* Marguerite-au-Rouet.jpg in Resources */,
-				8074EA32171770350057664C /* Noisetier-Franca-Gros-Fruits-tb.jpg in Resources */,
-				8074EA33171770350057664C /* Noisetier-Franca-Gros-Fruits.jpg in Resources */,
 				8074EA34171770350057664C /* Prints and Drawings.txt in Resources */,
 				8074EA35171770350057664C /* The-Deconstruction-of-the-French-Armada-tb.jpg in Resources */,
 				8074EA36171770350057664C /* The-Deconstruction-of-the-French-Armada.jpg in Resources */,
-				8074EA37171770350057664C /* The-Fall-of-the-Walls-of-Jericho-tb.jpg in Resources */,
-				8074EA38171770350057664C /* The-Fall-of-the-Walls-of-Jericho.jpg in Resources */,
 				1DD946E71717A78A006DD9D8 /* Dancing Ganesh.jpg in Resources */,
 				1DD946E81717A78A006DD9D8 /* Dancing Ganesh-tb.jpg in Resources */,
 				1DD946EB1717A7EC006DD9D8 /* Uma-Mahesvara.jpg in Resources */,
@@ -1130,6 +1118,18 @@
 				1DD947201717B232006DD9D8 /* bridge-tb.jpg in Resources */,
 				1DBADA5C17184D66008CADD0 /* warhol.jpg in Resources */,
 				1DBADA5D17184D66008CADD0 /* warhol-tb.jpg in Resources */,
+				1DF4A386171900F200598443 /* papauer.jpg in Resources */,
+				1DF4A387171900F200598443 /* papauer-tb.jpg in Resources */,
+				1DF4A38A1719048800598443 /* pancratium.jpg in Resources */,
+				1DF4A38B1719048800598443 /* pancratium-tb.jpg in Resources */,
+				1DF4A38E1719057700598443 /* heliconia.jpg in Resources */,
+				1DF4A38F1719057700598443 /* heliconia-tb.jpg in Resources */,
+				1DF4A3921719062B00598443 /* deer.JPG in Resources */,
+				1DF4A3931719062B00598443 /* deer-tb.JPG in Resources */,
+				1DF4A3961719068100598443 /* dream.JPG in Resources */,
+				1DF4A3971719068100598443 /* dream-tb.JPG in Resources */,
+				1DF4A39A1719073C00598443 /* madhouse.jpg in Resources */,
+				1DF4A39B1719073C00598443 /* madhouse-tb.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -275,7 +275,61 @@
         
     }else if([chosenCollection isEqualToString:@"Prints and Drawings Bef..."])
     {
-        
+        [self setImageThumbnails:@[[UIImage imageNamed:@"papauer-tb.jpg"],
+         [UIImage imageNamed:@"pancratium-tb.jpg"],
+         [UIImage imageNamed:@"heliconia-tb.jpg"],
+         [UIImage imageNamed:@"deer-tb.JPG"],
+         [UIImage imageNamed:@"dream-tb.JPG"],
+         [UIImage imageNamed:@"madhouse-tb.jpg"],
+         [UIImage imageNamed:@"Disparte-General-tb.JPG"],
+         [UIImage imageNamed:@"Inscriptions-Sepulchrales-tb.jpg"],
+         [UIImage imageNamed:@"China-Limodoron-tb.jpg"],
+         [UIImage imageNamed:@"The-Deconstruction-of-the-French-Armada-tb.jpg"],
+         ]];
+        [self setLargeImages:@[[UIImage imageNamed:@"papauer.jpg"],
+         [UIImage imageNamed:@"pancratium.jpg"],
+         [UIImage imageNamed:@"heliconia.jpg"],
+         [UIImage imageNamed:@"deer.JPG"],
+         [UIImage imageNamed:@"dream.JPG"],
+         [UIImage imageNamed:@"madhouse.jpg"],
+         [UIImage imageNamed:@"Disparte-General.JPG"],
+         [UIImage imageNamed:@"Inscriptions-Sepulchrales.jpg"],
+         [UIImage imageNamed:@"China-Limodoron.jpg"],
+         [UIImage imageNamed:@"The-Deconstruction-of-the-French-Armada.jpg"],
+         ]];
+        [self setTitles:@[@"Papauer Corniculatum Luteum",
+         @"Pancratium I",
+         @"Heliconia Acuminata",
+         @"Stalking Deer",
+         @"The Dream of Aeneas",
+         @"Scene in a Madhouse",
+         @"Disparte General",
+         @"Inscriptions Sepulchrales et Autres Trouvees dans les Fabriques",
+         @"China Limodoron",
+         @"The Destruction of the French Armada"
+         ]];
+        [self setSmallDescription:@[@"Basilius Besler, German, 1613",
+         @"Johann Michael Seligmann, German, 1768",
+         @"Maria Sibylla Merian, German, 1705",
+         @"Theodore de Bry, Flemish, 1591",
+         @"Salvator Rosa, Italian, 1663-1664",
+         @"William Hogarth, English, 1735-1763",
+         @"Francisco de Goya, Spanish, 1875",
+         @"Giovanni Battista Piranesi, Italian, 1804",
+         @"Dr. Robert John Thornton, British, 1799-1812",
+         @"James Gillray, English, 1797"
+         ]];
+        [self setExtendedDescription:@[@"\n1613\n\nBasilius Besler\nGerman, 1561-1629\n\nCopperplate engraving, hand colored\nFrom Hortus Eystettensis (Eichstätt, 1613)\nMuseum purchase, funds provided by Peter DeSorcy, with additional funds provided by Gladys Harn Harris Art Acquisition Endowment",
+         @"\n1768\n\nJohann Michael Seligmann, after unknown artist\nGerman, 1702-1762\n\nCopperplate engraving, hand colored\nFrom Hortus Nitidissimis, by Christoph Jakob Trew and Georg Dionysius Ehret (Nuremberg, 1768)\nMuseum purchase, funds provided by Lawrence Reed Miller",
+         @"\nc. 1705\n\nMaria Sibylla Merian\nGerman, 1647 - 1717\n\nEngraving, hand colored\nFrom Metamorphosis Insectorum Surinamensium (Amsterdam, 1705)\nMuseum purchase, funds provided by Peter DeSorcy",
+         @"\n1591\n\nTheodore de Bry\nFranco Flemish, 1528–1598\n\nEngraving\nFrom Brief Narration of Europeans in Florida\nUniversity Gallery purchase",
+         @"\nc. 1663-1664\n\nSalvator Rosa\nItalian, 1615-1673\n\nEtching with drypoint\nUniversity Gallery purchase",
+         @"\n1735-1763\n\nWilliam Hogarth\nEnglish, 1697 - 1764\n\nEngraving\nFrom A Rake’s Progress\nGift of H.J. Roberts, M.D., and the Honorable Carol A. Roberts",
+         @"\nArtist: Francisco de Goya\nSpanish, 1746 - 1828\n\nDimensions: sheet: 12 1/8 x 17 1/4 in. (30.8 x 43.8 cm) Image: 8 1/2 x 13 in. (21.6 x 33 cm)\nMedium: Etching and burnished aquatint\nCredit Line: Museum Collection, University Gallery purchase\n\nDescription: ink on paper",
+         @"\nArtist: Giovanni Battista Piranesi\nItalian, 1720 - 1778\n\nDimensions: sheet: 21 x 26 1/2 in. (53.3 x 67.3 cm) image: 17 x 22 3/4 in. (43.2 x 57.8 cm)\nMedium: Engraving\nCredit Line: Museum collection, University Gallery purchase, Gift of the Department of Architecture, University of Florida\n\nDescription: inscriptions on marble stones found in Pompeia on the buildings",
+         @"\nArtist: Dr. Robert John Thornton\nBritish, 1768 - 1837\n\nDimensions: 20 x 16 in. (50.8 x 40.6 cm) Other (frame): 29 3/4 x 25 in. (75.6 x 63.5 cm)\nMedium: Hand-colored engraved plate (in aquatint, mezzotint, stipple, line)\nCredit Line: Gift of Kirk Henckels",
+         @"\nArtist: James Gillray\nEnglish, 1757 - 1815\n\nDimensions: sheet: 12 x 15 7/8 in. (30.5 x 40.3 cm) image: 10 3/8 x 15 in. (26.4 x 38.1 cm)\nMedium: Etching and aquatint\nCredit Line: Gift of Wilse B. and Mary H. Webb\n\nDescription: Political illustration of a storm at sea sinking the French Armada."
+         ]];
     }else
     {
         NSLog(@"BIG ERROR");
