@@ -20,6 +20,211 @@
             </objects>
             <point key="canvasLocation" x="-213" y="36"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="4Gd-eM-BbC">
+            <objects>
+                <viewController storyboardIdentifier="Privacy" id="s09-H9-bzG" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p1q-Nm-VuS">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" id="DaG-lQ-fex">
+                                <rect key="frame" x="0.0" y="44" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="HARN Mobile Application Terms of Use &amp; Privacy Policy">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">----This mobile application (the “Application”) is made available to you by the Samuel P. Harn Museum of Art (the “HARN”). By downloading, installing, copying, or otherwise using the Application, you agree to be bound by the Terms of Use and the Privacy Policy set forth below. If you do not agree to these terms, please do not download or use the Application.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Terms of Use">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">----The Application is licensed for noncommercial use by individual users on an “as is” basis. This means:You may neither reverse engineer, decompile, or disassemble the Application nor attempt in any other manner to obtain the source code without the expressed consent of the HARN and their constituents. Except for making a backup, you may not reproduce, duplicate, copy, sell, trade or resell the Application for any purpose.You may not modify, alter, or make derivative versions of the Application.Unless otherwise noted, all images, artworks, text, data, files, audio, video clips, illustrations, designs, and documentation are © Harn Museum of Art, Florida. All rights reserved. </string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="User-Generated Content">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">----The Application may include functionality that allows you to take photographs and share them through websites, social-media account pages, and mobile applications. In these circumstances, please note the following:You may not upload photographs taken in locations where photography is prohibited. Please abide by all posted restrictions in the HARN, including those on videotaping and on the use of flashes and tripods.Artworks on view in the HARN may be protected by third-party copyrights. If you wish to post or distribute photographs of artworks that are protected by copyright, your use may not be a commercial use and must fall within Fair Use, the Special Permission for Educators, or another legislative exemption, unless you have permission from the rights holder. If you submit content to any HARN website, mobile application, or social-media account page, you understand that you are solely responsible for that content; you affirm that you have the necessary rights and permissions to publish that content; and you give the HARN, its affiliates, and the general public permission to use that content for any purpose.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Privacy Policy">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">----We respect you privacy and value the relationship we have with you. The information the HARN will collect from you via the Application, how the HARN will use your information, with whom the HARN may share your information, and how you can let the HARN know that you do not wish to be contacted is listed below. Please review it carefully. The HARN is committed to protecting the privacy of its Application users in accordance with applicable laws and regulations. All information gathered from you in connection with your use of the www.harn.ufl.edu website, the Application as well as various microsites that include harn.ufl.edu in the URL, and related services, including RSS feeds, mobile websites and mobile applications (such services, collectively, referred to herein as the "Site") is governed by this privacy policy (the "Privacy Policy"). By using the Site, you agree to be bound by the terms and conditions of this Privacy Policy. If you do not agree to this Privacy Policy, please do not use the Site.The Site does not systematically collect or record names, postal or email addresses, phone numbers, gender identity, or other personally identifying data (the "Personal Data") from visitors to the Site, unless such data is voluntarily submitted by visitors for the purposes outlined below.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Interest Based Advertising">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">----The HARN may provide certain third party service providers the cookies it has obtained in order for such service provider to serve HARN advertisements on other websites a user visits, based on such user’s prior visits to the Site. The HARN directs these service providers to not use the provided cookies for any purpose other than to provide the advertising services explicitly requested by the HARN.You can opt out of certain service providers’ use of cookies. For example:Google permits you to register your preferences at http://www.google.com/ads/preferences;The Self-Regulatory Program for Online Behavioral Advertising (http://www.aboutads.info/choices) and the National Advertising Initiative (http://www.networkadvertising.org/choices/) have websites that allow you to register your choice to opt-out of receiving interest-based advertisements from certain companies that participate in such initiatives;Yahoo permits you to register your preferences at https://reports.web.analytics.yahoo.com/optout,OptOut.vm?domain=a.analytics.yahoo.com.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="User-Generated Content">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">----From time to time, the HARN may offer Site visitors the opportunity to submit content or post comments. If you choose to participate, the HARN or its third-party affiliate will request such information, including Personal Data, as is necessary for such participation. The terms of this Privacy Policy shall apply to such information, unless HARN or its third-party affiliate provides an alternate policy governing the use of Personal Data collected from such user submission. Your Personal Data may be used as set forth below. See "Use of Personal Data by the HARN" and "Disclosure of Personal Data to Others."</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="USE OF PERSONAL DATA BY THE HARN">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">----The HARN uses the personal information you provide to us for internal purposes, such as filling and tracking your order, analyzing trends and collecting statistics. In addition, the HARN may use your Personal Data for HARN marketing and promotional purposes. For example, the HARN may notify you of events, programs, sales at the HARN Store, and special offers and promotions related to the HARN Museum that we think might be of interest to you. We may also request your participation in surveys. If you do not want us to use your Personal Data to contact you for these purposes, please follow the instructions in “Do Not Contact” below.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Aggregate Information">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">----The HARN may compile and provide aggregate statistics about Site visitors, customers, sales, traffic patterns, and related information to third parties, but such information will not specify Personal Data. The HARN collects IP addresses as a component of such aggregate information. Such information could, if necessary, be used to identify a user in order to comply with safety or security issues.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Personal Data">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">----The HARN may share your Personal Data, as collected under the circumstances outlined above, with other reputable organizations, such as other nonprofits, art institutions, and media companies. The HARN has teamed up with reputable third-party vendors in order to provide certain services to its online users and allow us to better respond to the needs of our visitors. The HARN requires its vendors to maintain the confidentiality and security of the information to which they are provided access, and restricts these vendors from using the information in any way without express authorization by the HARN.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="LINKING TO THIRD PARTIES">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">----The Site may include links to websites operated by third parties over which the HARN has no control. Once you leave the Site, this Privacy Policy will no longer apply, and you will be subject to the third party’s privacy policy. For example, the HARN may use third-party service providers such as Facebook and Twitter to give you easy ways to share our content with others. The information you provide when using these tools is subject to these third parties' privacy policies. The HARN is not responsible for the privacy or security practices nor the content of third party websites, and such links are not intended to be an endorsement of the third party website or its content.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="DO NOT CONTACT">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">----If you do not want to be contacted by the HARN, or if you do not want the HARN to share your Personal Data, please let us know by writing to the following address:Harn Museum of Art3259 Hull RoadGainesville, Florida 32611-2700 Attn: Marketing – Do Not Contact List</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="REVISIONS TO HARN PRIVACY POLICY">
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                            <font key="NSOriginalFont" size="14" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">----The HARN may revise its Privacy Policy at any time, without notice, and encourages you to periodically visit this page to review the most current policy.Effective Date: 4/13/13Last Updated: 4/13/13</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" secureTextEntry="YES"/>
+                            </textView>
+                            <navigationBar contentMode="scaleToFill" id="8wv-fd-bhm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <navigationItem title="Privacy Policy" id="Baf-1c-SdJ">
+                                        <barButtonItem key="leftBarButtonItem" title="Home" id="Llz-5h-e3a">
+                                            <connections>
+                                                <segue destination="523-E5-MiZ" kind="modal" modalTransitionStyle="crossDissolve" id="q5f-Re-dBj"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="stR-FB-vOB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="241" y="-653"/>
+        </scene>
         <!--Title View Controller-->
         <scene sceneID="76r-G1-DF6">
             <objects>
@@ -376,16 +581,8 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Gk-FZ-D1Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="left" id="lXm-rU-Hb8">
-                    <connections>
-                        <action selector="swipedLeft:" destination="2AL-bL-RkM" id="KxM-Mz-Rro"/>
-                    </connections>
-                </swipeGestureRecognizer>
-                <swipeGestureRecognizer direction="right" id="C8W-vk-i6k">
-                    <connections>
-                        <action selector="swipedRight:" destination="2AL-bL-RkM" id="Ndl-9m-hDt"/>
-                    </connections>
-                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="lXm-rU-Hb8"/>
+                <swipeGestureRecognizer direction="right" id="C8W-vk-i6k"/>
             </objects>
             <point key="canvasLocation" x="1748" y="36"/>
         </scene>
@@ -604,7 +801,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="HIp-HR-2YJ"/>
-        <segue reference="qGh-2M-BUh"/>
+        <segue reference="q5f-Re-dBj"/>
+        <segue reference="M8Z-AE-feP"/>
     </inferredMetricsTieBreakers>
 </document>

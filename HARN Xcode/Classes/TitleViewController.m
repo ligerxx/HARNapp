@@ -185,59 +185,26 @@ BOOL _bottomVisible;
     // Dispose of any resources that can be recreated.
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+// area where the color and title of the Navigation Bar will be set when someone has clicked on a cell
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-/*
     // get the selected item in our navigation list
     NSDictionary *dictionary = [_properties objectAtIndex:[self.tableView indexPathForSelectedRow].section];
     NSArray *array = [dictionary objectForKey:@"data"];
     self.selectedCell = [array objectAtIndex:[self.tableView indexPathForSelectedRow].row];
     
-    // write which item we have selected to our output
-    NSLog(@"%@", self.selectedCell);
-    
-    UINavigationController *collection = [self.storyboard instantiateViewControllerWithIdentifier:@"collectionRoot"];
-    
-    // set nav bar title
-    collection.navigationBar.topItem.title = self.selectedCell;
-    
-    // set nav bar color
-    if([self.selectedCell isEqualToString:@"African"]) {
-        collection.navigationBar.tintColor = [UIColor colorWithRed:0.964 green:0.584 blue:0.266 alpha:1]; //ORANGE
-    } else if([self.selectedCell isEqualToString:@"Ancient American"]) {
-        collection.navigationBar.tintColor = [UIColor colorWithRed:0.565 green:0.411 blue:0.8 alpha:1]; //PURPLE
-    } else if([self.selectedCell isEqualToString:@"Asian"]) {
-        collection.navigationBar.tintColor = [UIColor colorWithRed:0.2509 green:0.6 blue:0.2901 alpha:1]; //GREEN
-    } else if([self.selectedCell isEqualToString:@"Contemporary"]) {
-        collection.navigationBar.tintColor = [UIColor colorWithRed:0.88 green:0.05 blue:0.05 alpha:1]; //RED
-    } else if([self.selectedCell isEqualToString:@"Prints and Drawings Bef..."]) {
-        collection.navigationBar.tintColor = [UIColor colorWithRed:0.886 green:0.83 blue:0.034 alpha:1]; //YELLOW
-    } else if([self.selectedCell isEqualToString:@"Oceanic"]) {
-        collection.navigationBar.tintColor = [UIColor colorWithRed:0.329 green:0.604 blue:0.95 alpha:1]; //BLUE
-    } else if([self.selectedCell isEqualToString:@"Photography"]) {
-        collection.navigationBar.tintColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1]; //BLACK
-    } else {
-        collection.navigationBar.tintColor = [UIColor colorWithRed:0.667 green:0.667 blue:0.667 alpha:1]; //GRAY
-    }
-
-[UIView transitionFromView:self.topLayer toView:collection.view duration:0.65 options:nil completion:
-    ^(BOOL finished)
+    //Special Cases like if someone clicks info, privacy policy, map, etc. This is currently throwing a warning but does work.
+    if([self.selectedCell isEqualToString:@"Privacy Policy"])
     {
-        self.topLayer = collection.view;
-    }];*/
-   
-}
-
-// area where the color and title of the Navigation Bar will be set when someone has clicked on a cell
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
+        UIStoryboard *storyboard = self.storyboard;
+        UIViewController *privacy = [storyboard instantiateViewControllerWithIdentifier:@"Privacy"];
+        [self presentViewController:privacy animated:YES completion:nil];
+        
+        return;
+    }
+    
     if ([[segue identifier] isEqualToString:@"navigateToCollection"])
     {
-        // get the selected item in our navigation list
-        NSDictionary *dictionary = [_properties objectAtIndex:[self.tableView indexPathForSelectedRow].section];
-        NSArray *array = [dictionary objectForKey:@"data"];
-        self.selectedCell = [array objectAtIndex:[self.tableView indexPathForSelectedRow].row];
-        
         // write which item we have selected to our output
         NSLog(@"%@", self.selectedCell);      
         
