@@ -20,7 +20,6 @@
 	BOOL textViewNeedsUpdate;
     BOOL imageViewNeedsUpdate;
 	IBOutlet UILabel *label;
-	IBOutlet UITextView *textView;
     IBOutlet UIImageView *imageView;
 }
 

@@ -18,12 +18,72 @@
    {
        chosenCollection = collectionPicked;
    }else{
+       NSLog(@"Ruh Roh!");
        return;
    }
    
     if([chosenCollection isEqualToString:@"African"])
     {
-
+        [self setImageThumbnails:@[[UIImage imageNamed:@"ancestral-head-tb.jpg"],
+         [UIImage imageNamed:@"post-tb.jpg"],
+         [UIImage imageNamed:@"ritual ax-tb.jpg"],
+         [UIImage imageNamed:@"Cloth-with-Olokun-tb.jpg"],
+         [UIImage imageNamed:@"Face-Mask-tb.JPG"],
+         [UIImage imageNamed:@"Gala-Blanket-tb.jpg"],
+         [UIImage imageNamed:@"Indigo-Resist-Dyed-Cloth-tb.jpg"],
+         [UIImage imageNamed:@"Koranic-Board-tb.jpg"],
+         [UIImage imageNamed:@"Maternity-Figure-tb.jpg"],
+         [UIImage imageNamed:@"Wedding-Cape-tb.jpg"],
+         ]];
+        
+        [self setLargeImages:@[[UIImage imageNamed:@"ancestral-head.jpg"],
+         [UIImage imageNamed:@"post.jpg"],
+         [UIImage imageNamed:@"ritual ax.jpg"],
+         [UIImage imageNamed:@"Cloth-with-Olokun.jpg"],
+         [UIImage imageNamed:@"Face-Mask.JPG"],
+         [UIImage imageNamed:@"Gala-Blanket.jpg"],
+         [UIImage imageNamed:@"Indigo-Resist-Dyed-Cloth.jpg"],
+         [UIImage imageNamed:@"Koranic-Board.jpg"],
+         [UIImage imageNamed:@"Maternity-Figure.jpg"],
+         [UIImage imageNamed:@"Wedding-Cape.jpg"],
+         ]];
+        
+        [self setTitles:@[@"Ancestral Head (uhumwelao or uhunmwun-elao)",
+         @"Post",
+         @"Ritual Ax",
+         @"Cloth with Olokun, Goddess of the Sea Motif (adire eleko)",
+         @"Face Mask (sauli)",
+         @"Gala Blanket (Nguba)",
+         @"Indigo Resist Dyed Cloth (adire alabere)",
+         @"Koranic Board",
+         @"Maternity Figure",
+         @"Wedding Cape (isikoti)"
+         ]];
+        
+        [self setSmallDescription:@[@"Edo people, Nigeria",
+         @"Igbo People, Nigeria, Late 19th-early 20th Century",
+         @"Yoruba people, Nigeria, Late 19th Century to Early 20th Century",
+         @"Yoruba people, Nigeria, c. 1973",
+         @"Guro people, Cote d'Ivoire, c. 1970-1980",
+         @"Ndebele people, South Africa, c. 1960",
+         @"Nike Davies Okundaye, African, c. 1980",
+         @"1966",
+         @"Osei Bonsu, Ghanaian, 1944",
+         @"Kholekile Maxulu, South African, c. 1960"
+         ]];
+        
+        [self setExtendedDescription:@[@"\nArtist: Edo people\nNigeria\n\nDimensions: 13 1/4 x 7 1/2 x 7 in. (33.7 x 19.1 x 17.8 cm)\nMedium: Wood, copper sheeting, metal, patina\nCredit Line: Gift of Rod McGalliard\nMade/manufactured: Africa\n\nDescription: With side feather, copper sheeting and staples",
+         @"\nMaker: Igbo people\nNigeria\n\nDimensions: 11 ft. 10 in. x 14 1/2 in. x 14 1/2 in. (360.7 x 36.8 x 36.8 cm) with base: 650 lb. (294.8 kg)\nMedium: Wood\nCredit Line: Gift of Rod McGalliard\nMade/manufactured: Africa\n\nDescription: Carved wooden post.",
+         @"\nMaker: Yoruba people\nNigeria\n\nDimensions: 20 x 2 9/16 x 11 3/16 in. (50.8 x 6.5 x 28.4 cm)\nMedium: Wood, iron, pigment\nCredit Line: Gift of Rodney D. McGalliard in honor of Dr. Robin Poynor\nMade/manufactured: Africa\n\nDescription: With wood haft sculpted with a standing figure holding a sash at the front, neck rings, scarifications, and dentate coiffure, with flaring iron blade emerging from a terminal carved with a guilloche design, and with a fine glossy patina.",
+         @"\nMaker: Yoruba people\nNigeria\n\nDimensions: 6 ft. 5 in. x 5 ft. 11 in. (195.6 x 180.3 cm)\nMedium: Imported cotton cloth, indigo dye with starch resist\nCredit Line: Gift of Dr. Robin Poynor\nMade/manufactured: Nigeria\n\nDescription: Dark blue cloth with lighter blue hand-painted motifs in grid pattern; various motifs including stool (center), or Olokun.",
+         @"\nMaker: Guro people\nCote d'Ivoire\n\nDimensions: 20 15/16 x 7 7/8 x 10 1/2 in. (53.2 x 20 x 26.7 cm)\nMedium: Wood, enamel\nCredit Line: Gift of Rod McGalliard\nMade/manufactured: Africa\n\nDescription: Surmounted by a standing male figure in European dress, with a leopard and dog at the sides, and with polychrome enamel pigment.",
+         @"\nMaker: Ndebele people\nSouth Africa\n\nDimensions: 5 ft. 2 in. x 5 ft. 2 in. (157.5 x 157.5 cm)\nMedium: Commercial blanket, fiber, glass beads\nCredit Line: Gift of William D. and Norma Canelas Roth\nMade/manufactured: Africa\n\nDescription: Wool blanket, with red color scheme; rectilinear, with 3 major bands of different geometric patterns in blue, black, white, green and purple beads sewn onto the outside surface. Short fringe of black, blue and white beads.",
+         @"\nArtist: Nike Davies Okundaye\nAfrican, born 1954\n\nDimensions: 5 ft. 5 1/2 in. x 56 in. (166.4 x 142.2 cm)\nMedium: Cotton, indigo dye\nCredit Line: Gift of Christopher Hardymon Poynor\nMade/manufactured: Africa\n\nDescription: Dark and light blue cloth with perforated surface.",
+         @"\nDimensions: 34 7/8 x 11 3/4 x 1 1/8 in. (88.6 x 29.8 x 2.9 cm)\nMedium: Ink and pigment on paper, wood, leather\nCredit Line: Museum purchase, funds provided by museum visitors\nMade/manufactured: Africa\n\nDescription: Ink and pigment on paper mounted on both sides of a hanging board, arched leather strap at top with fringe, written passages are at center of both sides, surrounded by geometric designs in yellow, black, white, red, green, and blue",
+         @"\nArtist: Osei Bonsu\nGhanaian, b. 1900 - d. 1977\n\nDimensions: 14 1/2 x 5 1/2 x 5 1/2 in. (36.8 x 14 x 14 cm)\nMedium: carved wood\nCredit Line: Gift of Lewis Berner and family\nMade/manufactured: Africa,\n\nDescription: Carved seated female figure holding child.",
+         @"\nArtist: Kholekile Maxulu\nSouth African\n\nDimensions: 45 1/2 x 31 in. (115.6 x 78.7 cm)\nMedium: Cloth, glass seed beads, plastic beads\nCredit Line: Museum purchase, funds provided by museum visitors\nMade/manufactured: Africa, South Africa, Maswazinni\n\nDescription: Layers of white and colored factory made cloth panels with beaded borders sewn together onto one panel; beaded loop (black with green, white and yellow diamond pattern)affixed to top of back panel; beaded motifs of: geometric shapes, trees, cross, automobiles; white, black, yellow, red, turquoise and green beads, mostly seed beads; some beads 1/4 inch in diameter."
+         ]];
+        
     }else if([chosenCollection isEqualToString:@"Asian"] )
     {
         [self setImageThumbnails:@[[UIImage imageNamed:@"Seated Bodhisattva-tb.jpg"],
@@ -339,30 +399,35 @@
 
 -(void) setImageThumbnails:(NSArray *)thumbnails
 {
+    NSLog(@"thumbnails are in");
     imageThumbnails = thumbnails;
     return;
 }
 
 -(void) setLargeImages:(NSArray *)images
 {
+    NSLog(@"large images are in");
     largeImages = images;
     return;
 }
 
 -(void) setTitles:(NSArray *)newtitles
 {
+    NSLog(@"Titles are set");
     titles = newtitles;
     return;
 }
 
 -(void) setSmallDescription:(NSArray *)newSmallDescription
 {
+    NSLog(@"small descriptions are set");
     smallDescription = newSmallDescription;
     return;
 }
 
 -(void) setExtendedDescription:(NSArray *)newExtendedDescription
 {
+    NSLog(@"large descriptions are set");
     extendedDescription = newExtendedDescription;
     return;
 }

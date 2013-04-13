@@ -36,14 +36,14 @@ const CGFloat TEXT_VIEW_PADDING = 50.0;
 		NSDictionary *pageData =
 			[[DataSource sharedDataSource] dataForPage:pageIndex];
 		label.text = [pageData objectForKey:@"pageName"];
-		textView.text = [pageData objectForKey:@"pageText"];
+		//textView.text = [pageData objectForKey:@"pageText"];
         NSString *imageLocation = [pageData objectForKey:@"pageImage"];
         imageView.image = [UIImage imageNamed:imageLocation];
         theImage = imageView.image;
 		
 		CGRect absoluteRect = [self.view.window
-			convertRect:textView.bounds
-			fromView:textView];
+			convertRect:label.bounds
+			fromView:label];
 		if (!self.view.window ||
 			!CGRectIntersectsRect(
 				CGRectInset(absoluteRect, TEXT_VIEW_PADDING, TEXT_VIEW_PADDING),
@@ -62,11 +62,11 @@ const CGFloat TEXT_VIEW_PADDING = 50.0;
 		self.view.window &&
 		CGRectIntersectsRect(
 			[self.view.window
-				convertRect:CGRectInset(textView.bounds, TEXT_VIEW_PADDING, TEXT_VIEW_PADDING)
-				fromView:textView],
+				convertRect:CGRectInset(label.bounds, TEXT_VIEW_PADDING, TEXT_VIEW_PADDING)
+				fromView:label],
 			[self.view.window bounds])))
 	{
-		for (UIView *childView in textView.subviews)
+		for (UIView *childView in label.subviews)
 		{
 			[childView setNeedsDisplay];
 		}

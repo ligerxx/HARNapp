@@ -31,16 +31,16 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(DataSource);
 	{
 		dataPages = [[NSArray alloc] initWithObjects:
 			[NSDictionary dictionaryWithObjectsAndKeys:
-				@"Feature 1", @"pageName",
-				@"Highlights from the Modern Collection", @"pageText", @"monet.png", @"pageImage",
+				@"Highlights from the Modern Collection", @"pageName",
+				@"", @"pageText", @"modern-main.png", @"pageImage",
 				nil],
 			[NSDictionary dictionaryWithObjectsAndKeys:
-				@"Feature 2", @"pageName",
-				@"Ceramics: Avenues of Exchange", @"pageText", @"ceramic.png", @"pageImage",
+				@"Contemporary Art from the Harn Collection", @"pageName",
+				@"", @"pageText", @"contemporary-main.png", @"pageImage",
 				nil],
 			[NSDictionary dictionaryWithObjectsAndKeys:
-				@"Feature 3", @"pageName",
-				@"Things That Go Bump In The Night", @"pageText", @"skeleton.png", @"pageImage",
+				@"Bird Mothers and Feathered Serpents: Mythical Beings of Oceania and Ancient America", @"pageName",
+				@"", @"pageText", @"ancientamerican-main.png", @"pageImage",
 				nil],
 			nil];
 	}
