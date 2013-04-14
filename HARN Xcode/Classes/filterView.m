@@ -193,6 +193,15 @@ bool firstTimeOpen = true;
         // Oasis, Jambo
     } else if ([typeOfFilters isEqualToString:@"Ancient American"]) {
         // Cuzco, Nasca, Wari
+        filterName1 = @"Nasca";
+        UIImage *nascaPic = [UIImage imageNamed:@"nasca.png"];
+        nascaPic = [self resizeTexture:nascaPic width:width height:height];
+        CIImage *nascaTexture = [[CIImage alloc] initWithImage:nascaPic];
+        CIFilter *nascaFalse = [CIFilter filterWithName:@"CIFalseColor" keysAndValues:@"inputImage", filterPreviewImage, nil];
+        CIFilter *nasca = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, nascaTexture, kCIInputImageKey, nascaFalse.outputImage, nil];
+        filter1 = nasca;
+        
+        
     } else if([typeOfFilters isEqualToString:@"Asian"]) {
         // ZEN
         filterName1 = @"Zen";
