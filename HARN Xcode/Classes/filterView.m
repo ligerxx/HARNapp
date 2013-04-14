@@ -180,10 +180,21 @@ bool firstTimeOpen = true;
         height = _imageView.image.size.width;
     }
     
-    if([typeOfFilters isEqualToString:@"Asian"])
-    {
-        /*ASIA FILTERS*/
-        //ZEN
+    if ([typeOfFilters isEqualToString:@"African"]) {
+        // SAHARA
+        filterName1 = @"Sahara";
+        UIImage *saharaPic = [UIImage imageNamed:@"sahara.png"];
+        saharaPic = [self resizeTexture:saharaPic width:width height:height];
+        CIImage *saharaTexture = [[CIImage alloc] initWithImage:saharaPic];
+        CIFilter *sepiaFilter = [CIFilter filterWithName:@"CISepiaTone" keysAndValues:kCIInputImageKey,filterPreviewImage,
+                                 @"inputIntensity",[NSNumber numberWithFloat:0.4],nil];
+        CIFilter *sahara = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, saharaTexture, kCIInputImageKey, sepiaFilter.outputImage, nil];
+        filter1 = sahara;
+        // Oasis, Jambo
+    } else if ([typeOfFilters isEqualToString:@"Ancient American"]) {
+        // Cuzco, Nasca, Wari
+    } else if([typeOfFilters isEqualToString:@"Asian"]) {
+        // ZEN
         filterName1 = @"Zen";
         UIImage *zenPic = [UIImage imageNamed:@"zen.png"];
         zenPic = [self resizeTexture:zenPic width:width height:height];
@@ -192,8 +203,7 @@ bool firstTimeOpen = true;
          @"inputIntensity",[NSNumber numberWithFloat:0.4],nil];
          CIFilter *zen = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, zenTexture, kCIInputImageKey, sepiaFilter.outputImage, nil];
         filter1 = zen;
-        
-        //JADE
+        // JADE
         filterName2 = @"Jade";
         UIImage *jadePic = [UIImage imageNamed:@"jade.png"];
         jadePic = [self resizeTexture:jadePic width:width height:height];
@@ -204,30 +214,21 @@ bool firstTimeOpen = true;
         [vignette setValue:[NSNumber numberWithFloat:30.0f] forKey:@"inputRadius"];
         CIFilter *neueJade = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, jadeTexture, kCIInputImageKey, vignette.outputImage, nil];
         filter2 = neueJade;
-    }else if( [typeOfFilters isEqualToString:@"African"])
-    {
-        /*AFRICA FILTERS*/
-        //SAHARA
-        filterName1 = @"Sahara";
-        UIImage *saharaPic = [UIImage imageNamed:@"sahara.png"];
-        saharaPic = [self resizeTexture:saharaPic width:width height:height];
-        CIImage *saharaTexture = [[CIImage alloc] initWithImage:saharaPic];
-        CIFilter *sepiaFilter = [CIFilter filterWithName:@"CISepiaTone" keysAndValues:kCIInputImageKey,filterPreviewImage,
-                                 @"inputIntensity",[NSNumber numberWithFloat:0.4],nil];
-        CIFilter *sahara = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, saharaTexture, kCIInputImageKey, sepiaFilter.outputImage, nil];
-        filter1 = sahara;
-        
-    }else if ([typeOfFilters isEqualToString:@"Contemporary"])
-    {
-        /*CONTEMPORARY*/
-        //Warhol
+    } else if ([typeOfFilters isEqualToString:@"Contemporary"]) {
+        // WARHOL
         filterName1 = @"Warhol";
         CIFilter *warholHalftone = [CIFilter filterWithName:@"CIDotScreen" keysAndValues:kCIInputImageKey, filterPreviewImage, @"inputAngle", [NSNumber numberWithFloat:0.86], @"inputWidth", [NSNumber numberWithFloat:18.34], @"inputSharpness", [NSNumber numberWithFloat:0.20], nil];
         CIFilter *warholOverlay = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, filterPreviewImage, kCIInputImageKey, warholHalftone.outputImage, nil];
         CIFilter *warholGamma = [CIFilter filterWithName:@"CIGammaAdjust" keysAndValues:kCIInputImageKey, warholOverlay.outputImage, @"inputPower", [NSNumber numberWithFloat:0.45], nil];
         CIFilter *warhol = [CIFilter filterWithName:@"CIColorControls" keysAndValues:kCIInputImageKey, warholGamma.outputImage, @"inputSaturation", [NSNumber numberWithFloat:1.57], @"inputBrightness", [NSNumber numberWithFloat:0.05], nil];
         filter1 = warhol;
-        
+        // Pop
+    } else if ([typeOfFilters isEqualToString:@"Modern"]) {
+        // Urbana, Dream, Impress
+    } else if ([typeOfFilters isEqualToString:@"Photography"]) {
+        // Daguerrotype, Mark, Cyanotype, Silver
+    } else if ([typeOfFilters isEqualToString:@"Prints"]) {
+        // X-Hatch, Sketch
     }
     
     if(filterName2 == nil)
