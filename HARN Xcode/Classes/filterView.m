@@ -367,7 +367,7 @@ bool firstTimeOpen = true;
         CIImage *outputImage = [filter.filter outputImage];
         
         //Here is where the outputImage is applied to the preview image coming in
-        CGImageRef cgimg =[_context createCGImage:outputImage fromRect:[outputImage extent]];
+        CGImageRef cgimg =[self.context createCGImage:outputImage fromRect:[outputImage extent]];
  
         
         //This is pulled from the extensions and rotates cgimg which will now become smallImage so we are BACK to a UIImage class instead of a CIImage to a CGImageRef (aka the data).
