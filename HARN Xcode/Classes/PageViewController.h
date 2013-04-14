@@ -25,6 +25,7 @@
 
 @property (nonatomic) NSInteger pageIndex;
 @property (nonatomic) UIImage * theImage;
+@property (nonatomic) NSString *moreInfo;
 
 - (NSInteger)getPageIndex;
 - (void)setPageIndex:(NSInteger)pageIndex;

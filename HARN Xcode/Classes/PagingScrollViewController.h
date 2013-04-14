@@ -25,7 +25,12 @@
 	PageViewController *nextPage;
 }
 
+@property (nonatomic, retain) UITextView *moreInfoView;
+
 - (IBAction)changePage:(id)sender;
 - (IBAction)goToDetailView:(id)sender;
+
+-(void)fadeOutMoreInfo;
+-(void)fadeInMoreInfo;
 
 @end

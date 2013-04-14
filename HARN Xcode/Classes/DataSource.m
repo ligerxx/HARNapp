@@ -32,15 +32,15 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(DataSource);
 		dataPages = [[NSArray alloc] initWithObjects:
 			[NSDictionary dictionaryWithObjectsAndKeys:
 				@"Highlights from the Modern Collection", @"pageName",
-				@"", @"pageText", @"modern-main.png", @"pageImage",
+				@"Ongoing\n\nThis exhibition presents highlights from the museum’s holdings of modern American, European and Latin American art spanning the mid-19th century through the first half of the 20th century.", @"pageText", @"modern-main.png", @"pageImage",
 				nil],
 			[NSDictionary dictionaryWithObjectsAndKeys:
 				@"Contemporary Art from the Harn Collection", @"pageName",
-				@"", @"pageText", @"contemporary-main.png", @"pageImage",
+				@"September 03, 2012 - August 04, 2013\n\nThis exhibition features seven areas showcasing a remarkable group of international artists who work in multiple mediums from painting and photography to installation and film engaging a wide range of aesthetic and cultural concerns.", @"pageText", @"contemporary-main.png", @"pageImage",
 				nil],
 			[NSDictionary dictionaryWithObjectsAndKeys:
 				@"Bird Mothers and Feathered Serpents: Mythical Beings of Oceania and Ancient America", @"pageName",
-				@"", @"pageText", @"ancientamerican-main.png", @"pageImage",
+				@"February 26, 2013 - January 01, 2014\n\nThis exhibition focuses on mythological beings in art from Oceania and Ancient America, using objects from the Harn Museum’s collection. Each object represents a fascinating character–a culture hero, a divinity, or a spirit being.", @"pageText", @"ancientamerican-main.png", @"pageImage",
 				nil],
 			nil];
 	}

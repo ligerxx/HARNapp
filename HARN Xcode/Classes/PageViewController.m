@@ -20,7 +20,7 @@ const CGFloat TEXT_VIEW_PADDING = 50.0;
 
 @implementation PageViewController
 
-@synthesize pageIndex, theImage;
+@synthesize pageIndex, moreInfo, theImage;
 
 - (NSInteger)getPageIndex
 {
@@ -36,7 +36,7 @@ const CGFloat TEXT_VIEW_PADDING = 50.0;
 		NSDictionary *pageData =
 			[[DataSource sharedDataSource] dataForPage:pageIndex];
 		label.text = [pageData objectForKey:@"pageName"];
-		//textView.text = [pageData objectForKey:@"pageText"];
+		moreInfo = [pageData objectForKey:@"pageText"];
         NSString *imageLocation = [pageData objectForKey:@"pageImage"];
         imageView.image = [UIImage imageNamed:imageLocation];
         theImage = imageView.image;
@@ -72,6 +72,7 @@ const CGFloat TEXT_VIEW_PADDING = 50.0;
 		}
 		textViewNeedsUpdate = NO;
 	}
+    
 }
 
 @end

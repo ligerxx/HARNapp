@@ -18,7 +18,8 @@
 @property (nonatomic, strong) NSMutableArray *titleArray;
 @property (nonatomic, strong) NSMutableArray *dataArray;
 
-
+@property (nonatomic, strong) IBOutlet UIImageView *harnLogo;
+@property (nonatomic) IBOutlet UILabel *nowFeaturing;
 @property (nonatomic) IBOutlet UIView *container;
 
 @property (nonatomic, strong) NSMutableArray *properties;

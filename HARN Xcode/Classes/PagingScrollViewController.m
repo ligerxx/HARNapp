@@ -16,8 +16,13 @@
 #import "PageViewController.h"
 #import "DataSource.h"
 #import "DetailViewController.h"
+#import "TitleViewController.h"
 
 @implementation PagingScrollViewController
+
+@synthesize moreInfoView;
+
+bool showMoreInfoHasBeenExpanded = FALSE;
 
 - (void)applyNewIndex:(NSInteger)newIndex pageController:(PageViewController *)pageController
 {
@@ -112,7 +117,11 @@
 			[self applyNewIndex:upperNumber pageController:nextPage];
 		}
 	}
-	
+	if(showMoreInfoHasBeenExpanded == TRUE)
+    {
+        [self fadeOutMoreInfo];
+    }
+    
 	[currentPage updateTextViews:NO];
 	[nextPage updateTextViews:NO];
 }
@@ -127,22 +136,53 @@
 	{
 		PageViewController *swapController = currentPage;
 		currentPage = nextPage;
+        currentPage.moreInfo = nextPage.moreInfo;
 		nextPage = swapController;
+        nextPage.moreInfo = swapController.moreInfo;
 	}
 
 	[currentPage updateTextViews:YES];
 }
 
+-(void)fadeOutMoreInfo
+{
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [UIView beginAnimations:nil context:context];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+    [UIView setAnimationDuration:0.16];
+    [UIView setAnimationDelegate:self];
+    moreInfoView.alpha = 0.0;
+    [UIView commitAnimations];
+}
+-(void)fadeInMoreInfo
+{
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [UIView beginAnimations:nil context:context];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+    [UIView setAnimationDuration:0.16];
+    [UIView setAnimationDelegate:self];
+
+    moreInfoView.alpha = 1.0;
+    moreInfoView.text = currentPage.moreInfo;
+    
+    [UIView commitAnimations];
+}
+
+
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)newScrollView
 {
 	[self scrollViewDidEndScrollingAnimation:newScrollView];
 	pageControl.currentPage = currentPage.pageIndex;
+    if(showMoreInfoHasBeenExpanded == TRUE)
+    {
+        [self fadeInMoreInfo];
+    }
 }
 
 - (IBAction)changePage:(id)sender
 {
 	NSInteger pageIndex = pageControl.currentPage;
-
+    
 	// update the scroll view to the appropriate page
     CGRect frame = scrollView.frame;
     frame.origin.x = frame.size.width * pageIndex;
@@ -152,25 +192,82 @@
 
 - (IBAction)goToDetailView:(id)sender
 {
- //NSLog(@"Button Touched");
-    [self performSegueWithIdentifier:@"goToDetail" sender:self];
-}
+    TitleViewController *mainScreen = (TitleViewController*) self.parentViewController;
 
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
+  if(showMoreInfoHasBeenExpanded == FALSE)
+  {
+
+    moreInfoView = [[UITextView alloc] initWithFrame:CGRectMake(40,130,240,180)];
+    moreInfoView.backgroundColor = [UIColor clearColor];
+    moreInfoView.scrollEnabled = FALSE;
+    moreInfoView.editable = FALSE;
+    moreInfoView.text = currentPage.moreInfo;
+    moreInfoView.textAlignment = 1;
+    moreInfoView.textColor = [UIColor grayColor];
     
-    //Creates the detailView that and begins adding everything for it to present to the users since this is templateted (sp?)
-    DetailViewController *detailViewController = [segue destinationViewController];
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [UIView beginAnimations:nil context:context];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+    [UIView setAnimationDuration:0.16];
+    [UIView setAnimationDelegate:self];
     
-    //This will have to be the changed to the image stored in the CoreData
+    //fadeout HARN logo
+    mainScreen.harnLogo.alpha = 0.0;
     
-    UIImage *imageToSend = currentPage.theImage;
+    //move Now Featuring Label
+    CGRect frame = mainScreen.nowFeaturing.frame;
+    frame.origin.y = 11;
+    [mainScreen.nowFeaturing setFrame:frame];
     
+    //move the Container
+    CGRect containerFrame = mainScreen.container.frame;
+    CGRect scrollViewHeight = mainScreen.container.frame;
+    CGRect keepPageControlerDown = pageControl.frame;
+      scrollViewHeight.origin.y = -150;
+    containerFrame.size.height = 503;
+    [mainScreen.container setFrame:containerFrame];
+    [scrollView setFrame:scrollViewHeight];
+
     
-    //ALL OF THESE MUST BE UPDATED TO THE ACTUAL INFORMATION VIA COREDATA
-    detailViewController.theImage = imageToSend;
-    [detailViewController setArtTitle:@"A Title from the main screen"];
-    [detailViewController setArtDescription:@"The most featured work in all the land!"];
+    //add the more info
+    [self.view addSubview:moreInfoView];
+    
+    [UIView commitAnimations];
+    [pageControl setFrame: keepPageControlerDown];
+      showMoreInfoHasBeenExpanded = TRUE;
+  }else{
+      
+      CGContextRef context = UIGraphicsGetCurrentContext();
+      [UIView beginAnimations:nil context:context];
+      [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+      [UIView setAnimationDuration:0.16];
+      [UIView setAnimationDelegate:self];
+      
+      //fadeout HARN logo
+      mainScreen.harnLogo.alpha = 1.0;
+      
+      //move Now Featuring Label
+      CGRect frame = mainScreen.nowFeaturing.frame;
+      frame.origin.y = 160;
+      [mainScreen.nowFeaturing setFrame:frame];
+      
+      //move the Container
+      CGRect containerFrame = mainScreen.container.frame;
+      CGRect scrollViewHeight = mainScreen.container.frame;
+      CGRect keepPageControlerDown = pageControl.frame;
+      scrollViewHeight.origin.y = +10;
+      containerFrame.size.height = 359;
+      [mainScreen.container setFrame:containerFrame];
+      [scrollView setFrame:scrollViewHeight];
+      
+      [self.moreInfoView removeFromSuperview];
+      
+      [UIView commitAnimations];
+      
+      [pageControl setFrame: keepPageControlerDown];
+      showMoreInfoHasBeenExpanded = FALSE;
+  }
+
 }
 
 
