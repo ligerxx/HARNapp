@@ -236,6 +236,14 @@ bool firstTimeOpen = true;
         // Urbana, Dream, Impress
     } else if ([typeOfFilters isEqualToString:@"Photography"]) {
         // Daguerrotype, Mark, Cyanotype, Silver
+        filterName1 = @"Daguerrotype";
+        CIFilter *daguerroColor = [CIFilter filterWithName:@"CIColorMonochrome" keysAndValues:@"inputImage", filterPreviewImage, @"inputColor", [CIColor colorWithRed:.85 green:0.85 blue:0.85], nil];
+        CIFilter *noise = [CIFilter filterWithName:@"CIRandomGenerator"];
+        CIFilter *colorMatrix = [CIFilter filterWithName:@"CIColorMatrix" keysAndValues:@"inputImage", noise.outputImage, @"inputRVector", (0,1,0,0), @"inputGVector", (0,1,0,0), @"inputBVector", (0,1,0,0), @"inputBiasVector", (0,0,0,0), nil];
+        CIFilter *composite = [CIFilter filterWithName:@"CISourceOverCompositing" keysAndValues:@"inputImage", colorMatrix.outputImage, @"inputBackgroundImage", daguerroColor.outputImage, nil];
+        filter1 = composite;
+        
+        
     } else if ([typeOfFilters isEqualToString:@"Prints and Drawings Bef..."]) {
         // X-Hatch
         filterName1 = @"X-Hatch";
