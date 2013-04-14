@@ -229,9 +229,9 @@ BOOL _bottomVisible;
             collection.navigationBar.tintColor = [UIColor colorWithRed:0.2509 green:0.6 blue:0.2901 alpha:1]; //GREEN
         } else if([self.selectedCell isEqualToString:@"Contemporary"]) {
             collection.navigationBar.tintColor = [UIColor colorWithRed:0.88 green:0.05 blue:0.05 alpha:1]; //RED
-        } else if([self.selectedCell isEqualToString:@"Prints and Drawings Bef..."]) {
-            collection.navigationBar.tintColor = [UIColor colorWithRed:0.886 green:0.83 blue:0.034 alpha:1]; //YELLOW
         } else if([self.selectedCell isEqualToString:@"Oceanic"]) {
+            collection.navigationBar.tintColor = [UIColor colorWithRed:0.886 green:0.83 blue:0.034 alpha:1]; //YELLOW
+        } else if([self.selectedCell isEqualToString:@"Prints and Drawings Bef..."]) {
             collection.navigationBar.tintColor = [UIColor colorWithRed:0.329 green:0.604 blue:0.95 alpha:1]; //BLUE
         } else if([self.selectedCell isEqualToString:@"Photography"]) {
             collection.navigationBar.tintColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1]; //BLACK
