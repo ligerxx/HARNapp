@@ -20,9 +20,7 @@
 
 @implementation PagingScrollViewController
 
-@synthesize moreInfoView;
-
-bool showMoreInfoHasBeenExpanded = FALSE;
+@synthesize moreInfoView, showMoreInfoHasBeenExpanded;
 
 - (void)applyNewIndex:(NSInteger)newIndex pageController:(PageViewController *)pageController
 {
@@ -48,6 +46,7 @@ bool showMoreInfoHasBeenExpanded = FALSE;
 
 - (void)viewDidLoad
 {
+    showMoreInfoHasBeenExpanded = FALSE;
 	currentPage = [[PageViewController alloc] initWithNibName:@"PageView" bundle:nil];
 	nextPage = [[PageViewController alloc] initWithNibName:@"PageView" bundle:nil];
 	[scrollView addSubview:currentPage.view];
@@ -58,7 +57,7 @@ bool showMoreInfoHasBeenExpanded = FALSE;
      */
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(goToDetailView:)];
     tapRecognizer.numberOfTapsRequired = 1;
-    [scrollView addGestureRecognizer:tapRecognizer];
+    [self.view addGestureRecognizer:tapRecognizer];
     
 	NSInteger widthCount = [[DataSource sharedDataSource] numDataPages];
 	if (widthCount == 0)
@@ -140,7 +139,10 @@ bool showMoreInfoHasBeenExpanded = FALSE;
 		nextPage = swapController;
         nextPage.moreInfo = swapController.moreInfo;
 	}
-
+	if(showMoreInfoHasBeenExpanded == TRUE)
+    {
+        [self fadeInMoreInfo];
+    }
 	[currentPage updateTextViews:YES];
 }
 
@@ -156,6 +158,8 @@ bool showMoreInfoHasBeenExpanded = FALSE;
 }
 -(void)fadeInMoreInfo
 {
+    moreInfoView.text = currentPage.moreInfo;
+    
     CGContextRef context = UIGraphicsGetCurrentContext();
     [UIView beginAnimations:nil context:context];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
@@ -163,7 +167,6 @@ bool showMoreInfoHasBeenExpanded = FALSE;
     [UIView setAnimationDelegate:self];
 
     moreInfoView.alpha = 1.0;
-    moreInfoView.text = currentPage.moreInfo;
     
     [UIView commitAnimations];
 }
@@ -188,6 +191,9 @@ bool showMoreInfoHasBeenExpanded = FALSE;
     frame.origin.x = frame.size.width * pageIndex;
     frame.origin.y = 0;
     [scrollView scrollRectToVisible:frame animated:YES];
+    
+    //[self fadeInMoreInfo];
+
 }
 
 - (IBAction)goToDetailView:(id)sender
@@ -227,14 +233,14 @@ bool showMoreInfoHasBeenExpanded = FALSE;
     containerFrame.size.height = 503;
     [mainScreen.container setFrame:containerFrame];
     [scrollView setFrame:scrollViewHeight];
-
+      //[scrollView setBackgroundColor:[UIColor redColor]];
     
     //add the more info
     [self.view addSubview:moreInfoView];
     
     [UIView commitAnimations];
     [pageControl setFrame: keepPageControlerDown];
-      showMoreInfoHasBeenExpanded = TRUE;
+    showMoreInfoHasBeenExpanded = TRUE;
   }else{
       
       CGContextRef context = UIGraphicsGetCurrentContext();

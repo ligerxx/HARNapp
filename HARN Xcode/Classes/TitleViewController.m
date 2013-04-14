@@ -9,6 +9,7 @@
 #import "TitleViewController.h"
 #import "CollectionViewController.h"
 #import "AboutPageViewController.h"
+#import "PagingScrollViewController.h"
 
 @interface TitleViewController ()
 

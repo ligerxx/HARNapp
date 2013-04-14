@@ -27,6 +27,8 @@
 
 @property (nonatomic, retain) UITextView *moreInfoView;
 
+@property bool showMoreInfoHasBeenExpanded;
+
 - (IBAction)changePage:(id)sender;
 - (IBAction)goToDetailView:(id)sender;
 
