@@ -123,6 +123,7 @@
 		1DF9C2D2171A118E00F85656 /* AboutPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DF9C2D1171A118D00F85656 /* AboutPageViewController.m */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		8016D53716CC220B00F20725 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8016D53516CC21BD00F20725 /* QuartzCore.framework */; };
+		8043BFB9171B55E6007AA35A /* blue-green.png in Resources */ = {isa = PBXBuildFile; fileRef = 8043BFB8171B55E6007AA35A /* blue-green.png */; };
 		8074E905171735510057664C /* Seated Bodhisattva-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E901171735510057664C /* Seated Bodhisattva-1.jpg */; };
 		8074E906171735510057664C /* Seated Bodhisattva-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E902171735510057664C /* Seated Bodhisattva-tb.jpg */; };
 		8074E907171735510057664C /* Seated Bodhisattva.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8074E903171735510057664C /* Seated Bodhisattva.jpg */; };
@@ -372,6 +373,7 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* HARN_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HARN_Prefix.pch; sourceTree = "<group>"; };
 		8016D53516CC21BD00F20725 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		8043BFB8171B55E6007AA35A /* blue-green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blue-green.png"; sourceTree = "<group>"; };
 		8074E901171735510057664C /* Seated Bodhisattva-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Seated Bodhisattva-1.jpg"; path = "Asian Collection/Seated Bodhisattva-1.jpg"; sourceTree = SOURCE_ROOT; };
 		8074E902171735510057664C /* Seated Bodhisattva-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Seated Bodhisattva-tb.jpg"; path = "Asian Collection/Seated Bodhisattva-tb.jpg"; sourceTree = SOURCE_ROOT; };
 		8074E903171735510057664C /* Seated Bodhisattva.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Seated Bodhisattva.jpg"; path = "Asian Collection/Seated Bodhisattva.jpg"; sourceTree = SOURCE_ROOT; };
@@ -586,6 +588,7 @@
 				1D7090AE16CC063A0074597B /* CameraViewController.m */,
 				1DEE8DF816CD855900A3C9B7 /* UIImageExtension.h */,
 				1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */,
+				8043BFB8171B55E6007AA35A /* blue-green.png */,
 				1D641B071716F06800C26210 /* sahara.png */,
 				1D2421C2171B3DA700998697 /* nasca.png */,
 				1DAE25A6170E151F00A2967B /* jade.png */,
@@ -1163,6 +1166,7 @@
 				1DF9C2CE171A0FB100F85656 /* casey.png in Resources */,
 				1DF9C2CF171A0FB100F85656 /* lauren.png in Resources */,
 				1D2421C3171B3DA700998697 /* nasca.png in Resources */,
+				8043BFB9171B55E6007AA35A /* blue-green.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

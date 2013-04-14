@@ -190,7 +190,23 @@ bool firstTimeOpen = true;
                                  @"inputIntensity",[NSNumber numberWithFloat:0.4],nil];
         CIFilter *sahara = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, saharaTexture, kCIInputImageKey, sepiaFilter.outputImage, nil];
         filter1 = sahara;
-        // Oasis, Jambo
+        // OASIS
+        filterName2 = @"Oasis";
+        //CIFilter *oasisFalseColor = [CIFilter filterWithName:@"CIFalseColor" keysAndValues: @"inputImage", filterPreviewImage, @"inputColor0", [CIColor colorWithRed:94/255. green:38/255. blue:18/255.], @"inputColor1", [CIColor colorWithRed:250/255. green:240/255. blue:230/255.], nil];
+        /* CIFilter *oasisRadialGradient = [CIFilter filterWithName:@"CIRadialGradient" keysAndValues:
+         @"inputCenter", [CIVector vectorWithX:500.f Y:500.f],
+         @"inputRadius0", [NSNumber numberWithFloat:100.0f],
+         @"inputRadius1", [NSNumber numberWithFloat:500.0f],
+         @"inputColor0", [CIColor colorWithRed:0/255. green:0/255. blue:238/255.],
+         @"inputColor1", [CIColor colorWithRed:0/255. green:238/255. blue:0/255.],
+         nil]; */
+        UIImage *oasisPic = [UIImage imageNamed:@"blue-green.png"];
+        oasisPic = [self resizeTexture:oasisPic width:width height:height];
+        CIImage *oasisTexture = [[CIImage alloc] initWithImage:oasisPic];
+        CIFilter *oasisBlend = [CIFilter filterWithName:@"CILightenBlendMode" keysAndValues: @"inputImage", filterPreviewImage, @"inputBackgroundImage", oasisTexture, nil];
+        CIFilter *oasisGamma = [CIFilter filterWithName:@"CIGammaAdjust" keysAndValues:@"inputImage", oasisBlend.outputImage, @"inputPower", [NSNumber numberWithFloat:.95], nil];
+        CIFilter *oasis = [CIFilter filterWithName:@"CIColorControls" keysAndValues:@"inputImage", oasisGamma.outputImage, @"inputSaturation", [NSNumber numberWithFloat:1.57], @"inputBrightness", [NSNumber numberWithFloat:-.05], @"inputContrast", [NSNumber numberWithFloat:1.15], nil];
+        filter2 = oasis;
     } else if ([typeOfFilters isEqualToString:@"Ancient American"]) {
         // Cuzco, Nasca, Wari
         filterName1 = @"Nasca";
@@ -200,8 +216,6 @@ bool firstTimeOpen = true;
         CIFilter *nascaFalse = [CIFilter filterWithName:@"CIFalseColor" keysAndValues:@"inputImage", filterPreviewImage, nil];
         CIFilter *nasca = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, nascaTexture, kCIInputImageKey, nascaFalse.outputImage, nil];
         filter1 = nasca;
-        
-        
     } else if([typeOfFilters isEqualToString:@"Asian"]) {
         // ZEN
         filterName1 = @"Zen";
