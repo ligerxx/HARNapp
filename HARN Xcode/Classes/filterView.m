@@ -236,8 +236,13 @@ bool firstTimeOpen = true;
         // Urbana, Dream, Impress
     } else if ([typeOfFilters isEqualToString:@"Photography"]) {
         // Daguerrotype, Mark, Cyanotype, Silver
-    } else if ([typeOfFilters isEqualToString:@"Prints"]) {
-        // X-Hatch, Sketch
+    } else if ([typeOfFilters isEqualToString:@"Prints and Drawings Bef..."]) {
+        // X-Hatch
+        filterName1 = @"X-Hatch";
+        CIFilter *xhatchScreen = [CIFilter filterWithName:@"CIHatchedScreen" keysAndValues:@"inputImage", filterPreviewImage, @"inputAngle", [NSNumber numberWithFloat:0.64], @"inputWidth", [NSNumber numberWithFloat: 15.97], @"inputSharpness", [NSNumber numberWithFloat: 0.69], nil];
+        filter1 = xhatchScreen;
+        
+        //Sketch
     }
     
     if(filterName2 == nil)
