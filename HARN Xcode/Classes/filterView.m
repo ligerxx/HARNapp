@@ -276,10 +276,15 @@ bool firstTimeOpen = true;
     } else if ([typeOfFilters isEqualToString:@"Prints and Drawings Bef..."]) {
         // X-Hatch
         filterName1 = @"X-Hatch";
-        CIFilter *xhatchScreen = [CIFilter filterWithName:@"CIHatchedScreen" keysAndValues:@"inputImage", filterPreviewImage, @"inputAngle", [NSNumber numberWithFloat:0.64], @"inputWidth", [NSNumber numberWithFloat: 15.97], @"inputSharpness", [NSNumber numberWithFloat: 0.69], nil];
+        CIFilter *xhatchScreen = [CIFilter filterWithName:@"CIHatchedScreen" keysAndValues:@"inputImage", filterPreviewImage, @"inputAngle", [NSNumber numberWithFloat:0.64], @"inputWidth", [NSNumber numberWithFloat: 40.97], @"inputSharpness", [NSNumber numberWithFloat: 0.09], nil];
         filter1 = xhatchScreen;
         
         //Sketch
+        filterName2 = @"Char";
+        CIFilter *sketchEV = [CIFilter filterWithName:@"CIExposureAdjust" keysAndValues:@"inputImage", filterPreviewImage, @"inputEV", [NSNumber numberWithFloat:1.8], nil];
+        CIFilter *blur = [CIFilter filterWithName:@"CIGaussianBlur" keysAndValues:@"inputImage", sketchEV.outputImage, @"inputRadius",[NSNumber numberWithFloat:1.66], nil];
+        CIFilter *sketch = [CIFilter filterWithName:@"CIColorMonochrome" keysAndValues:@"inputImage", blur.outputImage, @"inputColor", [CIColor colorWithRed:.85 green:0.85 blue:0.85], nil];
+        filter2 = sketch;
     }
     
     if(filterName2 == nil)
@@ -442,9 +447,9 @@ bool firstTimeOpen = true;
         }else if ([filter.name isEqualToString:@"X-Hatch"])
         {
             filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"xhatch-preview.png"]];
-        }else if ([filter.name isEqualToString:@"prints2"])
+        }else if ([filter.name isEqualToString:@"Char"])
         {
-
+            filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"char-preview.png"]];
         }else
         {
             // create filter preview image views
