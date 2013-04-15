@@ -441,9 +441,9 @@ bool firstTimeOpen = true;
         }else if ([filter.name isEqualToString:@"Nasca"])
         {
            filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"nasca-preview.png"]];
-        }else if ([filter.name isEqualToString:@"ancient2"])
+        }else if ([filter.name isEqualToString:@"Kuzco"])
         {
-            
+           filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"kuzco-preview.png"]];            
         }else if ([filter.name isEqualToString:@"Zen"])
         {
            filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"zen-preview.png"]];            
@@ -453,9 +453,9 @@ bool firstTimeOpen = true;
         }else if ([filter.name isEqualToString:@"Warhol"])
         {
            filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"warhol-preview.png"]];
-        }else if ([filter.name isEqualToString:@"contemporary2"])
+        }else if ([filter.name isEqualToString:@"Pop"])
         {
-            
+           filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pop-preview.png"]];            
         }else if ([filter.name isEqualToString:@"Silver"])
         {
             filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"silver-preview.png"]];
@@ -465,9 +465,9 @@ bool firstTimeOpen = true;
         }else if ([filter.name isEqualToString:@"Impress"])
         {
            filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"impress-preview.png"]];
-        }else if ([filter.name isEqualToString:@"modern2"])
+        }else if ([filter.name isEqualToString:@"Dream"])
         {
-            
+           filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"dream-preview.png"]];            
         }else if ([filter.name isEqualToString:@"X-Hatch"])
         {
             filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"xhatch-preview.png"]];
