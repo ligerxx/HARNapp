@@ -459,9 +459,9 @@ bool firstTimeOpen = true;
         }else if ([filter.name isEqualToString:@"Silver"])
         {
             filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"silver-preview.png"]];
-        }else if ([filter.name isEqualToString:@"photo2"])
+        }else if ([filter.name isEqualToString:@"Cyan"])
         {
-            
+            filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cyan-preview.png"]];            
         }else if ([filter.name isEqualToString:@"Impress"])
         {
            filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"impress-preview.png"]];
