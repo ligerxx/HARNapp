@@ -226,12 +226,10 @@
     [mainScreen.nowFeaturing setFrame:frame];
     
     //move the Container
-    CGRect containerFrame = mainScreen.container.frame;
     CGRect scrollViewHeight = mainScreen.container.frame;
     CGRect keepPageControlerDown = pageControl.frame;
       scrollViewHeight.origin.y = -150;
-    containerFrame.size.height = 503;
-    [mainScreen.container setFrame:containerFrame];
+
     [scrollView setFrame:scrollViewHeight];
       //[scrollView setBackgroundColor:[UIColor redColor]];
     
