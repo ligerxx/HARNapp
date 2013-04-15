@@ -1169,11 +1169,8 @@
 				1DF9C2CE171A0FB100F85656 /* casey.png in Resources */,
 				1DF9C2CF171A0FB100F85656 /* lauren.png in Resources */,
 				1D2421C3171B3DA700998697 /* nasca.png in Resources */,
-<<<<<<< HEAD
 				8043BFB9171B55E6007AA35A /* blue-green.png in Resources */,
-=======
 				1D2421C5171B582A00998697 /* dust.png in Resources */,
->>>>>>> Project file
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
