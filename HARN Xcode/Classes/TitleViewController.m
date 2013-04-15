@@ -194,28 +194,11 @@ BOOL _bottomVisible;
     NSDictionary *dictionary = [_properties objectAtIndex:[self.tableView indexPathForSelectedRow].section];
     NSArray *array = [dictionary objectForKey:@"data"];
     self.selectedCell = [array objectAtIndex:[self.tableView indexPathForSelectedRow].row];
-    
-    UIStoryboard *storyboard = self.storyboard;
-    //Special Cases like if someone clicks info, privacy policy, map, etc. This is currently throwing a warning but does work.
-    if([self.selectedCell isEqualToString:@"Privacy Policy"])
-    {
-        UIViewController *privacy = [storyboard instantiateViewControllerWithIdentifier:@"Privacy"];
-        [self presentViewController:privacy animated:YES completion:nil];
-        
-        return;
-    }
-    
-    if ([self.selectedCell isEqualToString:@"About This App"]) {
-        
-        AboutPageViewController *aboutPage = [storyboard instantiateViewControllerWithIdentifier:@"About"];
-        [self presentViewController:aboutPage animated:YES completion:nil];
-    }
-    
-    
-    if ([[segue identifier] isEqualToString:@"navigateToCollection"])
+
+    if ([[segue identifier] isEqualToString:@"navigateToCollection"] && (![self.selectedCell isEqualToString:@"Privacy Policy"] || ![self.selectedCell isEqualToString:@"Map"] || ![self.selectedCell isEqualToString:@"About"]) )
     {
         // write which item we have selected to our output
-        NSLog(@"%@", self.selectedCell);      
+        NSLog(@"%@", self.selectedCell);
         
         UINavigationController *collection = [segue destinationViewController];
         // set nav bar title
@@ -239,6 +222,27 @@ BOOL _bottomVisible;
             collection.navigationBar.tintColor = [UIColor colorWithRed:0.667 green:0.667 blue:0.667 alpha:1]; //GRAY
         }
     }
+    
+    UIStoryboard *storyboard = self.storyboard;
+    //Special Cases like if someone clicks info, privacy policy, map, etc. This is currently throwing a warning but does work.
+    if([self.selectedCell isEqualToString:@"Privacy Policy"])
+    {
+        UIViewController *privacy = [storyboard instantiateViewControllerWithIdentifier:@"Privacy"];
+        [self presentViewController:privacy animated:YES completion:nil];
+        
+        return;
+    }else if ([self.selectedCell isEqualToString:@"About This App"]) {
+        
+        AboutPageViewController *aboutPage = [storyboard instantiateViewControllerWithIdentifier:@"About"];
+        [self presentViewController:aboutPage animated:YES completion:nil];
+    }
+    
+    if ([self.selectedCell isEqualToString:@"Map"]) {
+        
+        AboutPageViewController *mapPage = [storyboard instantiateViewControllerWithIdentifier:@"Map"];
+        [self presentViewController:mapPage animated:YES completion:nil];
+    }
+
 }
 
 - (void)viewDidUnload {
