@@ -208,7 +208,7 @@ bool firstTimeOpen = true;
         CIFilter *oasis = [CIFilter filterWithName:@"CIColorControls" keysAndValues:@"inputImage", oasisGamma.outputImage, @"inputSaturation", [NSNumber numberWithFloat:1.57], @"inputBrightness", [NSNumber numberWithFloat:-.05], @"inputContrast", [NSNumber numberWithFloat:1.15], nil];
         filter2 = oasis;
     } else if ([typeOfFilters isEqualToString:@"Ancient American"]) {
-        // Cuzco, Nasca, Wari
+        // Nasca
         filterName1 = @"Nasca";
         UIImage *nascaPic = [UIImage imageNamed:@"nasca.png"];
         nascaPic = [self resizeTexture:nascaPic width:width height:height];
@@ -216,6 +216,13 @@ bool firstTimeOpen = true;
         CIFilter *nascaFalse = [CIFilter filterWithName:@"CIFalseColor" keysAndValues:@"inputImage", filterPreviewImage, nil];
         CIFilter *nasca = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:kCIInputBackgroundImageKey, nascaTexture, kCIInputImageKey, nascaFalse.outputImage, nil];
         filter1 = nasca;
+        // KUZCO
+        filterName2 = @"Kuzco";
+        CIFilter *posterize = [CIFilter filterWithName:@"CIColorPosterize" keysAndValues:@"inputImage", filterPreviewImage, @"inputLevels", [NSNumber numberWithFloat:10.20f], nil];
+        CIFilter *blackWhite = [CIFilter filterWithName:@"CIColorControls" keysAndValues:kCIInputImageKey, posterize.outputImage, @"inputSaturation", [NSNumber numberWithFloat:0.0], nil];
+        CIFilter *falseColor = [CIFilter filterWithName:@"CIFalseColor" keysAndValues:@"inputImage", blackWhite.outputImage, @"inputColor0", [CIColor colorWithRed:255/255. green:0/255. blue:0/255.], @"inputColor1", [CIColor colorWithRed:255/255. green:255/255. blue:100/255.], nil];
+        CIFilter *kuzco = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:@"inputImage", falseColor.outputImage, @"inputBackgroundImage", filterPreviewImage, nil];
+        filter2 = kuzco;
     } else if([typeOfFilters isEqualToString:@"Asian"]) {
         // ZEN
         filterName1 = @"Zen";
@@ -245,16 +252,28 @@ bool firstTimeOpen = true;
         CIFilter *warholGamma = [CIFilter filterWithName:@"CIGammaAdjust" keysAndValues:kCIInputImageKey, warholOverlay.outputImage, @"inputPower", [NSNumber numberWithFloat:0.45], nil];
         CIFilter *warhol = [CIFilter filterWithName:@"CIColorControls" keysAndValues:kCIInputImageKey, warholGamma.outputImage, @"inputSaturation", [NSNumber numberWithFloat:1.57], @"inputBrightness", [NSNumber numberWithFloat:0.05], nil];
         filter1 = warhol;
-        // Pop
+        // POP
+        filterName2 = @"Pop";
+        CIFilter *hueFilter = [CIFilter filterWithName:@"CIHueAdjust" keysAndValues:kCIInputImageKey, filterPreviewImage, nil];
+        float low_bound = -3.14;
+        float high_bound = 3.14;
+        float rndValue = (((float)arc4random()/0x100000000)*(high_bound-low_bound)+low_bound);
+        [hueFilter setValue:[NSNumber numberWithFloat:rndValue] forKey:@"inputAngle"];
+        filter2 = hueFilter;
     } else if ([typeOfFilters isEqualToString:@"Modern"]) {
         // IMPRESS
         filterName1 = @"Impress";
-        CIFilter *posterize = [CIFilter filterWithName:@"CIColorPosterize" keysAndValues:@"inputImage", filterPreviewImage, @"inputLevels", [NSNumber numberWithFloat:20.40f], nil];
+        CIFilter *posterize = [CIFilter filterWithName:@"CIColorPosterize" keysAndValues:@"inputImage", filterPreviewImage, @"inputLevels", [NSNumber numberWithFloat:12.9f], nil];
         CIFilter *impressGamma = [CIFilter filterWithName:@"CIHighlightShadowAdjust" keysAndValues:kCIInputImageKey, posterize.outputImage, @"inputRadius", [NSNumber numberWithFloat:4.25], @"inputShadowAmount", [NSNumber numberWithFloat:1.00], @"inputHighlightAmount", [NSNumber numberWithFloat:1.00], nil];
         CIFilter *blur = [CIFilter filterWithName:@"CIGaussianBlur" keysAndValues:@"inputImage", impressGamma.outputImage, @"inputRadius",[NSNumber numberWithFloat:2.66], nil];
-        filter1 = blur;
+        CIFilter *impress = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:@"inputImage", blur.outputImage, @"inputBackgroundImage", filterPreviewImage, nil];
+        filter1 = impress;
         
-        //Dream/Urbana?
+        // DREAM
+        filterName2 = @"Dream";
+        CIFilter *bloom = [CIFilter filterWithName:@"CIBloom" keysAndValues:@"inputImage", filterPreviewImage, @"inputRadius", [NSNumber numberWithFloat:7.26], @"inputIntensity", [NSNumber numberWithFloat:1.0], nil];
+        CIFilter *dream = [CIFilter filterWithName:@"CIColorControls" keysAndValues: @"inputImage", bloom.outputImage, @"inputSaturation", [NSNumber numberWithFloat:1.26], nil];
+        filter2 = dream;
         
     } else if ([typeOfFilters isEqualToString:@"Photography"]) {
         // Silver
