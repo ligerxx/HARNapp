@@ -293,7 +293,7 @@ bool firstTimeOpen = true;
     
     filters = [[NSMutableArray alloc] init];
     
-    NSLog(@" filters array is created");
+    //NSLog(@" filters array is created");
     [filters addObjectsFromArray:[NSArray arrayWithObjects:
                                   [[FilterPreview alloc] initWithNameAndFilter:@"Camera" filter:nil],[[FilterPreview alloc] initWithNameAndFilter:@"Original" filter: nil],
                                   [[FilterPreview alloc] initWithNameAndFilter:filterName1 filter:filter1],
@@ -301,7 +301,7 @@ bool firstTimeOpen = true;
                                   
                                   , nil]];
     
-    NSLog(@"everything is in the filters array");
+    //NSLog(@"everything is in the filters array");
     
     [self createPreviewViewsForFilters];
 }
@@ -367,7 +367,7 @@ bool firstTimeOpen = true;
             filterNameLabel.font = [UIFont fontWithName:@"AppleColorEmoji" size:10]; //I don't know why Emoji is used...
             filterNameLabel.textAlignment = NSTextAlignmentCenter;
             
-            UIImageView *filterPreviewImageView = [[UIImageView alloc] initWithImage:originalImage];
+            UIImageView *filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"original.png"]];
             
             [filterView setUserInteractionEnabled:YES];
             
@@ -398,26 +398,58 @@ bool firstTimeOpen = true;
         filterNameLabel.textColor = [UIColor whiteColor];
         filterNameLabel.font = [UIFont fontWithName:@"AppleColorEmoji" size:10]; //I don't know why Emoji is used...
         filterNameLabel.textAlignment = NSTextAlignmentCenter;
-        
-        
-        //IMAGE PREVIEW TIME - first make a new outputImage based on the imagePicker's selection of outputImage stored in the filter array
-        CIImage *outputImage = [filter.filter outputImage];
-        
-        //Here is where the outputImage is applied to the preview image coming in
-        CGImageRef cgimg =[self.context createCGImage:outputImage fromRect:[outputImage extent]];
  
-        
-        //This is pulled from the extensions and rotates cgimg which will now become smallImage so we are BACK to a UIImage class instead of a CIImage to a CGImageRef (aka the data).
-        UIImage *smallImage =  [UIImage imageWithCGImage:cgimg];
-        
-            //if(originalImage.size.width < originalImage.size.height)
+        UIImageView *filterPreviewImageView;
+            
+            
+        //PREVIEW IMAGES ARE MADE HERE FROM STOCK IMAGES
+        if([filter.name isEqualToString:@"Sahara"])
         {
-            //DONT THINK THIS DOES ANYTHING GOOD
-            //smallImage = [smallImage imageRotatedByDegrees:90];
+           filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"sahara-preview.png"]];
+        }else if ([filter.name isEqualToString:@"Oasis"])
+        {
+            filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"oasis-preview.png"]];
+        }else if ([filter.name isEqualToString:@"Nasca"])
+        {
+           filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"nasca-preview.png"]];
+        }else if ([filter.name isEqualToString:@"ancient2"])
+        {
+            
+        }else if ([filter.name isEqualToString:@"Zen"])
+        {
+           filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"zen-preview.png"]];            
+        }else if ([filter.name isEqualToString:@"Jade"])
+        {
+           filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"jade-preview.png"]];            
+        }else if ([filter.name isEqualToString:@"Warhol"])
+        {
+           filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"warhol-preview.png"]];
+        }else if ([filter.name isEqualToString:@"contemporary2"])
+        {
+            
+        }else if ([filter.name isEqualToString:@"Silver"])
+        {
+            filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"silver-preview.png"]];
+        }else if ([filter.name isEqualToString:@"photo2"])
+        {
+            
+        }else if ([filter.name isEqualToString:@"Impress"])
+        {
+           filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"impress-preview.png"]];
+        }else if ([filter.name isEqualToString:@"modern2"])
+        {
+            
+        }else if ([filter.name isEqualToString:@"X-Hatch"])
+        {
+            filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"xhatch-preview.png"]];
+        }else if ([filter.name isEqualToString:@"prints2"])
+        {
+
+        }else
+        {
+            // create filter preview image views
+            filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"original.png"]];
         }
-        
-        // create filter preview image views
-        UIImageView *filterPreviewImageView = [[UIImageView alloc] initWithImage:smallImage];
         
         [filterView setUserInteractionEnabled:YES];
         

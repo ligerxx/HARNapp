@@ -466,35 +466,35 @@
 
 -(void) setImageThumbnails:(NSArray *)thumbnails
 {
-    NSLog(@"thumbnails are in");
+    //NSLog(@"thumbnails are in");
     imageThumbnails = thumbnails;
     return;
 }
 
 -(void) setLargeImages:(NSArray *)images
 {
-    NSLog(@"large images are in");
+    //NSLog(@"large images are in");
     largeImages = images;
     return;
 }
 
 -(void) setTitles:(NSArray *)newtitles
 {
-    NSLog(@"Titles are set");
+    //NSLog(@"Titles are set");
     titles = newtitles;
     return;
 }
 
 -(void) setSmallDescription:(NSArray *)newSmallDescription
 {
-    NSLog(@"small descriptions are set");
+    //NSLog(@"small descriptions are set");
     smallDescription = newSmallDescription;
     return;
 }
 
 -(void) setExtendedDescription:(NSArray *)newExtendedDescription
 {
-    NSLog(@"large descriptions are set");
+    //NSLog(@"large descriptions are set");
     extendedDescription = newExtendedDescription;
     return;
 }
