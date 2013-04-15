@@ -16,7 +16,7 @@
 
 @synthesize filtersScrollView = _filterScrollView;
 
-@synthesize typeOfFilters;
+@synthesize typeOfFilters, save;
 
 static const int FILTER_LABEL = 001;
 
@@ -87,7 +87,7 @@ bool firstTimeOpen = true;
     
     [self.imageView setImage:image];
     
-    _save.enabled = YES;
+    save.enabled = YES;
     _retake.hidden = YES;
     
     //If you do not dismiss the model view controller as done below then you will be stuck at the camera screen.
@@ -111,7 +111,7 @@ bool firstTimeOpen = true;
         [subview removeFromSuperview];
     }
     
-    _save.enabled = NO;
+    save.enabled = NO;
     _retake.hidden = NO;
     
     [self.background setImage:[UIImage imageNamed:@"retake@2x.png"]];
@@ -271,7 +271,12 @@ bool firstTimeOpen = true;
         [vignette setValue:[NSNumber numberWithFloat:2.0f] forKey:@"inputRadius"];
         filter1 = vignette;
         
-        //Mark, Cyanotype
+        //Cyan
+        filterName2 = @"Cyan";
+        CIFilter *cyanColor = [CIFilter filterWithName:@"CIColorMonochrome" keysAndValues:@"inputImage", filterPreviewImage, @"inputColor", [CIColor colorWithRed:0.0 green:0.682 blue:0.937], nil];
+        CIFilter *cyanEV = [CIFilter filterWithName:@"CIExposureAdjust" keysAndValues:@"inputImage", dustTexture, @"inputEV", [NSNumber numberWithFloat:0.8], nil];
+        CIFilter *cyanComposite = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:@"inputImage", cyanEV.outputImage, @"inputBackgroundImage", cyanColor.outputImage, nil];
+        filter2 = cyanComposite;
         
     } else if ([typeOfFilters isEqualToString:@"Prints and Drawings Bef..."]) {
         // X-Hatch
@@ -556,6 +561,7 @@ bool firstTimeOpen = true;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    save.enabled = NO;
     self.context =[CIContext contextWithOptions:nil];        // Custom initialization
     self.title = @"Edit";
     self.filtersScrollView = _filterScrollView;
