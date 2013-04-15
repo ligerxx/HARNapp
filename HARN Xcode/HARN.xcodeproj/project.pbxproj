@@ -58,6 +58,7 @@
 		1DB0B04A171BC1C600C53DAF /* warhol-preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB0B040171BC1C600C53DAF /* warhol-preview.png */; };
 		1DB0B04B171BC1C600C53DAF /* xhatch-preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB0B041171BC1C600C53DAF /* xhatch-preview.png */; };
 		1DB0B04C171BC1C600C53DAF /* zen-preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB0B042171BC1C600C53DAF /* zen-preview.png */; };
+		1DB0B04F171BCFC700C53DAF /* Properties-With-Personal.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1DB0B04E171BCFC700C53DAF /* Properties-With-Personal.plist */; };
 		1DB9453B16F6A18800EDB437 /* filterpanel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB9453A16F6A18800EDB437 /* filterpanel@2x.png */; };
 		1DB9453D16F6A97400EDB437 /* edit@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB9453C16F6A97400EDB437 /* edit@2x.png */; };
 		1DBADA5C17184D66008CADD0 /* warhol.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DBADA5A17184D66008CADD0 /* warhol.jpg */; };
@@ -304,6 +305,7 @@
 		1DB0B040171BC1C600C53DAF /* warhol-preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warhol-preview.png"; sourceTree = "<group>"; };
 		1DB0B041171BC1C600C53DAF /* xhatch-preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "xhatch-preview.png"; sourceTree = "<group>"; };
 		1DB0B042171BC1C600C53DAF /* zen-preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zen-preview.png"; sourceTree = "<group>"; };
+		1DB0B04E171BCFC700C53DAF /* Properties-With-Personal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Properties-With-Personal.plist"; sourceTree = "<group>"; };
 		1DB9453A16F6A18800EDB437 /* filterpanel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "filterpanel@2x.png"; path = "../filterpanel@2x.png"; sourceTree = "<group>"; };
 		1DB9453C16F6A97400EDB437 /* edit@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "edit@2x.png"; sourceTree = "<group>"; };
 		1DBADA5A17184D66008CADD0 /* warhol.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = warhol.jpg; sourceTree = "<group>"; };
@@ -684,6 +686,7 @@
 				C9F783920F2ABA430029CA01 /* PageView.xib */,
 				1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */,
 				80CFA22A16F218F200F90382 /* Properties.plist */,
+				1DB0B04E171BCFC700C53DAF /* Properties-With-Personal.plist */,
 			);
 			name = "Other Sources";
 			sourceTree = "<group>";
@@ -1191,6 +1194,7 @@
 				1DB0B04A171BC1C600C53DAF /* warhol-preview.png in Resources */,
 				1DB0B04B171BC1C600C53DAF /* xhatch-preview.png in Resources */,
 				1DB0B04C171BC1C600C53DAF /* zen-preview.png in Resources */,
+				1DB0B04F171BCFC700C53DAF /* Properties-With-Personal.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -27,6 +27,18 @@
 	<dict>
 		<key>images</key>
 		<array>
+			<string>favorites.png</string>
+			<string>photos.png</string>
+		</array>
+		<key>data</key>
+		<array>
+			<string>Favorites</string>
+			<string>Photos</string>
+		</array>
+	</dict>
+	<dict>
+		<key>images</key>
+		<array>
 			<string>map.png</string>
 			<string>about.png</string>
 			<string>privacy.png</string>

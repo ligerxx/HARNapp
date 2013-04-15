@@ -79,14 +79,15 @@
 {
     NSArray *sharedItems;   //Items that will be shared
     
-    NSArray *applicationActivities = @[[[addToFavoritesActivity alloc] init]];
+    //TAKEN OUT FOR THIS RELEASE - THIS IS THE CUSTOM CLASS THAT ADDS THE BUTTON ADD TO FAVORITES
+    //NSArray *applicationActivities = @[[[addToFavoritesActivity alloc] init]];
     
     NSString *sharedText = @""; //This string would be the initial text that is in the share sheet
     
     sharedItems = @[sharedText, _previewImage.image]; //adding the text and image into the array that is initializing below
     
     
-    UIActivityViewController *shareSheet = [[UIActivityViewController alloc] initWithActivityItems:sharedItems applicationActivities:applicationActivities];
+    UIActivityViewController *shareSheet = [[UIActivityViewController alloc] initWithActivityItems:sharedItems applicationActivities:nil];
     
     shareSheet.excludedActivityTypes = @[UIActivityTypeAssignToContact, UIActivityTypeCopyToPasteboard, UIActivityTypePrint, UIActivityTypeSaveToCameraRoll, UIActivityTypeMessage];
     

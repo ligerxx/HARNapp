@@ -142,9 +142,9 @@ BOOL _bottomVisible;
     if(section == 0)
         return @"Collections";
     else if(section == 1)
-        return @"Personal";
-    else
         return @"Information";
+    else
+        return @"Personal";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {

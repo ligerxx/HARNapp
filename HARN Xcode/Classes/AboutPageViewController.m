@@ -30,8 +30,7 @@
     }
     else{
         
-        //LAUREN PUT YOUR WEBSITE IN THE URL BELOW
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.google.com"]];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.laurengraydesigns.com"]];
     }
 }
 
