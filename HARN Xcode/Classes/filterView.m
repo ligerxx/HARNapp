@@ -247,16 +247,31 @@ bool firstTimeOpen = true;
         filter1 = warhol;
         // Pop
     } else if ([typeOfFilters isEqualToString:@"Modern"]) {
-        // Urbana, Dream, Impress
-    } else if ([typeOfFilters isEqualToString:@"Photography"]) {
-        // Daguerrotype, Mark, Cyanotype, Silver
-        filterName1 = @"Daguerrotype";
-        CIFilter *daguerroColor = [CIFilter filterWithName:@"CIColorMonochrome" keysAndValues:@"inputImage", filterPreviewImage, @"inputColor", [CIColor colorWithRed:.85 green:0.85 blue:0.85], nil];
-        CIFilter *noise = [CIFilter filterWithName:@"CIRandomGenerator"];
-        CIFilter *colorMatrix = [CIFilter filterWithName:@"CIColorMatrix" keysAndValues:@"inputImage", noise.outputImage, @"inputRVector", (0,1,0,0), @"inputGVector", (0,1,0,0), @"inputBVector", (0,1,0,0), @"inputBiasVector", (0,0,0,0), nil];
-        CIFilter *composite = [CIFilter filterWithName:@"CISourceOverCompositing" keysAndValues:@"inputImage", colorMatrix.outputImage, @"inputBackgroundImage", daguerroColor.outputImage, nil];
-        filter1 = composite;
+        // IMPRESS
+        filterName1 = @"Impress";
+        CIFilter *posterize = [CIFilter filterWithName:@"CIColorPosterize" keysAndValues:@"inputImage", filterPreviewImage, @"inputLevels", [NSNumber numberWithFloat:20.40f], nil];
+        CIFilter *impressGamma = [CIFilter filterWithName:@"CIHighlightShadowAdjust" keysAndValues:kCIInputImageKey, posterize.outputImage, @"inputRadius", [NSNumber numberWithFloat:4.25], @"inputShadowAmount", [NSNumber numberWithFloat:1.00], @"inputHighlightAmount", [NSNumber numberWithFloat:1.00], nil];
+        CIFilter *blur = [CIFilter filterWithName:@"CIGaussianBlur" keysAndValues:@"inputImage", impressGamma.outputImage, @"inputRadius",[NSNumber numberWithFloat:2.66], nil];
+        filter1 = blur;
         
+        //Dream/Urbana?
+        
+    } else if ([typeOfFilters isEqualToString:@"Photography"]) {
+        // Silver
+        filterName1 = @"Silver";
+        UIImage *dustPic = [UIImage imageNamed:@"dust.png"];
+        dustPic = [self resizeTexture:dustPic width:width height:height];
+        CIImage *dustTexture = [[CIImage alloc] initWithImage:dustPic];
+        
+        CIFilter *daguerroColor = [CIFilter filterWithName:@"CIColorMonochrome" keysAndValues:@"inputImage", filterPreviewImage, @"inputColor", [CIColor colorWithRed:.85 green:0.85 blue:0.85], nil];
+        CIFilter *composite = [CIFilter filterWithName:@"CIOverlayBlendMode" keysAndValues:@"inputImage", dustTexture, @"inputBackgroundImage", daguerroColor.outputImage, nil];
+        CIFilter *vignette = [CIFilter filterWithName:@"CIVignette"];
+        [vignette setValue:composite.outputImage forKey:kCIInputImageKey];
+        [vignette setValue:[NSNumber numberWithFloat:0.99f] forKey:@"inputIntensity"];
+        [vignette setValue:[NSNumber numberWithFloat:2.0f] forKey:@"inputRadius"];
+        filter1 = vignette;
+        
+        //Mark, Cyanotype
         
     } else if ([typeOfFilters isEqualToString:@"Prints and Drawings Bef..."]) {
         // X-Hatch
