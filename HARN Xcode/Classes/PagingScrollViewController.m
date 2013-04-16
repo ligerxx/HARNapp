@@ -199,7 +199,7 @@
 - (IBAction)goToDetailView:(id)sender
 {
     TitleViewController *mainScreen = (TitleViewController*) self.parentViewController;
-
+    
   if(showMoreInfoHasBeenExpanded == FALSE)
   {
 
@@ -220,15 +220,24 @@
     //fadeout HARN logo
     mainScreen.harnLogo.alpha = 0.0;
     
+   //fade out if 3.5" screen otherwise move it up
+   CGSize result = [[UIScreen mainScreen] bounds].size;
+   CGRect scrollViewHeight = mainScreen.container.frame;
+   CGRect keepPageControlerDown = pageControl.frame;
+      
+   if(result.height != 568)
+   {
+       mainScreen.nowFeaturing.alpha = 0.0;
+       //move the Container
+       scrollViewHeight.origin.y = -120;
+   }else{      
     //move Now Featuring Label
     CGRect frame = mainScreen.nowFeaturing.frame;
     frame.origin.y = 11;
     [mainScreen.nowFeaturing setFrame:frame];
-    
     //move the Container
-    CGRect scrollViewHeight = mainScreen.container.frame;
-    CGRect keepPageControlerDown = pageControl.frame;
-      scrollViewHeight.origin.y = -150;
+    scrollViewHeight.origin.y = -150;
+   }
 
     [scrollView setFrame:scrollViewHeight];
       //[scrollView setBackgroundColor:[UIColor redColor]];
@@ -249,20 +258,34 @@
       
       //fadeout HARN logo
       mainScreen.harnLogo.alpha = 1.0;
+      //fade out if 3.5" screen otherwise move it up
+      CGSize result = [[UIScreen mainScreen] bounds].size;
       
-      //move Now Featuring Label
-      CGRect frame = mainScreen.nowFeaturing.frame;
-      frame.origin.y = 160;
-      [mainScreen.nowFeaturing setFrame:frame];
-      
-      //move the Container
       CGRect containerFrame = mainScreen.container.frame;
       CGRect scrollViewHeight = mainScreen.container.frame;
       CGRect keepPageControlerDown = pageControl.frame;
-      scrollViewHeight.origin.y = +10;
-      containerFrame.size.height = 359;
-      [mainScreen.container setFrame:containerFrame];
-      [scrollView setFrame:scrollViewHeight];
+      
+      if(result.height != 568)
+      {
+          mainScreen.nowFeaturing.alpha = 1.0;
+          //move the Container
+          scrollViewHeight.origin.y = +3;
+          containerFrame.size.height = 327;
+          [mainScreen.container setFrame:containerFrame];
+          [scrollView setFrame:scrollViewHeight];
+
+      }else{
+          //move Now Featuring Label
+          CGRect frame = mainScreen.nowFeaturing.frame;
+          frame.origin.y = 160;
+          [mainScreen.nowFeaturing setFrame:frame];
+          
+          //move the Container
+          scrollViewHeight.origin.y = +10;
+          containerFrame.size.height = 359;
+          [mainScreen.container setFrame:containerFrame];
+          [scrollView setFrame:scrollViewHeight];
+      }
       
       [self.moreInfoView removeFromSuperview];
       

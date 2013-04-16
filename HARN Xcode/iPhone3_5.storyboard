@@ -349,10 +349,10 @@ Last Updated: 4/13/13</string>
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="HarnLogoSquare.png" id="brI-Eh-j9V">
-                                        <rect key="frame" x="107" y="13" width="106" height="99"/>
+                                        <rect key="frame" x="107" y="8" width="106" height="99"/>
                                     </imageView>
                                     <containerView contentMode="scaleToFill" id="1FI-OK-9Cx">
-                                        <rect key="frame" x="0.0" y="149" width="320" height="311"/>
+                                        <rect key="frame" x="0.0" y="133" width="320" height="327"/>
                                         <connections>
                                             <segue destination="SvH-Ag-GkU" kind="embed" id="zb0-dV-rd0"/>
                                         </connections>
@@ -372,7 +372,7 @@ Last Updated: 4/13/13</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Now Featuring" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DhP-Qs-mRc">
-                                        <rect key="frame" x="99" y="120" width="123" height="21"/>
+                                        <rect key="frame" x="99" y="115" width="123" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.53333050270000004" green="0.53333050270000004" blue="0.53333050270000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -526,7 +526,7 @@ Last Updated: 4/13/13</string>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="mfb-xa-j5R" userLabel="Filtered Image">
-                                <rect key="frame" x="-7" y="0.0" width="334" height="274"/>
+                                <rect key="frame" x="-7" y="0.0" width="334" height="315"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -555,17 +555,17 @@ Last Updated: 4/13/13</string>
             <objects>
                 <viewController autoresizesArchivedViewToFullSize="NO" id="SvH-Ag-GkU" customClass="PagingScrollViewController" sceneMemberID="viewController">
                     <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" id="YTf-8g-K4S">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="311"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="327"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" id="6LX-Y5-bRU">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="212"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="257"/>
                                 <connections>
                                     <outlet property="delegate" destination="SvH-Ag-GkU" id="yfF-we-3FU"/>
                                 </connections>
                             </scrollView>
                             <pageControl opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="hki-ab-AGK">
-                                <rect key="frame" x="0.0" y="258" width="320" height="36"/>
+                                <rect key="frame" x="0.0" y="273" width="320" height="36"/>
                                 <connections>
                                     <action selector="changePage:" destination="SvH-Ag-GkU" eventType="valueChanged" id="LKb-Gq-MpK"/>
                                 </connections>
@@ -594,17 +594,17 @@ Last Updated: 4/13/13</string>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" id="hWy-w2-PsC">
-                                <rect key="frame" x="0.0" y="66" width="320" height="290"/>
+                                <rect key="frame" x="0.0" y="20" width="320" height="322"/>
                                 <gestureRecognizers/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Title of Work" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y8A-Ju-Wkb">
-                                <rect key="frame" x="20" y="407" width="280" height="21"/>
+                                <rect key="frame" x="20" y="391" width="280" height="21"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" red="0.99607849120000003" green="0.99215692280000001" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Description" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="s27-G7-jtx">
-                                <rect key="frame" x="20" y="407" width="251" height="76"/>
+                                <rect key="frame" x="20" y="420" width="251" height="44"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" red="0.99607849120000003" green="0.99215692280000001" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
@@ -902,7 +902,7 @@ Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath
         </scene>
     </scenes>
     <resources>
-        <image name="HarnLogoSquare.png" width="540" height="540"/>
+        <image name="HarnLogoSquare.png" width="16" height="16"/>
         <image name="aA.png" width="30" height="19"/>
         <image name="blackbutton.png" width="300" height="100"/>
         <image name="casey.png" width="384" height="402"/>
@@ -912,119 +912,6 @@ Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath
         <image name="mainmenu.png" width="50" height="50"/>
         <image name="retake@2x.png" width="640" height="1136"/>
     </resources>
-    <classes>
-        <class className="AboutPageViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutPageViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="visitSite:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="caseyImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="followCasey" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="followLauren" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="laurenImage" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="ArtCell" superclassName="UICollectionViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ArtCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="description" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="previewImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="title" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="CameraViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CameraViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancelView:"/>
-                <relationship kind="action" name="saveImage:"/>
-                <relationship kind="action" name="share:"/>
-                <relationship kind="outlet" name="cancel" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="savePhoto" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="shareButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="CollectionViewController" superclassName="UICollectionViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CollectionViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="navBar" candidateClass="UINavigationBar"/>
-            </relationships>
-        </class>
-        <class className="DetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="share:"/>
-                <relationship kind="outlet" name="descriptionOfWork" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="homeButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="previewImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="shareButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="titleOfWork" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="InformationViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/InformationViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="changeFontSize:"/>
-                <relationship kind="action" name="donePressed:"/>
-                <relationship kind="outlet" name="descriptionOfWork" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="MapViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="showInfo:"/>
-                <relationship kind="outlet" name="mapView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="PagingScrollViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PagingScrollViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="changePage:"/>
-                <relationship kind="action" name="goToDetailView:"/>
-                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="TitleViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TitleViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="panLayer:" candidateClass="UIPanGestureRecognizer"/>
-                <relationship kind="action" name="tapToPanLayer:"/>
-                <relationship kind="outlet" name="container" candidateClass="UIView"/>
-                <relationship kind="outlet" name="harnLogo" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="nowFeaturing" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="topLayer" candidateClass="UIView"/>
-                <relationship kind="outlet" name="viewDeckController" candidateClass="UINavigationBar"/>
-            </relationships>
-        </class>
-        <class className="UICollectionReusableView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
-        </class>
-        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
-        </class>
-        <class className="UICollectionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
-        </class>
-        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
-        </class>
-        <class className="filterView" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/filterView.h"/>
-            <relationships>
-                <relationship kind="action" name="showCameraUI:"/>
-                <relationship kind="outlet" name="background" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="filtersScrollView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="retake" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="save" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

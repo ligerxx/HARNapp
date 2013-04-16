@@ -93,14 +93,21 @@ bool firstTimeOpen = true;
     //If you do not dismiss the model view controller as done below then you will be stuck at the camera screen.
     [self dismissViewControllerAnimated:YES completion:nil];
     
-    self.filtersScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 405, 320, 100)];
+    CGSize result = [[UIScreen mainScreen] bounds].size;
+    
+    if(result.height != 568)
+    {
+        self.filtersScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 315, 320, 100)];
+    }else{
+        self.filtersScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 405, 320, 100)];
+    }
     
     [self.filtersScrollView setScrollEnabled:YES];
     [self.filtersScrollView setShowsVerticalScrollIndicator:NO];
     self.filtersScrollView.showsHorizontalScrollIndicator = NO;
     
     [self.view addSubview:self.filtersScrollView];
-    
+
     //Load the set of filters again
     [self loadFiltersForImage:image];
 }

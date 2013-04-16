@@ -32,7 +32,7 @@
         result = CGSizeMake(result.width * scale, result.height * scale);
         
         if(result.height == 1136){
-            storyBoard = [UIStoryboard storyboardWithName:@"MainStoryboard.storyboard" bundle:nil];
+            storyBoard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
             UIViewController *initViewController = [storyBoard instantiateInitialViewController];
             [self.window setRootViewController:initViewController];
         }
