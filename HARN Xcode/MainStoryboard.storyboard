@@ -344,7 +344,7 @@ Last Updated: 4/13/13</string>
                                 <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                             <view contentMode="scaleToFill" id="ic6-P1-Y3U" userLabel="Top View">
-                                <rect key="frame" x="200" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="gallerybackground@2x.png" id="HL7-mA-Tas">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
