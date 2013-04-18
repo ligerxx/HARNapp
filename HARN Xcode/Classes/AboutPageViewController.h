@@ -18,5 +18,5 @@
 }
 
 -(IBAction)visitSite:(UIButton *)sender;
-
+-(IBAction)swipedRight:(UIGestureRecognizer *)sender;
 @end

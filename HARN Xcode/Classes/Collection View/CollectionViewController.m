@@ -57,6 +57,12 @@
     return collectionInfo.titles.count;
 }
 
+-(IBAction)swipedRight:(UIGestureRecognizer *)sender
+{
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)cv cellForItemAtIndexPath:(NSIndexPath *)indexPath;
 {
 

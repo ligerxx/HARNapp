@@ -33,47 +33,18 @@
     _artDescription = someDescription;
 }
 
-/*
+
 -(IBAction)swipedLeft:(UIGestureRecognizer *)sender
 {
-    if( (int) currentViewIndex != [arrayOfArt count])
-    {
-        currentViewIndex++;
-    }
-
-    _artTitle = [_arrayOfArt objectAtIndex:_currentViewIndex];
-    _titleOfWork.text = [_arrayOfArt objectAtIndex:_currentViewIndex];
-
-    self.title = [NSString stringWithFormat:@"%d of %u",  _currentViewIndex, [_arrayOfArt count] ];
-    //DESCRIPTION CHANGED HERE
-    //_artDescription = _artDescription;
-
-    //PASS LARGER DESCRIPTION HERE
-
-    _previewImage.image = [UIImage imageNamed:@"skeleton.png"];
-    
+     [[self navigationController] popViewControllerAnimated:YES];   
 }
 
+/*
 -(IBAction)swipedRight:(UIGestureRecognizer *)sender
 {
-    if(currentViewIndex != 0)
-    {
-        currentViewIndex--;
-    }
-    
-    _artTitle = [_arrayOfArt objectAtIndex:_currentViewIndex];
-    _titleOfWork.text = [_arrayOfArt objectAtIndex:_currentViewIndex];
-    
-    self.title = [NSString stringWithFormat:@"%d of %u", _currentViewIndex, [_arrayOfArt count] ];
-    //DESCRIPTION CHANGED HERE
-    //_artDescription = _artDescription;
-    
-    //PASS LARGER DESCRIPTION HERE
-    
-    _previewImage.image = [UIImage imageNamed:@"ceramic.png"];
-    
-}
-*/
+
+}*/
+
  
 -(IBAction)share:(id)sender
 {

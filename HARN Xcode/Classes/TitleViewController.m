@@ -52,6 +52,7 @@ BOOL _bottomVisible;
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
+    
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapToPanLayer:)];
     tapRecognizer.numberOfTapsRequired = 1;
     [self.topLayer addGestureRecognizer:tapRecognizer];
@@ -243,6 +244,13 @@ BOOL _bottomVisible;
         [self presentViewController:mapPage animated:YES completion:nil];
     }
 
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
 }
 
 - (void)viewDidUnload {
