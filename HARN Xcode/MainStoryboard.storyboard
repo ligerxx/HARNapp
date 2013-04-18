@@ -901,6 +901,11 @@ Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath
                                                 <segue destination="523-E5-MiZ" kind="modal" modalTransitionStyle="crossDissolve" id="fbo-Fe-BOL"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" image="mycar.png" id="PWQ-2B-fcm">
+                                            <connections>
+                                                <action selector="launchMaps:" destination="9kg-y9-Xgj" id="zps-Hs-rTZ"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -919,6 +924,7 @@ Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath
                     </view>
                     <connections>
                         <outlet property="mapView" destination="9iZ-bz-nXQ" id="Z3k-rV-ul3"/>
+                        <outlet property="openMaps" destination="PWQ-2B-fcm" id="8q7-xj-jlc"/>
                         <outlet property="scrollView" destination="0pp-AU-HW8" id="bR6-z2-srR"/>
                     </connections>
                 </viewController>
@@ -937,6 +943,7 @@ Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath
         <image name="gallerybackground@2x.png" width="640" height="1136"/>
         <image name="lauren.png" width="576" height="576"/>
         <image name="mainmenu.png" width="50" height="50"/>
+        <image name="mycar.png" width="20" height="20"/>
         <image name="retake@2x.png" width="640" height="1136"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
@@ -945,6 +952,6 @@ Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="za4-fP-9ZH"/>
+        <segue reference="fbo-Fe-BOL"/>
     </inferredMetricsTieBreakers>
 </document>

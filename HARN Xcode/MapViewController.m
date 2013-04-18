@@ -13,14 +13,27 @@
 @end
 
 @implementation MapViewController
-//It is not necessary to @synthesize any properties if your Xcode version is >=4.5
 
-@synthesize scrollView, mapView;
+@synthesize scrollView, mapView, openMaps;
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Release any cached data, images, etc that aren't in use.
+}
+
+- (IBAction)launchMaps:(id)sender
+{
+    //See if they have Google Maps installed and give that preference first
+   BOOL googleMaps = [[UIApplication sharedApplication] canOpenURL:
+     [NSURL URLWithString:@"comgooglemaps://"]];
+    
+    if(!googleMaps){
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://maps.apple.com/?q=3259+Hull+Road+Gainesville,+FL+32611-2700"]];
+    }else{
+        [[UIApplication sharedApplication] openURL:
+         [NSURL URLWithString:@"comgooglemaps://?saddr=&daddr=Samuel+P.+Harn+Museum+of+Art,+3259+Hull+Road,+Gainesville,+Florida&directionsmode=driving"]];
+    }
 }
 
 #pragma mark - View lifecycle
