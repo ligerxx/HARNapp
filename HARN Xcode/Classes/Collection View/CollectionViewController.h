@@ -15,6 +15,6 @@
 @property (nonatomic, retain, readonly) NSArray *sections;
 
 -(IBAction)swipedRight:(UIGestureRecognizer *)sender;
-
+-(IBAction)closeView:(id)sender;
 
 @end

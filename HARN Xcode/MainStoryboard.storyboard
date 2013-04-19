@@ -374,7 +374,7 @@ Last Updated: 4/13/13</string>
                                         </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Now Featuring" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DhP-Qs-mRc">
-                                        <rect key="frame" x="99" y="160" width="123" height="21"/>
+                                        <rect key="frame" x="50" y="160" width="220" height="21"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" red="0.53333050270000004" green="0.53333050270000004" blue="0.53333050270000004" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -438,7 +438,7 @@ Last Updated: 4/13/13</string>
                         <gestureRecognizers/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="L2u-d1-t0L">
                             <size key="itemSize" width="155" height="298"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="50" height="70"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
@@ -448,7 +448,7 @@ Last Updated: 4/13/13</string>
                         </imageView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="PCG-uP-X5T" customClass="ArtCell">
-                                <rect key="frame" x="0.0" y="0.0" width="155" height="298"/>
+                                <rect key="frame" x="0.0" y="70" width="155" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="155" height="298"/>
@@ -480,6 +480,22 @@ Last Updated: 4/13/13</string>
                                 </connections>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderView" id="DXT-oI-KxE" customClass="CollectionHeaderView">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="hig-1k-1Bi">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                            </subviews>
+                            <connections>
+                                <outlet property="headerText" destination="hig-1k-1Bi" id="qcZ-uR-C19"/>
+                            </connections>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="F7t-B6-5ds" id="RTa-Tv-huD"/>
                             <outlet property="delegate" destination="F7t-B6-5ds" id="M3j-2M-k6G"/>
@@ -489,7 +505,7 @@ Last Updated: 4/13/13</string>
                     <navigationItem key="navigationItem" id="GF1-Ve-JpU">
                         <barButtonItem key="leftBarButtonItem" title="Home" id="kUg-RU-TMJ">
                             <connections>
-                                <segue destination="523-E5-MiZ" kind="modal" id="1cH-WO-3yV"/>
+                                <action selector="closeView:" destination="F7t-B6-5ds" id="iHh-37-SmJ"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="Ngl-CJ-BF8">
@@ -800,7 +816,7 @@ Last Updated: 4/13/13</string>
                                     <navigationItem title="About This App" id="Dq7-WM-oHe">
                                         <barButtonItem key="leftBarButtonItem" title="Home" id="5fS-Mc-G70">
                                             <connections>
-                                                <segue destination="523-E5-MiZ" kind="modal" modalTransitionStyle="crossDissolve" id="za4-fP-9ZH"/>
+                                                <action selector="closeView:" destination="ItQ-k4-DfS" id="gOP-YW-AXC"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -880,7 +896,7 @@ Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="302" y="-734"/>
+            <point key="canvasLocation" x="-172" y="-55"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="gGR-28-ubV">
@@ -898,7 +914,7 @@ Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath
                                     <navigationItem title="Map" id="LN9-42-THo">
                                         <barButtonItem key="leftBarButtonItem" title="Home" id="uaV-Ql-Qd7">
                                             <connections>
-                                                <segue destination="523-E5-MiZ" kind="modal" modalTransitionStyle="crossDissolve" id="fbo-Fe-BOL"/>
+                                                <action selector="closeView:" destination="9kg-y9-Xgj" id="CAS-7J-Kvp"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="mycar.png" id="PWQ-2B-fcm">
@@ -932,6 +948,95 @@ Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath
             </objects>
             <point key="canvasLocation" x="-576" y="-734"/>
         </scene>
+        <!--About Harn View Controller-->
+        <scene sceneID="e3H-iz-lm4">
+            <objects>
+                <viewController storyboardIdentifier="AboutHarn" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3Z6-it-NBN" customClass="AboutHarnViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TRj-Va-GtK">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="gallerybackground@2x.png" id="s0p-iH-dwF">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="The HARN app was crafted with care by LALALALALALALAA HARN HARN HARN" textAlignment="center" id="9Q0-Yc-Rk1">
+                                <rect key="frame" x="20" y="235" width="280" height="215"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="0.53333050270000004" green="0.53333050270000004" blue="0.53333050270000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pO9-GW-bfd">
+                                <rect key="frame" x="25" y="484" width="118" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Facebook" backgroundImage="blackbutton.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="visitSite:" destination="3Z6-it-NBN" eventType="touchUpInside" id="qUY-cb-cSF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cky-19-5zi">
+                                <rect key="frame" x="178" y="484" width="118" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Visit Our Site" backgroundImage="blackbutton.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="visitSite:" destination="3Z6-it-NBN" eventType="touchUpInside" id="HIk-kc-REe"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="modern-main.png" id="vkz-Xz-m07">
+                                <rect key="frame" x="40" y="79" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" id="h7V-zq-KrJ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.53333050270000004" green="0.53333050270000004" blue="0.53333050270000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <navigationItem title="About The HARN" id="9zM-U0-slY">
+                                        <barButtonItem key="leftBarButtonItem" title="Home" id="aOi-O7-dKq">
+                                            <connections>
+                                                <action selector="closeView:" destination="3Z6-it-NBN" id="TI7-wz-EVV"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="XMD-0A-EZP" appends="YES" id="GTJ-su-NiF"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="harnImage" destination="vkz-Xz-m07" id="Ebk-Fw-pQP"/>
+                        <outlet property="openFacebook" destination="pO9-GW-bfd" id="vBP-O4-JJu"/>
+                        <outlet property="openWebsite" destination="cky-19-5zi" id="dGx-pm-76y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Pe-dK-7Ou" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="XMD-0A-EZP">
+                    <connections>
+                        <action selector="swipedRight:" destination="3Z6-it-NBN" id="1T7-2a-bsv"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-576" y="-55"/>
+        </scene>
     </scenes>
     <resources>
         <image name="HarnLogoSquare@2x.png" width="540" height="540"/>
@@ -943,15 +1048,150 @@ Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath
         <image name="gallerybackground@2x.png" width="640" height="1136"/>
         <image name="lauren.png" width="576" height="576"/>
         <image name="mainmenu.png" width="50" height="50"/>
+        <image name="modern-main.png" width="980" height="720"/>
         <image name="mycar.png" width="20" height="20"/>
         <image name="retake@2x.png" width="640" height="1136"/>
     </resources>
+    <classes>
+        <class className="AboutHarnViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutHarnViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="closeView:"/>
+                <relationship kind="action" name="swipedRight:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="action" name="visitSite:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="harnImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="openFacebook" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="openWebsite" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="AboutPageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutPageViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="closeView:"/>
+                <relationship kind="action" name="swipedRight:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="action" name="visitSite:" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="caseyImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="followCasey" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="followLauren" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="laurenImage" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="ArtCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ArtCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="description" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="previewImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="title" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="CameraViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CameraViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancelView:"/>
+                <relationship kind="action" name="saveImage:"/>
+                <relationship kind="action" name="share:"/>
+                <relationship kind="outlet" name="cancel" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="savePhoto" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="shareButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="CollectionHeaderView" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CollectionHeaderView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="headerBackground" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="headerText" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="CollectionViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CollectionViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="closeView:"/>
+                <relationship kind="action" name="swipedRight:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="outlet" name="navBar" candidateClass="UINavigationBar"/>
+            </relationships>
+        </class>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="share:"/>
+                <relationship kind="action" name="swipedLeft:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="outlet" name="descriptionOfWork" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="homeButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="previewImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="shareButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="titleOfWork" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="InformationViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/InformationViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changeFontSize:"/>
+                <relationship kind="action" name="donePressed:"/>
+                <relationship kind="outlet" name="descriptionOfWork" candidateClass="UITextView"/>
+            </relationships>
+        </class>
+        <class className="MapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="closeView:"/>
+                <relationship kind="action" name="launchMaps:"/>
+                <relationship kind="action" name="showInfo:"/>
+                <relationship kind="outlet" name="mapView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="openMaps" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="PagingScrollViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PagingScrollViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="changePage:"/>
+                <relationship kind="action" name="goToDetailView:"/>
+                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
+                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
+            </relationships>
+        </class>
+        <class className="TitleViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TitleViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="container" candidateClass="UIView"/>
+                <relationship kind="outlet" name="harnLogo" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="nowFeaturing" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+                <relationship kind="outlet" name="topLayer" candidateClass="UIView"/>
+                <relationship kind="outlet" name="viewDeckController" candidateClass="UINavigationBar"/>
+            </relationships>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="filterView" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/filterView.h"/>
+            <relationships>
+                <relationship kind="action" name="showCameraUI:"/>
+                <relationship kind="outlet" name="background" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="filtersScrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="retake" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="save" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="fbo-Fe-BOL"/>
+        <segue reference="q5f-Re-dBj"/>
     </inferredMetricsTieBreakers>
 </document>

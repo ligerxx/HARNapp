@@ -19,7 +19,7 @@
 @synthesize topLayer = _topLayer;
 @synthesize layerPosition = _layerPosition;
 @synthesize titleArray = _titleArray;
-@synthesize selectedCell;
+@synthesize selectedCell, nowFeaturing;
 
 BOOL _bottomVisible;
 
@@ -57,6 +57,7 @@ BOOL _bottomVisible;
     tapRecognizer.numberOfTapsRequired = 1;
     [self.topLayer addGestureRecognizer:tapRecognizer];
     
+    nowFeaturing.text = @"A Project By UF Students";
 }
 
 // the number of pixels we want displayed for our navigation
@@ -236,6 +237,10 @@ BOOL _bottomVisible;
         
         AboutPageViewController *aboutPage = [storyboard instantiateViewControllerWithIdentifier:@"About"];
         [self presentViewController:aboutPage animated:YES completion:nil];
+    }else if ([self.selectedCell isEqualToString:@"About The HARN"]) {
+        
+        AboutPageViewController *aboutHarnPage = [storyboard instantiateViewControllerWithIdentifier:@"AboutHarn"];
+        [self presentViewController:aboutHarnPage animated:YES completion:nil];
     }
     
     if ([self.selectedCell isEqualToString:@"Map"]) {
@@ -249,6 +254,16 @@ BOOL _bottomVisible;
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    
+    //Transition the label text
+    CATransition *animation = [CATransition animation];
+    animation.duration = 2.25;
+    animation.type = kCATransitionFade;
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    [nowFeaturing.layer addAnimation:animation forKey:@"changeTextTransition"];
+    
+    // Change the text
+    nowFeaturing.text = @"Now Featuring";
     
     [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
 }

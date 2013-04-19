@@ -11,6 +11,7 @@
 #import "ArtworkInformation.h"
 #import "DetailViewController.h"
 #import "filterView.h"
+#import "CollectionHeaderView.h"
 
 @interface CollectionViewController ()
 
@@ -30,6 +31,23 @@
         // Custom initialization
     }
     return self;
+}
+
+- (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
+{
+    UICollectionReusableView *reusableview = nil;
+    
+    if (kind == UICollectionElementKindSectionHeader) {
+        CollectionHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView" forIndexPath:indexPath];
+        NSString *title = [[NSString alloc]initWithFormat:@"This is the %@ collection. And this is the area where we would have text about this collection.", self.navigationController.navigationBar.topItem.title];
+        headerView.headerText.text = title;
+        
+        //UIImage *headerImage = [UIImage imageNamed:@"header_banner.png"];
+        //headerView.backgroundImage.image = headerImage;
+        
+        reusableview = headerView;
+    }
+    return reusableview;
 }
 
 - (void)viewDidLoad
@@ -60,6 +78,10 @@
 -(IBAction)swipedRight:(UIGestureRecognizer *)sender
 {
     
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+-(IBAction)closeView:(id)sender
+{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

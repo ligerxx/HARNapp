@@ -26,6 +26,8 @@
 		1D57AF0716FD6676007D64AF /* photography.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D57AF0616FD6676007D64AF /* photography.png */; };
 		1D5CBC4716E06DF0004CAE64 /* HARN Retina no label.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D5CBC4616E06DF0004CAE64 /* HARN Retina no label.png */; };
 		1D5CBC4916E073B6004CAE64 /* HARN no label.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D5CBC4816E073B6004CAE64 /* HARN no label.png */; };
+		1D5CF7371721A3B200FA3875 /* AboutHarnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5CF7361721A3B200FA3875 /* AboutHarnViewController.m */; };
+		1D5CF73A1721D22F00FA3875 /* CollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5CF7391721D22F00FA3875 /* CollectionHeaderView.m */; };
 		1D5DA93016B62504002FBF16 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D2E2B9816B613F1006F1863 /* Default-568h@2x.png */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -281,6 +283,10 @@
 		1D57AF0616FD6676007D64AF /* photography.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photography.png; sourceTree = "<group>"; };
 		1D5CBC4616E06DF0004CAE64 /* HARN Retina no label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HARN Retina no label.png"; sourceTree = "<group>"; };
 		1D5CBC4816E073B6004CAE64 /* HARN no label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HARN no label.png"; sourceTree = "<group>"; };
+		1D5CF7351721A3B200FA3875 /* AboutHarnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutHarnViewController.h; sourceTree = "<group>"; };
+		1D5CF7361721A3B200FA3875 /* AboutHarnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutHarnViewController.m; sourceTree = "<group>"; };
+		1D5CF7381721D22F00FA3875 /* CollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionHeaderView.h; sourceTree = "<group>"; };
+		1D5CF7391721D22F00FA3875 /* CollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionHeaderView.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* HARN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HARN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D61A4AF17074A40007CC2F4 /* newmodern.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newmodern.png; sourceTree = "<group>"; };
 		1D62063B16CB480900203DA8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -554,6 +560,8 @@
 			children = (
 				1DF9C2D0171A118D00F85656 /* AboutPageViewController.h */,
 				1DF9C2D1171A118D00F85656 /* AboutPageViewController.m */,
+				1D5CF7351721A3B200FA3875 /* AboutHarnViewController.h */,
+				1D5CF7361721A3B200FA3875 /* AboutHarnViewController.m */,
 				1D7E680E171C5D2000D0F42D /* MapViewController.h */,
 				1D7E680F171C5D2000D0F42D /* MapViewController.m */,
 				1DAF8CF416D6E6CA0080224C /* Camera */,
@@ -596,6 +604,8 @@
 		1DAF8CF316D6E6B50080224C /* Collection View */ = {
 			isa = PBXGroup;
 			children = (
+				1D5CF7381721D22F00FA3875 /* CollectionHeaderView.h */,
+				1D5CF7391721D22F00FA3875 /* CollectionHeaderView.m */,
 				1DAF8CEF16D6E5060080224C /* DetailViewController.h */,
 				1DAF8CF016D6E5060080224C /* DetailViewController.m */,
 				1DAF8CF716D6F1A10080224C /* InformationViewController.h */,
@@ -1269,6 +1279,8 @@
 				1DD0AE80171744EE00CC8507 /* ArtworkInformation.m in Sources */,
 				1DF9C2D2171A118E00F85656 /* AboutPageViewController.m in Sources */,
 				1D7E6810171C5D2000D0F42D /* MapViewController.m in Sources */,
+				1D5CF7371721A3B200FA3875 /* AboutHarnViewController.m in Sources */,
+				1D5CF73A1721D22F00FA3875 /* CollectionHeaderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

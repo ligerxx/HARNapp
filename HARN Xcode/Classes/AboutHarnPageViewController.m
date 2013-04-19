@@ -6,10 +6,10 @@
 //
 //
 
-#import "AboutPageViewController.h"
+#import "AboutHarnPageViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
-@interface AboutPageViewController ()
+@interface AboutHarnPageViewController ()
 
 @end
 
@@ -32,11 +32,6 @@
         
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.laurengraydesigns.com"]];
     }
-}
-
--(IBAction)closeView:(id)sender
-{
-    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 -(IBAction)swipedRight:(UIGestureRecognizer *)sender

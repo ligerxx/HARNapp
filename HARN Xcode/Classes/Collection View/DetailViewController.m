@@ -53,7 +53,7 @@
     //TAKEN OUT FOR THIS RELEASE - THIS IS THE CUSTOM CLASS THAT ADDS THE BUTTON ADD TO FAVORITES
     //NSArray *applicationActivities = @[[[addToFavoritesActivity alloc] init]];
     
-    NSString *sharedText = @""; //This string would be the initial text that is in the share sheet
+    NSString *sharedText = [[NSString alloc] initWithFormat:@"I found %@ in the HARN app. Check it out!", _artTitle]; //This string would be the initial text that is in the share sheet
     
     sharedItems = @[sharedText, _previewImage.image]; //adding the text and image into the array that is initializing below
     

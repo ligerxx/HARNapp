@@ -21,5 +21,6 @@
 
 - (IBAction)showInfo:(id)sender;
 - (IBAction)launchMaps:(id)sender;
+- (IBAction)closeView:(id)sender;
 
 @end

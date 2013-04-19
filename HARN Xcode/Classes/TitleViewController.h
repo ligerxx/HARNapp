@@ -10,6 +10,9 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface TitleViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+{
+    IBOutlet UILabel *nowFeaturing;
+}
 
 @property (weak, nonatomic) IBOutlet UIView *topLayer;
 @property (strong, nonatomic) IBOutlet UINavigationBar *viewDeckController;

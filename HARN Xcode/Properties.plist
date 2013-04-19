@@ -28,12 +28,14 @@
 		<key>images</key>
 		<array>
 			<string>map.png</string>
+			<string>privacy.png</string>
 			<string>about.png</string>
 			<string>privacy.png</string>
 		</array>
 		<key>data</key>
 		<array>
 			<string>Map</string>
+			<string>About The HARN</string>
 			<string>About This App</string>
 			<string>Privacy Policy</string>
 		</array>

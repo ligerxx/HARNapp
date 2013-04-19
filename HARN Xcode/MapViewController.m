@@ -36,25 +36,34 @@
     }
 }
 
+-(IBAction)closeView:(id)sender
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
-    [scrollView setBackgroundColor:[UIColor blackColor]];
+    [scrollView setBackgroundColor:[UIColor whiteColor]];
     [scrollView setCanCancelContentTouches:NO];
     scrollView.clipsToBounds = YES; // default is NO, we want to restrict drawing within our scrollview
     scrollView.indicatorStyle = UIScrollViewIndicatorStyleWhite;
     
     mapView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"harnmap.png"]];
-    mapView.contentMode = UIViewContentModeScaleAspectFit;
+    //mapView.contentMode = UIViewContentModeScaleToFill;
     [scrollView addSubview:mapView];
     [scrollView setContentSize:CGSizeMake(mapView.frame.size.width, mapView.frame.size.height)];
-    scrollView.minimumZoomScale = 1;
-    scrollView.maximumZoomScale = 3;
+    scrollView.minimumZoomScale = 0.5;
+    scrollView.maximumZoomScale = 1.0f;
     scrollView.delegate = self;
     [scrollView setScrollEnabled:YES];
     
     [super viewDidLoad];
+    
+    float minimumScale = [scrollView frame].size.width / [mapView frame].size.width;
+    [scrollView setMinimumZoomScale:minimumScale];
+    [scrollView setZoomScale:minimumScale];
     // Do any additional setup after loading the view, typically from a nib.
 }
 - (void)scrollViewDidZoom:(UIScrollView *)aScrollView {

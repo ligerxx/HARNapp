@@ -8,16 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AboutPageViewController : UIViewController
+@interface AboutHarnPageViewController : UIViewController
 {
     IBOutlet UIImageView *caseyImage;
     IBOutlet UIImageView *laurenImage;
     IBOutlet UIButton *followCasey;
     IBOutlet UIButton *followLauren;
+    
 }
 
 -(IBAction)visitSite:(UIButton *)sender;
 -(IBAction)swipedRight:(UIGestureRecognizer *)sender;
--(IBAction)closeView:(id)sender;
-
 @end
