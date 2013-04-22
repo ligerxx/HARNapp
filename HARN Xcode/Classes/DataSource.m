@@ -42,6 +42,10 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(DataSource);
 				@"Bird Mothers and Feathered Serpents: Mythical Beings of Oceania and Ancient America", @"pageName",
 				@"February 26, 2013 - January 01, 2014\n\nThis exhibition focuses on mythological beings in art from Oceania and Ancient America, using objects from the Harn Museum’s collection. Each object represents a fascinating character–a culture hero, a divinity, or a spirit being.", @"pageText", @"ancientamerican-main.png", @"pageImage",
 				nil],
+            [NSDictionary dictionaryWithObjectsAndKeys:
+                @"All the World's a Frame", @"pageName",
+                @"April 05, 2013 - November 10, 2013\n\nExamine photographs from the Harn and other local collections in terms of their formal characteristics, motives, repeated tropes and expectations embedded in their making.", @"pageText", @"worldframe_main.png", @"pageImage",
+                nil],
 			nil];
 	}
 	return self;

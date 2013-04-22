@@ -10,7 +10,7 @@
 
 @implementation ArtworkInformation
 
-@synthesize imageThumbnails, largeImages, titles, extendedDescription, smallDescription, chosenCollection;
+@synthesize collectionDescription, imageThumbnails, largeImages, titles, extendedDescription, smallDescription, chosenCollection;
 
 -(void) generateInfo:(NSString *) collectionPicked
 {
@@ -25,6 +25,8 @@
     if([chosenCollection isEqualToString:@"African"])
     {
         //AFRICA
+        self.collectionDescription = @"The African Collection consists of more than 1,000 works and represents art from all regions of the continent with particular strength in the areas of West Africa, South Africa and Ethiopia. Works includes wood sculpture, textiles, ceramics, leatherwork, beadwork, metalwork and painting from 5th century BCE to the 21st century.";
+        
         [self setImageThumbnails:@[[UIImage imageNamed:@"ancestral-head-tb.jpg"],
          [UIImage imageNamed:@"post-tb.jpg"],
          [UIImage imageNamed:@"ritual ax-tb.jpg"],
@@ -88,6 +90,8 @@
     }else if([chosenCollection isEqualToString:@"Asian"] )
     {
         //ASIA
+        self.collectionDescription = @"With more than 2,100 works, the Harn’s Asian art collection spans a timeframe ranging from the Neolithic period through cutting-edge contemporary art. The strengths of the collection are evident in ceramics, jades and metal works and are further augmented by stone sculptures, paintings and prints.";
+        
         [self setImageThumbnails:@[[UIImage imageNamed:@"Seated Bodhisattva-tb.jpg"],
                                    [UIImage imageNamed:@"Vajravarahi.jpg"],
                                    [UIImage imageNamed:@"Dancing Ganesh-tb.jpg"],
@@ -156,6 +160,8 @@
     }else if([chosenCollection isEqualToString:@"Contemporary"])
     {
         //CONTEMPORARY
+        self.collectionDescription = @"The contemporary collection encompasses international art in all media created between 1945 and the present. The collection holds nearly 1,500 objects with exemplary works from major contemporary art movements and recent works by emerging artists from around the world.";
+        
         
         [self setImageThumbnails:@[[UIImage imageNamed:@"Dogon-Couple-tb.jpg"],
          [UIImage imageNamed:@"warhol-tb.jpg"],
@@ -220,6 +226,7 @@
     }else if([chosenCollection isEqualToString:@"Modern"])
     {
         //MODERN
+        self.collectionDescription = @"The modern collection comprises nearly 1,000 works of art spanning from the mid-19th century to the first half of the 20th century. The collection is divided into three areas-American art, European art and Latin American art-and includes paintings, sculpture, and prints and drawings.";
         
         [self setImageThumbnails:@[[UIImage imageNamed:@"Ireland Reef-tb.jpg"],
          [UIImage imageNamed:@"Three Men at Union Square-tb.jpg"],
@@ -279,6 +286,7 @@
     }else if([chosenCollection isEqualToString:@"Ancient American"])
     {
         //ANCIENT AMERICAN
+        self.collectionDescription = @"There are more than 600 Ancient American objects in the collection, primarily from Mesoamerica, Central America and the Central Andes.";
         
         [self setImageThumbnails:@[[UIImage imageNamed:@"stirrup-tb.jpg"],
          [UIImage imageNamed:@"bridge-tb.jpg"],
@@ -338,10 +346,13 @@
     }else if([chosenCollection isEqualToString:@"Oceanic"])
     {
         //OCEANIC
+        self.collectionDescription = @"The 108 objects in the Oceanic collection are from Melanesia, primarily various regions of Papua New Guinea. Most are 20th century objects from the Sepik River region.";
+        
         
     }else if([chosenCollection isEqualToString:@"Photography"])
     {
         //PHOTOGRAPHY
+        self.collectionDescription = @"The photography collection includes more than 700 photographs dated from the 19th century to the present with an emphasis on works from the last 50 years.";
         
         [self setImageThumbnails:@[[UIImage imageNamed:@"The-patient-gardener-tb.jpg"],
          [UIImage imageNamed:@"A-sphere-lit-tb.jpg"],
@@ -401,6 +412,7 @@
     }else if([chosenCollection isEqualToString:@"Prints and Drawings Bef..."])
     {
         //PRINTS AND DRAWINGS
+        self.collectionDescription = @"The prints and drawings collection, dated before 1850, includes more than 200 works from the late Middle Ages through the mid-19th century representing artists from England, France, Germany, Italy, the Netherlands, Spain, Switzerland and the United States";
         
         [self setImageThumbnails:@[[UIImage imageNamed:@"papauer-tb.jpg"],
          [UIImage imageNamed:@"pancratium-tb.jpg"],

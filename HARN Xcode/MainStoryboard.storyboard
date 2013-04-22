@@ -438,7 +438,7 @@ Last Updated: 4/13/13</string>
                         <gestureRecognizers/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="L2u-d1-t0L">
                             <size key="itemSize" width="155" height="298"/>
-                            <size key="headerReferenceSize" width="50" height="70"/>
+                            <size key="headerReferenceSize" width="50" height="128"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
@@ -448,7 +448,7 @@ Last Updated: 4/13/13</string>
                         </imageView>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="PCG-uP-X5T" customClass="ArtCell">
-                                <rect key="frame" x="0.0" y="70" width="155" height="298"/>
+                                <rect key="frame" x="0.0" y="128" width="155" height="298"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="155" height="298"/>
@@ -481,14 +481,15 @@ Last Updated: 4/13/13</string>
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderView" id="DXT-oI-KxE" customClass="CollectionHeaderView">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="hig-1k-1Bi">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" id="hig-1k-1Bi">
+                                    <rect key="frame" x="10" y="0.0" width="300" height="128"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 </textView>
                             </subviews>
@@ -957,19 +958,22 @@ Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="gallerybackground@2x.png" id="s0p-iH-dwF">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="The HARN app was crafted with care by LALALALALALALAA HARN HARN HARN" textAlignment="center" id="9Q0-Yc-Rk1">
-                                <rect key="frame" x="20" y="235" width="280" height="215"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" id="9Q0-Yc-Rk1">
+                                <rect key="frame" x="20" y="208" width="280" height="258"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">The University of Florida’s Harn Museum of Art collaborates with university and community partners to inspire, educate and enrich people’s lives through art. The museum brings the joy of experiencing great works of art to diverse university, community, national and global audiences through relevant and enlightening art collections, exhibitions and learning opportunities.
+
+The 112,800-square-foot facility includes 11 galleries for exhibiting art, a 250-seat auditorium, 2 Asian-inspired gardens, classrooms, museum study center, store and Camellia Court Café. The Harn Museum’s collections consist of more than 9,000 works of art focusing on African, Asian, modern and contemporary art, and photography.</string>
                                 <color key="textColor" red="0.53333050270000004" green="0.53333050270000004" blue="0.53333050270000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="11"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pO9-GW-bfd">
-                                <rect key="frame" x="25" y="484" width="118" height="44"/>
+                                <rect key="frame" x="25" y="489" width="118" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Facebook" backgroundImage="blackbutton.png">
@@ -984,7 +988,7 @@ Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cky-19-5zi">
-                                <rect key="frame" x="178" y="484" width="118" height="44"/>
+                                <rect key="frame" x="178" y="489" width="118" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Visit Our Site" backgroundImage="blackbutton.png">
@@ -998,8 +1002,8 @@ Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath
                                     <action selector="visitSite:" destination="3Z6-it-NBN" eventType="touchUpInside" id="HIk-kc-REe"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="modern-main.png" id="vkz-Xz-m07">
-                                <rect key="frame" x="40" y="79" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="harnfront.jpg" id="vkz-Xz-m07">
+                                <rect key="frame" x="0.0" y="44" width="320" height="156"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" id="h7V-zq-KrJ">
@@ -1046,9 +1050,9 @@ Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath
         <image name="casey.png" width="384" height="402"/>
         <image name="comingsoon@2x.png" width="640" height="1136"/>
         <image name="gallerybackground@2x.png" width="640" height="1136"/>
+        <image name="harnfront.jpg" width="1800" height="842"/>
         <image name="lauren.png" width="576" height="576"/>
         <image name="mainmenu.png" width="50" height="50"/>
-        <image name="modern-main.png" width="980" height="720"/>
         <image name="mycar.png" width="20" height="20"/>
         <image name="retake@2x.png" width="640" height="1136"/>
     </resources>
@@ -1154,8 +1158,6 @@ Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath
         <class className="TitleViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TitleViewController.h"/>
             <relationships>
-                <relationship kind="action" name="panLayer:" candidateClass="UIPanGestureRecognizer"/>
-                <relationship kind="action" name="tapToPanLayer:"/>
                 <relationship kind="outlet" name="container" candidateClass="UIView"/>
                 <relationship kind="outlet" name="harnLogo" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="nowFeaturing" candidateClass="UILabel"/>

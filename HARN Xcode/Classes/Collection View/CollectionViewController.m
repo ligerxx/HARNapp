@@ -39,7 +39,7 @@
     
     if (kind == UICollectionElementKindSectionHeader) {
         CollectionHeaderView *headerView = [collectionView dequeueReusableSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"HeaderView" forIndexPath:indexPath];
-        NSString *title = [[NSString alloc]initWithFormat:@"This is the %@ collection. And this is the area where we would have text about this collection.", self.navigationController.navigationBar.topItem.title];
+        NSString *title = collectionInfo.collectionDescription;
         headerView.headerText.text = title;
         
         //UIImage *headerImage = [UIImage imageNamed:@"header_banner.png"];

@@ -12,6 +12,7 @@
 
 @property (nonatomic) NSString *chosenCollection;
 
+@property (nonatomic, retain) NSString *collectionDescription;
 @property (nonatomic, readonly) NSArray *imageThumbnails;
 @property (nonatomic, readonly) NSArray *largeImages;
 @property (nonatomic, retain) NSArray *titles;
