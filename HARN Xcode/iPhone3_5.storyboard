@@ -966,13 +966,12 @@ Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath
                                 <gestureRecognizers/>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" id="ZgM-O6-jzn">
-                                <rect key="frame" x="0.0" y="180" width="320" height="198"/>
+                                <rect key="frame" x="0.0" y="180" width="320" height="206"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">The University of Florida’s Harn Museum of Art collaborates with university and community partners to inspire, educate and enrich people’s lives through art. The museum brings the joy of experiencing great works of art to diverse university, community, national and global audiences through relevant and enlightening art collections, exhibitions and learning opportunities.
-
-The 112,800-square-foot facility includes 11 galleries for exhibiting art, a 250-seat auditorium, 2 Asian-inspired gardens, classrooms, museum study center, store and Camellia Court Café. The Harn Museum’s collections consist of more than 9,000 works of art focusing on African, Asian, modern and contemporary art, and photography.</string>
+Admission is free</string>
                                 <color key="textColor" red="0.53333050270000004" green="0.53333050270000004" blue="0.53333050270000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="10"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="48I-Zt-46b">
