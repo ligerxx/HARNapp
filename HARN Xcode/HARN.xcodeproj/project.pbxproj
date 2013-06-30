@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1D00C31D1705F4E000A40D79 /* blackbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D00C31C1705F4E000A40D79 /* blackbutton.png */; };
+		1D0A90491775060800246ECD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D0A90481775060800246ECD /* Media.xcassets */; };
+		1D0A904E177506B800246ECD /* Africa-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0A904A177506B800246ECD /* Africa-ios7.png */; };
+		1D0A9050177506B800246ECD /* camera-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0A904C177506B800246ECD /* camera-ios7.png */; };
+		1D0A9051177506B800246ECD /* dragon-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0A904D177506B800246ECD /* dragon-ios7.png */; };
 		1D1EA86116C6E59A0019B139 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D1EA86016C6E59A0019B139 /* Default@2x.png */; };
 		1D1EA86316C6E5A70019B139 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D1EA86216C6E5A70019B139 /* Default.png */; };
 		1D2421C3171B3DA700998697 /* nasca.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D2421C2171B3DA700998697 /* nasca.png */; };
@@ -18,6 +22,7 @@
 		1D278EA9171C83CB0018CE60 /* kuzco-preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D278EA6171C83CB0018CE60 /* kuzco-preview.png */; };
 		1D278EAA171C83CB0018CE60 /* pop-preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D278EA7171C83CB0018CE60 /* pop-preview.png */; };
 		1D29777616CD77370094FD84 /* FilterPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D29777516CD77370094FD84 /* FilterPreview.m */; };
+		1D2E7B5C177377A1003F4ABB /* retina ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D2E7B5B177377A1003F4ABB /* retina ios7.png */; };
 		1D30FACD16E1938E000B1CE2 /* gallerybackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D30FACC16E1938E000B1CE2 /* gallerybackground@2x.png */; };
 		1D3623260D0F684500981E51 /* PagingScrollViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* PagingScrollViewAppDelegate.m */; };
 		1D3F272216FB884800451DCE /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D3F272116FB884800451DCE /* about.png */; };
@@ -53,6 +58,7 @@
 		1D7E680D171C58BC00D0F42D /* harnmap.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7E680C171C58BC00D0F42D /* harnmap.png */; };
 		1D7E6810171C5D2000D0F42D /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E680F171C5D2000D0F42D /* MapViewController.m */; };
 		1D95457A17259DB700A3B01A /* worldframe_main.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D95457917259DB700A3B01A /* worldframe_main.png */; };
+		1D99875A1780B14100531EF1 /* Ancient America - ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0A9053177508B400246ECD /* Ancient America - ios7.png */; };
 		1D9EAFC91720A03700DD62EA /* mycar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D9EAFC81720A03700DD62EA /* mycar.png */; };
 		1D9EAFCB1720A18400DD62EA /* mycar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D9EAFCA1720A18400DD62EA /* mycar@2x.png */; };
 		1DA6A40D16CAFBEE0021267F /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA6A40C16CAFBEE0021267F /* CoreImage.framework */; };
@@ -121,6 +127,7 @@
 		1DD9471F1717B232006DD9D8 /* bridge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9471D1717B232006DD9D8 /* bridge.jpg */; };
 		1DD947201717B232006DD9D8 /* bridge-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9471E1717B232006DD9D8 /* bridge-tb.jpg */; };
 		1DE88E5416CB140600B8804E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */; };
+		1DE992741773B4350079DFF0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE992731773B4350079DFF0 /* CFNetwork.framework */; };
 		1DED7F6416F2D97C0005B3A9 /* camerafiltericon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED7F6316F2D97C0005B3A9 /* camerafiltericon@2x.png */; };
 		1DEE8DFA16CD855900A3C9B7 /* UIImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */; };
 		1DF4A386171900F200598443 /* papauer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DF4A384171900F200598443 /* papauer.jpg */; };
@@ -264,6 +271,11 @@
 
 /* Begin PBXFileReference section */
 		1D00C31C1705F4E000A40D79 /* blackbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackbutton.png; sourceTree = "<group>"; };
+		1D0A90481775060800246ECD /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = HARN/Media.xcassets; sourceTree = "<group>"; };
+		1D0A904A177506B800246ECD /* Africa-ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Africa-ios7.png"; sourceTree = "<group>"; };
+		1D0A904C177506B800246ECD /* camera-ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-ios7.png"; sourceTree = "<group>"; };
+		1D0A904D177506B800246ECD /* dragon-ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dragon-ios7.png"; sourceTree = "<group>"; };
+		1D0A9053177508B400246ECD /* Ancient America - ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ancient America - ios7.png"; sourceTree = "<group>"; };
 		1D1EA86016C6E59A0019B139 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		1D1EA86216C6E5A70019B139 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		1D2421C2171B3DA700998697 /* nasca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nasca.png; sourceTree = "<group>"; };
@@ -276,6 +288,7 @@
 		1D29777416CD77370094FD84 /* FilterPreview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterPreview.h; sourceTree = "<group>"; };
 		1D29777516CD77370094FD84 /* FilterPreview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterPreview.m; sourceTree = "<group>"; };
 		1D2E2B9816B613F1006F1863 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1D2E7B5B177377A1003F4ABB /* retina ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "retina ios7.png"; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D30FACC16E1938E000B1CE2 /* gallerybackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gallerybackground@2x.png"; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* PagingScrollViewAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagingScrollViewAppDelegate.h; sourceTree = "<group>"; };
@@ -391,6 +404,8 @@
 		1DD9471D1717B232006DD9D8 /* bridge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bridge.jpg; sourceTree = "<group>"; };
 		1DD9471E1717B232006DD9D8 /* bridge-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bridge-tb.jpg"; sourceTree = "<group>"; };
 		1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		1DE992721773B4130079DFF0 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
+		1DE992731773B4350079DFF0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		1DED7F6316F2D97C0005B3A9 /* camerafiltericon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camerafiltericon@2x.png"; path = "../Classes/camerafiltericon@2x.png"; sourceTree = "<group>"; };
 		1DEE8DF816CD855900A3C9B7 /* UIImageExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageExtension.h; sourceTree = "<group>"; };
 		1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageExtension.m; sourceTree = "<group>"; };
@@ -547,6 +562,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE992741773B4350079DFF0 /* CFNetwork.framework in Frameworks */,
 				8016D53716CC220B00F20725 /* QuartzCore.framework in Frameworks */,
 				1DA8E15D16CD8A9B002914E4 /* OpenGLES.framework in Frameworks */,
 				1DA6A40D16CAFBEE0021267F /* CoreImage.framework in Frameworks */,
@@ -592,6 +608,17 @@
 				1D6058910D05DD3D006BFB54 /* HARN.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1D0A9052177506BF00246ECD /* iOS7 */ = {
+			isa = PBXGroup;
+			children = (
+				1D0A904A177506B800246ECD /* Africa-ios7.png */,
+				1D0A9053177508B400246ECD /* Ancient America - ios7.png */,
+				1D0A904C177506B800246ECD /* camera-ios7.png */,
+				1D0A904D177506B800246ECD /* dragon-ios7.png */,
+			);
+			name = iOS7;
 			sourceTree = "<group>";
 		};
 		1D7A6F5016E17FC500DCBFAB /* Custom Activity */ = {
@@ -697,6 +724,7 @@
 		1DF9C2CB1719ECBC00F85656 /* Glyphs */ = {
 			isa = PBXGroup;
 			children = (
+				1D0A9052177506BF00246ECD /* iOS7 */,
 				1D657CE71726FFD700F5545A /* harnglyph@2x.png */,
 				1D76D3BD16D7EFA70074284E /* aA@2x.png */,
 				1DAF8CF516D6ED8D0080224C /* aA.png */,
@@ -724,6 +752,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				1D0A90481775060800246ECD /* Media.xcassets */,
+				1D2E7B5B177377A1003F4ABB /* retina ios7.png */,
 				1D30FACC16E1938E000B1CE2 /* gallerybackground@2x.png */,
 				1D5CBC4816E073B6004CAE64 /* HARN no label.png */,
 				1D5CBC4616E06DF0004CAE64 /* HARN Retina no label.png */,
@@ -783,6 +813,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1DE992731773B4350079DFF0 /* CFNetwork.framework */,
+				1DE992721773B4130079DFF0 /* Reveal.framework */,
 				1DA8E15C16CD8A9B002914E4 /* OpenGLES.framework */,
 				8016D53516CC21BD00F20725 /* QuartzCore.framework */,
 				1D62063D16CB481100203DA8 /* MediaPlayer.framework */,
@@ -1054,6 +1086,7 @@
 				1DE88E5416CB140600B8804E /* MainStoryboard.storyboard in Resources */,
 				1DAF8CF616D6ED8D0080224C /* aA.png in Resources */,
 				1D76D3BE16D7EFA70074284E /* aA@2x.png in Resources */,
+				1D0A90491775060800246ECD /* Media.xcassets in Resources */,
 				1D5CBC4716E06DF0004CAE64 /* HARN Retina no label.png in Resources */,
 				1D5CBC4916E073B6004CAE64 /* HARN no label.png in Resources */,
 				1D7A6F5816E1862600DCBFAB /* favorites-activity.png in Resources */,
@@ -1097,6 +1130,7 @@
 				8074E9AB171770350057664C /* Gala-Blanket-tb.jpg in Resources */,
 				8074E9AC171770350057664C /* Gala-Blanket.jpg in Resources */,
 				8074E9AD171770350057664C /* Indigo-Resist-Dyed-Cloth-tb.jpg in Resources */,
+				1D99875A1780B14100531EF1 /* Ancient America - ios7.png in Resources */,
 				8074E9AE171770350057664C /* Indigo-Resist-Dyed-Cloth.jpg in Resources */,
 				8074E9AF171770350057664C /* Koranic-Board-tb.jpg in Resources */,
 				8074E9B0171770350057664C /* Koranic-Board.jpg in Resources */,
@@ -1115,6 +1149,7 @@
 				8074E9C3171770350057664C /* Jaguar-effigy-metate.jpg in Resources */,
 				8074E9C6171770350057664C /* Seated-Companion-Urn-tb.jpg in Resources */,
 				8074E9C7171770350057664C /* Seated-Companion-Urn.jpg in Resources */,
+				1D2E7B5C177377A1003F4ABB /* retina ios7.png in Resources */,
 				8074E9C8171770350057664C /* Seated-Female-Figurine-tb.jpg in Resources */,
 				8074E9C9171770350057664C /* Seated-Female-Figurine.jpg in Resources */,
 				8074E9CA171770350057664C /* Standing-figure-in-the-Laughing-Child-form-tb.jpg in Resources */,
@@ -1125,6 +1160,7 @@
 				8074E9D1171770350057664C /* Beauties-in-the-Garden-tb.jpg in Resources */,
 				8074E9D2171770350057664C /* Beauties-in-the-Garden.jpg in Resources */,
 				8074E9D3171770350057664C /* Blue-Glazed-Cong-Shaped-Vase-tb.jpg in Resources */,
+				1D0A9050177506B800246ECD /* camera-ios7.png in Resources */,
 				8074E9D4171770350057664C /* Blue-Glazed-Cong-Shaped-Vase.jpg in Resources */,
 				8074E9D5171770350057664C /* Fuchu-Female-Tea-Pickers-tb.jpg in Resources */,
 				8074E9D6171770350057664C /* Fuchu-Female-Tea-Pickers.jpg in Resources */,
@@ -1146,6 +1182,7 @@
 				8074E9EE171770350057664C /* IMAGinING-Tobia-tb.jpg in Resources */,
 				8074E9EF171770350057664C /* IMAGinING-Tobia.jpg in Resources */,
 				8074E9F0171770350057664C /* Nets-Infinitity-TWOS-tb.jpg in Resources */,
+				1D0A904E177506B800246ECD /* Africa-ios7.png in Resources */,
 				8074E9F1171770350057664C /* Nets-Infinitity-TWOS.jpg in Resources */,
 				8074E9F2171770350057664C /* Ode-a-lOubli-tb.jpg in Resources */,
 				8074E9F3171770350057664C /* Ode-a-lOubli.jpg in Resources */,
@@ -1225,6 +1262,7 @@
 				1DD9471F1717B232006DD9D8 /* bridge.jpg in Resources */,
 				1DD947201717B232006DD9D8 /* bridge-tb.jpg in Resources */,
 				1DBADA5C17184D66008CADD0 /* warhol.jpg in Resources */,
+				1D0A9051177506B800246ECD /* dragon-ios7.png in Resources */,
 				1DBADA5D17184D66008CADD0 /* warhol-tb.jpg in Resources */,
 				1DF4A386171900F200598443 /* papauer.jpg in Resources */,
 				1DF4A387171900F200598443 /* papauer-tb.jpg in Resources */,
@@ -1311,6 +1349,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1318,7 +1358,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HARN_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = HARN;
 				SDKROOT = iphoneos;
 			};
@@ -1328,12 +1369,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HARN_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = HARN;
 				SDKROOT = iphoneos;
 			};

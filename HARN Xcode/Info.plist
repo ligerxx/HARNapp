@@ -11,18 +11,9 @@
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIcons</key>
-	<dict>
-		<key>CFBundlePrimaryIcon</key>
-		<dict>
-			<key>CFBundleIconFiles</key>
-			<array>
-				<string>HARN Retina no label.png</string>
-				<string>HARN no label.png</string>
-			</array>
-			<key>UIPrerenderedIcon</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
+	<key>CFBundleIcons~ipad</key>
+	<dict/>
 	<key>CFBundleIdentifier</key>
 	<string>com.exceptionmark.${PRODUCT_NAME:identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -46,7 +37,17 @@
 	<key>UIStatusBarHidden</key>
 	<false/>
 	<key>UIStatusBarStyle</key>
-	<string>UIStatusBarStyleBlackOpaque</string>
+	<string>UIStatusBarStyleBlackTranslucent</string>
+	<key>UIStatusBarTintParameters</key>
+	<dict>
+		<key>UINavigationBar</key>
+		<dict>
+			<key>Style</key>
+			<string>UIBarStyleDefault</string>
+			<key>Translucent</key>
+			<false/>
+		</dict>
+	</dict>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

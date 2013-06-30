@@ -233,13 +233,14 @@
    }else{      
     //move Now Featuring Label
     CGRect frame = mainScreen.nowFeaturing.frame;
-    frame.origin.y = 11;
+    frame.origin.y = 31;
     [mainScreen.nowFeaturing setFrame:frame];
     //move the Container
-    scrollViewHeight.origin.y = -150;
+    scrollView.transform = CGAffineTransformTranslate(scrollView.transform, 0.0, -250.0);
+    //scrollViewHeight.origin.y = -150;
    }
 
-    [scrollView setFrame:scrollViewHeight];
+    //[scrollView setFrame:scrollViewHeight];
       //[scrollView setBackgroundColor:[UIColor redColor]];
     
     //add the more info
@@ -281,10 +282,11 @@
           [mainScreen.nowFeaturing setFrame:frame];
           
           //move the Container
-          scrollViewHeight.origin.y = +10;
+          /*scrollViewHeight.origin.y = +10;
           containerFrame.size.height = 359;
           [mainScreen.container setFrame:containerFrame];
-          [scrollView setFrame:scrollViewHeight];
+          [scrollView setFrame:scrollViewHeight];*/
+          scrollView.transform = CGAffineTransformIdentity;
       }
       
       [self.moreInfoView removeFromSuperview];
