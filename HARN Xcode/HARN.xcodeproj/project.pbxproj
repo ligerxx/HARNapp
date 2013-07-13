@@ -40,6 +40,8 @@
 		1D62063C16CB480900203DA8 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D62063B16CB480900203DA8 /* MobileCoreServices.framework */; };
 		1D62063E16CB481100203DA8 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D62063D16CB481100203DA8 /* MediaPlayer.framework */; };
 		1D641B081716F06800C26210 /* sahara.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D641B071716F06800C26210 /* sahara.png */; };
+		1D6469C51791CBB400DC5083 /* contemporary-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6469C31791CAB900DC5083 /* contemporary-ios7.png */; };
+		1D6469C61791CBB800DC5083 /* modern-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6469C41791CAB900DC5083 /* modern-ios7.png */; };
 		1D657CE81726FFD700F5545A /* harnglyph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D657CE71726FFD700F5545A /* harnglyph@2x.png */; };
 		1D66A5711715B98700641B84 /* HarnLogoSquare@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D66A5701715B98700641B84 /* HarnLogoSquare@2x.png */; };
 		1D6EC699171CA4DA00186AE4 /* iPhone3_5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D6EC698171CA4DA00186AE4 /* iPhone3_5.storyboard */; };
@@ -308,6 +310,8 @@
 		1D62063B16CB480900203DA8 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		1D62063D16CB481100203DA8 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		1D641B071716F06800C26210 /* sahara.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sahara.png; path = ../sahara.png; sourceTree = "<group>"; };
+		1D6469C31791CAB900DC5083 /* contemporary-ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "contemporary-ios7.png"; sourceTree = "<group>"; };
+		1D6469C41791CAB900DC5083 /* modern-ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "modern-ios7.png"; sourceTree = "<group>"; };
 		1D657CE71726FFD700F5545A /* harnglyph@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "harnglyph@2x.png"; sourceTree = "<group>"; };
 		1D66A5701715B98700641B84 /* HarnLogoSquare@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HarnLogoSquare@2x.png"; sourceTree = "<group>"; };
 		1D6EC698171CA4DA00186AE4 /* iPhone3_5.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone3_5.storyboard; sourceTree = "<group>"; };
@@ -617,6 +621,8 @@
 				1D0A9053177508B400246ECD /* Ancient America - ios7.png */,
 				1D0A904C177506B800246ECD /* camera-ios7.png */,
 				1D0A904D177506B800246ECD /* dragon-ios7.png */,
+				1D6469C31791CAB900DC5083 /* contemporary-ios7.png */,
+				1D6469C41791CAB900DC5083 /* modern-ios7.png */,
 			);
 			name = iOS7;
 			sourceTree = "<group>";
@@ -1056,6 +1062,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
+				TargetAttributes = {
+					1D6058900D05DD3D006BFB54 = {
+						DevelopmentTeam = XH25EXN37U;
+					};
+				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "HARN" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1133,6 +1144,7 @@
 				1D99875A1780B14100531EF1 /* Ancient America - ios7.png in Resources */,
 				8074E9AE171770350057664C /* Indigo-Resist-Dyed-Cloth.jpg in Resources */,
 				8074E9AF171770350057664C /* Koranic-Board-tb.jpg in Resources */,
+				1D6469C51791CBB400DC5083 /* contemporary-ios7.png in Resources */,
 				8074E9B0171770350057664C /* Koranic-Board.jpg in Resources */,
 				8074E9B1171770350057664C /* Maternity-Figure-tb.jpg in Resources */,
 				8074E9B2171770350057664C /* Maternity-Figure.jpg in Resources */,
@@ -1155,6 +1167,7 @@
 				8074E9CA171770350057664C /* Standing-figure-in-the-Laughing-Child-form-tb.jpg in Resources */,
 				8074E9CB171770350057664C /* Standing-figure-in-the-Laughing-Child-form.jpg in Resources */,
 				8074E9CE171770350057664C /* Tripod-Plate-with-Rain-Serpent-tb.jpg in Resources */,
+				1D6469C61791CBB800DC5083 /* modern-ios7.png in Resources */,
 				8074E9CF171770350057664C /* Tripod-Plate-with-Rain-Serpent.jpg in Resources */,
 				8074E9D0171770350057664C /* Asian.txt in Resources */,
 				8074E9D1171770350057664C /* Beauties-in-the-Garden-tb.jpg in Resources */,
@@ -1352,6 +1365,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1372,6 +1386,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HARN_Prefix.pch;
