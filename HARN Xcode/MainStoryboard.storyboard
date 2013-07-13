@@ -14,7 +14,7 @@
                         <viewControllerLayoutGuide type="bottom" id="1bR-Kf-1wj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="p1q-Nm-VuS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DaG-lQ-fex">
@@ -1727,7 +1727,7 @@ Cg
                         <viewControllerLayoutGuide type="bottom" id="mzV-HI-NFn"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ned-qV-P8g" userLabel="Bottom View">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zWt-9L-fD6">
@@ -1903,7 +1903,7 @@ Cg
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="F7t-B6-5ds" customClass="CollectionViewController" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="YTK-l6-Meg">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -1914,7 +1914,7 @@ Cg
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="blankwhitebacktextureground.png" id="Hko-S7-kdo">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </imageView>
                         <cells>
@@ -2014,7 +2014,7 @@ Cg
                         <viewControllerLayoutGuide type="bottom" id="G2f-tk-gCa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="orO-jg-NmW">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="retake.png" translatesAutoresizingMaskIntoConstraints="NO" id="EWr-Jk-RvE" userLabel="Background">
@@ -2111,7 +2111,7 @@ Cg
                         <viewControllerLayoutGuide type="bottom" id="aeb-fy-Ldl"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="i7K-pV-HdI">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="hWy-w2-PsC">
@@ -2212,7 +2212,7 @@ Cg
                         <viewControllerLayoutGuide type="bottom" id="Vhk-un-3ud"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wUG-DZ-8eH">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bu4-ii-N8T">
@@ -2263,7 +2263,7 @@ Cg
                         <viewControllerLayoutGuide type="bottom" id="kzU-gq-mpo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iLY-by-ptg">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="comingsoon.png" translatesAutoresizingMaskIntoConstraints="NO" id="oE8-aZ-enl">
@@ -2334,24 +2334,31 @@ Cg
                         <viewControllerLayoutGuide type="bottom" id="huS-BY-aVM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="61W-73-Rth">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="gallerybackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="1hJ-6o-kN4">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="gallerybackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="1hJ-6o-kN4">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="casey.png" translatesAutoresizingMaskIntoConstraints="NO" id="NrS-Eo-Amt">
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="casey.png" translatesAutoresizingMaskIntoConstraints="NO" id="NrS-Eo-Amt">
                                 <rect key="frame" x="20" y="81" width="127" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="hu8-Ee-BXa"/>
+                                    <constraint firstAttribute="height" constant="132" id="vny-2A-56p"/>
+                                </constraints>
                             </imageView>
-                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="lauren.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hoz-fc-O0G">
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="lauren.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hoz-fc-O0G">
                                 <rect key="frame" x="173" y="81" width="127" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RTF-9m-7Z3">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RTF-9m-7Z3">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="bfF-jL-sBF"/>
+                                </constraints>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <items>
                                     <navigationItem title="About This App" id="Dq7-WM-oHe">
@@ -2363,8 +2370,8 @@ Cg
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2vH-9h-suJ">
-                                <rect key="frame" x="20" y="227" width="280" height="255"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2vH-9h-suJ">
+                                <rect key="frame" x="20" y="228" width="280" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">The HARN app was crafted with care by Casey Feldman and Lauren Gray (Exception Mark Inc.) in collaboration with the University of Florida's HARN Museum of Art for their undergraduate senior project in University of Florida's Department of Computer Science. Casey and Lauren are both Digital Arts &amp; Sciences majors.
 
@@ -2374,9 +2381,13 @@ Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead1"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDU-cD-dnQ">
-                                <rect key="frame" x="25" y="504" width="118" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDU-cD-dnQ">
+                                <rect key="frame" x="25" y="422" width="118" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="nvo-GU-8Er"/>
+                                    <constraint firstAttribute="height" constant="44" id="p5d-4C-fUb"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline2"/>
                                 <state key="normal" title="Follow Casey" backgroundImage="blackbutton.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2389,8 +2400,8 @@ Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath
                                     <action selector="visitSite:" destination="ItQ-k4-DfS" eventType="touchUpInside" id="2jC-Pi-jkx"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqC-Ix-eSC">
-                                <rect key="frame" x="178" y="504" width="118" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqC-Ix-eSC">
+                                <rect key="frame" x="178" y="422" width="118" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline2"/>
                                 <state key="normal" title="Follow Lauren" backgroundImage="blackbutton.png">
@@ -2407,6 +2418,31 @@ Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gqC-Ix-eSC" secondAttribute="trailing" constant="24" id="05v-U4-OvY"/>
+                            <constraint firstItem="2vH-9h-suJ" firstAttribute="top" secondItem="NrS-Eo-Amt" secondAttribute="bottom" constant="15" id="2g0-9u-AHV"/>
+                            <constraint firstItem="SDU-cD-dnQ" firstAttribute="leading" secondItem="61W-73-Rth" secondAttribute="leading" constant="25" id="46S-3q-KdA"/>
+                            <constraint firstAttribute="trailing" secondItem="Hoz-fc-O0G" secondAttribute="trailing" constant="20" symbolic="YES" id="4Ir-To-Ctp"/>
+                            <constraint firstItem="Hoz-fc-O0G" firstAttribute="leading" secondItem="NrS-Eo-Amt" secondAttribute="trailing" constant="26" id="Cpw-7b-Smk"/>
+                            <constraint firstItem="NrS-Eo-Amt" firstAttribute="leading" secondItem="61W-73-Rth" secondAttribute="leading" constant="20" symbolic="YES" id="ElG-HD-0AY"/>
+                            <constraint firstItem="Hoz-fc-O0G" firstAttribute="bottom" secondItem="NrS-Eo-Amt" secondAttribute="bottom" id="FoN-aE-lD3"/>
+                            <constraint firstItem="NrS-Eo-Amt" firstAttribute="top" secondItem="RTF-9m-7Z3" secondAttribute="bottom" constant="17" id="H9K-2v-kVb"/>
+                            <constraint firstItem="SDU-cD-dnQ" firstAttribute="top" secondItem="2vH-9h-suJ" secondAttribute="bottom" constant="14" id="Q24-cd-nzQ"/>
+                            <constraint firstAttribute="bottom" secondItem="1hJ-6o-kN4" secondAttribute="bottom" id="TIZ-Yu-75Y"/>
+                            <constraint firstItem="gqC-Ix-eSC" firstAttribute="bottom" secondItem="SDU-cD-dnQ" secondAttribute="bottom" id="Ueu-2P-EzF"/>
+                            <constraint firstItem="RTF-9m-7Z3" firstAttribute="leading" secondItem="61W-73-Rth" secondAttribute="leading" id="WB3-W7-ZZe"/>
+                            <constraint firstItem="Hoz-fc-O0G" firstAttribute="trailing" secondItem="2vH-9h-suJ" secondAttribute="trailing" id="Yuj-de-jvf"/>
+                            <constraint firstItem="1hJ-6o-kN4" firstAttribute="leading" secondItem="RTF-9m-7Z3" secondAttribute="leading" id="a1U-Ok-L8V"/>
+                            <constraint firstItem="SDU-cD-dnQ" firstAttribute="top" secondItem="gqC-Ix-eSC" secondAttribute="top" id="cPq-YR-cwN"/>
+                            <constraint firstItem="2vH-9h-suJ" firstAttribute="centerX" secondItem="RTF-9m-7Z3" secondAttribute="centerX" id="e4m-Io-llQ"/>
+                            <constraint firstItem="2vH-9h-suJ" firstAttribute="leading" secondItem="NrS-Eo-Amt" secondAttribute="leading" id="f4y-hs-Fyl"/>
+                            <constraint firstItem="gqC-Ix-eSC" firstAttribute="leading" secondItem="SDU-cD-dnQ" secondAttribute="trailing" constant="35" id="g96-II-8V4"/>
+                            <constraint firstItem="1hJ-6o-kN4" firstAttribute="trailing" secondItem="RTF-9m-7Z3" secondAttribute="trailing" id="hcY-8c-rUh"/>
+                            <constraint firstItem="huS-BY-aVM" firstAttribute="top" secondItem="SDU-cD-dnQ" secondAttribute="bottom" constant="14" id="iGC-7p-aMv"/>
+                            <constraint firstItem="RTF-9m-7Z3" firstAttribute="top" secondItem="UgS-lp-RkD" secondAttribute="bottom" id="ngE-Wk-5Xz"/>
+                            <constraint firstItem="1hJ-6o-kN4" firstAttribute="top" secondItem="61W-73-Rth" secondAttribute="top" id="rhM-Z4-eUn"/>
+                            <constraint firstItem="Hoz-fc-O0G" firstAttribute="top" secondItem="NrS-Eo-Amt" secondAttribute="top" id="veR-Yb-TXY"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Hxo-ob-Z4v" appends="YES" id="Jzg-Ez-N2u"/>
                         </connections>
@@ -2437,7 +2473,7 @@ Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath
                         <viewControllerLayoutGuide type="bottom" id="E8A-tL-a57"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9QC-rq-76I">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pp-AU-HW8">
@@ -2492,27 +2528,33 @@ Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath
                         <viewControllerLayoutGuide type="bottom" id="gk5-HD-ERo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TRj-Va-GtK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="gallerybackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="s0p-iH-dwF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="gallerybackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="s0p-iH-dwF">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <gestureRecognizers/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9Q0-Yc-Rk1">
-                                <rect key="frame" x="20" y="228" width="280" height="253"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9Q0-Yc-Rk1">
+                                <rect key="frame" x="20" y="228" width="280" height="181"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="gKP-6w-slT"/>
+                                </constraints>
                                 <string key="text">The University of Florida’s Harn Museum of Art collaborates with university and community partners to inspire, educate and enrich people’s lives through art. The museum brings the joy of experiencing great works of art to diverse university, community, national and global audiences through relevant and enlightening art collections, exhibitions and learning opportunities.
 
 Admission is free.</string>
                                 <color key="textColor" red="0.53333050270000004" green="0.53333050270000004" blue="0.53333050270000004" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead1"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12.5"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pO9-GW-bfd">
-                                <rect key="frame" x="25" y="504" width="118" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pO9-GW-bfd">
+                                <rect key="frame" x="25" y="510" width="118" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="jYQ-Ge-3Th"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline2"/>
                                 <state key="normal" title="Facebook" backgroundImage="blackbutton.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2525,9 +2567,12 @@ Admission is free.</string>
                                     <action selector="visitSite:" destination="3Z6-it-NBN" eventType="touchUpInside" id="qUY-cb-cSF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cky-19-5zi">
-                                <rect key="frame" x="178" y="504" width="118" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cky-19-5zi">
+                                <rect key="frame" x="177" y="510" width="118" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hl8-XG-8KU"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline2"/>
                                 <state key="normal" title="Visit Our Site" backgroundImage="blackbutton.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2540,13 +2585,19 @@ Admission is free.</string>
                                     <action selector="visitSite:" destination="3Z6-it-NBN" eventType="touchUpInside" id="HIk-kc-REe"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="harnfront.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vkz-Xz-m07">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="harnfront.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vkz-Xz-m07">
                                 <rect key="frame" x="0.0" y="64" width="320" height="156"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="156" id="pZb-zP-k1d"/>
+                                </constraints>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h7V-zq-KrJ">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7V-zq-KrJ">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="QuQ-q1-YA5"/>
+                                </constraints>
                                 <color key="tintColor" red="0.53333050270000004" green="0.53333050270000004" blue="0.53333050270000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="About The HARN" id="9zM-U0-slY">
@@ -2560,6 +2611,28 @@ Admission is free.</string>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vkz-Xz-m07" firstAttribute="leading" secondItem="h7V-zq-KrJ" secondAttribute="leading" id="0Zc-Zk-9HJ"/>
+                            <constraint firstItem="vkz-Xz-m07" firstAttribute="trailing" secondItem="h7V-zq-KrJ" secondAttribute="trailing" id="75v-a9-csg"/>
+                            <constraint firstItem="cky-19-5zi" firstAttribute="top" secondItem="pO9-GW-bfd" secondAttribute="top" id="7D2-d8-m3W"/>
+                            <constraint firstItem="h7V-zq-KrJ" firstAttribute="leading" secondItem="s0p-iH-dwF" secondAttribute="leading" id="8Z7-O8-45O"/>
+                            <constraint firstItem="9Q0-Yc-Rk1" firstAttribute="leading" secondItem="TRj-Va-GtK" secondAttribute="leading" constant="20" symbolic="YES" id="FDy-N7-YeA"/>
+                            <constraint firstItem="vkz-Xz-m07" firstAttribute="centerX" secondItem="9Q0-Yc-Rk1" secondAttribute="centerX" id="OqM-U6-ZrA"/>
+                            <constraint firstAttribute="trailing" secondItem="cky-19-5zi" secondAttribute="trailing" constant="25" id="PQ3-dF-vVP"/>
+                            <constraint firstItem="9Q0-Yc-Rk1" firstAttribute="top" secondItem="vkz-Xz-m07" secondAttribute="bottom" constant="8" symbolic="YES" id="Rur-xw-GNO"/>
+                            <constraint firstItem="vkz-Xz-m07" firstAttribute="top" secondItem="h7V-zq-KrJ" secondAttribute="bottom" id="TdW-yH-dEl"/>
+                            <constraint firstItem="pO9-GW-bfd" firstAttribute="top" relation="greaterThanOrEqual" secondItem="9Q0-Yc-Rk1" secondAttribute="bottom" constant="14" id="Uao-5h-myX"/>
+                            <constraint firstItem="cky-19-5zi" firstAttribute="leading" secondItem="pO9-GW-bfd" secondAttribute="trailing" constant="34" id="UyN-Xz-KaI"/>
+                            <constraint firstItem="h7V-zq-KrJ" firstAttribute="top" secondItem="TRj-Va-GtK" secondAttribute="top" constant="20" id="dFy-AL-I7z"/>
+                            <constraint firstItem="h7V-zq-KrJ" firstAttribute="trailing" secondItem="s0p-iH-dwF" secondAttribute="trailing" id="jGj-Fa-d4q"/>
+                            <constraint firstItem="s0p-iH-dwF" firstAttribute="top" secondItem="TRj-Va-GtK" secondAttribute="top" id="kKM-zZ-ewA"/>
+                            <constraint firstItem="s0p-iH-dwF" firstAttribute="bottom" secondItem="TRj-Va-GtK" secondAttribute="bottom" id="li6-5j-vwI"/>
+                            <constraint firstItem="pO9-GW-bfd" firstAttribute="bottom" secondItem="cky-19-5zi" secondAttribute="bottom" id="lkh-CR-HMq"/>
+                            <constraint firstItem="pO9-GW-bfd" firstAttribute="leading" secondItem="TRj-Va-GtK" secondAttribute="leading" constant="25" id="mjl-6d-pgw"/>
+                            <constraint firstItem="gk5-HD-ERo" firstAttribute="top" secondItem="pO9-GW-bfd" secondAttribute="bottom" constant="14" id="sk3-nC-V2y"/>
+                            <constraint firstItem="vkz-Xz-m07" firstAttribute="leading" secondItem="TRj-Va-GtK" secondAttribute="leading" id="soM-PF-eMv"/>
+                            <constraint firstAttribute="trailing" secondItem="9Q0-Yc-Rk1" secondAttribute="trailing" constant="20" symbolic="YES" id="yVo-vS-dfI"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="XMD-0A-EZP" appends="YES" id="GTJ-su-NiF"/>
                         </connections>
@@ -2578,7 +2651,7 @@ Admission is free.</string>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-571" y="-55"/>
+            <point key="canvasLocation" x="-493" y="-55"/>
         </scene>
     </scenes>
     <resources>
@@ -2597,7 +2670,7 @@ Admission is free.</string>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="HIp-HR-2YJ"/>
