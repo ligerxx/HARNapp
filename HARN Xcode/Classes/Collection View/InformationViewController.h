@@ -20,6 +20,7 @@
 @property (nonatomic, strong) NSString* artTitle;
 @property (nonatomic, strong) NSString* artDescription;
 @property (strong, nonatomic) IBOutlet UITextView *descriptionOfWork;
+@property (nonatomic) IBOutlet UINavigationBar *navBar;
 @property NSInteger currentSize;
 
 -(void)setArtTitle:(NSString *)name;

@@ -15,6 +15,7 @@
 
 @implementation InformationViewController
 
+@synthesize navBar;
 @synthesize artTitle = _artTitle;
 @synthesize artDescription = _artDescription;
 
@@ -47,6 +48,8 @@
 {
     [super viewDidLoad];
     
+    NSLog(@"%@", navBar.barTintColor);
+    
     self.descriptionOfWork.clipsToBounds = YES;
     self.descriptionOfWork.layer.cornerRadius = 10.0f;
     
@@ -58,11 +61,17 @@
     }
     _smallerFontSizeF = _fontSizeF-12;
     
+    //Make sure the color of the bar buttons in the Nav Bar are the same as the collection they are currently in. iOS 7 style
+    for( UIBarButtonItem * button in self.navBar.subviews)
+    {
+        button.tintColor = self.navBar.barTintColor;
+    }
+    
     [self updateDisplay];
     
     // write the size the font loaded at
-    NSLog(@"%f", _fontSizeF);
-    NSLog(@"%f", _smallerFontSizeF);
+    //NSLog(@"%f", _fontSizeF);
+    //NSLog(@"%f", _smallerFontSizeF);
 }
 
 - (void)updateDisplay {

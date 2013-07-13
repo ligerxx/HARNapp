@@ -36,6 +36,8 @@
 @property int *currentViewIndex;
 @property (strong, nonatomic) NSArray *arrayOfArt;
 
+@property (strong) IBOutlet UIButton *info;
+
 //Used for gesture navigation
 -(IBAction)swipedLeft:(UIGestureRecognizer *)sender;
 //-(IBAction)swipedRight:(UIGestureRecognizer *)sender;

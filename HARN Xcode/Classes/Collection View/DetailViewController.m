@@ -17,20 +17,20 @@
 
 @implementation DetailViewController
 
-@synthesize extendedDescription;
+@synthesize arrayOfArt, artDescription, artTitle, currentViewIndex, extendedDescription, info, theImage, previewImage;
 
 -(void)setImage:(UIImage *)image
 {
-    [_previewImage setImage:image];
+    [previewImage setImage:image];
 }
 -(void)setArtTitle:(NSString *)name
 {
-    _artTitle = name;
+    artTitle = name;
     
 }
 -(void)setArtDescription:(NSString *)someDescription
 {
-    _artDescription = someDescription;
+    artDescription = someDescription;
 }
 
 
@@ -53,9 +53,9 @@
     //TAKEN OUT FOR THIS RELEASE - THIS IS THE CUSTOM CLASS THAT ADDS THE BUTTON ADD TO FAVORITES
     //NSArray *applicationActivities = @[[[addToFavoritesActivity alloc] init]];
     
-    NSString *sharedText = [[NSString alloc] initWithFormat:@"I found %@ in the HARN app. Check it out!", _artTitle]; //This string would be the initial text that is in the share sheet
+    NSString *sharedText = [[NSString alloc] initWithFormat:@"I found %@ in the HARN app. Check it out!", artTitle]; //This string would be the initial text that is in the share sheet
     
-    sharedItems = @[sharedText, _previewImage.image]; //adding the text and image into the array that is initializing below
+    sharedItems = @[sharedText, previewImage.image]; //adding the text and image into the array that is initializing below
     
     
     UIActivityViewController *shareSheet = [[UIActivityViewController alloc] initWithActivityItems:sharedItems applicationActivities:nil];
@@ -100,10 +100,12 @@
         self.navigationItem.leftBarButtonItem = nil;
     }
         
-    [_previewImage setImage:_theImage];
+    [previewImage setImage:theImage];
     
-    _titleOfWork.text = _artTitle;
-    _descriptionOfWork.text = _artDescription;
+    info.tintColor = self.navigationController.navigationBar.tintColor;
+    
+    _titleOfWork.text = artTitle;
+    _descriptionOfWork.text = artDescription;
     
 }
 
@@ -122,6 +124,9 @@
         
         infoView.artTitle = self.artTitle;
         infoView.artDescription = extendedDescription;
+        
+        NSLog(@"The tint color of the info button is: %@\nThis color should transfer to the information view's buttons at the top", info.tintColor);
+        infoView.navBar.barTintColor = info.tintColor;
     }
 }
 
