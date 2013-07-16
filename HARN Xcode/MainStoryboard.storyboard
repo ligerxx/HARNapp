@@ -1758,8 +1758,8 @@ Cg
                                     <navigationItem id="aYN-tP-iGN"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="HARN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpL-P4-j1m">
-                                <rect key="frame" x="-86" y="75" width="62" height="26"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="HARN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpL-P4-j1m">
+                                <rect key="frame" x="103" y="29" width="62" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" staticText="YES" notEnabled="YES"/>
@@ -1770,17 +1770,20 @@ Cg
                             <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ic6-P1-Y3U" userLabel="Top View">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="gallerybackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="HL7-mA-Tas">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="gallerybackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="HL7-mA-Tas">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="HarnLogoSquare.png" translatesAutoresizingMaskIntoConstraints="NO" id="brI-Eh-j9V">
                                         <rect key="frame" x="92" y="20" width="136" height="127"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="127" id="7xB-xY-gxn"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="127" id="7xB-xY-gxn"/>
                                         </constraints>
                                     </imageView>
-                                    <containerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1FI-OK-9Cx">
+                                    <containerView autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1FI-OK-9Cx">
                                         <rect key="frame" x="0.0" y="189" width="320" height="379"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="379" placeholder="YES" id="fOV-s4-dfq"/>
+                                        </constraints>
                                         <connections>
                                             <segue destination="SvH-Ag-GkU" kind="embed" id="zb0-dV-rd0"/>
                                         </connections>
@@ -1818,21 +1821,24 @@ Cg
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="H3K-9T-JXu" firstAttribute="leading" secondItem="ic6-P1-Y3U" secondAttribute="leading" constant="13" id="29y-5J-Vpe"/>
+                                    <constraint firstAttribute="width" constant="320" id="2mk-HF-2sK"/>
+                                    <constraint firstItem="brI-Eh-j9V" firstAttribute="top" secondItem="ic6-P1-Y3U" secondAttribute="top" constant="20" symbolic="YES" id="32B-Uy-EZb"/>
                                     <constraint firstAttribute="bottom" secondItem="1FI-OK-9Cx" secondAttribute="bottom" id="4CT-X3-kuO"/>
-                                    <constraint firstAttribute="trailing" secondItem="brI-Eh-j9V" secondAttribute="trailing" constant="92" id="4Kg-oi-O2e"/>
                                     <constraint firstItem="1FI-OK-9Cx" firstAttribute="top" secondItem="DhP-Qs-mRc" secondAttribute="bottom" constant="8" symbolic="YES" id="6Va-vE-ykm"/>
                                     <constraint firstItem="H3K-9T-JXu" firstAttribute="top" secondItem="ic6-P1-Y3U" secondAttribute="top" constant="29" id="7Rr-e5-2Av"/>
-                                    <constraint firstItem="brI-Eh-j9V" firstAttribute="leading" secondItem="H3K-9T-JXu" secondAttribute="trailing" constant="53" id="7mU-So-mGJ"/>
-                                    <constraint firstItem="1FI-OK-9Cx" firstAttribute="centerX" secondItem="DhP-Qs-mRc" secondAttribute="centerX" id="CVh-Zk-CsG"/>
                                     <constraint firstItem="HL7-mA-Tas" firstAttribute="top" secondItem="ic6-P1-Y3U" secondAttribute="top" id="IHe-av-6Gc"/>
                                     <constraint firstItem="HL7-mA-Tas" firstAttribute="height" secondItem="ic6-P1-Y3U" secondAttribute="height" id="ILN-bo-DMl"/>
+                                    <constraint firstAttribute="centerX" secondItem="brI-Eh-j9V" secondAttribute="centerX" id="ITl-8R-dhQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="brI-Eh-j9V" secondAttribute="trailing" constant="92" id="Iag-PA-mJB"/>
+                                    <constraint firstItem="1FI-OK-9Cx" firstAttribute="bottom" secondItem="ic6-P1-Y3U" secondAttribute="bottom" id="IuA-bX-ovK"/>
                                     <constraint firstItem="HL7-mA-Tas" firstAttribute="leading" secondItem="ic6-P1-Y3U" secondAttribute="leading" id="Lv0-wL-EJU"/>
-                                    <constraint firstItem="brI-Eh-j9V" firstAttribute="centerX" secondItem="1FI-OK-9Cx" secondAttribute="centerX" id="Rme-8y-9iT"/>
+                                    <constraint firstItem="brI-Eh-j9V" firstAttribute="leading" secondItem="H3K-9T-JXu" secondAttribute="trailing" constant="53" id="OhU-M7-R2A"/>
                                     <constraint firstItem="1FI-OK-9Cx" firstAttribute="trailing" secondItem="ic6-P1-Y3U" secondAttribute="trailing" id="URu-Lz-p9t"/>
-                                    <constraint firstItem="brI-Eh-j9V" firstAttribute="top" secondItem="ic6-P1-Y3U" secondAttribute="top" constant="20" symbolic="YES" id="ZQI-LQ-fBu"/>
                                     <constraint firstItem="HL7-mA-Tas" firstAttribute="leading" secondItem="1FI-OK-9Cx" secondAttribute="leading" id="blj-hm-QgE"/>
+                                    <constraint firstAttribute="centerX" secondItem="1FI-OK-9Cx" secondAttribute="centerX" id="bso-Q0-sI0"/>
                                     <constraint firstItem="HL7-mA-Tas" firstAttribute="trailing" secondItem="1FI-OK-9Cx" secondAttribute="trailing" id="eBj-I3-HTG"/>
                                     <constraint firstItem="DhP-Qs-mRc" firstAttribute="top" secondItem="brI-Eh-j9V" secondAttribute="bottom" constant="13" id="sAY-BE-3mP"/>
+                                    <constraint firstAttribute="centerX" secondItem="DhP-Qs-mRc" secondAttribute="centerX" id="veU-7B-Z54"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="ZCF-kN-6zS" appends="YES" id="SGq-KL-UDm"/>
@@ -1841,16 +1847,18 @@ Cg
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="cpL-P4-j1m" firstAttribute="centerY" secondItem="hpK-S1-wZL" secondAttribute="centerY" id="1lE-nW-0US"/>
                             <constraint firstItem="ic6-P1-Y3U" firstAttribute="top" secondItem="Ned-qV-P8g" secondAttribute="top" id="4XV-Wl-EKp"/>
-                            <constraint firstItem="zWt-9L-fD6" firstAttribute="bottom" secondItem="ic6-P1-Y3U" secondAttribute="bottom" id="9Vw-kl-RlX"/>
+                            <constraint firstItem="ic6-P1-Y3U" firstAttribute="bottom" secondItem="zWt-9L-fD6" secondAttribute="bottom" placeholder="YES" id="7aJ-1B-2YW"/>
                             <constraint firstItem="zWt-9L-fD6" firstAttribute="trailing" secondItem="Ned-qV-P8g" secondAttribute="trailing" id="DXz-99-KuD"/>
                             <constraint firstItem="zWt-9L-fD6" firstAttribute="leading" secondItem="Ned-qV-P8g" secondAttribute="leading" id="IgS-qh-4MU"/>
+                            <constraint firstItem="ic6-P1-Y3U" firstAttribute="leading" secondItem="hpK-S1-wZL" secondAttribute="leading" placeholder="YES" id="Tu3-9g-QhD"/>
                             <constraint firstItem="zWt-9L-fD6" firstAttribute="bottom" secondItem="Ned-qV-P8g" secondAttribute="bottom" id="URe-HS-GcI"/>
+                            <constraint firstItem="ic6-P1-Y3U" firstAttribute="trailing" secondItem="hpK-S1-wZL" secondAttribute="trailing" placeholder="YES" id="XM7-iP-3s1"/>
                             <constraint firstItem="zWt-9L-fD6" firstAttribute="trailing" secondItem="hpK-S1-wZL" secondAttribute="trailing" id="arT-wg-vS3"/>
                             <constraint firstItem="zWt-9L-fD6" firstAttribute="leading" secondItem="hpK-S1-wZL" secondAttribute="leading" id="eIZ-x5-Pjh"/>
-                            <constraint firstItem="ic6-P1-Y3U" firstAttribute="leading" secondItem="zWt-9L-fD6" secondAttribute="leading" id="gA3-LQ-0Yq"/>
                             <constraint firstItem="hpK-S1-wZL" firstAttribute="top" secondItem="Ned-qV-P8g" secondAttribute="top" constant="20" id="hOX-6s-zFw"/>
-                            <constraint firstItem="ic6-P1-Y3U" firstAttribute="trailing" secondItem="zWt-9L-fD6" secondAttribute="trailing" id="iJ8-Hb-Yjj"/>
+                            <constraint firstItem="cpL-P4-j1m" firstAttribute="leading" secondItem="Ned-qV-P8g" secondAttribute="leading" constant="103" id="pO6-SK-ji0"/>
                             <constraint firstItem="zWt-9L-fD6" firstAttribute="top" secondItem="hpK-S1-wZL" secondAttribute="bottom" id="yHj-Wx-wqW"/>
                         </constraints>
                     </view>
@@ -2070,29 +2078,41 @@ Cg
                         <viewControllerLayoutGuide type="top" id="v2u-1B-g9T"/>
                         <viewControllerLayoutGuide type="bottom" id="ii7-qq-8H7"/>
                     </layoutGuides>
-                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" id="YTf-8g-K4S">
+                    <view key="view" autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" id="YTf-8g-K4S">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="379"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LX-Y5-bRU">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="315"/>
+                            <scrollView opaque="NO" autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LX-Y5-bRU">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="320" id="TWT-w9-9GH"/>
+                                </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="SvH-Ag-GkU" id="yfF-we-3FU"/>
                                 </connections>
                             </scrollView>
-                            <pageControl opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hki-ab-AGK">
-                                <rect key="frame" x="-1" y="303" width="320" height="37"/>
+                            <pageControl opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hki-ab-AGK">
+                                <rect key="frame" x="0.0" y="335" width="320" height="37"/>
                                 <connections>
                                     <action selector="changePage:" destination="SvH-Ag-GkU" eventType="valueChanged" id="LKb-Gq-MpK"/>
                                 </connections>
                             </pageControl>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="hki-ab-AGK" firstAttribute="trailing" secondItem="6LX-Y5-bRU" secondAttribute="trailing" id="7x5-0Q-E56"/>
+                            <constraint firstItem="hki-ab-AGK" firstAttribute="leading" secondItem="6LX-Y5-bRU" secondAttribute="leading" id="9Ls-ZJ-v9f"/>
+                            <constraint firstItem="6LX-Y5-bRU" firstAttribute="top" secondItem="YTf-8g-K4S" secondAttribute="top" id="DVc-mM-Xvd"/>
+                            <constraint firstItem="hki-ab-AGK" firstAttribute="trailing" secondItem="YTf-8g-K4S" secondAttribute="trailing" id="ZWI-px-mTs"/>
+                            <constraint firstItem="hki-ab-AGK" firstAttribute="leading" secondItem="YTf-8g-K4S" secondAttribute="leading" id="kvd-jG-R1W"/>
+                            <constraint firstItem="ii7-qq-8H7" firstAttribute="top" secondItem="hki-ab-AGK" secondAttribute="bottom" constant="7" id="lmo-VF-4oF"/>
+                        </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="pageControl" destination="hki-ab-AGK" id="kFA-Xc-g8a"/>
                         <outlet property="scrollView" destination="6LX-Y5-bRU" id="tXy-YT-wbK"/>
@@ -2115,18 +2135,18 @@ Cg
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="hWy-w2-PsC">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="330"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="300" id="aD2-z4-6jd"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" priority="260" constant="330" id="aD2-z4-6jd"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="lXm-rU-Hb8" appends="YES" id="06C-6v-fhD"/>
                                 </connections>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="249" text="Title of Work" lineBreakMode="wordWrap" numberOfLines="2" preferredMaxLayoutWidth="238" translatesAutoresizingMaskIntoConstraints="NO" id="y8A-Ju-Wkb">
-                                <rect key="frame" x="20" y="310" width="238" height="157"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="249" text="Title of Work" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" preferredMaxLayoutWidth="238" translatesAutoresizingMaskIntoConstraints="NO" id="y8A-Ju-Wkb">
+                                <rect key="frame" x="20" y="340" width="238" height="127"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="R2r-gA-HeS"/>
@@ -2137,6 +2157,9 @@ Cg
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="249" translatesAutoresizingMaskIntoConstraints="NO" id="s27-G7-jtx">
                                 <rect key="frame" x="20" y="477" width="249" height="17"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="0w4-Hl-XLB"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead1"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -2682,6 +2705,6 @@ Admission is free.</string>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="HIp-HR-2YJ"/>
+        <segue reference="q5f-Re-dBj"/>
     </inferredMetricsTieBreakers>
 </document>

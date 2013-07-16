@@ -15,7 +15,7 @@
 
 @implementation InformationViewController
 
-@synthesize navBar;
+@synthesize navBar, navBarTint;
 @synthesize artTitle = _artTitle;
 @synthesize artDescription = _artDescription;
 
@@ -48,8 +48,6 @@
 {
     [super viewDidLoad];
     
-    NSLog(@"%@", navBar.barTintColor);
-    
     self.descriptionOfWork.clipsToBounds = YES;
     self.descriptionOfWork.layer.cornerRadius = 10.0f;
     
@@ -64,7 +62,7 @@
     //Make sure the color of the bar buttons in the Nav Bar are the same as the collection they are currently in. iOS 7 style
     for( UIBarButtonItem * button in self.navBar.subviews)
     {
-        button.tintColor = self.navBar.barTintColor;
+        button.tintColor = navBarTint;
     }
     
     [self updateDisplay];

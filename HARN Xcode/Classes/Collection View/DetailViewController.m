@@ -126,7 +126,7 @@
         infoView.artDescription = extendedDescription;
         
         NSLog(@"The tint color of the info button is: %@\nThis color should transfer to the information view's buttons at the top", info.tintColor);
-        infoView.navBar.barTintColor = info.tintColor;
+        infoView.navBarTint = info.tintColor;
     }
 }
 

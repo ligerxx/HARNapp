@@ -51,13 +51,16 @@
 	nextPage = [[PageViewController alloc] initWithNibName:@"PageView" bundle:nil];
 	[scrollView addSubview:currentPage.view];
 	[scrollView addSubview:nextPage.view];
+    
+    //THIS!!!! HELPING WITH AUTOLAYOUT TRANSLATION PROBLEMS
+    scrollView.translatesAutoresizingMaskIntoConstraints = YES;
 
     /* This gesture is added to the scrollview if a user taps a work of art or its label and then goes to the method goToDetailView
      * which opens the segue "goToDetail" and presents the detail view of the featured work.
      */
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(goToDetailView:)];
     tapRecognizer.numberOfTapsRequired = 1;
-    [self.view addGestureRecognizer:tapRecognizer];
+    [scrollView addGestureRecognizer:tapRecognizer];
     
 	NSInteger widthCount = [[DataSource sharedDataSource] numDataPages];
 	if (widthCount == 0)
@@ -222,22 +225,27 @@
     
    //fade out if 3.5" screen otherwise move it up
    CGSize result = [[UIScreen mainScreen] bounds].size;
-   CGRect scrollViewHeight = mainScreen.container.frame;
+   //CGRect scrollViewHeight = mainScreen.container.frame;
    CGRect keepPageControlerDown = pageControl.frame;
       
    if(result.height != 568)
    {
        mainScreen.nowFeaturing.alpha = 0.0;
        //move the Container
-       scrollViewHeight.origin.y = -120;
+       
+        scrollView.transform = CGAffineTransformTranslate(scrollView.transform, 0.0, -150.0);
+       
    }else{      
     //move Now Featuring Label
     CGRect frame = mainScreen.nowFeaturing.frame;
     frame.origin.y = 31;
     [mainScreen.nowFeaturing setFrame:frame];
     //move the Container
-    scrollView.transform = CGAffineTransformTranslate(scrollView.transform, 0.0, -250.0);
-    //scrollViewHeight.origin.y = -150;
+       
+    scrollView.transform = CGAffineTransformTranslate(scrollView.transform, 0.0, -150.0);
+    
+       
+       //scrollViewHeight.origin.y = -150;
    }
 
     //[scrollView setFrame:scrollViewHeight];
@@ -262,18 +270,16 @@
       //fade out if 3.5" screen otherwise move it up
       CGSize result = [[UIScreen mainScreen] bounds].size;
       
-      CGRect containerFrame = mainScreen.container.frame;
-      CGRect scrollViewHeight = mainScreen.container.frame;
+      //CGRect containerFrame = mainScreen.container.frame;
+      //CGRect scrollViewHeight = mainScreen.container.frame;
       CGRect keepPageControlerDown = pageControl.frame;
       
       if(result.height != 568)
       {
           mainScreen.nowFeaturing.alpha = 1.0;
           //move the Container
-          scrollViewHeight.origin.y = +3;
-          containerFrame.size.height = 327;
-          [mainScreen.container setFrame:containerFrame];
-          [scrollView setFrame:scrollViewHeight];
+
+          scrollView.transform = CGAffineTransformIdentity;
 
       }else{
           //move Now Featuring Label
@@ -286,6 +292,7 @@
           containerFrame.size.height = 359;
           [mainScreen.container setFrame:containerFrame];
           [scrollView setFrame:scrollViewHeight];*/
+          
           scrollView.transform = CGAffineTransformIdentity;
       }
       

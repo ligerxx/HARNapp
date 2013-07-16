@@ -264,6 +264,7 @@ BOOL _bottomVisible;
     
     // Change the text
     nowFeaturing.text = @"Now Featuring";
+
     
     [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
 }

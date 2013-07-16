@@ -44,6 +44,7 @@
 		1D6469C61791CBB800DC5083 /* modern-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6469C41791CAB900DC5083 /* modern-ios7.png */; };
 		1D657CE81726FFD700F5545A /* harnglyph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D657CE71726FFD700F5545A /* harnglyph@2x.png */; };
 		1D66A5711715B98700641B84 /* HarnLogoSquare@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D66A5701715B98700641B84 /* HarnLogoSquare@2x.png */; };
+		1D6C95DC17947F0500F9ACA3 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE992721773B4130079DFF0 /* Reveal.framework */; };
 		1D6EC699171CA4DA00186AE4 /* iPhone3_5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D6EC698171CA4DA00186AE4 /* iPhone3_5.storyboard */; };
 		1D7090AF16CC063A0074597B /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7090AE16CC063A0074597B /* CameraViewController.m */; };
 		1D76D3BE16D7EFA70074284E /* aA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D76D3BD16D7EFA70074284E /* aA@2x.png */; };
@@ -566,6 +567,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D6C95DC17947F0500F9ACA3 /* Reveal.framework in Frameworks */,
 				1DE992741773B4350079DFF0 /* CFNetwork.framework in Frameworks */,
 				8016D53716CC220B00F20725 /* QuartzCore.framework in Frameworks */,
 				1DA8E15D16CD8A9B002914E4 /* OpenGLES.framework in Frameworks */,
@@ -1367,6 +1369,10 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1388,6 +1394,10 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = HARN_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
