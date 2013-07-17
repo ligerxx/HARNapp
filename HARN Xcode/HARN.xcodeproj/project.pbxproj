@@ -60,6 +60,11 @@
 		1D7DDA7116F2A0CF00BF99E1 /* oceanic.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7DDA6B16F2A0CF00BF99E1 /* oceanic.png */; };
 		1D7E680D171C58BC00D0F42D /* harnmap.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D7E680C171C58BC00D0F42D /* harnmap.png */; };
 		1D7E6810171C5D2000D0F42D /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E680F171C5D2000D0F42D /* MapViewController.m */; };
+		1D84FCA41796464B002BECD1 /* prints-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D84FCA31796464B002BECD1 /* prints-ios7.png */; };
+		1D84FCA617964A3C002BECD1 /* map-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D84FCA517964A3C002BECD1 /* map-ios7.png */; };
+		1D84FCA817964DCF002BECD1 /* about-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D84FCA717964DCF002BECD1 /* about-ios7.png */; };
+		1D84FCAA17964ED3002BECD1 /* harn-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D84FCA917964ED3002BECD1 /* harn-ios7.png */; };
+		1D84FCAC1796505C002BECD1 /* privacy-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D84FCAB1796505C002BECD1 /* privacy-ios7.png */; };
 		1D95457A17259DB700A3B01A /* worldframe_main.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D95457917259DB700A3B01A /* worldframe_main.png */; };
 		1D99875A1780B14100531EF1 /* Ancient America - ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0A9053177508B400246ECD /* Ancient America - ios7.png */; };
 		1D9EAFC91720A03700DD62EA /* mycar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D9EAFC81720A03700DD62EA /* mycar.png */; };
@@ -334,6 +339,11 @@
 		1D7E680C171C58BC00D0F42D /* harnmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = harnmap.png; sourceTree = "<group>"; };
 		1D7E680E171C5D2000D0F42D /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = ../MapViewController.h; sourceTree = "<group>"; };
 		1D7E680F171C5D2000D0F42D /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = ../MapViewController.m; sourceTree = "<group>"; };
+		1D84FCA31796464B002BECD1 /* prints-ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "prints-ios7.png"; sourceTree = "<group>"; };
+		1D84FCA517964A3C002BECD1 /* map-ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map-ios7.png"; sourceTree = "<group>"; };
+		1D84FCA717964DCF002BECD1 /* about-ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about-ios7.png"; sourceTree = "<group>"; };
+		1D84FCA917964ED3002BECD1 /* harn-ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "harn-ios7.png"; sourceTree = "<group>"; };
+		1D84FCAB1796505C002BECD1 /* privacy-ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "privacy-ios7.png"; sourceTree = "<group>"; };
 		1D95457917259DB700A3B01A /* worldframe_main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = worldframe_main.png; sourceTree = "<group>"; };
 		1D9EAFC81720A03700DD62EA /* mycar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mycar.png; sourceTree = "<group>"; };
 		1D9EAFCA1720A18400DD62EA /* mycar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mycar@2x.png"; sourceTree = "<group>"; };
@@ -625,6 +635,11 @@
 				1D0A904D177506B800246ECD /* dragon-ios7.png */,
 				1D6469C31791CAB900DC5083 /* contemporary-ios7.png */,
 				1D6469C41791CAB900DC5083 /* modern-ios7.png */,
+				1D84FCA31796464B002BECD1 /* prints-ios7.png */,
+				1D84FCA517964A3C002BECD1 /* map-ios7.png */,
+				1D84FCA917964ED3002BECD1 /* harn-ios7.png */,
+				1D84FCA717964DCF002BECD1 /* about-ios7.png */,
+				1D84FCAB1796505C002BECD1 /* privacy-ios7.png */,
 			);
 			name = iOS7;
 			sourceTree = "<group>";
@@ -1107,6 +1122,7 @@
 				1D30FACD16E1938E000B1CE2 /* gallerybackground@2x.png in Resources */,
 				80CFA22B16F218F200F90382 /* Properties.plist in Resources */,
 				1DCA55A116F2753800909059 /* comingsoon@2x.png in Resources */,
+				1D84FCAA17964ED3002BECD1 /* harn-ios7.png in Resources */,
 				1DCA55A916F2927D00909059 /* asian.png in Resources */,
 				1DCA55AA16F2927D00909059 /* contemporary.png in Resources */,
 				1DCA55AB16F2927D00909059 /* ancientamerican.png in Resources */,
@@ -1119,6 +1135,7 @@
 				1DC6C89116F2C90000C0B201 /* retake@2x.png in Resources */,
 				1DED7F6416F2D97C0005B3A9 /* camerafiltericon@2x.png in Resources */,
 				1DB9453B16F6A18800EDB437 /* filterpanel@2x.png in Resources */,
+				1D84FCA617964A3C002BECD1 /* map-ios7.png in Resources */,
 				1DB9453D16F6A97400EDB437 /* edit@2x.png in Resources */,
 				1D3F272216FB884800451DCE /* about.png in Resources */,
 				1D3F272416FB895000451DCE /* privacy.png in Resources */,
@@ -1135,6 +1152,7 @@
 				8074E906171735510057664C /* Seated Bodhisattva-tb.jpg in Resources */,
 				8074E907171735510057664C /* Seated Bodhisattva.jpg in Resources */,
 				8074E908171735510057664C /* Vajravarahi.jpg in Resources */,
+				1D84FCA41796464B002BECD1 /* prints-ios7.png in Resources */,
 				8074E9A6171770350057664C /* African.txt in Resources */,
 				8074E9A7171770350057664C /* Cloth-with-Olokun-tb.jpg in Resources */,
 				8074E9A8171770350057664C /* Cloth-with-Olokun.jpg in Resources */,
@@ -1251,6 +1269,7 @@
 				1DD946EB1717A7EC006DD9D8 /* Uma-Mahesvara.jpg in Resources */,
 				1DD946EC1717A7EC006DD9D8 /* Uma-Mahesvara-tb.jpg in Resources */,
 				1DD946EF1717AA20006DD9D8 /* Ireland Reef.jpg in Resources */,
+				1D84FCA817964DCF002BECD1 /* about-ios7.png in Resources */,
 				1DD946F01717AA20006DD9D8 /* Ireland Reef-tb.jpg in Resources */,
 				1DD946F31717AA85006DD9D8 /* Three Men at Union Square.jpg in Resources */,
 				1DD946F41717AA85006DD9D8 /* Three Men at Union Square-tb.jpg in Resources */,
@@ -1287,6 +1306,7 @@
 				1DF4A38F1719057700598443 /* heliconia-tb.jpg in Resources */,
 				1DF4A3921719062B00598443 /* deer.JPG in Resources */,
 				1DF4A3931719062B00598443 /* deer-tb.JPG in Resources */,
+				1D84FCAC1796505C002BECD1 /* privacy-ios7.png in Resources */,
 				1DF4A3961719068100598443 /* dream.JPG in Resources */,
 				1DF4A3971719068100598443 /* dream-tb.JPG in Resources */,
 				1DF4A39A1719073C00598443 /* madhouse.jpg in Resources */,
