@@ -350,6 +350,11 @@
 		1DA6A40C16CAFBEE0021267F /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		1DA8969D1715B88100881D50 /* harn logo orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "harn logo orange.png"; sourceTree = "<group>"; };
 		1DA8E15C16CD8A9B002914E4 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		1DAC4B1E1796F236004A141D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1DAC4B241796F236004A141D /* HARN Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HARN Tests-Info.plist"; sourceTree = "<group>"; };
+		1DAC4B261796F236004A141D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1DAC4B281796F236004A141D /* HARN_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HARN_Tests.m; sourceTree = "<group>"; };
+		1DAC4B2A1796F236004A141D /* HARN Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HARN Tests-Prefix.pch"; sourceTree = "<group>"; };
 		1DAE25A6170E151F00A2967B /* jade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jade.png; sourceTree = "<group>"; };
 		1DAE25A8170E5D9900A2967B /* zen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zen.png; sourceTree = "<group>"; };
 		1DAF8CEF16D6E5060080224C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = "Collection View/DetailViewController.h"; sourceTree = "<group>"; };
@@ -668,6 +673,25 @@
 			name = "Main Screen";
 			sourceTree = "<group>";
 		};
+		1DAC4B221796F236004A141D /* HARN Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC4B281796F236004A141D /* HARN_Tests.m */,
+				1DAC4B231796F236004A141D /* Supporting Files */,
+			);
+			path = "HARN Tests";
+			sourceTree = "<group>";
+		};
+		1DAC4B231796F236004A141D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DAC4B241796F236004A141D /* HARN Tests-Info.plist */,
+				1DAC4B251796F236004A141D /* InfoPlist.strings */,
+				1DAC4B2A1796F236004A141D /* HARN Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		1DAF8CF316D6E6B50080224C /* Collection View */ = {
 			isa = PBXGroup;
 			children = (
@@ -786,6 +810,7 @@
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				1DAC4B221796F236004A141D /* HARN Tests */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
@@ -846,6 +871,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				1DAC4B1E1796F236004A141D /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1378,6 +1404,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1DAC4B251796F236004A141D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DAC4B261796F236004A141D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1D6058940D05DD3E006BFB54 /* Debug */ = {

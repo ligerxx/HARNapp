@@ -2023,13 +2023,16 @@ Cg
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="retake.png" translatesAutoresizingMaskIntoConstraints="NO" id="EWr-Jk-RvE" userLabel="Background">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="retake.png" translatesAutoresizingMaskIntoConstraints="NO" id="EWr-Jk-RvE" userLabel="Background">
                                 <rect key="frame" x="0.0" y="-45" width="320" height="549"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7F-It-TQa" userLabel="Invisible Retake Button">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d7F-It-TQa" userLabel="Invisible Retake Button">
                                 <rect key="frame" x="86" y="186" width="165" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="E56-2v-fm1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -2042,12 +2045,28 @@ Cg
                                     <action selector="showCameraUI:" destination="bzk-Jl-YLS" eventType="touchUpInside" id="KU5-EU-F5M"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mfb-xa-j5R" userLabel="Filtered Image">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="mfb-xa-j5R" userLabel="Filtered Image">
                                 <rect key="frame" x="-7" y="0.0" width="334" height="406"/>
                                 <autoresizingMask key="autoresizingMask"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="406" id="TUC-P3-Gmr"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="G2f-tk-gCa" firstAttribute="top" secondItem="mfb-xa-j5R" secondAttribute="bottom" constant="98" id="FFI-B5-vNE"/>
+                            <constraint firstItem="EWr-Jk-RvE" firstAttribute="top" secondItem="orO-jg-NmW" secondAttribute="top" constant="-45" id="FeA-2V-TYx"/>
+                            <constraint firstAttribute="trailing" secondItem="d7F-It-TQa" secondAttribute="trailing" constant="69" id="Hdg-8z-c5b"/>
+                            <constraint firstItem="EWr-Jk-RvE" firstAttribute="bottom" secondItem="orO-jg-NmW" secondAttribute="bottom" id="LUI-sf-icS"/>
+                            <constraint firstItem="EWr-Jk-RvE" firstAttribute="centerX" secondItem="mfb-xa-j5R" secondAttribute="centerX" id="Wlb-Fv-zkk"/>
+                            <constraint firstItem="d7F-It-TQa" firstAttribute="top" secondItem="orO-jg-NmW" secondAttribute="top" constant="186" id="enP-Rn-uTV"/>
+                            <constraint firstItem="d7F-It-TQa" firstAttribute="leading" secondItem="orO-jg-NmW" secondAttribute="leading" constant="86" id="epS-7s-ofO"/>
+                            <constraint firstItem="mfb-xa-j5R" firstAttribute="leading" secondItem="orO-jg-NmW" secondAttribute="leading" constant="-7" id="j33-7X-JTA"/>
+                            <constraint firstItem="EWr-Jk-RvE" firstAttribute="trailing" secondItem="orO-jg-NmW" secondAttribute="trailing" id="jgW-XA-lbo"/>
+                            <constraint firstItem="mfb-xa-j5R" firstAttribute="top" secondItem="orO-jg-NmW" secondAttribute="top" id="koa-Ye-9U7"/>
+                            <constraint firstItem="EWr-Jk-RvE" firstAttribute="leading" secondItem="orO-jg-NmW" secondAttribute="leading" id="pjQ-Qf-cPp"/>
+                        </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="oJK-qc-wea">
@@ -2299,12 +2318,16 @@ Cg
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="comingsoon.png" translatesAutoresizingMaskIntoConstraints="NO" id="oE8-aZ-enl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="comingsoon.png" translatesAutoresizingMaskIntoConstraints="NO" id="oE8-aZ-enl">
                                 <rect key="frame" x="0.0" y="-42" width="320" height="546"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEM-4Z-pTe">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEM-4Z-pTe">
                                 <rect key="frame" x="189" y="440" width="106" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="7Y6-7T-8uA"/>
+                                    <constraint firstAttribute="width" constant="106" id="If6-aI-Sbl"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="Save Photo" backgroundImage="blackbutton.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2317,13 +2340,17 @@ Cg
                                     <action selector="saveImage:" destination="bAc-KR-bzf" eventType="touchUpInside" id="rD8-AO-LcY"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8gP-fu-xxh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="8gP-fu-xxh">
                                 <rect key="frame" x="25" y="37" width="270" height="355"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soD-oF-5OU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soD-oF-5OU">
                                 <rect key="frame" x="25" y="440" width="106" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="fO3-Gx-jex"/>
+                                    <constraint firstAttribute="width" constant="106" id="fQe-9u-FmX"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="Cancel" backgroundImage="blackbutton.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -2338,6 +2365,24 @@ Cg
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iEM-4Z-pTe" firstAttribute="bottom" secondItem="soD-oF-5OU" secondAttribute="bottom" id="7li-WR-Jsc"/>
+                            <constraint firstItem="oE8-aZ-enl" firstAttribute="leading" secondItem="iLY-by-ptg" secondAttribute="leading" id="BWC-5Z-JLU"/>
+                            <constraint firstAttribute="bottom" secondItem="soD-oF-5OU" secondAttribute="bottom" constant="20" symbolic="YES" id="Bg0-Yd-SrE"/>
+                            <constraint firstItem="oE8-aZ-enl" firstAttribute="centerX" secondItem="8gP-fu-xxh" secondAttribute="centerX" id="F0w-tx-5hk"/>
+                            <constraint firstItem="8gP-fu-xxh" firstAttribute="top" secondItem="bQZ-8e-Rtf" secondAttribute="bottom" constant="37" id="FE2-e7-jw5"/>
+                            <constraint firstItem="iEM-4Z-pTe" firstAttribute="top" secondItem="oE8-aZ-enl" secondAttribute="bottom" constant="-64" id="GdN-nB-mwn"/>
+                            <constraint firstItem="iEM-4Z-pTe" firstAttribute="leading" secondItem="soD-oF-5OU" secondAttribute="trailing" constant="58" id="Ka5-v9-mex"/>
+                            <constraint firstItem="8gP-fu-xxh" firstAttribute="leading" secondItem="soD-oF-5OU" secondAttribute="leading" id="Rtn-2D-T7d"/>
+                            <constraint firstItem="oE8-aZ-enl" firstAttribute="top" secondItem="iLY-by-ptg" secondAttribute="top" constant="-42" id="Thq-zR-ENH"/>
+                            <constraint firstItem="8gP-fu-xxh" firstAttribute="leading" secondItem="iLY-by-ptg" secondAttribute="leading" constant="25" id="V3w-tg-KFO"/>
+                            <constraint firstItem="oE8-aZ-enl" firstAttribute="trailing" secondItem="iLY-by-ptg" secondAttribute="trailing" id="cel-lr-fMK"/>
+                            <constraint firstItem="iEM-4Z-pTe" firstAttribute="trailing" secondItem="8gP-fu-xxh" secondAttribute="trailing" id="sjW-PY-5T4"/>
+                            <constraint firstItem="soD-oF-5OU" firstAttribute="top" secondItem="iEM-4Z-pTe" secondAttribute="top" id="tCr-EY-qOy"/>
+                            <constraint firstItem="soD-oF-5OU" firstAttribute="top" secondItem="oE8-aZ-enl" secondAttribute="bottom" constant="-64" id="wdq-FJ-2HR"/>
+                            <constraint firstItem="soD-oF-5OU" firstAttribute="top" secondItem="8gP-fu-xxh" secondAttribute="bottom" constant="48" id="x5p-Jf-Bku"/>
+                            <constraint firstItem="oE8-aZ-enl" firstAttribute="bottom" secondItem="iLY-by-ptg" secondAttribute="bottom" id="yMr-oZ-I0n"/>
+                        </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="rA1-b1-nDf">

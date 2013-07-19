@@ -370,7 +370,7 @@ bool firstTimeOpen = true;
             filterNameLabel.text =  filter.name;
             filterNameLabel.backgroundColor = [UIColor clearColor];
             filterNameLabel.textColor = [UIColor whiteColor];
-            filterNameLabel.font = [UIFont fontWithName:@"AppleColorEmoji" size:10]; //I don't know why Emoji is used...
+            filterNameLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:10];
             filterNameLabel.textAlignment = NSTextAlignmentCenter;
             
             UIImageView *filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"camerafiltericon@2x.png"]];
@@ -400,7 +400,7 @@ bool firstTimeOpen = true;
             filterNameLabel.text =  filter.name;
             filterNameLabel.backgroundColor = [UIColor clearColor];
             filterNameLabel.textColor = [UIColor whiteColor];
-            filterNameLabel.font = [UIFont fontWithName:@"AppleColorEmoji" size:10]; //I don't know why Emoji is used...
+            filterNameLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:10];
             filterNameLabel.textAlignment = NSTextAlignmentCenter;
             
             UIImageView *filterPreviewImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"original.png"]];
@@ -432,7 +432,7 @@ bool firstTimeOpen = true;
         filterNameLabel.text =  filter.name;
         filterNameLabel.backgroundColor = [UIColor clearColor];
         filterNameLabel.textColor = [UIColor whiteColor];
-        filterNameLabel.font = [UIFont fontWithName:@"AppleColorEmoji" size:10]; //I don't know why Emoji is used...
+        filterNameLabel.font = [UIFont fontWithName:@"HelveticaNeue" size:10];
         filterNameLabel.textAlignment = NSTextAlignmentCenter;
  
         UIImageView *filterPreviewImageView;
@@ -553,8 +553,14 @@ bool firstTimeOpen = true;
     
     CIImage *outputImage = [filter.filter outputImage];
     
+    
+    EAGLContext *myEAGLContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+    NSMutableDictionary *options = [[NSMutableDictionary alloc] init];
+    [options setObject: [NSNull null] forKey: kCIContextWorkingColorSpace];
+    CIContext *newContext = [CIContext contextWithEAGLContext:myEAGLContext options:options];
+    
     CGImageRef cgimg =
-    [self.context createCGImage:outputImage fromRect:[outputImage extent]];
+    [newContext createCGImage:outputImage fromRect:[outputImage extent]];
     
     finalImage = [UIImage imageWithCGImage:cgimg];
 
@@ -576,7 +582,12 @@ bool firstTimeOpen = true;
     if (self) {
         if(_imageView.image != nil)
         {
-            self.context =[CIContext contextWithOptions:nil];
+            //self.context =[CIContext contextWithOptions:nil];
+            EAGLContext *myEAGLContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+            NSMutableDictionary *options = [[NSMutableDictionary alloc] init];
+            [options setObject: [NSNull null] forKey: kCIContextWorkingColorSpace];
+            self.context = [CIContext contextWithEAGLContext:myEAGLContext options:options];
+            
             [self.view addSubview:self.filtersScrollView];
         }
         // Custom initialization
@@ -588,7 +599,13 @@ bool firstTimeOpen = true;
 {
     [super viewDidLoad];
     save.enabled = NO;
-    self.context =[CIContext contextWithOptions:nil];        // Custom initialization
+    //self.context =[CIContext contextWithOptions:nil];        // Custom initialization
+    
+    EAGLContext *myEAGLContext = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+    NSMutableDictionary *options = [[NSMutableDictionary alloc] init];
+    [options setObject: [NSNull null] forKey: kCIContextWorkingColorSpace];
+    self.context = [CIContext contextWithEAGLContext:myEAGLContext options:options];
+    
     self.title = @"Edit";
     self.filtersScrollView = _filterScrollView;
     

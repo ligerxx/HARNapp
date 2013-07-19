@@ -19,7 +19,7 @@
     imageToSave = _imageView.image;
     UIImageWriteToSavedPhotosAlbum((imageToSave), nil, nil, nil);
     
-    //ADD CODE TO LEAVE THE CAMERA UI ALL TOGETHER AND RETURN TO WHATEVER COLLECTION WAS LAST BEING VIEWED IN THE STACK
+    savePhoto.enabled = NO;
 }
 
 
