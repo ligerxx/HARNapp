@@ -24,6 +24,8 @@
 		1D29777616CD77370094FD84 /* FilterPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D29777516CD77370094FD84 /* FilterPreview.m */; };
 		1D2E7B5C177377A1003F4ABB /* retina ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D2E7B5B177377A1003F4ABB /* retina ios7.png */; };
 		1D30FACD16E1938E000B1CE2 /* gallerybackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D30FACC16E1938E000B1CE2 /* gallerybackground@2x.png */; };
+		1D32F8DE1799E88800718574 /* MapGPSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D32F8DD1799E88800718574 /* MapGPSViewController.m */; };
+		1D32F8E01799EA5F00718574 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D32F8DF1799EA5F00718574 /* MapKit.framework */; };
 		1D3623260D0F684500981E51 /* PagingScrollViewAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* PagingScrollViewAppDelegate.m */; };
 		1D3F272216FB884800451DCE /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D3F272116FB884800451DCE /* about.png */; };
 		1D3F272416FB895000451DCE /* privacy.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D3F272316FB895000451DCE /* privacy.png */; };
@@ -65,6 +67,7 @@
 		1D84FCA817964DCF002BECD1 /* about-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D84FCA717964DCF002BECD1 /* about-ios7.png */; };
 		1D84FCAA17964ED3002BECD1 /* harn-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D84FCA917964ED3002BECD1 /* harn-ios7.png */; };
 		1D84FCAC1796505C002BECD1 /* privacy-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D84FCAB1796505C002BECD1 /* privacy-ios7.png */; };
+		1D8D460D179C49DE00BD2278 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8D460C179C49DE00BD2278 /* CoreLocation.framework */; };
 		1D95457A17259DB700A3B01A /* worldframe_main.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D95457917259DB700A3B01A /* worldframe_main.png */; };
 		1D99875A1780B14100531EF1 /* Ancient America - ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0A9053177508B400246ECD /* Ancient America - ios7.png */; };
 		1D9EAFC91720A03700DD62EA /* mycar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D9EAFC81720A03700DD62EA /* mycar.png */; };
@@ -96,6 +99,7 @@
 		1DC3B8B416D6E08F00BFF5ED /* ArtCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC3B8B316D6E08F00BFF5ED /* ArtCell.m */; };
 		1DC3B8B716D6E0FB00BFF5ED /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC3B8B616D6E0FB00BFF5ED /* CollectionViewController.m */; };
 		1DC53B5916B60028003591CD /* mainmenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC53B5816B60028003591CD /* mainmenu.png */; };
+		1DC6C809179B3DCA0006FAA4 /* harngpsoverlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC6C808179B3DCA0006FAA4 /* harngpsoverlay.png */; };
 		1DC6C89116F2C90000C0B201 /* retake@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC6C89016F2C90000C0B201 /* retake@2x.png */; };
 		1DCA55A116F2753800909059 /* comingsoon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DCA55A016F2753800909059 /* comingsoon@2x.png */; };
 		1DCA55A416F28FDF00909059 /* filterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DCA55A316F28FDF00909059 /* filterView.m */; };
@@ -299,6 +303,9 @@
 		1D2E7B5B177377A1003F4ABB /* retina ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "retina ios7.png"; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D30FACC16E1938E000B1CE2 /* gallerybackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gallerybackground@2x.png"; sourceTree = "<group>"; };
+		1D32F8DC1799E88800718574 /* MapGPSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapGPSViewController.h; path = "MapGPS Classes/MapGPSViewController.h"; sourceTree = "<group>"; };
+		1D32F8DD1799E88800718574 /* MapGPSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapGPSViewController.m; path = "MapGPS Classes/MapGPSViewController.m"; sourceTree = "<group>"; };
+		1D32F8DF1799EA5F00718574 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* PagingScrollViewAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagingScrollViewAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* PagingScrollViewAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagingScrollViewAppDelegate.m; sourceTree = "<group>"; };
 		1D3F272116FB884800451DCE /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
@@ -344,6 +351,7 @@
 		1D84FCA717964DCF002BECD1 /* about-ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about-ios7.png"; sourceTree = "<group>"; };
 		1D84FCA917964ED3002BECD1 /* harn-ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "harn-ios7.png"; sourceTree = "<group>"; };
 		1D84FCAB1796505C002BECD1 /* privacy-ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "privacy-ios7.png"; sourceTree = "<group>"; };
+		1D8D460C179C49DE00BD2278 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1D95457917259DB700A3B01A /* worldframe_main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = worldframe_main.png; sourceTree = "<group>"; };
 		1D9EAFC81720A03700DD62EA /* mycar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mycar.png; sourceTree = "<group>"; };
 		1D9EAFCA1720A18400DD62EA /* mycar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mycar@2x.png"; sourceTree = "<group>"; };
@@ -383,6 +391,7 @@
 		1DC3B8B516D6E0FB00BFF5ED /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewController.h; path = "Collection View/CollectionViewController.h"; sourceTree = "<group>"; };
 		1DC3B8B616D6E0FB00BFF5ED /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewController.m; path = "Collection View/CollectionViewController.m"; sourceTree = "<group>"; };
 		1DC53B5816B60028003591CD /* mainmenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainmenu.png; sourceTree = "<group>"; };
+		1DC6C808179B3DCA0006FAA4 /* harngpsoverlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = harngpsoverlay.png; sourceTree = "<group>"; };
 		1DC6C89016F2C90000C0B201 /* retake@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "retake@2x.png"; sourceTree = "<group>"; };
 		1DCA55A016F2753800909059 /* comingsoon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "comingsoon@2x.png"; path = "../comingsoon@2x.png"; sourceTree = "<group>"; };
 		1DCA55A216F28FDF00909059 /* filterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filterView.h; sourceTree = "<group>"; };
@@ -582,6 +591,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D8D460D179C49DE00BD2278 /* CoreLocation.framework in Frameworks */,
+				1D32F8E01799EA5F00718574 /* MapKit.framework in Frameworks */,
 				1D6C95DC17947F0500F9ACA3 /* Reveal.framework in Frameworks */,
 				1DE992741773B4350079DFF0 /* CFNetwork.framework in Frameworks */,
 				8016D53716CC220B00F20725 /* QuartzCore.framework in Frameworks */,
@@ -607,6 +618,8 @@
 				1D5CF7361721A3B200FA3875 /* AboutHarnViewController.m */,
 				1D7E680E171C5D2000D0F42D /* MapViewController.h */,
 				1D7E680F171C5D2000D0F42D /* MapViewController.m */,
+				1D32F8DC1799E88800718574 /* MapGPSViewController.h */,
+				1D32F8DD1799E88800718574 /* MapGPSViewController.m */,
 				1DAF8CF416D6E6CA0080224C /* Camera */,
 				1DAF8CF316D6E6B50080224C /* Collection View */,
 				1D3623240D0F684500981E51 /* PagingScrollViewAppDelegate.h */,
@@ -835,6 +848,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1DC6C808179B3DCA0006FAA4 /* harngpsoverlay.png */,
 				1DB110E41720675100D438F6 /* blankwhitebacktextureground@2x.png */,
 				1D7E680C171C58BC00D0F42D /* harnmap.png */,
 				1DB0B038171BC1C600C53DAF /* Filter Preview Images */,
@@ -861,6 +875,8 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1D8D460C179C49DE00BD2278 /* CoreLocation.framework */,
+				1D32F8DF1799EA5F00718574 /* MapKit.framework */,
 				1DE992731773B4350079DFF0 /* CFNetwork.framework */,
 				1DE992721773B4130079DFF0 /* Reveal.framework */,
 				1DA8E15C16CD8A9B002914E4 /* OpenGLES.framework */,
@@ -1354,6 +1370,7 @@
 				1DB0B049171BC1C600C53DAF /* silver-preview.png in Resources */,
 				1DB0B04A171BC1C600C53DAF /* warhol-preview.png in Resources */,
 				1DB0B04B171BC1C600C53DAF /* xhatch-preview.png in Resources */,
+				1DC6C809179B3DCA0006FAA4 /* harngpsoverlay.png in Resources */,
 				1DB0B04C171BC1C600C53DAF /* zen-preview.png in Resources */,
 				1DB0B04F171BCFC700C53DAF /* Properties-With-Personal.plist in Resources */,
 				1D7E680D171C58BC00D0F42D /* harnmap.png in Resources */,
@@ -1387,6 +1404,7 @@
 				1D7090AF16CC063A0074597B /* CameraViewController.m in Sources */,
 				1D29777616CD77370094FD84 /* FilterPreview.m in Sources */,
 				808DB99816CD7E5F00B591D6 /* TitleViewController.m in Sources */,
+				1D32F8DE1799E88800718574 /* MapGPSViewController.m in Sources */,
 				1DEE8DFA16CD855900A3C9B7 /* UIImageExtension.m in Sources */,
 				1DC3B8B416D6E08F00BFF5ED /* ArtCell.m in Sources */,
 				1DC3B8B716D6E0FB00BFF5ED /* CollectionViewController.m in Sources */,

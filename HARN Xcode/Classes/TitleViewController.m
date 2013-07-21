@@ -245,7 +245,7 @@ BOOL _bottomVisible;
     
     if ([self.selectedCell isEqualToString:@"Map"]) {
         
-        AboutPageViewController *mapPage = [storyboard instantiateViewControllerWithIdentifier:@"Map"];
+        AboutPageViewController *mapPage = [storyboard instantiateViewControllerWithIdentifier:@"NewMap"];
         [self presentViewController:mapPage animated:YES completion:nil];
     }
 
