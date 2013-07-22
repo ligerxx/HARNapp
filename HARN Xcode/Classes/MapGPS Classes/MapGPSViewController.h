@@ -10,7 +10,7 @@
 #import <MapKit/MapKit.h>
 #import "MapViewController.h"
 
-@interface MapGPSViewController : MapViewController
+@interface MapGPSViewController : MapViewController <MKMapViewDelegate>
 {
     IBOutlet UIBarButtonItem *openInOtherApp;
 }
