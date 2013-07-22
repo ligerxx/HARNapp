@@ -25,7 +25,7 @@
     if([chosenCollection isEqualToString:@"African"])
     {
         //AFRICA
-        self.collectionDescription = @"The African Collection consists of more than 1,000 works and represents art from all regions of the continent with particular strength in the areas of West Africa, South Africa and Ethiopia. Works includes wood sculpture, textiles, ceramics, leatherwork, beadwork, metalwork and painting from 5th century BCE to the 21st century.";
+        self.collectionDescription = @"The African Collection consists of more than 1,000 works and represents art from all regions of the continent with particular strength in the areas of West Africa, South Africa and Ethiopia. Works include wood sculpture, textiles, ceramics, leatherwork, beadwork, metalwork and painting from 5th century BCE to the 21st century.";
         
         [self setImageThumbnails:@[[UIImage imageNamed:@"ancestral-head-tb.jpg"],
          [UIImage imageNamed:@"post-tb.jpg"],

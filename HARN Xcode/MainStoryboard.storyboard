@@ -2450,7 +2450,7 @@ Cg
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">The HARN app was crafted with care by Casey Feldman and Lauren Gray (Exception Mark Inc.) in collaboration with the University of Florida's HARN Museum of Art for their undergraduate senior project in University of Florida's Department of Computer Science. Casey and Lauren are both Digital Arts &amp; Sciences majors.
 
-Special Thanks to: Eric Segal, Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath, Jessica Park, and Kristofer Kraul
+Special Thanks to: Eric Segal, Ph.D., Alireza Entezari, Ph.D., Ivy Chen, Tami M. Wroath, Matt Herring, Jessica Park, and Kristofer Kraul
 </string>
                                 <color key="textColor" red="0.53333050270000004" green="0.53333050270000004" blue="0.53333050270000004" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12.5"/>
