@@ -38,8 +38,16 @@ BOOL _bottomVisible;
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    // plist shit
-    NSString *propertiesFile = [[NSBundle mainBundle] pathForResource:@"Properties" ofType:@"plist"];
+    // plist loading in for icons and titles in table view
+    NSString *propertiesFile;
+    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
+        // Load resources for iOS 6.1 or earlier
+        propertiesFile = [[NSBundle mainBundle] pathForResource:@"Properties-iOS6" ofType:@"plist"];
+    } else {
+        // Load resources for iOS 7 or later
+        propertiesFile = [[NSBundle mainBundle] pathForResource:@"Properties" ofType:@"plist"];
+    }
+    
     _properties = [[NSMutableArray alloc] initWithContentsOfFile:propertiesFile];
     
     // create shadows
@@ -244,8 +252,17 @@ BOOL _bottomVisible;
     }
     
     if ([self.selectedCell isEqualToString:@"Map"]) {
+        //iOS 6 v iOS 7 Condition
+        AboutPageViewController *mapPage;
         
-        AboutPageViewController *mapPage = [storyboard instantiateViewControllerWithIdentifier:@"NewMap"];
+        if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
+            // Load resources for iOS 6.1 or earlier
+            mapPage = [storyboard instantiateViewControllerWithIdentifier:@"Map"];
+        } else {
+            // Load resources for iOS 7 or later
+            mapPage = [storyboard instantiateViewControllerWithIdentifier:@"NewMap"];
+        }
+
         [self presentViewController:mapPage animated:YES completion:nil];
     }
 

@@ -66,6 +66,7 @@
 		1D84FCA817964DCF002BECD1 /* about-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D84FCA717964DCF002BECD1 /* about-ios7.png */; };
 		1D84FCAA17964ED3002BECD1 /* harn-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D84FCA917964ED3002BECD1 /* harn-ios7.png */; };
 		1D84FCAC1796505C002BECD1 /* privacy-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D84FCAB1796505C002BECD1 /* privacy-ios7.png */; };
+		1D895A9717A855C90077E4EE /* Properties-iOS6.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D895A9617A855C90077E4EE /* Properties-iOS6.plist */; };
 		1D8D460D179C49DE00BD2278 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8D460C179C49DE00BD2278 /* CoreLocation.framework */; };
 		1D95457A17259DB700A3B01A /* worldframe_main.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D95457917259DB700A3B01A /* worldframe_main.png */; };
 		1D99875A1780B14100531EF1 /* Ancient America - ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0A9053177508B400246ECD /* Ancient America - ios7.png */; };
@@ -348,6 +349,7 @@
 		1D84FCA717964DCF002BECD1 /* about-ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about-ios7.png"; sourceTree = "<group>"; };
 		1D84FCA917964ED3002BECD1 /* harn-ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "harn-ios7.png"; sourceTree = "<group>"; };
 		1D84FCAB1796505C002BECD1 /* privacy-ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "privacy-ios7.png"; sourceTree = "<group>"; };
+		1D895A9617A855C90077E4EE /* Properties-iOS6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Properties-iOS6.plist"; sourceTree = "<group>"; };
 		1D8D460C179C49DE00BD2278 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		1D95457917259DB700A3B01A /* worldframe_main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = worldframe_main.png; sourceTree = "<group>"; };
 		1D9EAFC81720A03700DD62EA /* mycar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mycar.png; path = "Buttons, Panels, and other resources/mycar.png"; sourceTree = "<group>"; };
@@ -867,6 +869,7 @@
 				1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */,
 				1D6EC698171CA4DA00186AE4 /* iPhone3_5.storyboard */,
 				80CFA22A16F218F200F90382 /* Properties.plist */,
+				1D895A9617A855C90077E4EE /* Properties-iOS6.plist */,
 				1DB0B04E171BCFC700C53DAF /* Properties-With-Personal.plist */,
 			);
 			name = "Other Sources";
@@ -1243,6 +1246,7 @@
 				8074E9C3171770350057664C /* Jaguar-effigy-metate.jpg in Resources */,
 				8074E9C6171770350057664C /* Seated-Companion-Urn-tb.jpg in Resources */,
 				8074E9C7171770350057664C /* Seated-Companion-Urn.jpg in Resources */,
+				1D895A9717A855C90077E4EE /* Properties-iOS6.plist in Resources */,
 				1D2E7B5C177377A1003F4ABB /* retina ios7.png in Resources */,
 				8074E9C8171770350057664C /* Seated-Female-Figurine-tb.jpg in Resources */,
 				8074E9C9171770350057664C /* Seated-Female-Figurine.jpg in Resources */,

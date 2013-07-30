@@ -39,12 +39,10 @@
     // Add an annotation
     MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
     point.coordinate = coordinate;
-    //point.title = locationInfo;
     
-    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(point.coordinate, 40, 40);
-    [locationView setRegion:region animated:YES];
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(point.coordinate, 50, 50);
     
-    [locationView addAnnotation:point];
+    //[locationView addAnnotation:point];
     
     CLLocationCoordinate2D harnBoundaries[4]=
     {
@@ -63,13 +61,13 @@
     
     MKPolygon *imageOverlayPolygon = [MKPolygon polygonWithCoordinates:harnBoundaries count:4];
     [self.locationView addOverlay:imageOverlayPolygon];
+    
+    [locationView setRegion:region animated:YES];
 }
 
 -(MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id)overlay
 {
     MKPolygonView *polyView = [[MKPolygonView alloc] initWithOverlay:overlay];
-    polyView.lineWidth = 1;
-    polyView.strokeColor = [UIColor blackColor];
     
     UIImage *harnMapImage = [UIImage imageNamed:@"harngpsoverlay.png"];
     MKMapRect mapRectangle = [overlay boundingMapRect];

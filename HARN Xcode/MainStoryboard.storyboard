@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4471.1" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="523-E5-MiZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4488.1" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="523-E5-MiZ">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3697.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -1740,7 +1740,7 @@ Cg
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k9I-bW-Eo9" id="pDF-gD-0tm">
-                                            <rect key="frame" x="0.0" y="0.0" width="289" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.81859290080000002" green="0.81859290080000002" blue="0.81859290080000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -1758,7 +1758,7 @@ Cg
                                     <navigationItem id="aYN-tP-iGN"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="HARN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpL-P4-j1m">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="HARN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpL-P4-j1m" userLabel="HARN Nav Bar Label">
                                 <rect key="frame" x="103" y="29" width="62" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
@@ -1770,25 +1770,25 @@ Cg
                             <view autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ic6-P1-Y3U" userLabel="Top View">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="gallerybackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="HL7-mA-Tas">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="gallerybackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="HL7-mA-Tas" userLabel="Gallery Background">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="HarnLogoSquare.png" translatesAutoresizingMaskIntoConstraints="NO" id="brI-Eh-j9V">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="HarnLogoSquare.png" translatesAutoresizingMaskIntoConstraints="NO" id="brI-Eh-j9V" userLabel="HARN Logo">
                                         <rect key="frame" x="92" y="20" width="136" height="127"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="127" id="7xB-xY-gxn"/>
+                                            <constraint firstAttribute="height" constant="127" id="6V1-o8-dhD"/>
                                         </constraints>
                                     </imageView>
                                     <containerView autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1FI-OK-9Cx">
                                         <rect key="frame" x="0.0" y="189" width="320" height="379"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="379" placeholder="YES" id="fOV-s4-dfq"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="379" id="fOV-s4-dfq"/>
                                         </constraints>
                                         <connections>
                                             <segue destination="SvH-Ag-GkU" kind="embed" id="zb0-dV-rd0"/>
                                         </connections>
                                     </containerView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3K-9T-JXu">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3K-9T-JXu" userLabel="Slider Button">
                                         <rect key="frame" x="13" y="29" width="26" height="27"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                         <constraints>
@@ -1806,7 +1806,7 @@ Cg
                                             <action selector="tapToPanLayer:" destination="523-E5-MiZ" eventType="touchUpInside" id="uno-4Z-fmw"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Now Featuring" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhP-Qs-mRc">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Now Featuring" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhP-Qs-mRc" userLabel="Now Featuring">
                                         <rect key="frame" x="35" y="160" width="250" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="lY2-2r-5fv"/>
@@ -1822,22 +1822,22 @@ Cg
                                 <constraints>
                                     <constraint firstItem="H3K-9T-JXu" firstAttribute="leading" secondItem="ic6-P1-Y3U" secondAttribute="leading" constant="13" id="29y-5J-Vpe"/>
                                     <constraint firstAttribute="width" constant="320" id="2mk-HF-2sK"/>
-                                    <constraint firstItem="brI-Eh-j9V" firstAttribute="top" secondItem="ic6-P1-Y3U" secondAttribute="top" constant="20" symbolic="YES" id="32B-Uy-EZb"/>
+                                    <constraint firstItem="brI-Eh-j9V" firstAttribute="centerX" secondItem="DhP-Qs-mRc" secondAttribute="centerX" id="3dr-w7-WUD"/>
                                     <constraint firstAttribute="bottom" secondItem="1FI-OK-9Cx" secondAttribute="bottom" id="4CT-X3-kuO"/>
                                     <constraint firstItem="1FI-OK-9Cx" firstAttribute="top" secondItem="DhP-Qs-mRc" secondAttribute="bottom" constant="8" symbolic="YES" id="6Va-vE-ykm"/>
                                     <constraint firstItem="H3K-9T-JXu" firstAttribute="top" secondItem="ic6-P1-Y3U" secondAttribute="top" constant="29" id="7Rr-e5-2Av"/>
+                                    <constraint firstAttribute="trailing" secondItem="brI-Eh-j9V" secondAttribute="trailing" constant="92" id="9RK-Wl-tL6"/>
                                     <constraint firstItem="HL7-mA-Tas" firstAttribute="top" secondItem="ic6-P1-Y3U" secondAttribute="top" id="IHe-av-6Gc"/>
                                     <constraint firstItem="HL7-mA-Tas" firstAttribute="height" secondItem="ic6-P1-Y3U" secondAttribute="height" id="ILN-bo-DMl"/>
-                                    <constraint firstAttribute="centerX" secondItem="brI-Eh-j9V" secondAttribute="centerX" id="ITl-8R-dhQ"/>
-                                    <constraint firstAttribute="trailing" secondItem="brI-Eh-j9V" secondAttribute="trailing" constant="92" id="Iag-PA-mJB"/>
                                     <constraint firstItem="1FI-OK-9Cx" firstAttribute="bottom" secondItem="ic6-P1-Y3U" secondAttribute="bottom" id="IuA-bX-ovK"/>
                                     <constraint firstItem="HL7-mA-Tas" firstAttribute="leading" secondItem="ic6-P1-Y3U" secondAttribute="leading" id="Lv0-wL-EJU"/>
-                                    <constraint firstItem="brI-Eh-j9V" firstAttribute="leading" secondItem="H3K-9T-JXu" secondAttribute="trailing" constant="53" id="OhU-M7-R2A"/>
+                                    <constraint firstItem="brI-Eh-j9V" firstAttribute="leading" secondItem="H3K-9T-JXu" secondAttribute="trailing" constant="53" id="M6g-Bz-hkF"/>
                                     <constraint firstItem="1FI-OK-9Cx" firstAttribute="trailing" secondItem="ic6-P1-Y3U" secondAttribute="trailing" id="URu-Lz-p9t"/>
+                                    <constraint firstItem="brI-Eh-j9V" firstAttribute="top" secondItem="ic6-P1-Y3U" secondAttribute="top" constant="20" symbolic="YES" id="XFG-tj-8Xh"/>
                                     <constraint firstItem="HL7-mA-Tas" firstAttribute="leading" secondItem="1FI-OK-9Cx" secondAttribute="leading" id="blj-hm-QgE"/>
                                     <constraint firstAttribute="centerX" secondItem="1FI-OK-9Cx" secondAttribute="centerX" id="bso-Q0-sI0"/>
                                     <constraint firstItem="HL7-mA-Tas" firstAttribute="trailing" secondItem="1FI-OK-9Cx" secondAttribute="trailing" id="eBj-I3-HTG"/>
-                                    <constraint firstItem="DhP-Qs-mRc" firstAttribute="top" secondItem="brI-Eh-j9V" secondAttribute="bottom" constant="13" id="sAY-BE-3mP"/>
+                                    <constraint firstItem="DhP-Qs-mRc" firstAttribute="top" secondItem="brI-Eh-j9V" secondAttribute="bottom" constant="13" id="jS3-qq-HLn"/>
                                     <constraint firstAttribute="centerX" secondItem="DhP-Qs-mRc" secondAttribute="centerX" id="veU-7B-Z54"/>
                                 </constraints>
                                 <connections>
@@ -2445,8 +2445,8 @@ Cg
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2vH-9h-suJ">
-                                <rect key="frame" x="20" y="228" width="280" height="195"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" misplaced="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2vH-9h-suJ">
+                                <rect key="frame" x="21" y="228" width="280" height="195"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">The HARN app was crafted with care by Casey Feldman and Lauren Gray (Exception Mark Inc.) in collaboration with the University of Florida's HARN Museum of Art for their undergraduate senior project in University of Florida's Department of Computer Science. Casey and Lauren are both Digital Arts &amp; Sciences majors.
 
@@ -2572,7 +2572,7 @@ Special Thanks to: Eric Segal, Ph.D., Alireza Entezari, Ph.D., Ivy Chen, Tami M.
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gz3-zF-wDH">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="1" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <items>
                                     <navigationItem title="Map" id="LN9-42-THo">
                                         <barButtonItem key="leftBarButtonItem" title="Home" id="uaV-Ql-Qd7">
@@ -2580,7 +2580,7 @@ Special Thanks to: Eric Segal, Ph.D., Alireza Entezari, Ph.D., Ivy Chen, Tami M.
                                                 <action selector="closeView:" destination="9kg-y9-Xgj" id="CAS-7J-Kvp"/>
                                             </connections>
                                         </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Directions" id="PWQ-2B-fcm">
+                                        <barButtonItem key="rightBarButtonItem" image="mycar.png" id="PWQ-2B-fcm">
                                             <connections>
                                                 <action selector="launchMaps:" destination="9kg-y9-Xgj" id="zps-Hs-rTZ"/>
                                             </connections>
@@ -2777,7 +2777,7 @@ Admission is free.</string>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybrid" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SzN-7J-9Y1">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SzN-7J-9Y1">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </mapView>
@@ -2817,6 +2817,7 @@ Admission is free.</string>
         <image name="harnfront.jpg" width="432" height="202.08000183105469"/>
         <image name="lauren.png" width="138.24461364746094" height="138.24461364746094"/>
         <image name="mainmenu.png" width="12" height="12"/>
+        <image name="mycar.png" width="10" height="10"/>
         <image name="retake.png" width="153.60511779785156" height="272.64910888671875"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

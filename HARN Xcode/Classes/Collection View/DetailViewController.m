@@ -102,7 +102,15 @@
         
     [previewImage setImage:theImage];
     
-    info.tintColor = self.navigationController.navigationBar.tintColor;
+    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
+        // Load resources for iOS 6.1 or earlier
+        self.view.backgroundColor = [UIColor blackColor];
+        _titleOfWork.textColor = [UIColor whiteColor];
+        _descriptionOfWork.textColor = [UIColor whiteColor];
+    } else {
+        // Load resources for iOS 7 or later
+        info.tintColor = self.navigationController.navigationBar.tintColor;
+    }
     
     _titleOfWork.text = artTitle;
     _descriptionOfWork.text = artDescription;
@@ -125,8 +133,11 @@
         infoView.artTitle = self.artTitle;
         infoView.artDescription = extendedDescription;
         
-        NSLog(@"The tint color of the info button is: %@\nThis color should transfer to the information view's buttons at the top", info.tintColor);
-        infoView.navBarTint = info.tintColor;
+        if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
+            // Load resources for iOS 7 or later
+            NSLog(@"The tint color of the info button is: %@\nThis color should transfer to the information view's buttons at the top", info.tintColor);
+            infoView.navBarTint = info.tintColor;
+        }
     }
 }
 
