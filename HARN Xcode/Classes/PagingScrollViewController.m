@@ -81,6 +81,22 @@
 	[self applyNewIndex:1 pageController:nextPage];
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+    //This function is used to keep the Now Featuring label for iPhone 5 screen sizes at the top after returning from a collection despite the AutoLayout constraints
+    CGSize result = [[UIScreen mainScreen] bounds].size;
+    TitleViewController *mainScreen = (TitleViewController*) self.parentViewController;
+    
+    if(result.height >= 568 && showMoreInfoHasBeenExpanded == TRUE )
+    {
+        //move Now Featuring Label
+        CGRect frame = mainScreen.nowFeaturing.frame;
+        frame.origin.y = 31;
+        [mainScreen.nowFeaturing setFrame:frame];
+    }
+    
+}
+
 - (void)scrollViewDidScroll:(UIScrollView *)sender
 {
     CGFloat pageWidth = scrollView.frame.size.width;
@@ -174,7 +190,6 @@
     [UIView commitAnimations];
 }
 
-
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)newScrollView
 {
 	[self scrollViewDidEndScrollingAnimation:newScrollView];
@@ -231,22 +246,16 @@
    if(result.height != 568)
    {
        mainScreen.nowFeaturing.alpha = 0.0;
-       //move the Container
-       
-        scrollView.transform = CGAffineTransformTranslate(scrollView.transform, 0.0, -150.0);
-       
    }else{      
     //move Now Featuring Label
-    CGRect frame = mainScreen.nowFeaturing.frame;
-    frame.origin.y = 31;
-    [mainScreen.nowFeaturing setFrame:frame];
-    //move the Container
-       
-    scrollView.transform = CGAffineTransformTranslate(scrollView.transform, 0.0, -150.0);
-    
-       
-       //scrollViewHeight.origin.y = -150;
+       CGRect frame = mainScreen.nowFeaturing.frame;
+       frame.origin.y = 31;
+       [mainScreen.nowFeaturing setFrame:frame];
    }
+      
+      //move the Container
+      
+      scrollView.transform = CGAffineTransformTranslate(scrollView.transform, 0.0, -150.0);
 
     //[scrollView setFrame:scrollViewHeight];
       //[scrollView setBackgroundColor:[UIColor redColor]];
@@ -283,6 +292,7 @@
 
       }else{
           //move Now Featuring Label
+          
           CGRect frame = mainScreen.nowFeaturing.frame;
           frame.origin.y = 160;
           [mainScreen.nowFeaturing setFrame:frame];
@@ -292,9 +302,10 @@
           containerFrame.size.height = 359;
           [mainScreen.container setFrame:containerFrame];
           [scrollView setFrame:scrollViewHeight];*/
-          
-          scrollView.transform = CGAffineTransformIdentity;
       }
+      
+      //Move the container
+      scrollView.transform = CGAffineTransformIdentity;
       
       [self.moreInfoView removeFromSuperview];
       

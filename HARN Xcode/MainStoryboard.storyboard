@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4488.2" systemVersion="13A538g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="523-E5-MiZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4504" systemVersion="13A558" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="523-E5-MiZ">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3734.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -1730,16 +1730,16 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zWt-9L-fD6">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="zWt-9L-fD6">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="k9I-bW-Eo9">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="k9I-bW-Eo9">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="k9I-bW-Eo9" id="pDF-gD-0tm">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k9I-bW-Eo9" id="pDF-gD-0tm">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
@@ -1758,8 +1758,8 @@ Cg
                                     <navigationItem id="aYN-tP-iGN"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" misplaced="YES" text="HARN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpL-P4-j1m" userLabel="HARN Nav Bar Label">
-                                <rect key="frame" x="103" y="29" width="62" height="26"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="HARN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpL-P4-j1m" userLabel="HARN Nav Bar Label">
+                                <rect key="frame" x="103" y="29" width="61" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" staticText="YES" notEnabled="YES"/>
@@ -1773,7 +1773,7 @@ Cg
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="gallerybackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="HL7-mA-Tas" userLabel="Gallery Background">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="HarnLogoSquare.png" translatesAutoresizingMaskIntoConstraints="NO" id="brI-Eh-j9V" userLabel="HARN Logo">
+                                    <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="HarnLogoSquare.png" translatesAutoresizingMaskIntoConstraints="NO" id="brI-Eh-j9V" userLabel="HARN Logo">
                                         <rect key="frame" x="92" y="20" width="136" height="127"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="127" id="6V1-o8-dhD"/>
@@ -1806,7 +1806,7 @@ Cg
                                             <action selector="tapToPanLayer:" destination="523-E5-MiZ" eventType="touchUpInside" id="uno-4Z-fmw"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Now Featuring" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhP-Qs-mRc" userLabel="Now Featuring">
+                                    <label autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Now Featuring" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhP-Qs-mRc" userLabel="Now Featuring">
                                         <rect key="frame" x="35" y="160" width="250" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="lY2-2r-5fv"/>
@@ -1963,7 +1963,7 @@ Cg
                             <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hig-1k-1Bi">
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hig-1k-1Bi">
                                     <rect key="frame" x="20" y="0.0" width="280" height="162"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -2446,7 +2446,7 @@ Cg
                                 </items>
                             </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" misplaced="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2vH-9h-suJ">
-                                <rect key="frame" x="21" y="228" width="280" height="195"/>
+                                <rect key="frame" x="22" y="228" width="280" height="195"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">The HARN app was crafted with care by Casey Feldman and Lauren Gray (Exception Mark Inc.) in collaboration with the University of Florida's HARN Museum of Art for their undergraduate senior project in University of Florida's Department of Computer Science. Casey and Lauren are both Digital Arts &amp; Sciences majors.
 
@@ -2810,15 +2810,15 @@ Admission is free.</string>
         <image name="HarnLogoSquare.png" width="270" height="270"/>
         <image name="aA.png" width="30" height="19"/>
         <image name="blackbutton.png" width="300" height="100"/>
-        <image name="blankwhitebacktextureground.png" width="153.60000610351562" height="272.6400146484375"/>
-        <image name="casey.png" width="92.160003662109375" height="96.480003356933594"/>
-        <image name="comingsoon.png" width="153.60000610351562" height="272.6400146484375"/>
-        <image name="gallerybackground.png" width="153.60000610351562" height="272.6400146484375"/>
-        <image name="harnfront.jpg" width="432" height="202.08000183105469"/>
-        <image name="lauren.png" width="138.24000549316406" height="138.24000549316406"/>
-        <image name="mainmenu.png" width="12" height="12"/>
-        <image name="mycar.png" width="10" height="10"/>
-        <image name="retake.png" width="153.60000610351562" height="272.6400146484375"/>
+        <image name="blankwhitebacktextureground.png" width="320" height="568"/>
+        <image name="casey.png" width="384" height="402"/>
+        <image name="comingsoon.png" width="320" height="568"/>
+        <image name="gallerybackground.png" width="320" height="568"/>
+        <image name="harnfront.jpg" width="1800" height="842"/>
+        <image name="lauren.png" width="576" height="576"/>
+        <image name="mainmenu.png" width="50" height="50"/>
+        <image name="mycar.png" width="20" height="20"/>
+        <image name="retake.png" width="320" height="568"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

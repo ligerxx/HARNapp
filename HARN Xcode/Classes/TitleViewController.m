@@ -19,7 +19,7 @@
 @synthesize topLayer = _topLayer;
 @synthesize layerPosition = _layerPosition;
 @synthesize titleArray = _titleArray;
-@synthesize selectedCell, nowFeaturing;
+@synthesize selectedCell, nowFeaturing, bottomLayerHidden;
 
 BOOL _bottomVisible;
 
@@ -37,7 +37,7 @@ BOOL _bottomVisible;
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
+        
     // plist loading in for icons and titles in table view
     NSString *propertiesFile;
     if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
@@ -69,7 +69,7 @@ BOOL _bottomVisible;
 }
 
 // the number of pixels we want displayed for our navigation
-#define VIEW_HIDDEN 265
+#define VIEW_HIDDEN 250
 
 // animate our layer to the specified point in pixels
 - (void)animateLayerToPoint:(CGFloat)x {
@@ -107,10 +107,12 @@ BOOL _bottomVisible;
             [self animateLayerToPoint:0];
             _bottomVisible = NO;
             self.container.userInteractionEnabled = YES; //Should enable the swiping through the gallery in the top layer
+            bottomLayerHidden = TRUE;
         } else {
             [self animateLayerToPoint:VIEW_HIDDEN];
             _bottomVisible = YES;
             self.container.userInteractionEnabled = NO; //Should disable the swiping through the gallery in the top layer
+            bottomLayerHidden = FALSE;
 
         }
     }
@@ -122,10 +124,12 @@ BOOL _bottomVisible;
         [self animateLayerToPoint:VIEW_HIDDEN];
         _bottomVisible = YES;
         self.container.userInteractionEnabled = NO; //Should disable the swiping through the gallery in the top layer
+        bottomLayerHidden = TRUE;
     } else {
         [self animateLayerToPoint:0];
         _bottomVisible = NO;
         self.container.userInteractionEnabled = YES; //Should disable the swiping through the gallery in the top layer
+        bottomLayerHidden = FALSE;
     }
 }
 

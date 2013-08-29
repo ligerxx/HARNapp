@@ -61,10 +61,7 @@
     
     if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1) {
         //Make sure the color of the bar buttons in the Nav Bar are the same as the collection they are currently in. iOS 7 style
-        for( UIBarButtonItem * button in self.navBar.subviews)
-        {
-            button.tintColor = navBarTint;
-        }
+        self.navBar.tintColor = navBarTint;
     }else{
         navBar.tintColor = [UIColor blackColor];
     }

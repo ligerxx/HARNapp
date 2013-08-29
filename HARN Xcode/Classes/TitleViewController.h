@@ -12,6 +12,7 @@
 @interface TitleViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
     IBOutlet UILabel *nowFeaturing;
+
 }
 
 @property (weak, nonatomic) IBOutlet UIView *topLayer;
@@ -28,5 +29,7 @@
 @property (nonatomic, strong) NSMutableArray *properties;
 
 @property (nonatomic) NSString * selectedCell;
+
+@property (assign) BOOL bottomLayerHidden;
 
 @end
