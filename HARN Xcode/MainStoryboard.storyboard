@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4488.1" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="523-E5-MiZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4488.2" systemVersion="13A538g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="523-E5-MiZ">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
@@ -1736,10 +1736,10 @@ Cg
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="k9I-bW-Eo9">
+                                    <tableViewCell contentMode="scaleToFill" ambiguous="YES" selectionStyle="gray" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="k9I-bW-Eo9">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k9I-bW-Eo9" id="pDF-gD-0tm">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="k9I-bW-Eo9" id="pDF-gD-0tm">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
@@ -2810,15 +2810,15 @@ Admission is free.</string>
         <image name="HarnLogoSquare.png" width="270" height="270"/>
         <image name="aA.png" width="30" height="19"/>
         <image name="blackbutton.png" width="300" height="100"/>
-        <image name="blankwhitebacktextureground.png" width="153.60511779785156" height="272.64910888671875"/>
-        <image name="casey.png" width="92.163078308105469" height="96.483222961425781"/>
-        <image name="comingsoon.png" width="153.60511779785156" height="272.64910888671875"/>
-        <image name="gallerybackground.png" width="153.60511779785156" height="272.64910888671875"/>
+        <image name="blankwhitebacktextureground.png" width="153.60000610351562" height="272.6400146484375"/>
+        <image name="casey.png" width="92.160003662109375" height="96.480003356933594"/>
+        <image name="comingsoon.png" width="153.60000610351562" height="272.6400146484375"/>
+        <image name="gallerybackground.png" width="153.60000610351562" height="272.6400146484375"/>
         <image name="harnfront.jpg" width="432" height="202.08000183105469"/>
-        <image name="lauren.png" width="138.24461364746094" height="138.24461364746094"/>
+        <image name="lauren.png" width="138.24000549316406" height="138.24000549316406"/>
         <image name="mainmenu.png" width="12" height="12"/>
         <image name="mycar.png" width="10" height="10"/>
-        <image name="retake.png" width="153.60511779785156" height="272.64910888671875"/>
+        <image name="retake.png" width="153.60000610351562" height="272.6400146484375"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
