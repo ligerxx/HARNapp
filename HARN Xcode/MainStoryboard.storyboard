@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DaG-lQ-fex">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DaG-lQ-fex">
                                 <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1695,7 +1695,7 @@ Cg
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" secureTextEntry="YES"/>
                             </textView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8wv-fd-bhm">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8wv-fd-bhm">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1711,6 +1711,17 @@ Cg
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="DaG-lQ-fex" secondAttribute="bottom" id="Csp-FX-YxW"/>
+                            <constraint firstItem="DaG-lQ-fex" firstAttribute="leading" secondItem="8wv-fd-bhm" secondAttribute="leading" id="FnI-RY-JD4"/>
+                            <constraint firstAttribute="trailing" secondItem="8wv-fd-bhm" secondAttribute="trailing" id="Ksn-Rw-yTm"/>
+                            <constraint firstItem="DaG-lQ-fex" firstAttribute="top" secondItem="8wv-fd-bhm" secondAttribute="bottom" id="RFq-VV-kC1"/>
+                            <constraint firstItem="DaG-lQ-fex" firstAttribute="trailing" secondItem="8wv-fd-bhm" secondAttribute="trailing" id="b1N-iI-CQn"/>
+                            <constraint firstItem="8wv-fd-bhm" firstAttribute="top" secondItem="8VI-se-Hf6" secondAttribute="bottom" id="ckD-yY-XcJ"/>
+                            <constraint firstItem="8wv-fd-bhm" firstAttribute="top" secondItem="8VI-se-Hf6" secondAttribute="bottom" id="iaH-n0-FHi"/>
+                            <constraint firstItem="1bR-Kf-1wj" firstAttribute="top" secondItem="DaG-lQ-fex" secondAttribute="bottom" id="oFe-Gq-fEb"/>
+                            <constraint firstItem="DaG-lQ-fex" firstAttribute="leading" secondItem="p1q-Nm-VuS" secondAttribute="leading" id="v4s-NS-NPw"/>
+                        </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                 </viewController>
@@ -1849,16 +1860,16 @@ Cg
                         <constraints>
                             <constraint firstItem="cpL-P4-j1m" firstAttribute="centerY" secondItem="hpK-S1-wZL" secondAttribute="centerY" id="1lE-nW-0US"/>
                             <constraint firstItem="ic6-P1-Y3U" firstAttribute="top" secondItem="Ned-qV-P8g" secondAttribute="top" id="4XV-Wl-EKp"/>
-                            <constraint firstItem="ic6-P1-Y3U" firstAttribute="bottom" secondItem="zWt-9L-fD6" secondAttribute="bottom" placeholder="YES" id="7aJ-1B-2YW"/>
                             <constraint firstItem="zWt-9L-fD6" firstAttribute="trailing" secondItem="Ned-qV-P8g" secondAttribute="trailing" id="DXz-99-KuD"/>
                             <constraint firstItem="zWt-9L-fD6" firstAttribute="leading" secondItem="Ned-qV-P8g" secondAttribute="leading" id="IgS-qh-4MU"/>
                             <constraint firstItem="ic6-P1-Y3U" firstAttribute="leading" secondItem="hpK-S1-wZL" secondAttribute="leading" placeholder="YES" id="Tu3-9g-QhD"/>
                             <constraint firstItem="zWt-9L-fD6" firstAttribute="bottom" secondItem="Ned-qV-P8g" secondAttribute="bottom" id="URe-HS-GcI"/>
                             <constraint firstItem="ic6-P1-Y3U" firstAttribute="trailing" secondItem="hpK-S1-wZL" secondAttribute="trailing" placeholder="YES" id="XM7-iP-3s1"/>
+                            <constraint firstItem="hpK-S1-wZL" firstAttribute="top" secondItem="aCH-Sb-QjC" secondAttribute="bottom" id="Xo8-J9-TM7"/>
                             <constraint firstItem="zWt-9L-fD6" firstAttribute="trailing" secondItem="hpK-S1-wZL" secondAttribute="trailing" id="arT-wg-vS3"/>
                             <constraint firstItem="zWt-9L-fD6" firstAttribute="leading" secondItem="hpK-S1-wZL" secondAttribute="leading" id="eIZ-x5-Pjh"/>
-                            <constraint firstItem="hpK-S1-wZL" firstAttribute="top" secondItem="Ned-qV-P8g" secondAttribute="top" constant="20" id="hOX-6s-zFw"/>
                             <constraint firstItem="cpL-P4-j1m" firstAttribute="leading" secondItem="Ned-qV-P8g" secondAttribute="leading" constant="103" id="pO6-SK-ji0"/>
+                            <constraint firstItem="mzV-HI-NFn" firstAttribute="top" secondItem="zWt-9L-fD6" secondAttribute="bottom" id="vly-HG-iL9"/>
                             <constraint firstItem="zWt-9L-fD6" firstAttribute="top" secondItem="hpK-S1-wZL" secondAttribute="bottom" id="yHj-Wx-wqW"/>
                         </constraints>
                     </view>
@@ -2291,7 +2302,7 @@ Cg
                             <constraint firstItem="KMS-PJ-xHt" firstAttribute="leading" secondItem="wUG-DZ-8eH" secondAttribute="leading" id="J5v-UI-A0Y"/>
                             <constraint firstItem="bu4-ii-N8T" firstAttribute="top" secondItem="KMS-PJ-xHt" secondAttribute="bottom" constant="9" id="NSA-gi-2XE"/>
                             <constraint firstItem="bu4-ii-N8T" firstAttribute="centerX" secondItem="KMS-PJ-xHt" secondAttribute="centerX" id="Nts-2v-gw6"/>
-                            <constraint firstItem="KMS-PJ-xHt" firstAttribute="top" secondItem="wUG-DZ-8eH" secondAttribute="top" constant="20" id="ksD-8A-cui"/>
+                            <constraint firstItem="KMS-PJ-xHt" firstAttribute="top" secondItem="Bge-g8-lWn" secondAttribute="bottom" id="bGH-iL-4xF"/>
                             <constraint firstItem="Vhk-un-3ud" firstAttribute="top" secondItem="bu4-ii-N8T" secondAttribute="bottom" constant="9" id="uQw-nZ-ZEW"/>
                             <constraint firstItem="bu4-ii-N8T" firstAttribute="leading" secondItem="wUG-DZ-8eH" secondAttribute="leading" constant="8" id="zRY-fx-LgE"/>
                         </constraints>
@@ -2431,8 +2442,8 @@ Cg
                                 <rect key="frame" x="173" y="81" width="127" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RTF-9m-7Z3">
-                                <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RTF-9m-7Z3">
+                                <rect key="frame" x="0.0" y="24" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <items>
@@ -2445,8 +2456,8 @@ Cg
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" misplaced="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2vH-9h-suJ">
-                                <rect key="frame" x="22" y="228" width="280" height="195"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2vH-9h-suJ">
+                                <rect key="frame" x="20" y="228" width="280" height="210"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">The HARN app was crafted with care by Casey Feldman and Lauren Gray (Exception Mark Inc.) in collaboration with the University of Florida's HARN Museum of Art for their undergraduate senior project in University of Florida's Department of Computer Science. Casey and Lauren are both Digital Arts &amp; Sciences majors.
 
@@ -2500,6 +2511,7 @@ Special Thanks to: Eric Segal, Ph.D., Alireza Entezari, Ph.D., Ivy Chen, Tami M.
                             <constraint firstItem="gqC-Ix-eSC" firstAttribute="top" secondItem="SDU-cD-dnQ" secondAttribute="top" id="8tY-cm-vA7"/>
                             <constraint firstItem="Hoz-fc-O0G" firstAttribute="trailing" secondItem="2vH-9h-suJ" secondAttribute="trailing" id="BJY-ay-GPE"/>
                             <constraint firstItem="Hoz-fc-O0G" firstAttribute="leading" secondItem="NrS-Eo-Amt" secondAttribute="trailing" constant="26" id="CzH-lz-lgd"/>
+                            <constraint firstItem="RTF-9m-7Z3" firstAttribute="top" secondItem="UgS-lp-RkD" secondAttribute="bottom" id="DcM-d2-ogR"/>
                             <constraint firstItem="gqC-Ix-eSC" firstAttribute="leading" secondItem="SDU-cD-dnQ" secondAttribute="trailing" constant="35" id="GE9-2Z-DSL"/>
                             <constraint firstItem="SDU-cD-dnQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="2vH-9h-suJ" secondAttribute="bottom" constant="14" id="MEv-Y2-2tr"/>
                             <constraint firstItem="1hJ-6o-kN4" firstAttribute="top" secondItem="61W-73-Rth" secondAttribute="top" id="QiQ-u4-Nwp"/>
@@ -2512,7 +2524,6 @@ Special Thanks to: Eric Segal, Ph.D., Alireza Entezari, Ph.D., Ivy Chen, Tami M.
                             <constraint firstItem="NrS-Eo-Amt" firstAttribute="leading" secondItem="2vH-9h-suJ" secondAttribute="leading" id="bGq-bK-bX2"/>
                             <constraint firstItem="RTF-9m-7Z3" firstAttribute="leading" secondItem="61W-73-Rth" secondAttribute="leading" id="cqf-yc-BXI"/>
                             <constraint firstItem="Hoz-fc-O0G" firstAttribute="top" secondItem="NrS-Eo-Amt" secondAttribute="top" id="kI6-hH-cda"/>
-                            <constraint firstItem="RTF-9m-7Z3" firstAttribute="top" secondItem="61W-73-Rth" secondAttribute="top" constant="20" id="kYV-AU-QZW"/>
                             <constraint firstAttribute="trailing" secondItem="gqC-Ix-eSC" secondAttribute="trailing" constant="24" id="lyB-g3-4uf"/>
                             <constraint firstItem="1hJ-6o-kN4" firstAttribute="bottom" secondItem="61W-73-Rth" secondAttribute="bottom" id="tg0-MF-xTy"/>
                             <constraint firstItem="NrS-Eo-Amt" firstAttribute="leading" secondItem="61W-73-Rth" secondAttribute="leading" constant="20" symbolic="YES" id="vxS-7H-CXo"/>
@@ -2594,11 +2605,13 @@ Special Thanks to: Eric Segal, Ph.D., Alireza Entezari, Ph.D., Ivy Chen, Tami M.
                             <constraint firstItem="0pp-AU-HW8" firstAttribute="bottom" secondItem="9QC-rq-76I" secondAttribute="bottom" id="EvS-MU-Yf4"/>
                             <constraint firstItem="0pp-AU-HW8" firstAttribute="trailing" secondItem="gz3-zF-wDH" secondAttribute="trailing" id="JSC-eY-8co"/>
                             <constraint firstItem="0pp-AU-HW8" firstAttribute="top" secondItem="gz3-zF-wDH" secondAttribute="bottom" id="OzF-FJ-xFW"/>
+                            <constraint firstItem="0pp-AU-HW8" firstAttribute="top" secondItem="gz3-zF-wDH" secondAttribute="bottom" id="PaC-iI-LfM"/>
                             <constraint firstItem="gz3-zF-wDH" firstAttribute="leading" secondItem="9QC-rq-76I" secondAttribute="leading" id="Qwf-zb-BI9"/>
                             <constraint firstItem="gz3-zF-wDH" firstAttribute="leading" secondItem="0pp-AU-HW8" secondAttribute="leading" id="Uq8-Ig-zxh"/>
                             <constraint firstItem="gz3-zF-wDH" firstAttribute="top" secondItem="09g-8B-RXV" secondAttribute="bottom" id="VuT-OO-Ztt"/>
                             <constraint firstItem="gz3-zF-wDH" firstAttribute="trailing" secondItem="9QC-rq-76I" secondAttribute="trailing" id="g94-iz-8Gl"/>
-                            <constraint firstItem="gz3-zF-wDH" firstAttribute="top" secondItem="9QC-rq-76I" secondAttribute="top" constant="20" id="io7-oV-ekc"/>
+                            <constraint firstItem="E8A-tL-a57" firstAttribute="top" secondItem="0pp-AU-HW8" secondAttribute="bottom" id="jTp-Gx-HUv"/>
+                            <constraint firstItem="09g-8B-RXV" firstAttribute="top" secondItem="gz3-zF-wDH" secondAttribute="bottom" constant="-44" id="oBZ-0T-0Ua"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -2709,6 +2722,7 @@ Admission is free.</string>
                             <constraint firstItem="vkz-Xz-m07" firstAttribute="trailing" secondItem="h7V-zq-KrJ" secondAttribute="trailing" id="75v-a9-csg"/>
                             <constraint firstItem="cky-19-5zi" firstAttribute="top" secondItem="pO9-GW-bfd" secondAttribute="top" id="7D2-d8-m3W"/>
                             <constraint firstItem="h7V-zq-KrJ" firstAttribute="leading" secondItem="s0p-iH-dwF" secondAttribute="leading" id="8Z7-O8-45O"/>
+                            <constraint firstItem="h7V-zq-KrJ" firstAttribute="top" secondItem="PHa-Q6-FHv" secondAttribute="bottom" id="B2J-cY-Qyw"/>
                             <constraint firstItem="9Q0-Yc-Rk1" firstAttribute="leading" secondItem="TRj-Va-GtK" secondAttribute="leading" constant="20" symbolic="YES" id="FDy-N7-YeA"/>
                             <constraint firstItem="vkz-Xz-m07" firstAttribute="centerX" secondItem="9Q0-Yc-Rk1" secondAttribute="centerX" id="OqM-U6-ZrA"/>
                             <constraint firstAttribute="trailing" secondItem="cky-19-5zi" secondAttribute="trailing" constant="25" id="PQ3-dF-vVP"/>
@@ -2716,7 +2730,6 @@ Admission is free.</string>
                             <constraint firstItem="vkz-Xz-m07" firstAttribute="top" secondItem="h7V-zq-KrJ" secondAttribute="bottom" id="TdW-yH-dEl"/>
                             <constraint firstItem="pO9-GW-bfd" firstAttribute="top" relation="greaterThanOrEqual" secondItem="9Q0-Yc-Rk1" secondAttribute="bottom" constant="14" id="Uao-5h-myX"/>
                             <constraint firstItem="cky-19-5zi" firstAttribute="leading" secondItem="pO9-GW-bfd" secondAttribute="trailing" constant="34" id="UyN-Xz-KaI"/>
-                            <constraint firstItem="h7V-zq-KrJ" firstAttribute="top" secondItem="TRj-Va-GtK" secondAttribute="top" constant="20" id="dFy-AL-I7z"/>
                             <constraint firstItem="h7V-zq-KrJ" firstAttribute="trailing" secondItem="s0p-iH-dwF" secondAttribute="trailing" id="jGj-Fa-d4q"/>
                             <constraint firstItem="s0p-iH-dwF" firstAttribute="top" secondItem="TRj-Va-GtK" secondAttribute="top" id="kKM-zZ-ewA"/>
                             <constraint firstItem="s0p-iH-dwF" firstAttribute="bottom" secondItem="TRj-Va-GtK" secondAttribute="bottom" id="li6-5j-vwI"/>
@@ -2810,9 +2823,16 @@ Admission is free.</string>
         <image name="HarnLogoSquare.png" width="270" height="270"/>
         <image name="aA.png" width="30" height="19"/>
         <image name="blackbutton.png" width="300" height="100"/>
+        <image name="blackbutton.png" width="300" height="100"/>
+        <image name="blackbutton.png" width="300" height="100"/>
+        <image name="blackbutton.png" width="300" height="100"/>
+        <image name="blackbutton.png" width="300" height="100"/>
+        <image name="blackbutton.png" width="300" height="100"/>
         <image name="blankwhitebacktextureground.png" width="320" height="568"/>
         <image name="casey.png" width="384" height="402"/>
         <image name="comingsoon.png" width="320" height="568"/>
+        <image name="gallerybackground.png" width="320" height="568"/>
+        <image name="gallerybackground.png" width="320" height="568"/>
         <image name="gallerybackground.png" width="320" height="568"/>
         <image name="harnfront.jpg" width="1800" height="842"/>
         <image name="lauren.png" width="576" height="576"/>
