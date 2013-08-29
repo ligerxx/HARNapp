@@ -3,6 +3,8 @@
 
 #import <Foundation/Foundation.h>
 
+CF_EXTERN_C_BEGIN
+
 /*!
  \brief         The Reveal Log level bit flags.
  \discussion    These flags are addative.  Ie, you should bitwise OR them together.  
@@ -37,7 +39,7 @@ typedef NS_OPTIONS(int32_t, IBARevealLogLevel)
         IBARevealLoggerSetLevelMask(IBARevealLogLevelError|IBARevealLogLevelWarn|IBARevealLogLevelInfo);
  
  */
-extern void IBARevealLoggerSetLevelMask(int32_t mask);
+CF_EXPORT void IBARevealLoggerSetLevelMask(int32_t mask);
 
 /*!
  \brief         Get the current Reveal logger level mask.
@@ -50,4 +52,6 @@ extern void IBARevealLoggerSetLevelMask(int32_t mask);
         IBARevealLoggerSetLevelMask(IBARevealLoggerGetLevelMask() & ~IBARevealLogLevelInfo);
  
  */
-extern int32_t IBARevealLoggerGetLevelMask(void);
+CF_EXPORT int32_t IBARevealLoggerGetLevelMask(void);
+
+CF_EXTERN_C_END
