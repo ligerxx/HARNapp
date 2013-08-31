@@ -221,7 +221,7 @@
   if(showMoreInfoHasBeenExpanded == FALSE)
   {
 
-    moreInfoView = [[UITextView alloc] initWithFrame:CGRectMake(40,130,240,180)];
+    moreInfoView = [[UITextView alloc] initWithFrame:CGRectMake(40,270,240,180)];
     moreInfoView.backgroundColor = [UIColor clearColor];
     moreInfoView.scrollEnabled = FALSE;
     moreInfoView.editable = FALSE;
@@ -254,7 +254,7 @@
    }
       
       //move the Container
-      scrollView.transform = CGAffineTransformTranslate(scrollView.transform, 0.0, -150.0);
+      scrollView.transform = CGAffineTransformTranslate(scrollView.transform, 0.0, -120.0);
     
     //add the more info
     [self.view addSubview:moreInfoView];
@@ -289,12 +289,7 @@
           CGRect frame = mainScreen.nowFeaturing.frame;
           frame.origin.y = 160;
           [mainScreen.nowFeaturing setFrame:frame];
-          
-          //move the Container
-          /*scrollViewHeight.origin.y = +10;
-          containerFrame.size.height = 359;
-          [mainScreen.container setFrame:containerFrame];
-          [scrollView setFrame:scrollViewHeight];*/
+
       }
       
       //Move the container

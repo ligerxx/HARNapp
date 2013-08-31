@@ -1791,7 +1791,7 @@ Cg
                                         </constraints>
                                     </imageView>
                                     <containerView autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1FI-OK-9Cx" userLabel="Gallery Container">
-                                        <rect key="frame" x="0.0" y="189" width="320" height="379"/>
+                                        <rect key="frame" x="0.0" y="59" width="320" height="509"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="379" id="fOV-s4-dfq"/>
                                         </constraints>
@@ -1847,7 +1847,7 @@ Cg
                                     <constraint firstAttribute="centerX" secondItem="1FI-OK-9Cx" secondAttribute="centerX" id="bso-Q0-sI0"/>
                                     <constraint firstItem="HL7-mA-Tas" firstAttribute="trailing" secondItem="1FI-OK-9Cx" secondAttribute="trailing" id="eBj-I3-HTG"/>
                                     <constraint firstItem="brI-Eh-j9V" firstAttribute="top" secondItem="ic6-P1-Y3U" secondAttribute="top" constant="20" symbolic="YES" id="kxs-54-674"/>
-                                    <constraint firstItem="1FI-OK-9Cx" firstAttribute="top" secondItem="DhP-Qs-mRc" secondAttribute="bottom" constant="8" symbolic="YES" id="meW-wY-38e"/>
+                                    <constraint firstItem="1FI-OK-9Cx" firstAttribute="top" secondItem="DhP-Qs-mRc" secondAttribute="bottom" constant="-122" id="meW-wY-38e"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="ZCF-kN-6zS" appends="YES" id="SGq-KL-UDm"/>
@@ -2108,11 +2108,11 @@ Cg
                         <viewControllerLayoutGuide type="bottom" id="ii7-qq-8H7"/>
                     </layoutGuides>
                     <view key="view" autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" id="YTf-8g-K4S">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="379"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="509"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6LX-Y5-bRU">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                <rect key="frame" x="0.0" y="110" width="320" height="320"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="320" id="9gp-aX-EdR"/>
                                 </constraints>
@@ -2121,7 +2121,7 @@ Cg
                                 </connections>
                             </scrollView>
                             <pageControl opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hki-ab-AGK">
-                                <rect key="frame" x="0.0" y="335" width="320" height="37"/>
+                                <rect key="frame" x="0.0" y="465" width="320" height="37"/>
                                 <connections>
                                     <action selector="changePage:" destination="SvH-Ag-GkU" eventType="valueChanged" id="LKb-Gq-MpK"/>
                                 </connections>
@@ -2134,7 +2134,7 @@ Cg
                             <constraint firstItem="hki-ab-AGK" firstAttribute="trailing" secondItem="YTf-8g-K4S" secondAttribute="trailing" id="ZWI-px-mTs"/>
                             <constraint firstItem="hki-ab-AGK" firstAttribute="leading" secondItem="YTf-8g-K4S" secondAttribute="leading" id="kvd-jG-R1W"/>
                             <constraint firstItem="ii7-qq-8H7" firstAttribute="top" secondItem="hki-ab-AGK" secondAttribute="bottom" constant="7" id="naZ-eE-KX0"/>
-                            <constraint firstItem="6LX-Y5-bRU" firstAttribute="top" secondItem="v2u-1B-g9T" secondAttribute="bottom" id="wAU-7N-pQi"/>
+                            <constraint firstItem="6LX-Y5-bRU" firstAttribute="top" secondItem="v2u-1B-g9T" secondAttribute="bottom" constant="110" id="wAU-7N-pQi"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
@@ -2822,16 +2822,9 @@ Admission is free.</string>
         <image name="HarnLogoSquare.png" width="270" height="270"/>
         <image name="aA.png" width="30" height="19"/>
         <image name="blackbutton.png" width="300" height="100"/>
-        <image name="blackbutton.png" width="300" height="100"/>
-        <image name="blackbutton.png" width="300" height="100"/>
-        <image name="blackbutton.png" width="300" height="100"/>
-        <image name="blackbutton.png" width="300" height="100"/>
-        <image name="blackbutton.png" width="300" height="100"/>
         <image name="blankwhitebacktextureground.png" width="320" height="568"/>
         <image name="casey.png" width="384" height="402"/>
         <image name="comingsoon.png" width="320" height="568"/>
-        <image name="gallerybackground.png" width="320" height="568"/>
-        <image name="gallerybackground.png" width="320" height="568"/>
         <image name="gallerybackground.png" width="320" height="568"/>
         <image name="harnfront.jpg" width="1800" height="842"/>
         <image name="lauren.png" width="576" height="576"/>
