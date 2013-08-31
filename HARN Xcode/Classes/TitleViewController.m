@@ -19,7 +19,7 @@
 @synthesize topLayer = _topLayer;
 @synthesize layerPosition = _layerPosition;
 @synthesize titleArray = _titleArray;
-@synthesize selectedCell, nowFeaturing, bottomLayerHidden;
+@synthesize selectedCell, nowFeaturing, slider, bottomLayerHidden;
 
 BOOL _bottomVisible;
 
@@ -35,6 +35,14 @@ BOOL _bottomVisible;
 
 - (void)viewDidLoad
 {
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] &&
+        ([UIScreen mainScreen].scale != 2.0)) {
+        //Non-retina devices should use a different slider image
+        
+        [slider setImage:[UIImage imageNamed:@"mainmenu.png"] forState:UIControlStateNormal];
+        [slider setImage:[UIImage imageNamed:@"mainmenu.png"] forState:UIControlStateSelected];
+    }
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
         

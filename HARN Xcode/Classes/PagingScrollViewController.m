@@ -227,7 +227,7 @@
     moreInfoView.editable = FALSE;
     moreInfoView.text = currentPage.moreInfo;
     moreInfoView.textAlignment = 1;
-    moreInfoView.textColor = [UIColor grayColor];
+    moreInfoView.textColor = [UIColor blackColor];
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     [UIView beginAnimations:nil context:context];
@@ -254,11 +254,7 @@
    }
       
       //move the Container
-      
       scrollView.transform = CGAffineTransformTranslate(scrollView.transform, 0.0, -150.0);
-
-    //[scrollView setFrame:scrollViewHeight];
-      //[scrollView setBackgroundColor:[UIColor redColor]];
     
     //add the more info
     [self.view addSubview:moreInfoView];
@@ -286,9 +282,6 @@
       if(result.height != 568)
       {
           mainScreen.nowFeaturing.alpha = 1.0;
-          //move the Container
-
-          scrollView.transform = CGAffineTransformIdentity;
 
       }else{
           //move Now Featuring Label

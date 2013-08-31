@@ -68,6 +68,7 @@
 		1D84FCAC1796505C002BECD1 /* privacy-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D84FCAB1796505C002BECD1 /* privacy-ios7.png */; };
 		1D895A9717A855C90077E4EE /* Properties-iOS6.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1D895A9617A855C90077E4EE /* Properties-iOS6.plist */; };
 		1D8D460D179C49DE00BD2278 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8D460C179C49DE00BD2278 /* CoreLocation.framework */; };
+		1D92F5E417D0E30E00279459 /* mainmenu-ios7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D92F5E317D0E30E00279459 /* mainmenu-ios7@2x.png */; };
 		1D95457A17259DB700A3B01A /* worldframe_main.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D95457917259DB700A3B01A /* worldframe_main.png */; };
 		1D99875A1780B14100531EF1 /* Ancient America - ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D0A9053177508B400246ECD /* Ancient America - ios7.png */; };
 		1D9EAFC91720A03700DD62EA /* mycar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D9EAFC81720A03700DD62EA /* mycar.png */; };
@@ -351,6 +352,7 @@
 		1D84FCAB1796505C002BECD1 /* privacy-ios7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "privacy-ios7.png"; sourceTree = "<group>"; };
 		1D895A9617A855C90077E4EE /* Properties-iOS6.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Properties-iOS6.plist"; sourceTree = "<group>"; };
 		1D8D460C179C49DE00BD2278 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1D92F5E317D0E30E00279459 /* mainmenu-ios7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mainmenu-ios7@2x.png"; sourceTree = "<group>"; };
 		1D95457917259DB700A3B01A /* worldframe_main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = worldframe_main.png; sourceTree = "<group>"; };
 		1D9EAFC81720A03700DD62EA /* mycar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mycar.png; path = "Buttons, Panels, and other resources/mycar.png"; sourceTree = "<group>"; };
 		1D9EAFCA1720A18400DD62EA /* mycar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mycar@2x.png"; path = "Buttons, Panels, and other resources/mycar@2x.png"; sourceTree = "<group>"; };
@@ -839,6 +841,7 @@
 				1D9EAFC81720A03700DD62EA /* mycar.png */,
 				1D9EAFCA1720A18400DD62EA /* mycar@2x.png */,
 				1DC53B5816B60028003591CD /* mainmenu.png */,
+				1D92F5E317D0E30E00279459 /* mainmenu-ios7@2x.png */,
 			);
 			name = Glyphs;
 			sourceTree = "<group>";
@@ -1368,6 +1371,7 @@
 				1DF4A387171900F200598443 /* papauer-tb.jpg in Resources */,
 				1DF4A38A1719048800598443 /* pancratium.jpg in Resources */,
 				1DF4A38B1719048800598443 /* pancratium-tb.jpg in Resources */,
+				1D92F5E417D0E30E00279459 /* mainmenu-ios7@2x.png in Resources */,
 				1DF4A38E1719057700598443 /* heliconia.jpg in Resources */,
 				1DF4A38F1719057700598443 /* heliconia-tb.jpg in Resources */,
 				1DF4A3921719062B00598443 /* deer.JPG in Resources */,
