@@ -31,7 +31,7 @@
         CGFloat scale = [UIScreen mainScreen].scale;
         result = CGSizeMake(result.width * scale, result.height * scale);
         
-        //changed result.height == 1136 for iOS 7 testing
+        //If for some reason it is required to use a different storyboard file (iPad, etc.) the check would go here
         if(result.height <= 1136){
             storyBoard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
             UIViewController *initViewController = [storyBoard instantiateInitialViewController];
