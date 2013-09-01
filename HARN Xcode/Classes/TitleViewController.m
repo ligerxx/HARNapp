@@ -19,7 +19,7 @@
 @synthesize topLayer = _topLayer;
 @synthesize layerPosition = _layerPosition;
 @synthesize titleArray = _titleArray;
-@synthesize selectedCell, nowFeaturing;
+@synthesize selectedCell, nowFeaturing, slider, bottomLayerHidden;
 
 BOOL _bottomVisible;
 
@@ -35,11 +35,27 @@ BOOL _bottomVisible;
 
 - (void)viewDidLoad
 {
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] &&
+        ([UIScreen mainScreen].scale != 2.0)) {
+        //Non-retina devices should use a different slider image
+        
+        [slider setImage:[UIImage imageNamed:@"mainmenu.png"] forState:UIControlStateNormal];
+        [slider setImage:[UIImage imageNamed:@"mainmenu.png"] forState:UIControlStateSelected];
+    }
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+        
+    // plist loading in for icons and titles in table view
+    NSString *propertiesFile;
+    if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
+        // Load resources for iOS 6.1 or earlier
+        propertiesFile = [[NSBundle mainBundle] pathForResource:@"Properties-iOS6" ofType:@"plist"];
+    } else {
+        // Load resources for iOS 7 or later
+        propertiesFile = [[NSBundle mainBundle] pathForResource:@"Properties" ofType:@"plist"];
+    }
     
-    // plist shit
-    NSString *propertiesFile = [[NSBundle mainBundle] pathForResource:@"Properties" ofType:@"plist"];
     _properties = [[NSMutableArray alloc] initWithContentsOfFile:propertiesFile];
     
     // create shadows
@@ -61,7 +77,7 @@ BOOL _bottomVisible;
 }
 
 // the number of pixels we want displayed for our navigation
-#define VIEW_HIDDEN 265
+#define VIEW_HIDDEN 250
 
 // animate our layer to the specified point in pixels
 - (void)animateLayerToPoint:(CGFloat)x {
@@ -99,10 +115,12 @@ BOOL _bottomVisible;
             [self animateLayerToPoint:0];
             _bottomVisible = NO;
             self.container.userInteractionEnabled = YES; //Should enable the swiping through the gallery in the top layer
+            bottomLayerHidden = TRUE;
         } else {
             [self animateLayerToPoint:VIEW_HIDDEN];
             _bottomVisible = YES;
             self.container.userInteractionEnabled = NO; //Should disable the swiping through the gallery in the top layer
+            bottomLayerHidden = FALSE;
 
         }
     }
@@ -114,10 +132,12 @@ BOOL _bottomVisible;
         [self animateLayerToPoint:VIEW_HIDDEN];
         _bottomVisible = YES;
         self.container.userInteractionEnabled = NO; //Should disable the swiping through the gallery in the top layer
+        bottomLayerHidden = TRUE;
     } else {
         [self animateLayerToPoint:0];
         _bottomVisible = NO;
         self.container.userInteractionEnabled = YES; //Should disable the swiping through the gallery in the top layer
+        bottomLayerHidden = FALSE;
     }
 }
 
@@ -244,8 +264,17 @@ BOOL _bottomVisible;
     }
     
     if ([self.selectedCell isEqualToString:@"Map"]) {
+        //iOS 6 v iOS 7 Condition
+        AboutPageViewController *mapPage;
         
-        AboutPageViewController *mapPage = [storyboard instantiateViewControllerWithIdentifier:@"Map"];
+        if (floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_6_1) {
+            // Load resources for iOS 6.1 or earlier
+            mapPage = [storyboard instantiateViewControllerWithIdentifier:@"Map"];
+        } else {
+            // Load resources for iOS 7 or later
+            mapPage = [storyboard instantiateViewControllerWithIdentifier:@"NewMap"];
+        }
+
         [self presentViewController:mapPage animated:YES completion:nil];
     }
 
@@ -264,6 +293,7 @@ BOOL _bottomVisible;
     
     // Change the text
     nowFeaturing.text = @"Now Featuring";
+
     
     [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
 }

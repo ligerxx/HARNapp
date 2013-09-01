@@ -5,13 +5,13 @@
 	<dict>
 		<key>images</key>
 		<array>
-			<string>african.png</string>
-			<string>ancientamerican.png</string>
-			<string>asian.png</string>
-			<string>contemporary.png</string>
-			<string>modern.png</string>
-			<string>photography.png</string>
-			<string>prints.png</string>
+			<string>Africa-ios7.png</string>
+			<string>Ancient America - ios7.png</string>
+			<string>dragon-ios7.png</string>
+			<string>contemporary-ios7.png</string>
+			<string>modern-ios7.png</string>
+			<string>camera-ios7.png</string>
+			<string>prints-ios7.png</string>
 		</array>
 		<key>data</key>
 		<array>
@@ -27,10 +27,10 @@
 	<dict>
 		<key>images</key>
 		<array>
-			<string>map.png</string>
-			<string>harnglyph@2x.png</string>
-			<string>about.png</string>
-			<string>privacy.png</string>
+			<string>map-ios7.png</string>
+			<string>harn-ios7.png</string>
+			<string>about-ios7.png</string>
+			<string>privacy-ios7.png</string>
 		</array>
 		<key>data</key>
 		<array>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>images</key>
+		<array>
+			<string>african.png</string>
+			<string>ancientamerican.png</string>
+			<string>asian.png</string>
+			<string>contemporary.png</string>
+			<string>modern.png</string>
+			<string>photography.png</string>
+			<string>prints.png</string>
+		</array>
+		<key>data</key>
+		<array>
+			<string>African</string>
+			<string>Ancient American</string>
+			<string>Asian</string>
+			<string>Contemporary</string>
+			<string>Modern</string>
+			<string>Photography</string>
+			<string>Prints and Drawings Bef...</string>
+		</array>
+	</dict>
+	<dict>
+		<key>images</key>
+		<array>
+			<string>map.png</string>
+			<string>harnglyph@2x.png</string>
+			<string>about.png</string>
+			<string>privacy.png</string>
+		</array>
+		<key>data</key>
+		<array>
+			<string>Map</string>
+			<string>About The HARN</string>
+			<string>About This App</string>
+			<string>Privacy Policy</string>
+		</array>
+	</dict>
+</array>
+</plist>

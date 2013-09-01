@@ -51,13 +51,16 @@
 	nextPage = [[PageViewController alloc] initWithNibName:@"PageView" bundle:nil];
 	[scrollView addSubview:currentPage.view];
 	[scrollView addSubview:nextPage.view];
+    
+    //THIS!!!! HELPING WITH AUTOLAYOUT TRANSLATION PROBLEMS
+    scrollView.translatesAutoresizingMaskIntoConstraints = YES;
 
     /* This gesture is added to the scrollview if a user taps a work of art or its label and then goes to the method goToDetailView
      * which opens the segue "goToDetail" and presents the detail view of the featured work.
      */
     UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(goToDetailView:)];
     tapRecognizer.numberOfTapsRequired = 1;
-    [self.view addGestureRecognizer:tapRecognizer];
+    [scrollView addGestureRecognizer:tapRecognizer];
     
 	NSInteger widthCount = [[DataSource sharedDataSource] numDataPages];
 	if (widthCount == 0)
@@ -76,6 +79,22 @@
 	
 	[self applyNewIndex:0 pageController:currentPage];
 	[self applyNewIndex:1 pageController:nextPage];
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+    //This function is used to keep the Now Featuring label for iPhone 5 screen sizes at the top after returning from a collection despite the AutoLayout constraints
+    CGSize result = [[UIScreen mainScreen] bounds].size;
+    TitleViewController *mainScreen = (TitleViewController*) self.parentViewController;
+    
+    if(result.height >= 568 && showMoreInfoHasBeenExpanded == TRUE )
+    {
+        //move Now Featuring Label
+        CGRect frame = mainScreen.nowFeaturing.frame;
+        frame.origin.y = 31;
+        [mainScreen.nowFeaturing setFrame:frame];
+    }
+    
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)sender
@@ -171,7 +190,6 @@
     [UIView commitAnimations];
 }
 
-
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)newScrollView
 {
 	[self scrollViewDidEndScrollingAnimation:newScrollView];
@@ -203,13 +221,13 @@
   if(showMoreInfoHasBeenExpanded == FALSE)
   {
 
-    moreInfoView = [[UITextView alloc] initWithFrame:CGRectMake(40,130,240,180)];
+    moreInfoView = [[UITextView alloc] initWithFrame:CGRectMake(40,270,240,180)];
     moreInfoView.backgroundColor = [UIColor clearColor];
     moreInfoView.scrollEnabled = FALSE;
     moreInfoView.editable = FALSE;
     moreInfoView.text = currentPage.moreInfo;
     moreInfoView.textAlignment = 1;
-    moreInfoView.textColor = [UIColor grayColor];
+    moreInfoView.textColor = [UIColor blackColor];
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     [UIView beginAnimations:nil context:context];
@@ -222,25 +240,21 @@
     
    //fade out if 3.5" screen otherwise move it up
    CGSize result = [[UIScreen mainScreen] bounds].size;
-   CGRect scrollViewHeight = mainScreen.container.frame;
+   //CGRect scrollViewHeight = mainScreen.container.frame;
    CGRect keepPageControlerDown = pageControl.frame;
       
    if(result.height != 568)
    {
        mainScreen.nowFeaturing.alpha = 0.0;
-       //move the Container
-       scrollViewHeight.origin.y = -120;
    }else{      
     //move Now Featuring Label
-    CGRect frame = mainScreen.nowFeaturing.frame;
-    frame.origin.y = 11;
-    [mainScreen.nowFeaturing setFrame:frame];
-    //move the Container
-    scrollViewHeight.origin.y = -150;
+       CGRect frame = mainScreen.nowFeaturing.frame;
+       frame.origin.y = 31;
+       [mainScreen.nowFeaturing setFrame:frame];
    }
-
-    [scrollView setFrame:scrollViewHeight];
-      //[scrollView setBackgroundColor:[UIColor redColor]];
+      
+      //move the Container
+      scrollView.transform = CGAffineTransformTranslate(scrollView.transform, 0.0, -120.0);
     
     //add the more info
     [self.view addSubview:moreInfoView];
@@ -261,31 +275,25 @@
       //fade out if 3.5" screen otherwise move it up
       CGSize result = [[UIScreen mainScreen] bounds].size;
       
-      CGRect containerFrame = mainScreen.container.frame;
-      CGRect scrollViewHeight = mainScreen.container.frame;
+      //CGRect containerFrame = mainScreen.container.frame;
+      //CGRect scrollViewHeight = mainScreen.container.frame;
       CGRect keepPageControlerDown = pageControl.frame;
       
       if(result.height != 568)
       {
           mainScreen.nowFeaturing.alpha = 1.0;
-          //move the Container
-          scrollViewHeight.origin.y = +3;
-          containerFrame.size.height = 327;
-          [mainScreen.container setFrame:containerFrame];
-          [scrollView setFrame:scrollViewHeight];
 
       }else{
           //move Now Featuring Label
+          
           CGRect frame = mainScreen.nowFeaturing.frame;
           frame.origin.y = 160;
           [mainScreen.nowFeaturing setFrame:frame];
-          
-          //move the Container
-          scrollViewHeight.origin.y = +10;
-          containerFrame.size.height = 359;
-          [mainScreen.container setFrame:containerFrame];
-          [scrollView setFrame:scrollViewHeight];
+
       }
+      
+      //Move the container
+      scrollView.transform = CGAffineTransformIdentity;
       
       [self.moreInfoView removeFromSuperview];
       
