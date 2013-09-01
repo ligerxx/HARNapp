@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="523-E5-MiZ">
-=======
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4504" systemVersion="13A558" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="523-E5-MiZ">
->>>>>>> ios7
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3734.1"/>
@@ -37,20 +33,6 @@
                                         </attributes>
                                     </fragment>
                                     <fragment>
-<<<<<<< HEAD
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-=======
->>>>>>> ios7
                                         <string key="content">
 This mobile application, “HARN” (the “Application”) is made available to you by the University of Florida Board of Trustees on behalf of the Samuel P. Harn Museum of Art (the “HARN”). By downloading, installing, copying, or otherwise using the Application, you agree to be bound by this Terms of Use and the Privacy Policy. If you do not agree to these terms, please do not download or use the Application.</string>
                                         <attributes>
@@ -1039,8 +1021,6 @@ Cg
                                         </attributes>
                                     </fragment>
                                     <fragment content="----">
-<<<<<<< HEAD
-=======
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
@@ -1138,7 +1118,6 @@ Cg
                                     </fragment>
                                     <fragment>
                                         <string key="content">The HARN uses the personal information you provide to us for internal purposes, such as filling and tracking your order, analyzing trends and collecting statistics. In addition, the HARN may use your Personal Data for HARN marketing and promotional purposes. For example, the HARN may notify you of events, programs, sales at the HARN Store, and special offers and promotions related to the HARN Museum that we think might be of interest to you. We may also request your participation in surveys. If you do not want us to use your Personal Data to contact you for these purposes, please follow the instructions in “Do Not Contact” below.</string>
->>>>>>> ios7
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
@@ -1157,12 +1136,7 @@ Cg
                                             </paragraphStyle>
                                         </attributes>
                                     </fragment>
-<<<<<<< HEAD
-                                    <fragment>
-                                        <string key="content">The HARN may offer Site visitors the opportunity to submit content or post comments. If you choose to participate, the HARN or its third-party affiliate will request such information, including Personal Data that are necessary for participation. The terms of this Privacy Policy apply to that information, unless HARN or its third-party affiliate provides an alternate policy. Your Personal Data may be used as set forth below. See "Use of Personal Data by the HARN" and "Disclosure of Personal Data to Others."</string>
-=======
                                     <fragment content=" ">
->>>>>>> ios7
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
@@ -1181,15 +1155,9 @@ Cg
                                             </paragraphStyle>
                                         </attributes>
                                     </fragment>
-<<<<<<< HEAD
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-=======
                                     <fragment content="Aggregate Information">
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
->>>>>>> ios7
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -1206,15 +1174,9 @@ Cg
                                             </paragraphStyle>
                                         </attributes>
                                     </fragment>
-<<<<<<< HEAD
-                                    <fragment content="USE OF PERSONAL DATA BY THE HARN">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-=======
                                     <fragment content="----">
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
->>>>>>> ios7
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -1231,12 +1193,8 @@ Cg
                                             </paragraphStyle>
                                         </attributes>
                                     </fragment>
-<<<<<<< HEAD
-                                    <fragment content="----">
-=======
                                     <fragment>
                                         <string key="content">The HARN may compile and provide aggregate statistics about Site visitors, customers, sales, traffic patterns, and related information to third parties, but that information will not specify Personal Data. The HARN collects IP addresses as a component of the aggregate information that could, if necessary, be used to identify a user in order to comply with safety or security issues.</string>
->>>>>>> ios7
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
@@ -1255,12 +1213,7 @@ Cg
                                             </paragraphStyle>
                                         </attributes>
                                     </fragment>
-<<<<<<< HEAD
-                                    <fragment>
-                                        <string key="content">The HARN uses the personal information you provide to us for internal purposes, such as filling and tracking your order, analyzing trends and collecting statistics. In addition, the HARN may use your Personal Data for HARN marketing and promotional purposes. For example, the HARN may notify you of events, programs, sales at the HARN Store, and special offers and promotions related to the HARN Museum that we think might be of interest to you. We may also request your participation in surveys. If you do not want us to use your Personal Data to contact you for these purposes, please follow the instructions in “Do Not Contact” below.</string>
-=======
                                     <fragment content=" ">
->>>>>>> ios7
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
@@ -1279,15 +1232,9 @@ Cg
                                             </paragraphStyle>
                                         </attributes>
                                     </fragment>
-<<<<<<< HEAD
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-=======
                                     <fragment content="Personal Data">
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
->>>>>>> ios7
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -1304,115 +1251,6 @@ Cg
                                             </paragraphStyle>
                                         </attributes>
                                     </fragment>
-                                    <fragment content="----">
-                                        <attributes>
-<<<<<<< HEAD
-                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-=======
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
->>>>>>> ios7
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-<<<<<<< HEAD
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="----">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">The HARN may compile and provide aggregate statistics about Site visitors, customers, sales, traffic patterns, and related information to third parties, but that information will not specify Personal Data. The HARN collects IP addresses as a component of the aggregate information that could, if necessary, be used to identify a user in order to comply with safety or security issues.</string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-=======
->>>>>>> ios7
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">The HARN may share your Personal Data as outlined above with other reputable organizations, such as other nonprofits, art institutions, and media companies. The HARN has teamed up with reputable third-party vendors in order to provide services to its online users and allow us to better respond to the needs of our visitors. The HARN requires its vendors to maintain the confidentiality and security of the information to which they are provided access and restricts these vendors from using the information in any way without express authorization by the HARN.</string>
-                                        <attributes>
-<<<<<<< HEAD
-                                            <font key="NSFont" size="14" name="HelveticaNeue-Bold"/>
-=======
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
->>>>>>> ios7
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-<<<<<<< HEAD
                                     <fragment content="----">
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
@@ -1452,8 +1290,6 @@ Cg
                                             </paragraphStyle>
                                         </attributes>
                                     </fragment>
-=======
->>>>>>> ios7
                                     <fragment content=" ">
                                         <attributes>
                                             <font key="NSFont" size="14" name="HelveticaNeue"/>
@@ -1732,8 +1568,6 @@ Cg
                                         <string key="content" base64-UTF8="YES">
 Cg
 </string>
-<<<<<<< HEAD
-=======
                                         <attributes>
                                             <font key="NSFont" size="16" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
@@ -1851,100 +1685,11 @@ Cg
                                         <string key="content" base64-UTF8="YES">
 Cg
 </string>
->>>>>>> ios7
                                         <attributes>
                                             <font key="NSFont" size="16" name="HelveticaNeue"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
                                                 <tabStops/>
                                             </paragraphStyle>
-<<<<<<< HEAD
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="----">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content">The HARN may revise its Privacy Policy at any time, without notice and encourages you to visit this page periodically to review the most current policy.</string>
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Effective Date: 6/30/13 ">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment>
-                                        <string key="content" base64-UTF8="YES">
-Cg
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="16" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="Last Updated:  6/30/13">
-                                        <attributes>
-                                            <font key="NSFont" size="14" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="468" defaultTabInterval="36">
-                                                <tabStops/>
-                                            </paragraphStyle>
-=======
->>>>>>> ios7
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -2230,13 +1975,8 @@ Cg
                             <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-<<<<<<< HEAD
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" id="hig-1k-1Bi">
-                                    <rect key="frame" x="10" y="0.0" width="300" height="128"/>
-=======
                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hig-1k-1Bi">
                                     <rect key="frame" x="20" y="0.0" width="280" height="162"/>
->>>>>>> ios7
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -2688,22 +2428,6 @@ Cg
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-<<<<<<< HEAD
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="gallerybackground@2x.png" id="1hJ-6o-kN4">
-                                <rect key="frame" x="0.0" y="44" width="320" height="504"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="casey.png" id="NrS-Eo-Amt">
-                                <rect key="frame" x="20" y="68" width="127" height="132"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="lauren.png" id="Hoz-fc-O0G">
-                                <rect key="frame" x="173" y="68" width="127" height="132"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" id="2vH-9h-suJ">
-                                <rect key="frame" x="20" y="220" width="280" height="226"/>
-=======
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="gallerybackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="1hJ-6o-kN4">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2736,7 +2460,6 @@ Cg
                             </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2vH-9h-suJ">
                                 <rect key="frame" x="20" y="228" width="280" height="210"/>
->>>>>>> ios7
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">The HARN app was crafted with care by Casey Feldman and Lauren Gray (Exception Mark Inc.) in collaboration with the University of Florida's HARN Museum of Art for their undergraduate senior project in University of Florida's Department of Computer Science. Casey and Lauren are both Digital Arts &amp; Sciences majors.
 
@@ -2780,20 +2503,6 @@ Special Thanks to: Eric Segal, Ph.D., Alireza Entezari, Ph.D., Ivy Chen, Tami M.
                                     <action selector="visitSite:" destination="ItQ-k4-DfS" eventType="touchUpInside" id="KDm-kB-qw5"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" id="RTF-9m-7Z3">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <items>
-                                    <navigationItem title="About This App" id="Dq7-WM-oHe">
-                                        <barButtonItem key="leftBarButtonItem" title="Home" id="5fS-Mc-G70">
-                                            <connections>
-                                                <action selector="closeView:" destination="ItQ-k4-DfS" id="gOP-YW-AXC"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -3123,145 +2832,6 @@ Admission is free.</string>
         <image name="mycar.png" width="20" height="20"/>
         <image name="retake.png" width="320" height="568"/>
     </resources>
-    <classes>
-        <class className="AboutHarnViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutHarnViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="closeView:"/>
-                <relationship kind="action" name="swipedRight:" candidateClass="UIGestureRecognizer"/>
-                <relationship kind="action" name="visitSite:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="harnImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="openFacebook" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="openWebsite" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="AboutPageViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutPageViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="closeView:"/>
-                <relationship kind="action" name="swipedRight:" candidateClass="UIGestureRecognizer"/>
-                <relationship kind="action" name="visitSite:" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="caseyImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="followCasey" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="followLauren" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="laurenImage" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="ArtCell" superclassName="UICollectionViewCell">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ArtCell.h"/>
-            <relationships>
-                <relationship kind="outlet" name="description" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="previewImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="title" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="CameraViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CameraViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancelView:"/>
-                <relationship kind="action" name="saveImage:"/>
-                <relationship kind="action" name="share:"/>
-                <relationship kind="outlet" name="cancel" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="savePhoto" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="shareButton" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-        <class className="CollectionHeaderView" superclassName="UICollectionReusableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CollectionHeaderView.h"/>
-            <relationships>
-                <relationship kind="outlet" name="headerBackground" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="headerText" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="CollectionViewController" superclassName="UICollectionViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CollectionViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="closeView:"/>
-                <relationship kind="action" name="swipedRight:" candidateClass="UIGestureRecognizer"/>
-                <relationship kind="outlet" name="navBar" candidateClass="UINavigationBar"/>
-            </relationships>
-        </class>
-        <class className="DetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="share:"/>
-                <relationship kind="action" name="swipedLeft:" candidateClass="UIGestureRecognizer"/>
-                <relationship kind="outlet" name="descriptionOfWork" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="homeButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="previewImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="shareButton" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="titleOfWork" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="InformationViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/InformationViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="changeFontSize:"/>
-                <relationship kind="action" name="donePressed:"/>
-                <relationship kind="outlet" name="descriptionOfWork" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="MapViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="closeView:"/>
-                <relationship kind="action" name="launchMaps:"/>
-                <relationship kind="action" name="showInfo:"/>
-                <relationship kind="outlet" name="mapView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="openMaps" candidateClass="UIBarButtonItem"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="PagingScrollViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PagingScrollViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="changePage:"/>
-                <relationship kind="action" name="goToDetailView:"/>
-                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
-                <relationship kind="outlet" name="scrollView" candidateClass="UIScrollView"/>
-            </relationships>
-        </class>
-        <class className="TitleViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TitleViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="panLayer:" candidateClass="UIPanGestureRecognizer"/>
-                <relationship kind="action" name="tapToPanLayer:"/>
-                <relationship kind="outlet" name="container" candidateClass="UIView"/>
-                <relationship kind="outlet" name="harnLogo" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="nowFeaturing" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-                <relationship kind="outlet" name="topLayer" candidateClass="UIView"/>
-                <relationship kind="outlet" name="viewDeckController" candidateClass="UINavigationBar"/>
-            </relationships>
-        </class>
-        <class className="UICollectionReusableView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
-        </class>
-        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
-        </class>
-        <class className="UICollectionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
-        </class>
-        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
-        </class>
-        <class className="filterView" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/filterView.h"/>
-            <relationships>
-                <relationship kind="action" name="showCameraUI:"/>
-                <relationship kind="outlet" name="background" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="filtersScrollView" candidateClass="UIScrollView"/>
-                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="retake" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="save" candidateClass="UIBarButtonItem"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
