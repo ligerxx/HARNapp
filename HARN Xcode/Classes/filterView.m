@@ -34,6 +34,11 @@ bool firstTimeOpen = true;
     
     if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
     {
+        if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)]) {
+            // iOS 7
+            [self prefersStatusBarHidden];
+            [self performSelector:@selector(setNeedsStatusBarAppearanceUpdate)];
+        }
         [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
     }
     else
@@ -45,10 +50,6 @@ bool firstTimeOpen = true;
     
     [self presentViewController:imagePicker animated:YES completion:nil];
     
-    /*THIS WAS THE ORIGINAL SPEC TAKEN FROM APPLE'S DOCS TO OPEN THE CAMERA GUI.
-     
-     [self startCameraControllerFromViewController: self
-     usingDelegate: self];*/
 }
 
 -(void)initializeCameraUI
@@ -63,6 +64,11 @@ bool firstTimeOpen = true;
     
     if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera])
     {
+        if ([self respondsToSelector:@selector(setNeedsStatusBarAppearanceUpdate)]) {
+            // iOS 7
+            [self prefersStatusBarHidden];
+            [self performSelector:@selector(setNeedsStatusBarAppearanceUpdate)];
+        }
         [imagePicker setSourceType:UIImagePickerControllerSourceTypeCamera];
     }
     else
