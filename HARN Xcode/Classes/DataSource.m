@@ -36,7 +36,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(DataSource);
 				nil],
 			[NSDictionary dictionaryWithObjectsAndKeys:
 				@"Picturing Florida", @"pageName",
-				@"June 18, 2013 - October 13, 2013\n\nPicturing Florida feat. landscapes by Herman Herzog and Frank Hamilton Taylor, two artists who captured scenes of Florida during their travels in the late 19th century. The works selected for the exhibition celebrate Florida’s coastal towns and interior wetlands which provided new subject matter for artists during this period.", @"pageText", @"florida-main.png", @"pageImage",
+				@"June 18, 2013 - October 13, 2013\n\nPicturing Florida features landscapes by Herman Herzog & Frank Hamilton Taylor, two artists who captured scenes of Florida during their travels in the late 19th century. The works selected for the exhibition celebrate Florida’s coastal towns & interior wetlands which provided new subject matter for artists during this period.", @"pageText", @"florida-main.png", @"pageImage",
 				nil],
 			[NSDictionary dictionaryWithObjectsAndKeys:
 				@"Bird Mothers and Feathered Serpents: Mythical Beings of Oceania and Ancient America", @"pageName",

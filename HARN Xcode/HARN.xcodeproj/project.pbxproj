@@ -45,7 +45,6 @@
 		1D6469C61791CBB800DC5083 /* modern-ios7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D6469C41791CAB900DC5083 /* modern-ios7.png */; };
 		1D657CE81726FFD700F5545A /* harnglyph@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D657CE71726FFD700F5545A /* harnglyph@2x.png */; };
 		1D66A5711715B98700641B84 /* HarnLogoSquare@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D66A5701715B98700641B84 /* HarnLogoSquare@2x.png */; };
-		1D6C95DC17947F0500F9ACA3 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE992721773B4130079DFF0 /* Reveal.framework */; };
 		1D7090AF16CC063A0074597B /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7090AE16CC063A0074597B /* CameraViewController.m */; };
 		1D76D3BE16D7EFA70074284E /* aA@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D76D3BD16D7EFA70074284E /* aA@2x.png */; };
 		1D7A6F4F16E17D4100DCBFAB /* addToFavorites.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7A6F4E16E17D4100DCBFAB /* addToFavorites.m */; };
@@ -140,7 +139,6 @@
 		1DD947201717B232006DD9D8 /* bridge-tb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DD9471E1717B232006DD9D8 /* bridge-tb.jpg */; };
 		1DE0689217DFEE340058270B /* florida-main.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DE0689117DFEE340058270B /* florida-main.png */; };
 		1DE88E5416CB140600B8804E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */; };
-		1DE992741773B4350079DFF0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE992731773B4350079DFF0 /* CFNetwork.framework */; };
 		1DED7F6416F2D97C0005B3A9 /* camerafiltericon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DED7F6316F2D97C0005B3A9 /* camerafiltericon@2x.png */; };
 		1DEE8DFA16CD855900A3C9B7 /* UIImageExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */; };
 		1DF4A386171900F200598443 /* papauer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DF4A384171900F200598443 /* papauer.jpg */; };
@@ -430,8 +428,6 @@
 		1DD9471E1717B232006DD9D8 /* bridge-tb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "bridge-tb.jpg"; sourceTree = "<group>"; };
 		1DE0689117DFEE340058270B /* florida-main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "florida-main.png"; sourceTree = "<group>"; };
 		1DE88E5316CB140600B8804E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		1DE992721773B4130079DFF0 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Reveal.framework; sourceTree = "<group>"; };
-		1DE992731773B4350079DFF0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		1DED7F6316F2D97C0005B3A9 /* camerafiltericon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camerafiltericon@2x.png"; sourceTree = "<group>"; };
 		1DEE8DF816CD855900A3C9B7 /* UIImageExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageExtension.h; sourceTree = "<group>"; };
 		1DEE8DF916CD855900A3C9B7 /* UIImageExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageExtension.m; sourceTree = "<group>"; };
@@ -589,8 +585,6 @@
 			files = (
 				1D8D460D179C49DE00BD2278 /* CoreLocation.framework in Frameworks */,
 				1D32F8E01799EA5F00718574 /* MapKit.framework in Frameworks */,
-				1D6C95DC17947F0500F9ACA3 /* Reveal.framework in Frameworks */,
-				1DE992741773B4350079DFF0 /* CFNetwork.framework in Frameworks */,
 				8016D53716CC220B00F20725 /* QuartzCore.framework in Frameworks */,
 				1DA8E15D16CD8A9B002914E4 /* OpenGLES.framework in Frameworks */,
 				1DA6A40D16CAFBEE0021267F /* CoreImage.framework in Frameworks */,
@@ -922,8 +916,6 @@
 			children = (
 				1D8D460C179C49DE00BD2278 /* CoreLocation.framework */,
 				1D32F8DF1799EA5F00718574 /* MapKit.framework */,
-				1DE992731773B4350079DFF0 /* CFNetwork.framework */,
-				1DE992721773B4130079DFF0 /* Reveal.framework */,
 				1DA8E15C16CD8A9B002914E4 /* OpenGLES.framework */,
 				8016D53516CC21BD00F20725 /* QuartzCore.framework */,
 				1D62063D16CB481100203DA8 /* MediaPlayer.framework */,
@@ -1487,7 +1479,7 @@
 				GCC_PREFIX_HEADER = HARN_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = HARN;
 				SDKROOT = iphoneos;
 			};
@@ -1510,7 +1502,7 @@
 				GCC_PREFIX_HEADER = HARN_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = HARN;
 				SDKROOT = iphoneos;
 			};
