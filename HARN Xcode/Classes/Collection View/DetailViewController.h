@@ -15,7 +15,6 @@
     NSString *artTitle;
     NSString *artDescription;
     NSArray *arrayOfArt;
-    int *currentViewIndex;
 }
 
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *homeButton; //Only used for front page navigation

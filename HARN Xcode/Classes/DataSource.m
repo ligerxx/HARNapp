@@ -34,9 +34,13 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(DataSource);
 				@"Highlights from the Modern Collection", @"pageName",
 				@"Ongoing\n\nThis exhibition presents highlights from the museum’s holdings of modern American, European and Latin American art spanning the mid-19th century through the first half of the 20th century.", @"pageText", @"modern-main.png", @"pageImage",
 				nil],
-			[NSDictionary dictionaryWithObjectsAndKeys:
-				@"Picturing Florida", @"pageName",
-				@"June 18, 2013 - October 13, 2013\n\nPicturing Florida features landscapes by Herman Herzog & Frank Hamilton Taylor, two artists who captured scenes of Florida during their travels in the late 19th century. The works selected for the exhibition celebrate Florida’s coastal towns & interior wetlands which provided new subject matter for artists during this period.", @"pageText", @"florida-main.png", @"pageImage",
+            [NSDictionary dictionaryWithObjectsAndKeys:
+             @"Cosmopolitan: Envisioning Global Communities", @"pageName",
+                      @"August 27, 2013 - July 27, 2014\n\nThis exhibition highlights multiple ways of fostering community through art by linking radically different expressions of contemporary art & culture in novel ways. Artists from around the world work at the intersection of ethics and aesthetics affirming notions of individual difference & communal coexistence.", @"pageText", @"cosmo-main.png", @"pageImage",
+                      nil],
+            [NSDictionary dictionaryWithObjectsAndKeys:
+				@"Highlights from the Asian Collection", @"pageName",
+				@"Ongoing\n\nThe Cofrin Asian Art Wing contains four main galleries and two focus galleries with more than 680 works showcasing the Harn Museum’s collections in Chinese, Indian, Japanese, Korean, and South and Southeast Asian art.", @"pageText", @"asian-main.png", @"pageImage",
 				nil],
 			[NSDictionary dictionaryWithObjectsAndKeys:
 				@"Bird Mothers and Feathered Serpents: Mythical Beings of Oceania and Ancient America", @"pageName",

@@ -65,9 +65,13 @@
     [locationView setRegion:region animated:YES];
 }
 
--(MKOverlayView *)mapView:(MKMapView *)mapView viewForOverlay:(id)overlay
+-(MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay
 {
-    MKPolygonView *polyView = [[MKPolygonView alloc] initWithOverlay:overlay];
+    if (![overlay isKindOfClass:[MKPolygon class]]) {
+        return nil;
+    }
+    
+    MKPolygonRenderer *polyView = [[MKPolygonRenderer alloc] initWithOverlay:overlay];
     
     UIImage *harnMapImage = [UIImage imageNamed:@"harngpsoverlay.png"];
     MKMapRect mapRectangle = [overlay boundingMapRect];

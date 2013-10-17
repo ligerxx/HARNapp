@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4504" systemVersion="13A558" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="523-E5-MiZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A598" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="523-E5-MiZ">
     <dependencies>
-        <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3734.1"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -2436,8 +2436,8 @@ Cg
                                 <rect key="frame" x="20" y="81" width="127" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="132" id="eyK-Kj-D4K"/>
-                                    <constraint firstAttribute="width" constant="127" id="pG2-Rc-a1v"/>
+                                    <constraint firstAttribute="height" constant="132" id="qDW-26-ZDD"/>
+                                    <constraint firstAttribute="width" constant="127" id="s4O-Zz-kH0"/>
                                 </constraints>
                             </imageView>
                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="lauren.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hoz-fc-O0G">
@@ -2459,7 +2459,7 @@ Cg
                                 </items>
                             </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="751" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2vH-9h-suJ">
-                                <rect key="frame" x="20" y="228" width="280" height="210"/>
+                                <rect key="frame" x="20" y="228" width="280" height="272"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">The HARN app was crafted with care by Casey Feldman and Lauren Gray (Exception Mark Inc.) in collaboration with the University of Florida's HARN Museum of Art for their undergraduate senior project in University of Florida's Department of Computer Science. Casey and Lauren are both Digital Arts &amp; Sciences majors.
 
@@ -2473,10 +2473,10 @@ Special Thanks to: Eric Segal, Ph.D., Alireza Entezari, Ph.D., Ivy Chen, Tami M.
                                 <rect key="frame" x="25" y="510" width="118" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="8Ga-o8-cQ5"/>
-                                    <constraint firstAttribute="width" constant="118" id="CLu-xo-hQg"/>
+                                    <constraint firstAttribute="height" constant="44" id="oqd-cT-3Nd"/>
+                                    <constraint firstAttribute="width" constant="118" id="vdU-Z0-0wF"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline2"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <state key="normal" title="Follow Casey" backgroundImage="blackbutton.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -2491,7 +2491,7 @@ Special Thanks to: Eric Segal, Ph.D., Alireza Entezari, Ph.D., Ivy Chen, Tami M.
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqC-Ix-eSC">
                                 <rect key="frame" x="178" y="510" width="118" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline2"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <state key="normal" title="Follow Lauren" backgroundImage="blackbutton.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -2507,29 +2507,28 @@ Special Thanks to: Eric Segal, Ph.D., Alireza Entezari, Ph.D., Ivy Chen, Tami M.
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Hoz-fc-O0G" firstAttribute="bottom" secondItem="NrS-Eo-Amt" secondAttribute="bottom" id="4KV-pf-dfG"/>
-                            <constraint firstItem="RTF-9m-7Z3" firstAttribute="trailing" secondItem="61W-73-Rth" secondAttribute="trailing" id="5Om-ck-RdV"/>
-                            <constraint firstItem="gqC-Ix-eSC" firstAttribute="top" secondItem="SDU-cD-dnQ" secondAttribute="top" id="8tY-cm-vA7"/>
-                            <constraint firstItem="Hoz-fc-O0G" firstAttribute="leading" secondItem="NrS-Eo-Amt" secondAttribute="trailing" constant="26" id="CzH-lz-lgd"/>
-                            <constraint firstItem="RTF-9m-7Z3" firstAttribute="top" secondItem="UgS-lp-RkD" secondAttribute="bottom" id="DcM-d2-ogR"/>
-                            <constraint firstItem="gqC-Ix-eSC" firstAttribute="leading" secondItem="SDU-cD-dnQ" secondAttribute="trailing" constant="35" id="GE9-2Z-DSL"/>
-                            <constraint firstItem="2vH-9h-suJ" firstAttribute="centerX" secondItem="RTF-9m-7Z3" secondAttribute="centerX" id="KNz-H8-Ygy"/>
-                            <constraint firstItem="1hJ-6o-kN4" firstAttribute="top" secondItem="61W-73-Rth" secondAttribute="top" id="QiQ-u4-Nwp"/>
-                            <constraint firstItem="gqC-Ix-eSC" firstAttribute="bottom" secondItem="SDU-cD-dnQ" secondAttribute="bottom" id="S8u-Z5-ZOb"/>
-                            <constraint firstItem="RTF-9m-7Z3" firstAttribute="trailing" secondItem="1hJ-6o-kN4" secondAttribute="trailing" id="SMz-cP-FNe"/>
-                            <constraint firstItem="huS-BY-aVM" firstAttribute="top" secondItem="SDU-cD-dnQ" secondAttribute="bottom" constant="14" id="TGe-4K-9Lv"/>
-                            <constraint firstItem="Hoz-fc-O0G" firstAttribute="top" secondItem="RTF-9m-7Z3" secondAttribute="bottom" constant="17" id="WY9-70-CE7"/>
-                            <constraint firstItem="SDU-cD-dnQ" firstAttribute="leading" secondItem="61W-73-Rth" secondAttribute="leading" constant="25" id="aKm-XK-FVy"/>
-                            <constraint firstItem="2vH-9h-suJ" firstAttribute="trailing" secondItem="Hoz-fc-O0G" secondAttribute="trailing" id="ayv-jc-jsg"/>
-                            <constraint firstItem="RTF-9m-7Z3" firstAttribute="leading" secondItem="61W-73-Rth" secondAttribute="leading" id="cqf-yc-BXI"/>
-                            <constraint firstItem="2vH-9h-suJ" firstAttribute="leading" secondItem="NrS-Eo-Amt" secondAttribute="leading" id="gS4-sT-6pR"/>
-                            <constraint firstItem="2vH-9h-suJ" firstAttribute="top" secondItem="Hoz-fc-O0G" secondAttribute="bottom" constant="15" id="iA2-hn-EWI"/>
-                            <constraint firstItem="gqC-Ix-eSC" firstAttribute="top" secondItem="2vH-9h-suJ" secondAttribute="bottom" constant="72" id="jKb-q9-3UA"/>
-                            <constraint firstItem="Hoz-fc-O0G" firstAttribute="top" secondItem="NrS-Eo-Amt" secondAttribute="top" id="kI6-hH-cda"/>
-                            <constraint firstAttribute="trailing" secondItem="gqC-Ix-eSC" secondAttribute="trailing" constant="24" id="lyB-g3-4uf"/>
-                            <constraint firstItem="1hJ-6o-kN4" firstAttribute="bottom" secondItem="61W-73-Rth" secondAttribute="bottom" id="tg0-MF-xTy"/>
-                            <constraint firstItem="NrS-Eo-Amt" firstAttribute="leading" secondItem="61W-73-Rth" secondAttribute="leading" constant="20" symbolic="YES" id="vxS-7H-CXo"/>
-                            <constraint firstItem="RTF-9m-7Z3" firstAttribute="leading" secondItem="1hJ-6o-kN4" secondAttribute="leading" id="wWy-jN-CzO"/>
+                            <constraint firstItem="2vH-9h-suJ" firstAttribute="top" secondItem="NrS-Eo-Amt" secondAttribute="bottom" constant="15" id="0DI-Co-zAb"/>
+                            <constraint firstItem="SDU-cD-dnQ" firstAttribute="bottom" secondItem="gqC-Ix-eSC" secondAttribute="bottom" id="2Hd-8A-EO4"/>
+                            <constraint firstItem="NrS-Eo-Amt" firstAttribute="leading" secondItem="61W-73-Rth" secondAttribute="leading" constant="20" symbolic="YES" id="5M2-cV-kDv"/>
+                            <constraint firstItem="NrS-Eo-Amt" firstAttribute="bottom" secondItem="Hoz-fc-O0G" secondAttribute="bottom" id="692-4a-eWG"/>
+                            <constraint firstItem="huS-BY-aVM" firstAttribute="top" secondItem="SDU-cD-dnQ" secondAttribute="bottom" constant="14" id="Lj2-P2-hRd"/>
+                            <constraint firstItem="RTF-9m-7Z3" firstAttribute="top" secondItem="UgS-lp-RkD" secondAttribute="bottom" id="OXe-xY-fxb"/>
+                            <constraint firstItem="SDU-cD-dnQ" firstAttribute="top" secondItem="gqC-Ix-eSC" secondAttribute="top" id="PVL-qN-xfe"/>
+                            <constraint firstItem="RTF-9m-7Z3" firstAttribute="trailing" secondItem="1hJ-6o-kN4" secondAttribute="trailing" id="VZ9-6f-qmP"/>
+                            <constraint firstItem="2vH-9h-suJ" firstAttribute="trailing" secondItem="Hoz-fc-O0G" secondAttribute="trailing" id="XE6-DC-Agv"/>
+                            <constraint firstItem="huS-BY-aVM" firstAttribute="top" secondItem="1hJ-6o-kN4" secondAttribute="bottom" id="aKH-S2-xNe"/>
+                            <constraint firstItem="RTF-9m-7Z3" firstAttribute="centerX" secondItem="2vH-9h-suJ" secondAttribute="centerX" id="gWl-iU-J18"/>
+                            <constraint firstAttribute="trailing" secondItem="gqC-Ix-eSC" secondAttribute="trailing" constant="24" id="kkn-Hm-MRG"/>
+                            <constraint firstItem="NrS-Eo-Amt" firstAttribute="top" secondItem="RTF-9m-7Z3" secondAttribute="bottom" constant="17" id="l1g-r5-YQ7"/>
+                            <constraint firstItem="NrS-Eo-Amt" firstAttribute="leading" secondItem="2vH-9h-suJ" secondAttribute="leading" id="lOM-bS-0rs"/>
+                            <constraint firstItem="SDU-cD-dnQ" firstAttribute="leading" secondItem="61W-73-Rth" secondAttribute="leading" constant="25" id="mE2-rr-iYo"/>
+                            <constraint firstItem="NrS-Eo-Amt" firstAttribute="top" secondItem="Hoz-fc-O0G" secondAttribute="top" id="om8-2d-WUk"/>
+                            <constraint firstItem="1hJ-6o-kN4" firstAttribute="leading" secondItem="RTF-9m-7Z3" secondAttribute="leading" id="pxe-fH-nFc"/>
+                            <constraint firstItem="gqC-Ix-eSC" firstAttribute="leading" secondItem="SDU-cD-dnQ" secondAttribute="trailing" constant="35" id="spP-eE-ZMi"/>
+                            <constraint firstItem="SDU-cD-dnQ" firstAttribute="top" secondItem="2vH-9h-suJ" secondAttribute="bottom" constant="10" id="sq5-dj-AIU"/>
+                            <constraint firstAttribute="trailing" secondItem="Hoz-fc-O0G" secondAttribute="trailing" constant="20" symbolic="YES" id="vvx-9O-qzQ"/>
+                            <constraint firstItem="Hoz-fc-O0G" firstAttribute="leading" secondItem="NrS-Eo-Amt" secondAttribute="trailing" constant="26" id="za2-rn-Tsf"/>
+                            <constraint firstItem="1hJ-6o-kN4" firstAttribute="top" secondItem="61W-73-Rth" secondAttribute="top" id="zkt-bK-skJ"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Hxo-ob-Z4v" appends="YES" id="Jzg-Ez-N2u"/>
@@ -2661,7 +2660,7 @@ Admission is free.</string>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="118" id="jYQ-Ge-3Th"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline2"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <state key="normal" title="Facebook" backgroundImage="blackbutton.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -2679,7 +2678,7 @@ Admission is free.</string>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="hl8-XG-8KU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline2"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <state key="normal" title="Visit Our Site" backgroundImage="blackbutton.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>

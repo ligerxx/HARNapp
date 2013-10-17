@@ -115,7 +115,7 @@
             
             //Creates the detailView that and begins adding everything for it to present to the users since this is templateted (sp?)
             DetailViewController *detailViewController = [segue destinationViewController];
-            detailViewController.title =  [NSString stringWithFormat:@"%u of %u",  indexPath, lengthOfArray ];
+            detailViewController.title =  [NSString stringWithFormat:@"%ld of %ld",  (long)indexPath, (long)lengthOfArray ];
             
             //This will have to be the image stored in the cell
             UIImage *imageToSend = collectionInfo.largeImages[selectedIndexPath.row];

@@ -17,7 +17,7 @@
 
 @implementation DetailViewController
 
-@synthesize arrayOfArt, artDescription, artTitle, currentViewIndex, extendedDescription, info, theImage, previewImage;
+@synthesize arrayOfArt, artDescription, artTitle, extendedDescription, info, theImage, previewImage;
 
 -(void)setImage:(UIImage *)image
 {

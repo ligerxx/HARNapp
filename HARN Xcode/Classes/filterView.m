@@ -542,7 +542,7 @@ bool firstTimeOpen = true;
 
 -(void) applyFilter:(id) sender
 {
-    int filterIndex = [(UITapGestureRecognizer *) sender view].tag;
+    NSInteger filterIndex = [(UITapGestureRecognizer *) sender view].tag;
     
     //REOPEN CAMERA CONDITION
     if(filterIndex == 0)
